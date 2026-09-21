@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrekkSjekk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+  :root {
+    --ground: #FBFAFC;
+    --surface: #FFFFFF;
+    --ink: #1C1A22;
+    --muted: #5E5A6B;
+    --accent: #5B3FD6;
+    --hairline: #E4E0EC;
+    --flag: #F4F1FB;
+    --yes: #1F7A5A;
+    --no: #A33A52;
+
+    --serif: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #15131B;
+      --surface: #1D1A25;
+      --ink: #EEEBF4;
+      --muted: #A7A1B8;
+      --accent: #AC99F7;
+      --hairline: #2E2939;
+      --flag: #221E2E;
+      --yes: #6FD4AC;
+      --no: #F09AAC;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #15131B;
+    --surface: #1D1A25;
+    --ink: #EEEBF4;
+    --muted: #A7A1B8;
+    --accent: #AC99F7;
+    --hairline: #2E2939;
+    --flag: #221E2E;
+    --yes: #6FD4AC;
+    --no: #F09AAC;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 56px 72px;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 6vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 18px;
+  }
+
+  .lead {
+    font-size: 1.12rem;
+    color: var(--muted);
+    max-width: 36rem;
+    margin: 0 0 28px;
+  }
+
+  .stamp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    color: var(--muted);
+    padding-block: 14px;
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 44px;
+  }
+
+  .summary {
+    background: var(--flag);
+    border-left: 3px solid var(--accent);
+    padding: 22px 24px;
+    margin-bottom: 48px;
+  }
+
+  .summary h2 {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+
+  .summary ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ledger {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1px;
+    background: var(--hairline);
+    border: 1px solid var(--hairline);
+    margin-bottom: 52px;
+  }
+
+  .ledger section {
+    background: var(--surface);
+    padding: 22px 24px;
+  }
+
+  .ledger h3 {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+  }
+
+  .ledger.keeps h3 { color: var(--yes); }
+
+  .ledger section:first-child h3 { color: var(--yes); }
+  .ledger section:last-child h3 { color: var(--no); }
+
+  .ledger ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.94rem;
+  }
+
+  .ledger li {
+    padding-left: 1.1rem;
+    position: relative;
+    color: var(--muted);
+  }
+
+  .ledger li::before {
+    position: absolute;
+    left: 0;
+    font-family: var(--mono);
+  }
+
+  .ledger section:first-child li::before { content: "+"; color: var(--yes); }
+  .ledger section:last-child li::before { content: "−"; color: var(--no); }
+
+  article {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr;
+    gap: 0 1.4rem;
+    padding-block: 30px;
+    border-top: 1px solid var(--hairline);
+  }
+
+  article .num {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    padding-top: 0.45rem;
+  }
+
+  article h2 {
+    font-family: var(--serif);
+    font-size: 1.42rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-wrap: balance;
+    margin: 0 0 10px;
+  }
+
+  article p {
+    margin: 0 0 12px;
+    max-width: 34rem;
+  }
+
+  article p:last-child { margin-bottom: 0; }
+
+  article ul {
+    margin: 0 0 12px;
+    padding-left: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    max-width: 34rem;
+  }
+
+  .who {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+  }
+
+  .who td {
+    padding: 9px 18px 9px 0;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+  }
+
+  .scroll { overflow-x: auto; margin-bottom: 12px; }
+
+  table { border-collapse: collapse; }
+
+  .fill {
+    background: var(--flag);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: var(--mono);
+    font-size: 0.85em;
+    color: var(--accent);
+  }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 26px;
+    border-top: 1px solid var(--hairline);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .en {
+    margin-top: 40px;
+    padding: 22px 24px;
+    border: 1px dashed var(--hairline);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .en h2 {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 10px;
+  }
+
+  a { color: var(--accent); }
+
+  @media (max-width: 620px) {
+    article {
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+    article .num { padding-top: 0; }
+  }
+</style>
+
+<div class="page">
+  <p class="eyebrow">TrekkSjekk · for iPhone</p>
+
+  <h1>Si opp i tide.</h1>
+
+  <p class="lead">
+      TrekkSjekk holder oversikt over abonnementene dine og regner ut når du
+      faktisk må si opp for å slippe neste trekk. Det er sjelden den datoen
+      du tror.
+  </p>
+
+  <div class="summary">
+    <h2>Dette gjør appen</h2>
+    <ul>
+      <li><strong>Regner ut oppsigelsesfristen.</strong> «Én måneds oppsigelse» hos et treningssenter betyr ofte to måneder i praksis. TrekkSjekk kjenner reglene til over hundre tjenester og sier hvilken dato som gjelder.</li>
+      <li><strong>Varsler før fristen,</strong> ikke bare før trekket — da er det som regel for sent.</li>
+      <li><strong>Viser veien til oppsigelsen.</strong> Ett trykk tar deg til siden der abonnementet faktisk avsluttes, også når det er kjøpt i App Store eller på PlayStation.</li>
+      <li><strong>Finner faste trekk i kontoutskriften</strong> du selv laster ned fra nettbanken. Fila leses på telefonen og sendes ingen steder.</li>
+      <li><strong>Viser hva du kan spare</strong> med studentpris eller årsbetaling av samme pakke.</li>
+    </ul>
+  </div>
+
+  <article>
+    <span class="num">01</span>
+    <div>
+      <h2>Alt ligger på telefonen din</h2>
+      <p>
+        TrekkSjekk har ingen brukerkonto, og abonnementene dine sendes ikke
+        til noen server. Appen er gratis og har ingen reklame.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">02</span>
+    <div>
+      <h2>Spørsmål eller feil?</h2>
+      <p>
+        Finner du en pris som ikke stemmer eller en oppsigelseslenke som ikke
+        virker, kan du si fra rett i appen: under Innstillinger, eller nederst
+        på hvert abonnement.
+      </p>
+      <p>
+        Alt annet: skriv til
+        <a href="mailto:01ole.foss@gmail.com">01ole.foss@gmail.com</a>.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">03</span>
+    <div>
+      <h2>Personvern og vilkår</h2>
+      <p>
+        <a href="personvern.html">Personvernerklæring</a><br>
+        <a href="vilkar.html">Brukervilkår</a>
+      </p>
+    </div>
+  </article>
+
+  <footer>
+    TrekkSjekk · Laget av Ole André Foss i Norge
+  </footer>
+</div>

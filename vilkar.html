@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrekkSjekk Brukervilkår</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+
+<style>
+  :root {
+    --ground: #FBFAFC;
+    --surface: #FFFFFF;
+    --ink: #1C1A22;
+    --muted: #5E5A6B;
+    --accent: #5B3FD6;
+    --hairline: #E4E0EC;
+    --flag: #F4F1FB;
+
+    --serif: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #15131B;
+      --surface: #1D1A25;
+      --ink: #EEEBF4;
+      --muted: #A7A1B8;
+      --accent: #AC99F7;
+      --hairline: #2E2939;
+      --flag: #221E2E;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #15131B;
+    --surface: #1D1A25;
+    --ink: #EEEBF4;
+    --muted: #A7A1B8;
+    --accent: #AC99F7;
+    --hairline: #2E2939;
+    --flag: #221E2E;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 56px 72px;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 6vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 18px;
+  }
+
+  .lead {
+    font-size: 1.12rem;
+    color: var(--muted);
+    max-width: 36rem;
+    margin: 0 0 28px;
+  }
+
+  .stamp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    color: var(--muted);
+    padding-block: 14px;
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 44px;
+  }
+
+  .promise {
+    background: var(--flag);
+    border-left: 3px solid var(--accent);
+    padding: 22px 24px;
+    margin-bottom: 48px;
+  }
+
+  .promise h2 {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+
+  .promise p {
+    margin: 0;
+    max-width: 34rem;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr;
+    gap: 0 1.4rem;
+    padding-block: 30px;
+    border-top: 1px solid var(--hairline);
+  }
+
+  article .num {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    padding-top: 0.45rem;
+  }
+
+  article h2 {
+    font-family: var(--serif);
+    font-size: 1.42rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-wrap: balance;
+    margin: 0 0 10px;
+  }
+
+  article p {
+    margin: 0 0 12px;
+    max-width: 34rem;
+  }
+
+  article p:last-child { margin-bottom: 0; }
+
+  article ul {
+    margin: 0 0 12px;
+    padding-left: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    max-width: 34rem;
+  }
+
+  .fill {
+    background: var(--flag);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: var(--mono);
+    font-size: 0.85em;
+    color: var(--accent);
+  }
+
+  .en {
+    margin-top: 40px;
+    padding: 22px 24px;
+    border: 1px dashed var(--hairline);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .en h2 {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 10px;
+  }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 26px;
+    border-top: 1px solid var(--hairline);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  a { color: var(--accent); }
+
+  @media (max-width: 620px) {
+    article {
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+    article .num { padding-top: 0; }
+  }
+</style>
+
+<div class="page">
+  <p class="eyebrow">TrekkSjekk · Vilkår</p>
+
+  <h1>Brukervilkår</h1>
+
+  <p class="lead">
+    Vilkårene under gjelder når du bruker TrekkSjekk. De er skrevet for å kunne leses
+    av den som faktisk bruker appen, ikke bare av en jurist.
+  </p>
+
+  <div class="stamp">
+    <span>Sist oppdatert 21. september 2026</span>
+    <span>Gjelder TrekkSjekk for iPhone</span>
+    <span>Versjon 1.0</span>
+  </div>
+
+  <div class="promise">
+    <h2>Det viktigste først</h2>
+    <p>
+      TrekkSjekk viser deg abonnementene dine og hjelper deg fram til stedet der de
+      avsluttes. TrekkSjekk sier ikke opp noe på egen hånd, og sier aldri at en
+      oppsigelse er sendt uten at den faktisk er det. Selve oppsigelsen skjer
+      hos leverandøren, og det er du som gjennomfører den.
+    </p>
+  </div>
+
+  <article>
+    <span class="num">01</span>
+    <div>
+      <h2>Hva TrekkSjekk er</h2>
+      <p>
+        TrekkSjekk er en app som samler abonnementene dine på ett sted, viser deg når
+        du blir trukket, og forteller deg hvordan hvert enkelt abonnement
+        avsluttes — inkludert oppsigelsesfrist og bindingstid der vi vet det. Appen drives av Ole André Foss, privatperson i Norge.
+        Kontakt: <a href="mailto:01ole.foss@gmail.com">01ole.foss@gmail.com</a>.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">02</span>
+    <div>
+      <h2>Ingen konto</h2>
+      <p>
+        TrekkSjekk har ingen brukerkonto. Abonnementene du legger inn ligger på
+        telefonen din, og sendes ikke til TrekkSjekk eller noen andre. Sletter du
+        appen, forsvinner oversikten, og det er ingenting å logge inn på.
+      </p>
+      <p>
+        TrekkSjekk tar ikke vare på noen kopi. Om oversikten følger med til en ny
+        telefon, avhenger av sikkerhetskopien av telefonen din, ikke av TrekkSjekk.
+      </p>
+      <p>
+        Det eneste TrekkSjekk mottar, er feilmeldinger du selv velger å sende inn.
+        Hva de inneholder og hvor de lagres, står i personvernerklæringen.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">03</span>
+    <div>
+      <h2>Hva TrekkSjekk koster</h2>
+      <p>
+        TrekkSjekk er gratis. Appen er under utvikling, og det finnes i dag ingen
+        betaling, ingen prøveperiode og ingenting å kjøpe.
+      </p>
+      <p>
+        Kommer det en betalt versjon senere, vil prisen stå i appen før du
+        kjøper, og disse vilkårene oppdateres først. Du blir aldri trukket for
+        noe du ikke har sagt ja til.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">04</span>
+    <div>
+      <h2>Hva du kan forvente, og hva du ikke kan</h2>
+      <p>
+        Du legger inn abonnementene dine selv. I tillegg kan TrekkSjekk lese en
+        kontoutskrift du selv laster ned fra nettbanken og velger i appen, og
+        foreslå de faste trekkene den finner. Fila leses på telefonen og
+        slettes etterpå.
+      </p>
+      <p>
+        TrekkSjekk kobler seg ikke til banken din og leser ikke e-posten din.
+      </p>
+      <p>Det du bør vite om treffsikkerheten:</p>
+      <ul>
+        <li>Et fast trekk som ikke står i kontoutskriften du gir appen, blir ikke funnet.</li>
+        <li>Beløp og datoer leses ut av utskriften og kan være feil. Du kan rette alt i appen.</li>
+        <li>Er et trekk ført under et navn som ikke sier hva det er — «APPLE BILL» — gjetter TrekkSjekk ut fra beløpet, og gjetningen kan være gal. Du velger selv, og «vet ikke» er alltid et gyldig svar.</li>
+        <li>Priser, oppsigelsesfrister og bindingstider er hentet fra leverandørenes egne sider, og kan være utdaterte. Appen viser hvor tallet kommer fra og når det sist ble kontrollert. Sjekk alltid hos leverandøren før noe som koster penger.</li>
+      </ul>
+      <p>
+        TrekkSjekk legger aldri inn et abonnement uten at du har bekreftet det.
+      </p>
+    </div>
+  </article>
+  <article>
+    <span class="num">05</span>
+    <div>
+      <h2>Oppsigelse av abonnementer</h2>
+      <p>
+        Når du sier opp et abonnement gjennom TrekkSjekk, tar appen deg til
+        leverandørens egen oppsigelsesside, eller hjelper deg å skrive en
+        oppsigelse du selv sender. TrekkSjekk er ikke part i avtalen mellom deg og
+        leverandøren, og kan ikke garantere at en oppsigelse blir godtatt, eller
+        at den rekker en frist.
+      </p>
+      <p>
+        Sletter du et abonnement i TrekkSjekk, fjerner det bare oversikten i appen.
+        Det avslutter ingenting.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">06</span>
+    <div>
+      <h2>Ditt ansvar</h2>
+      <p>
+        Du gir TrekkSjekk bare kontoutskrifter du selv har rett til å se, og bruker
+        appen til å holde orden på dine egne abonnementer. Du skal ikke bruke
+        den til å hente ut andres opplysninger, eller til noe som er ulovlig.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">07</span>
+    <div>
+      <h2>Ansvarsbegrensning</h2>
+      <p>
+        TrekkSjekk leveres som den er. Appen er under utvikling, og det kan oppstå
+        feil, avbrudd og manglende treff. TrekkSjekk er ikke ansvarlig for indirekte
+        tap — for eksempel et abonnement som ble trukket fordi appen ikke fant
+        det, eller en frist som ble oversittet.
+      </p>
+      <p>
+        TrekkSjekk er gratis, så det er ingenting å kreve tilbake. Er du forbruker,
+        gjelder rettighetene dine etter norsk forbrukerlovgivning uavhengig av
+        det som står her.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">08</span>
+    <div>
+      <h2>Endringer og avslutning</h2>
+      <p>
+        Vilkårene kan endres. Er endringen av betydning, får du beskjed i appen
+        før den trer i kraft. Vil du slutte å bruke TrekkSjekk, sletter du appen —
+        da forsvinner alt som er lagret, siden alt ligger på telefonen din.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">09</span>
+    <div>
+      <h2>Lovvalg</h2>
+      <p>
+        Norsk rett gjelder. Tvister som ikke løses i minnelighet, hører inn
+        under norske domstoler. Er du forbruker, kan du også bringe saken inn
+        for Forbrukertilsynet.
+      </p>
+    </div>
+  </article>
+
+  <div class="en">
+    <h2>English summary</h2>
+    <p>
+      TrekkSjekk is a subscription overview app operated by a private individual in
+      Norway. It shows users the subscriptions they have, when they will be
+      charged, and how each one is cancelled. TrekkSjekk never cancels anything on the
+      user's behalf and never claims a cancellation has been sent unless it has.
+      Users enter subscriptions themselves; TrekkSjekk can additionally read a bank
+      statement the user downloads and selects, entirely on the device, and
+      suggest the recurring charges it finds. TrekkSjekk does not connect to your bank
+      and does not read your email. Detection is best-effort and may be
+      incomplete or inaccurate; users confirm every entry and can correct all
+      values. The app is free and there is nothing to purchase. Norwegian law
+      applies.
+    </p>
+  </div>
+
+  <footer>
+    TrekkSjekk · Brukervilkår · Sist oppdatert 21. september 2026
+  </footer>
+</div>

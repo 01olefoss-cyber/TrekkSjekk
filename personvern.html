@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrekkSjekk Personvernerklæring</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+
+<style>
+  :root {
+    --ground: #FBFAFC;
+    --surface: #FFFFFF;
+    --ink: #1C1A22;
+    --muted: #5E5A6B;
+    --accent: #5B3FD6;
+    --hairline: #E4E0EC;
+    --flag: #F4F1FB;
+    --yes: #1F7A5A;
+    --no: #A33A52;
+
+    --serif: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #15131B;
+      --surface: #1D1A25;
+      --ink: #EEEBF4;
+      --muted: #A7A1B8;
+      --accent: #AC99F7;
+      --hairline: #2E2939;
+      --flag: #221E2E;
+      --yes: #6FD4AC;
+      --no: #F09AAC;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #15131B;
+    --surface: #1D1A25;
+    --ink: #EEEBF4;
+    --muted: #A7A1B8;
+    --accent: #AC99F7;
+    --hairline: #2E2939;
+    --flag: #221E2E;
+    --yes: #6FD4AC;
+    --no: #F09AAC;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 56px 72px;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 6vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 18px;
+  }
+
+  .lead {
+    font-size: 1.12rem;
+    color: var(--muted);
+    max-width: 36rem;
+    margin: 0 0 28px;
+  }
+
+  .stamp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    color: var(--muted);
+    padding-block: 14px;
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 44px;
+  }
+
+  .summary {
+    background: var(--flag);
+    border-left: 3px solid var(--accent);
+    padding: 22px 24px;
+    margin-bottom: 48px;
+  }
+
+  .summary h2 {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+
+  .summary ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ledger {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1px;
+    background: var(--hairline);
+    border: 1px solid var(--hairline);
+    margin-bottom: 52px;
+  }
+
+  .ledger section {
+    background: var(--surface);
+    padding: 22px 24px;
+  }
+
+  .ledger h3 {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+  }
+
+  .ledger.keeps h3 { color: var(--yes); }
+
+  .ledger section:first-child h3 { color: var(--yes); }
+  .ledger section:last-child h3 { color: var(--no); }
+
+  .ledger ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.94rem;
+  }
+
+  .ledger li {
+    padding-left: 1.1rem;
+    position: relative;
+    color: var(--muted);
+  }
+
+  .ledger li::before {
+    position: absolute;
+    left: 0;
+    font-family: var(--mono);
+  }
+
+  .ledger section:first-child li::before { content: "+"; color: var(--yes); }
+  .ledger section:last-child li::before { content: "−"; color: var(--no); }
+
+  article {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr;
+    gap: 0 1.4rem;
+    padding-block: 30px;
+    border-top: 1px solid var(--hairline);
+  }
+
+  article .num {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    padding-top: 0.45rem;
+  }
+
+  article h2 {
+    font-family: var(--serif);
+    font-size: 1.42rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-wrap: balance;
+    margin: 0 0 10px;
+  }
+
+  article p {
+    margin: 0 0 12px;
+    max-width: 34rem;
+  }
+
+  article p:last-child { margin-bottom: 0; }
+
+  article ul {
+    margin: 0 0 12px;
+    padding-left: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    max-width: 34rem;
+  }
+
+  .who {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+  }
+
+  .who td {
+    padding: 9px 18px 9px 0;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+  }
+
+  .scroll { overflow-x: auto; margin-bottom: 12px; }
+
+  table { border-collapse: collapse; }
+
+  .fill {
+    background: var(--flag);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: var(--mono);
+    font-size: 0.85em;
+    color: var(--accent);
+  }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 26px;
+    border-top: 1px solid var(--hairline);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .en {
+    margin-top: 40px;
+    padding: 22px 24px;
+    border: 1px dashed var(--hairline);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .en h2 {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 10px;
+  }
+
+  a { color: var(--accent); }
+
+  @media (max-width: 620px) {
+    article {
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+    article .num { padding-top: 0; }
+  }
+</style>
+
+<div class="page">
+  <p class="eyebrow">TrekkSjekk · Personvern</p>
+
+  <h1>Personvernerklæring</h1>
+
+  <p class="lead">
+    TrekkSjekk gir deg oversikt over abonnementene dine og hjelper deg å avslutte dem
+    du ikke vil ha. Denne siden forklarer hvilke opplysninger appen bruker, hva
+    som lagres, og hva som ikke gjør det.
+  </p>
+
+  <div class="stamp">
+    <span>Sist oppdatert 21. september 2026</span>
+    <span>Gjelder TrekkSjekk for iPhone</span>
+    <span>Versjon 1.0</span>
+  </div>
+
+  <div class="summary">
+    <h2>Kort fortalt</h2>
+    <ul>
+      <li>Abonnementene dine ligger på telefonen din, og bare der. Det finnes ingen brukerkonto, og abonnementene sendes ikke til noen server.</li>
+      <li>Gir du TrekkSjekk en kontoutskrift, leses den på telefonen og slettes etterpå. Innholdet sendes ingen steder.</li>
+      <li>TrekkSjekk legger aldri inn et abonnement uten at du bekrefter det, og sier aldri opp noe på egen hånd.</li>
+      <li>Det eneste som sendes til TrekkSjekk, er en feilmelding du selv velger å skrive og sende. Den er ikke knyttet til deg.</li>
+      <li>Opplysningene dine selges ikke, og brukes ikke til reklame.</li>
+    </ul>
+  </div>
+
+  <div class="ledger">
+    <section>
+      <h3>Dette lagres</h3>
+      <ul>
+        <li>Abonnementene du har lagt inn: navn, pris, betalingsintervall og neste trekkdato</li>
+        <li>Innstillingene dine i appen</li>
+        <li>Feilmeldinger du selv sender inn — se punkt 06</li>
+
+      </ul>
+    </section>
+
+    <section>
+      <h3>Dette lagres ikke</h3>
+      <ul>
+        <li>Innholdet i kontoutskriften du gir appen</li>
+        <li>Navnet ditt, e-postadressen din eller kontonummeret ditt</li>
+        <li>Bankinnloggingen din — TrekkSjekk ber aldri om den</li>
+        <li>Transaksjoner ut over de abonnementene du selv huker av</li>
+      </ul>
+    </section>
+  </div>
+
+  <article>
+    <span class="num">01</span>
+    <div>
+      <h2>Hvem er ansvarlig</h2>
+      <p>
+        TrekkSjekk er utviklet og drives av Ole André Foss, en privatperson i Norge.
+        Spørsmål om personvern, innsyn eller sletting rettes til
+        <a href="mailto:01ole.foss@gmail.com">01ole.foss@gmail.com</a>.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">02</span>
+    <div>
+      <h2>Hva TrekkSjekk bruker opplysningene til</h2>
+      <p>
+        Opplysningene brukes til ett formål: å vise deg hvilke abonnementer du
+        har, varsle deg før du blir trukket, og hjelpe deg å avslutte dem du
+        ikke vil ha. De brukes ikke til noe annet, selges ikke videre, og
+        brukes ikke til å vise deg reklame.
+      </p>
+      <p>
+        Behandlingsgrunnlaget er ditt samtykke, og for konto og lagring at
+        behandlingen er nødvendig for å levere tjenesten du har bedt om
+        (personvernforordningen artikkel 6 nr. 1 bokstav a og b).
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">03</span>
+    <div>
+      <h2>Abonnementene du legger inn</h2>
+      <p>
+        Abonnementene du legger inn, lagres i appens eget område på
+        telefonen din, og bare der. Det finnes ingen brukerkonto, og de
+        sendes ikke til TrekkSjekk eller til noen andre.
+      </p>
+      <p>
+        Sletter du et abonnement i appen, er det borte. Merk at
+        det bare fjerner oversikten i TrekkSjekk — selve abonnementet hos leverandøren
+        må sies opp der.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">04</span>
+    <div>
+      <h2>Kontoutskrift</h2>
+      <p>
+        TrekkSjekk kan lese en kontoutskrift du selv laster ned fra nettbanken
+        og velger i appen. <strong>Fila forlater aldri telefonen.</strong>
+        Den leses på enheten, TrekkSjekk finner de faste trekkene, og kopien av
+        fila slettes når lesingen er ferdig.
+      </p>
+      <p>
+        TrekkSjekk leser dato, tekst og beløp. Kontonummer, saldo og navn brukes
+        ikke til noe. Ingenting av innholdet sendes til TrekkSjekk, til meg, eller
+        til noen andre &mdash; appen har ingen funksjon som sender den
+        noe sted. De eneste opplysningene som blir liggende igjen, er de
+        abonnementene du selv huker av og legger inn.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">05</span>
+    <div>
+      <h2>Når appen henter noe fra nettet</h2>
+      <p>
+        TrekkSjekk henter ting fra nettet på tre måter. Den første er den jeg
+        vil at du skal lese nøye, fordi den er den eneste der noen andre
+        kan utlede noe om deg.
+      </p>
+      <p>
+        For &aring; vise logoen til en tjeneste henter TrekkSjekk ikonet fra
+        Googles favicon-tjeneste. Det betyr at <strong>Google mottar en
+        foresp&oslash;rsel med nettadressen til tjenesten</strong> &mdash;
+        for eksempel <em>netflix.com</em> &mdash; sammen med IP-adressen
+        din. Google kan dermed utlede hvilke tjenester du har lagt inn i
+        appen.
+      </p>
+      <p>
+        Det skjer <strong>&eacute;n gang per tjeneste</strong>. Logoen
+        lagres p&aring; telefonen f&oslash;rste gang, og hentes derfra
+        etterp&aring;. Legger du aldri inn flere abonnementer, snakker
+        appen aldri med Google igjen.
+      </p>
+      <p>
+        Har du et abonnement du ikke vil at noen skal kunne utlede at du
+        har, er dette verdt &aring; vite om. Den eneste m&aring;ten
+        &aring; unng&aring; det helt p&aring;, er &aring; la v&aelig;re
+        &aring; legge tjenesten inn &mdash; eller skrive inn et navn som
+        ikke st&aring;r i tjenestedatabasen, slik at TrekkSjekk viser en farget
+        forbokstav i stedet.
+      </p>
+      <p>
+        TrekkSjekk henter ogs&aring; valutakurser fra Norges Bank, for &aring;
+        kunne vise hva et abonnement i dollar koster i kroner. Den
+        foresp&oslash;rselen inneholder ingenting om deg &mdash; bare
+        hvilke valutaer som &oslash;nskes.
+      </p>
+      <p>
+        Legger du inn en tjeneste TrekkSjekk ikke kjenner oppsigelsen til, kan
+        appen åpne tjenestens egen nettside for å lete etter siden der du
+        sier opp. Det er en vanlig forespørsel fra telefonen din til
+        leverandøren, som om du hadde åpnet nettsiden deres selv. Ingenting
+        om deg eller abonnementene dine sendes med.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">06</span>
+    <div>
+      <h2>Hvem andre er involvert</h2>
+      <p>
+        Tre, og bare til det som står her:
+      </p>
+      <table>
+        <tr>
+          <th>Google</th>
+          <td>Logoen til tjenestene du legger inn, hentet &eacute;n gang per
+              tjeneste. Se punkt 05.</td>
+          <td>EU/USA</td>
+        </tr>
+        <tr>
+          <th>Norges Bank</th>
+          <td>Valutakurser, uten at noe om deg sendes med</td>
+          <td>Norge</td>
+        </tr>
+        <tr>
+          <th>Supabase</th>
+          <td>Lagrer feilmeldinger du selv sender inn. Ingenting annet.</td>
+          <td>Irland (EU)</td>
+        </tr>
+      </table>
+      <p>
+        <strong>Feilmeldinger.</strong> Under Innstillinger og på hvert
+        abonnement kan du si fra om noe som ikke stemmer — en død
+        oppsigelseslenke, en feil pris eller en logo som mangler. Sender du
+        en slik melding, lagres den hos Supabase på en server i Irland.
+        Meldingen inneholder hvilken tjeneste det gjelder, hva slags feil
+        det er, teksten du selv har skrevet, tidspunktet og hvilken versjon
+        av TrekkSjekk du bruker. <strong>Den inneholder ikke navnet ditt,
+        e-postadressen din eller abonnementslista di</strong>, og er ikke
+        knyttet til deg på noen måte. Supabase kan registrere IP-adressen i
+        sine tekniske logger, men TrekkSjekk lagrer den ikke sammen med meldingen.
+      </p>
+      <p>
+        Irland er med i EU og Norge i EØS, så de samme personvernreglene
+        gjelder. Supabase er et amerikansk selskap, men dataene lagres i
+        Irland. Ingen andre enn meg kan lese meldingene — heller ikke den
+        som sendte dem.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">07</span>
+    <div>
+      <h2>Hvor lenge ting lagres</h2>
+      <p>
+        Abonnementene dine ligger på telefonen til du sletter dem, eller til
+        du avinstallerer TrekkSjekk. Da forsvinner alt sammen med appen — det finnes
+        ingen kopi noe annet sted. Innholdet i en kontoutskrift lagres aldri,
+        og kopien av fila slettes så snart lesingen er ferdig.
+      </p>
+      <p>
+        Feilmeldinger slettes når feilen er rettet, og senest etter tolv
+        måneder.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">08</span>
+    <div>
+      <h2>Rettighetene dine</h2>
+      <p>
+        Du har rett til innsyn i hva som er lagret om deg, til å få rettet det
+        som er feil, til å få det slettet, og til å få det utlevert i et format
+        du kan ta med deg. I praksis er det enkelt her: alt som er lagret om
+        deg ligger på din egen telefon, og du sletter det selv i appen eller
+        ved å avinstallere den. Har du sendt en feilmelding du vil ha
+        slettet, skriv til adressen i punkt 01 og si omtrent når du sendte
+        den og hva den gjaldt — siden den ikke er knyttet til deg, er det
+        den eneste måten å finne den på.
+      </p>
+      <p>
+        Mener du at TrekkSjekk behandler opplysninger om deg på en måte som ikke er
+        riktig, kan du klage til Datatilsynet.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">09</span>
+    <div>
+      <h2>Sikkerhet</h2>
+      <p>
+        TrekkSjekk har ingen brukerkonto og ingen passord å miste. Abonnementene
+        ligger i appens eget område på telefonen, som andre apper ikke har
+        tilgang til, og som beskyttes av kodelåsen din. Alt appen henter
+        fra nettet, og feilmeldingene du sender, går kryptert. Tabellen
+        med feilmeldinger er satt opp slik at alle kan legge til en
+        melding, men ingen kan lese dem gjennom appen.
+        TrekkSjekk er under utvikling, og der noe ikke er på plass ennå, skal det
+        stå i appen, ikke bare her.
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <span class="num">10</span>
+    <div>
+      <h2>Endringer</h2>
+      <p>
+        Endres denne erklæringen, oppdateres datoen øverst på siden. Er
+        endringen av betydning for deg, får du beskjed i appen før den trer i
+        kraft.
+      </p>
+    </div>
+  </article>
+
+  <div class="en">
+    <h2>English summary</h2>
+    <p>
+      TrekkSjekk is a subscription overview app for Norwegian users. Everything you
+      enter is stored on your device only: there is no account and no
+      analytics, and your subscriptions are never sent anywhere. If you hand TrekkSjekk a bank statement exported from your online
+      bank, the file is read on the device and the copy is deleted afterwards —
+      its contents are never transmitted. The app fetches each service's logo
+      from Google's favicon service once per service, which means Google can
+      infer which services you have added (see section 05); it fetches
+      exchange rates from Norges Bank; and for services it does not know, it
+      may open the provider's own website to find the cancellation page. The
+      only thing ever sent to TrekkSjekk is an error report you choose to write and
+      send. It is stored with Supabase in Ireland (EU), contains the service,
+      the kind of error, your text and the app version, and is not linked to
+      you in any way. Reports are deleted once the error is fixed, and after
+      twelve months at the latest. No data is sold or used for advertising.
+      For access, correction or deletion requests, contact the address in
+      section 01.
+    </p>
+  </div>
+
+  <footer>
+    TrekkSjekk · Personvernerklæring · Sist oppdatert 21. september 2026
+  </footer>
+</div>
