@@ -307,6 +307,7 @@
       <li>Gir du TrekkSjekk en kontoutskrift, leses den på telefonen og slettes etterpå. Innholdet sendes ingen steder.</li>
       <li>TrekkSjekk legger aldri inn et abonnement uten at du bekrefter det, og sier aldri opp noe på egen hånd.</li>
       <li>Det eneste som sendes til TrekkSjekk, er en feilmelding du selv velger å skrive og sende. Den er ikke knyttet til deg.</li>
+      <li>Kjøper du Premium, betaler du til Apple. TrekkSjekk får aldri navnet ditt, e-posten din eller betalingsopplysningene dine — bare beskjed om at Premium er kjøpt.</li>
       <li>Opplysningene dine selges ikke, og brukes ikke til reklame.</li>
     </ul>
   </div>
@@ -356,9 +357,9 @@
         brukes ikke til å vise deg reklame.
       </p>
       <p>
-        Behandlingsgrunnlaget er ditt samtykke, og for konto og lagring at
-        behandlingen er nødvendig for å levere tjenesten du har bedt om
-        (personvernforordningen artikkel 6 nr. 1 bokstav a og b).
+        Behandlingsgrunnlaget er ditt samtykke, og for lagring og kjøp av
+        Premium at behandlingen er nødvendig for å levere tjenesten du har
+        bedt om (personvernforordningen artikkel 6 nr. 1 bokstav a og b).
       </p>
     </div>
   </article>
@@ -452,7 +453,7 @@
     <div>
       <h2>Hvem andre er involvert</h2>
       <p>
-        Tre, og bare til det som står her:
+        Fem, og bare til det som står her:
       </p>
       <table>
         <tr>
@@ -470,6 +471,16 @@
           <th>Supabase</th>
           <td>Lagrer feilmeldinger du selv sender inn. Ingenting annet.</td>
           <td>Irland (EU)</td>
+        </tr>
+        <tr>
+          <th>Apple</th>
+          <td>Tar imot betalingen når du kjøper Premium</td>
+          <td>Apples egne vilkår</td>
+        </tr>
+        <tr>
+          <th>RevenueCat</th>
+          <td>Bekrefter at et Premium-kjøp er gyldig. Ingenting annet.</td>
+          <td>USA</td>
         </tr>
       </table>
       <p>
@@ -490,6 +501,23 @@
         Irland. Ingen andre enn meg kan lese meldingene — heller ikke den
         som sendte dem.
       </p>
+      <p>
+        <strong>Kjøp av Premium.</strong> Selve kjøpet skjer hos Apple, med
+        Apple-ID-en din, og Apple behandler betalingen etter sin egen
+        personvernerklæring. TrekkSjekk får ikke navnet ditt, e-postadressen
+        din eller kortnummeret ditt.
+      </p>
+      <p>
+        For å vite om du har Premium, bruker TrekkSjekk RevenueCat, et selskap i
+        USA som kontrollerer kjøpskvitteringen fra Apple. RevenueCat får en
+        tilfeldig ID som appen lager, og som ikke sier noe om hvem du er,
+        kvitteringen for kjøpet (hva som er kjøpt, når, pris og land),
+        telefonmodell og iOS-versjon, og IP-adressen i sine tekniske logger.
+        Abonnementslista di og kontoutskriften sendes aldri til RevenueCat.
+        Overføringen til USA skjer på grunnlag av EU-kommisjonens
+        standardkontraktsklausuler i RevenueCats databehandleravtale.
+        Kjøper du ikke Premium, sendes ingenting til RevenueCat.
+      </p>
     </div>
   </article>
 
@@ -505,7 +533,10 @@
       </p>
       <p>
         Feilmeldinger slettes når feilen er rettet, og senest etter tolv
-        måneder.
+        måneder. Opplysningene om et Premium-kjøp oppbevares hos RevenueCat så
+        lenge det trengs for å vite at du har kjøpt, og ellers så lenge
+        bokføringsreglene krever. Vil du ha dem slettet, skriv til adressen i
+        punkt 01.
       </p>
     </div>
   </article>
@@ -576,7 +607,12 @@
       send. It is stored with Supabase in Ireland (EU), contains the service,
       the kind of error, your text and the app version, and is not linked to
       you in any way. Reports are deleted once the error is fixed, and after
-      twelve months at the latest. No data is sold or used for advertising.
+      twelve months at the latest. Premium is purchased through Apple; TrekkSjekk
+      never receives your name, email or payment details. To check whether a
+      purchase is valid, the app uses RevenueCat (USA), which receives a random
+      app-generated ID, the purchase receipt, device model and iOS version, and
+      your IP address in its logs — nothing about your subscriptions. No data
+      is sold or used for advertising.
       For access, correction or deletion requests, contact the address in
       section 01.
     </p>
