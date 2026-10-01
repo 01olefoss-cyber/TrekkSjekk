@@ -1,349 +1,357 @@
 <!doctype html>
 <html lang="no">
+<head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TrekkSjekk</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TrekkSjekk – si opp abonnementer i tide</title>
+<meta name="description" content="TrekkSjekk samler abonnementene dine og regner ut når du faktisk må si opp for å slippe neste trekk. Gratis iPhone-app. Ingen konto, ingen bankkobling.">
+<link rel="canonical" href="https://trekksjekk.no/">
+<meta name="apple-itunes-app" content="app-id=6811947257">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:site_name" content="TrekkSjekk">
+<meta property="og:title" content="TrekkSjekk – si opp abonnementer i tide">
+<meta property="og:description" content="Fristen for å si opp er ofte tidligere enn du tror. TrekkSjekk regner den ut og varsler deg.">
+<meta property="og:url" content="https://trekksjekk.no/">
+<meta property="og:image" content="https://trekksjekk.no/bilder/ikon-512.png">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="icon" type="image/png" href="bilder/ikon-64.png">
+<link rel="apple-touch-icon" href="bilder/ikon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Manrope:wght@400;500;600;700&display=swap">
 <style>
-  :root {
-    --ground: #FBFAFC;
-    --surface: #FFFFFF;
-    --ink: #1C1A22;
-    --muted: #5E5A6B;
-    --accent: #5B3FD6;
-    --hairline: #E4E0EC;
-    --flag: #F4F1FB;
-    --yes: #1F7A5A;
-    --no: #A33A52;
-
-    --serif: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --mono: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+:root{
+  --navy:#1E3A8A;
+  --navy-deep:#17306F;
+  --navy-ink:#C9D5F5;
+  --check:#4ADE80;
+  --ground:#F5F7FC;
+  --surface:#FFFFFF;
+  --ink:#0F1630;
+  --muted:#56607A;
+  --line:#DCE2F0;
+  --ok:#15803D;
+  --warn:#B45309;
+  --display:"Bricolage Grotesque", Manrope, system-ui, sans-serif;
+  --body:Manrope, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1124; --surface:#121A33; --ink:#EEF1F8; --muted:#A3ABC2; --line:#243055;
+    --ok:#4ADE80; --warn:#F5B860;
   }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1124; --surface:#121A33; --ink:#EEF1F8; --muted:#A3ABC2; --line:#243055;
+  --ok:#4ADE80; --warn:#F5B860;
+}
 
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --ground: #15131B;
-      --surface: #1D1A25;
-      --ink: #EEEBF4;
-      --muted: #A7A1B8;
-      --accent: #AC99F7;
-      --hairline: #2E2939;
-      --flag: #221E2E;
-      --yes: #6FD4AC;
-      --no: #F09AAC;
-    }
-  }
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--check);outline-offset:3px;border-radius:6px}
 
-  :root[data-theme="dark"] {
-    --ground: #15131B;
-    --surface: #1D1A25;
-    --ink: #EEEBF4;
-    --muted: #A7A1B8;
-    --accent: #AC99F7;
-    --hairline: #2E2939;
-    --flag: #221E2E;
-    --yes: #6FD4AC;
-    --no: #F09AAC;
-  }
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
 
-  body {
-    background: var(--ground);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 16px;
-    line-height: 1.62;
-    -webkit-font-smoothing: antialiased;
-  }
+/* Knapp til App Store */
+.last-ned{display:inline-flex;align-items:center;gap:10px;background:#fff;color:#0F1630;text-decoration:none;font-weight:700;font-size:17px;padding:14px 22px;border-radius:14px}
+.last-ned svg{width:20px;height:20px;flex:none}
+.last-ned:hover{background:#EAF0FF}
 
-  .page {
-    max-width: 46rem;
-    margin: 0 auto;
-    padding-inline: 20px;
-    padding-block: 56px 72px;
-  }
+/* ---------- Toppen ---------- */
+.topp{background:var(--navy);color:#fff;overflow:hidden}
+.topp-linje{display:flex;justify-content:space-between;align-items:center;padding-block:22px}
+.merke{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:800;font-size:21px;letter-spacing:-.01em;text-decoration:none}
+.merke svg{width:40px;height:40px;border-radius:10px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+.topp-linje a.lenke{color:var(--navy-ink);font-weight:600;font-size:15px;text-decoration:none}
+.topp-linje a.lenke:hover{color:#fff}
 
-  .eyebrow {
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 18px;
-  }
+.helt{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:end;padding-top:36px}
+.helt-tekst{padding-bottom:72px}
+.helt h1{font-size:clamp(30px,4.2vw,44px);font-weight:600;line-height:1.12;max-width:16ch}
+.helt .ingress{color:var(--navy-ink);font-size:18px;max-width:34rem;margin-top:22px}
+.helt .handling{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin-top:32px}
+.helt .handling small{color:var(--navy-ink);font-size:14px}
 
-  h1 {
-    font-family: var(--serif);
-    font-weight: 600;
-    font-size: clamp(2.1rem, 6vw, 3rem);
-    line-height: 1.1;
-    letter-spacing: -0.015em;
-    text-wrap: balance;
-    margin: 0 0 18px;
-  }
+/* Datoene – det ene store grepet */
+.frist{margin-top:34px;border-left:2px solid rgba(255,255,255,.22);padding-left:22px}
+.frist-tjeneste{color:var(--navy-ink);font-size:15px;margin-bottom:6px}
+.frist-rad{display:grid;grid-template-columns:5.5rem 1fr;align-items:baseline;gap:12px}
+.frist-rad .tag{color:var(--navy-ink);font-size:15px;font-weight:600}
+.frist-rad .dato{font-family:var(--display);font-weight:800;white-space:nowrap;font-size:clamp(34px,5vw,60px);line-height:1.04;letter-spacing:-.035em}
+.frist-rad s.dato{color:rgba(201,213,245,.55);text-decoration-thickness:4px;text-decoration-color:rgba(255,255,255,.7)}
+.frist-rad.ekte .dato{display:inline-flex;align-items:center;gap:.25em}
+.frist-rad.ekte svg{width:.62em;height:.62em;flex:none}
 
-  .lead {
-    font-size: 1.12rem;
-    color: var(--muted);
-    max-width: 36rem;
-    margin: 0 0 28px;
-  }
+.helt-bilde{align-self:end;justify-self:center;width:min(100%,380px);margin-bottom:-2px}
 
-  .stamp {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 20px;
-    font-family: var(--mono);
-    font-size: 0.76rem;
-    color: var(--muted);
-    padding-block: 14px;
-    border-top: 1px solid var(--hairline);
-    border-bottom: 1px solid var(--hairline);
-    margin-bottom: 44px;
-  }
+/* ---------- Seksjoner ---------- */
+.seksjon{padding-block:88px 0}
+.seksjon > .wrap > h2,.seksjon .tittel{font-size:clamp(28px,3.6vw,40px);font-weight:800;line-height:1.1;max-width:22ch}
+.seksjon .forklaring{color:var(--muted);max-width:40rem;margin-top:14px}
 
-  .summary {
-    background: var(--flag);
-    border-left: 3px solid var(--accent);
-    padding: 22px 24px;
-    margin-bottom: 48px;
-  }
+/* Reglene */
+.regler{margin-top:34px;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.regel{display:grid;grid-template-columns:1fr 1.1fr;gap:20px;padding:20px 26px;border-top:1px solid var(--line)}
+.regel:first-child{border-top:0}
+.regel b{display:block;font-size:17px}
+.regel span{color:var(--muted);font-size:14px}
+.regel .nar{font-weight:600}
+.regel .nar.lang{color:var(--warn)}
 
-  .summary h2 {
-    font-family: var(--sans);
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 12px;
-  }
+/* Skjermene */
+.skjermer{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,300px);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:34px 20px 18px;margin-inline:-20px;scrollbar-width:thin}
+.skjerm{scroll-snap-align:start;background:var(--navy);color:#fff;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;margin:0}
+.skjerm figcaption{padding:24px 22px 18px}
+.skjerm h3{font-size:22px;font-weight:600;line-height:1.15}
+.skjerm p{color:var(--navy-ink);font-size:15px;line-height:1.5;margin-top:8px}
+.skjerm img{margin-top:auto;width:100%}
+.bla{color:var(--muted);font-size:14px;margin-top:4px}
 
-  .summary ul {
-    margin: 0;
-    padding-left: 1.1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
+/* Personvern */
+.privat{display:grid;grid-template-columns:1fr 1fr;gap:28px 56px;align-items:start}
+.privat ul{list-style:none;margin:0;padding:0;display:grid;gap:2px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.privat li{background:var(--surface);padding:16px 20px;display:flex;gap:14px;align-items:flex-start}
+.privat li svg{width:22px;height:22px;flex:none;margin-top:2px}
 
-  .ledger {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1px;
-    background: var(--hairline);
-    border: 1px solid var(--hairline);
-    margin-bottom: 52px;
-  }
+/* Pris */
+.planer{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
+.plan h3{font-size:19px;font-weight:600}
+.plan .belop{font-family:var(--display);font-weight:800;font-size:44px;letter-spacing:-.03em;line-height:1;margin-top:14px}
+.plan .per{color:var(--muted);font-size:14px;margin-top:6px}
+.plan ul{margin:18px 0 0;padding-left:1.1rem;display:grid;gap:6px;font-size:15px}
+.plan.livstid{border:2px solid var(--navy)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .plan.livstid{border-color:#5C7BD6}}
+:root[data-theme="dark"] .plan.livstid{border-color:#5C7BD6}
+.premium-liste{color:var(--muted);font-size:15px;max-width:44rem;margin-top:18px}
 
-  .ledger section {
-    background: var(--surface);
-    padding: 22px 24px;
-  }
+/* Hjelp */
+.hjelp{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.hjelp > div{border-top:2px solid var(--ink);padding-top:16px}
+.hjelp h3{font-size:19px;font-weight:600;margin-bottom:8px}
+.hjelp p{color:var(--muted);font-size:15px}
+.hjelp a{color:var(--ink);font-weight:600}
 
-  .ledger h3 {
-    font-family: var(--mono);
-    font-size: 0.74rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin: 0 0 14px;
-  }
+/* Bunnen */
+.bunn{margin-top:96px;background:var(--navy);color:#fff}
+.bunn > .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px;padding-block:48px}
+.bunn h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;max-width:20ch}
+.bunn-info{border-top:1px solid rgba(255,255,255,.16)}
+.bunn-info .wrap{padding-block:22px;color:var(--navy-ink);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 24px}
+.bunn-info a{color:var(--navy-ink)}
 
-  .ledger.keeps h3 { color: var(--yes); }
-
-  .ledger section:first-child h3 { color: var(--yes); }
-  .ledger section:last-child h3 { color: var(--no); }
-
-  .ledger ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 0.94rem;
-  }
-
-  .ledger li {
-    padding-left: 1.1rem;
-    position: relative;
-    color: var(--muted);
-  }
-
-  .ledger li::before {
-    position: absolute;
-    left: 0;
-    font-family: var(--mono);
-  }
-
-  .ledger section:first-child li::before { content: "+"; color: var(--yes); }
-  .ledger section:last-child li::before { content: "−"; color: var(--no); }
-
-  article {
-    display: grid;
-    grid-template-columns: 3.2rem 1fr;
-    gap: 0 1.4rem;
-    padding-block: 30px;
-    border-top: 1px solid var(--hairline);
-  }
-
-  article .num {
-    font-family: var(--mono);
-    font-size: 0.8rem;
-    color: var(--accent);
-    padding-top: 0.45rem;
-  }
-
-  article h2 {
-    font-family: var(--serif);
-    font-size: 1.42rem;
-    font-weight: 600;
-    line-height: 1.25;
-    text-wrap: balance;
-    margin: 0 0 10px;
-  }
-
-  article p {
-    margin: 0 0 12px;
-    max-width: 34rem;
-  }
-
-  article p:last-child { margin-bottom: 0; }
-
-  article ul {
-    margin: 0 0 12px;
-    padding-left: 1.15rem;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    max-width: 34rem;
-  }
-
-  .who {
-    font-family: var(--mono);
-    font-size: 0.82rem;
-  }
-
-  .who td {
-    padding: 9px 18px 9px 0;
-    border-bottom: 1px solid var(--hairline);
-    vertical-align: top;
-  }
-
-  .scroll { overflow-x: auto; margin-bottom: 12px; }
-
-  table { border-collapse: collapse; }
-
-  .fill {
-    background: var(--flag);
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-family: var(--mono);
-    font-size: 0.85em;
-    color: var(--accent);
-  }
-
-  footer {
-    margin-top: 52px;
-    padding-top: 26px;
-    border-top: 1px solid var(--hairline);
-    font-size: 0.9rem;
-    color: var(--muted);
-  }
-
-  .en {
-    margin-top: 40px;
-    padding: 22px 24px;
-    border: 1px dashed var(--hairline);
-    font-size: 0.9rem;
-    color: var(--muted);
-  }
-
-  .en h2 {
-    font-family: var(--mono);
-    font-size: 0.74rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink);
-    margin: 0 0 10px;
-  }
-
-  a { color: var(--accent); }
-
-  @media (max-width: 620px) {
-    article {
-      grid-template-columns: 1fr;
-      gap: 6px;
-    }
-    article .num { padding-top: 0; }
-  }
+@media (max-width:820px){
+  .helt{grid-template-columns:1fr;gap:8px;padding-top:12px}
+  .helt-tekst{padding-bottom:20px}
+  .helt-bilde{width:min(86%,340px)}
+  .privat{grid-template-columns:1fr}
+  .planer,.hjelp{grid-template-columns:1fr}
+  .regel{grid-template-columns:1fr;gap:4px}
+  .seksjon{padding-block:64px 0}
+}
+@media (max-width:420px){
+  .frist-rad{grid-template-columns:1fr;gap:0}
+  .frist-rad .tag{margin-top:8px}
+  .topp-linje a.lenke{display:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .frist-rad s.dato{animation:stryk .5s .3s ease-out both}
+  .frist-rad.ekte{animation:fram .45s .75s ease-out both}
+  @keyframes stryk{from{text-decoration-color:transparent;color:#fff}}
+  @keyframes fram{from{opacity:0;transform:translateY(6px)}}
+}
 </style>
+</head>
+<body>
 
-<div class="page">
-  <p class="eyebrow">TrekkSjekk · for iPhone</p>
+<header class="topp">
+  <div class="wrap">
+    <div class="topp-linje">
+      <a class="merke" href="./" aria-label="TrekkSjekk, til forsiden">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#1E3A8A"/><path d="M50 22 A28 28 0 1 1 25.75 36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><polyline points="16.2,38.6 26.8,34.3 28.4,45.6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><polyline points="39,51 47,59 62,43" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        TrekkSjekk
+      </a>
+      <a class="lenke" href="#hjelp">Hjelp og kontakt</a>
+    </div>
 
-  <h1>Si opp i tide.</h1>
+    <div class="helt">
+      <div class="helt-tekst">
+        <h1>Fristen for å si opp er tidligere enn du tror.</h1>
 
-  <p class="lead">
-      TrekkSjekk holder oversikt over abonnementene dine og regner ut når du
-      faktisk må si opp for å slippe neste trekk. Det er sjelden den datoen
-      du tror.
-  </p>
+        <div class="frist" role="group" aria-label="Eksempel: Trener 1 trekker 15. november">
+          <p class="frist-tjeneste">Treningssenter som trekker 15. november</p>
+          <div class="frist-rad">
+            <span class="tag">Du tror</span>
+            <s class="dato">14. november</s>
+          </div>
+          <div class="frist-rad ekte">
+            <span class="tag">Fristen</span>
+            <strong class="dato">30. september<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="#4ADE80" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></strong>
+          </div>
+        </div>
 
-  <div class="summary">
-    <h2>Dette gjør appen</h2>
+        <p class="ingress">TrekkSjekk samler abonnementene dine, viser hva de koster i året og regner ut siste dag du kan si opp for å slippe neste trekk. Så sier den fra i tide.</p>
+
+        <div class="handling">
+          <a class="last-ned" href="https://apps.apple.com/no/app/id6811947257">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Last ned i App Store
+          </a>
+          <small>Gratis for iPhone. Ingen konto.</small>
+        </div>
+      </div>
+
+      <img class="helt-bilde" src="bilder/frist.webp" width="760" height="1487" alt="TrekkSjekk viser Trener 1: neste trekk 15. oktober, si opp innen 30. september">
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="seksjon" aria-labelledby="regler-tittel">
+  <div class="wrap">
+    <h2 id="regler-tittel">Dagen før holder sjelden.</h2>
+    <p class="forklaring">De fleste tror de kan si opp kvelden før neste trekk. Hos mange tjenester er det for sent. TrekkSjekk kjenner reglene til over 250 tjenester og regner ut datoen som faktisk gjelder.</p>
+
+    <div class="regler">
+      <div class="regel">
+        <div><b>Strømming og apper</b><span>Netflix, Spotify, HBO Max</span></div>
+        <div class="nar">Dagen før trekket</div>
+      </div>
+      <div class="regel">
+        <div><b>Treningssenter</b><span>SATS, Trener 1, MOVA</span></div>
+        <div class="nar lang">Ut neste måned, altså opptil to måneder før</div>
+      </div>
+      <div class="regel">
+        <div><b>TV-pakker og noen sentre</b><span>RiksTV, Fitness24Seven</span></div>
+        <div class="nar lang">Opptil tre måneder før</div>
+      </div>
+      <div class="regel">
+        <div><b>Prøveperioder</b><span>Lydbøker, strømming, apper</span></div>
+        <div class="nar">Før gratisperioden går ut, ellers begynner den å koste</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seksjon" aria-labelledby="skjermer-tittel">
+  <div class="wrap">
+    <h2 id="skjermer-tittel">Det appen gjør for deg.</h2>
+    <div class="skjermer" tabindex="0" aria-label="Skjermbilder fra appen, kan blas sidelengs">
+      <figure class="skjerm">
+        <figcaption><h3>Hva du egentlig betaler</h3><p>Alle abonnementene på ett sted, per måned og per år.</p></figcaption>
+        <img src="bilder/oversikt.webp" width="760" height="1487" loading="lazy" alt="Oversikten: 1 362 kr i måneden, fordelt på trening, lyd og musikk, strømming og programvare">
+      </figure>
+      <figure class="skjerm">
+        <figcaption><h3>Studentpris du ikke bruker</h3><p>Er du student, viser den rabattene du har krav på.</p></figcaption>
+        <img src="bilder/studentpris.webp" width="760" height="1487" loading="lazy" alt="Studentpris-siden med Storytel, YouTube Premium, Spotify og Disney+">
+      </figure>
+      <figure class="skjerm">
+        <figcaption><h3>Varsel før prøveperioden</h3><p>Du får beskjed før gratisperioden begynner å koste.</p></figcaption>
+        <img src="bilder/proveperiode.webp" width="760" height="1487" loading="lazy" alt="Varsel om at prøveperioden hos Nextory går ut, med frist for å si opp">
+      </figure>
+      <figure class="skjerm">
+        <figcaption><h3>Leser kontoutskriften</h3><p>Finner de faste trekkene, også det som skjuler seg bak «Apple Bill».</p></figcaption>
+        <img src="bilder/kontoutskrift.webp" width="760" height="1487" loading="lazy" alt="Faste trekk funnet i kontoutskriften: Netflix, Spotify, Trener 1 og iCloud+">
+      </figure>
+      <figure class="skjerm">
+        <figcaption><h3>Rett til oppsigelsen</h3><p>Ett trykk til siden der abonnementet faktisk avsluttes.</p></figcaption>
+        <img src="bilder/oppsigelse.webp" width="760" height="1487" loading="lazy" alt="Avslutt Netflix: knapp til oppsigelsessiden og fristen">
+      </figure>
+    </div>
+    <p class="bla">Bla sidelengs for flere.</p>
+  </div>
+</section>
+
+<section class="seksjon" aria-labelledby="privat-tittel">
+  <div class="wrap privat">
+    <div>
+      <h2 class="tittel" id="privat-tittel">Ingen konto. Ingen bankkobling.</h2>
+      <p class="forklaring">Abonnementslista di ligger på telefonen din og ingen andre steder. Du trenger ikke logge inn noe sted for å bruke appen.</p>
+    </div>
     <ul>
-      <li><strong>Regner ut oppsigelsesfristen.</strong> «Én måneds oppsigelse» hos et treningssenter betyr ofte to måneder i praksis. TrekkSjekk kjenner reglene til over hundre tjenester og sier hvilken dato som gjelder.</li>
-      <li><strong>Varsler før fristen,</strong> ikke bare før trekket — da er det som regel for sent.</li>
-      <li><strong>Viser veien til oppsigelsen.</strong> Ett trykk tar deg til siden der abonnementet faktisk avsluttes, også når det er kjøpt i App Store eller på PlayStation.</li>
-      <li><strong>Finner faste trekk i kontoutskriften</strong> du selv laster ned fra nettbanken. Fila leses på telefonen og sendes ingen steder.</li>
-      <li><strong>Viser hva du kan spare</strong> med studentpris eller årsbetaling av samme pakke.</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--ok)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Ingen brukerkonto og ingen innlogging</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--ok)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Kobler seg aldri til banken din</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--ok)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Kontoutskriften leses på telefonen og slettes etterpå</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--ok)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Sier aldri opp noe på egen hånd, det er du som bestemmer</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--ok)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Ingen reklame, og ingenting selges videre</li>
     </ul>
   </div>
+</section>
 
-  <article>
-    <span class="num">01</span>
-    <div>
-      <h2>Alt ligger på telefonen din</h2>
-      <p>
-        TrekkSjekk har ingen brukerkonto, og abonnementene dine sendes ikke
-        til noen server. Appen har ingen reklame, og er gratis å bruke med
-        opptil fem abonnementer. TrekkSjekk Premium koster 39 kr i måneden eller
-        399 kr én gang, og kjøpes gjennom App Store.
-      </p>
+<section class="seksjon" aria-labelledby="pris-tittel">
+  <div class="wrap">
+    <h2 id="pris-tittel">Gratis å bruke. Premium når du vil ha mer.</h2>
+    <div class="planer">
+      <div class="plan">
+        <h3>Gratis</h3>
+        <div class="belop">0 kr</div>
+        <div class="per">for alltid</div>
+        <ul><li>Opptil 5 abonnementer</li><li>Trekkdatoer og frister</li><li>Ett varsel per trekk</li><li>Sum per måned og år</li></ul>
+      </div>
+      <div class="plan">
+        <h3>Premium månedlig</h3>
+        <div class="belop">39 kr</div>
+        <div class="per">i måneden</div>
+        <ul><li>Alt i Premium</li><li>Si opp når du vil, i App Store</li></ul>
+      </div>
+      <div class="plan livstid">
+        <h3>Premium livstid</h3>
+        <div class="belop">399 kr</div>
+        <div class="per">én gang</div>
+        <ul><li>Alt i Premium, for alltid</li><li>Ingenting å si opp</li></ul>
+      </div>
     </div>
-  </article>
+    <p class="premium-liste">Premium gir ubegrenset antall abonnementer, varsler når du vil, oppsigelsessiden, kontoutskrift, prøveperioder og hele spareoversikten. Kjøpes i appen gjennom App Store.</p>
+  </div>
+</section>
 
-  <article>
-    <span class="num">02</span>
-    <div>
-      <h2>Spørsmål eller feil?</h2>
-      <p>
-        Finner du en pris som ikke stemmer eller en oppsigelseslenke som ikke
-        virker, kan du si fra rett i appen: under Innstillinger, eller nederst
-        på hvert abonnement.
-      </p>
-      <p>
-        Alt annet: skriv til
-        <a href="mailto:01ole.foss@gmail.com">01ole.foss@gmail.com</a>.
-      </p>
+<section class="seksjon" id="hjelp" aria-labelledby="hjelp-tittel">
+  <div class="wrap">
+    <h2 id="hjelp-tittel">Hjelp og kontakt</h2>
+    <div class="hjelp">
+      <div>
+        <h3>Feil pris eller lenke?</h3>
+        <p>Si fra rett i appen, under Innstillinger eller nederst på hvert abonnement. Da vet vi nøyaktig hvilken tjeneste det gjelder.</p>
+      </div>
+      <div>
+        <h3>Alt annet</h3>
+        <p>Skriv til <a href="mailto:01ole.foss@gmail.com">01ole.foss@gmail.com</a>. Du får svar fra den som har laget appen.</p>
+      </div>
+      <div>
+        <h3>Personvern og vilkår</h3>
+        <p><a href="personvern.html">Personvernerklæring</a><br><a href="vilkar.html">Brukervilkår</a></p>
+      </div>
     </div>
-  </article>
+  </div>
+</section>
 
-  <article>
-    <span class="num">03</span>
-    <div>
-      <h2>Personvern og vilkår</h2>
-      <p>
-        <a href="personvern.html">Personvernerklæring</a><br>
-        <a href="vilkar.html">Brukervilkår</a>
-      </p>
+</main>
+
+<footer>
+  <div class="bunn">
+    <div class="wrap">
+      <h2>Si opp det du ikke bruker, før det trekkes.</h2>
+      <a class="last-ned" href="https://apps.apple.com/no/app/id6811947257">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Last ned i App Store
+      </a>
     </div>
-  </article>
+    <div class="bunn-info">
+      <div class="wrap">
+        <span>TrekkSjekk er laget av Ole André Foss i Norge</span>
+        <a href="personvern.html">Personvern</a>
+        <a href="vilkar.html">Vilkår</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <footer>
-    TrekkSjekk · Laget av Ole André Foss i Norge
-  </footer>
-</div>
+</body>
+</html>
