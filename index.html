@@ -17,10 +17,11 @@
 <meta name="theme-color" content="#1E3A8A">
 <link rel="icon" type="image/png" href="bilder/ikon-64.png">
 <link rel="apple-touch-icon" href="bilder/ikon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="preload" href="fonter/poppins-bold.woff" as="font" type="font/woff" crossorigin>
 <style>
+@font-face{font-family:"Poppins";src:url("fonter/poppins-regular.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Poppins";src:url("fonter/poppins-medium.woff") format("woff");font-weight:500 600;font-display:swap}
+@font-face{font-family:"Poppins";src:url("fonter/poppins-bold.woff") format("woff");font-weight:700 800;font-display:swap}
 :root{
   --navy:#1E3A8A;
   --navy-deep:#17306F;
@@ -33,25 +34,28 @@
   --line:#DCE2F0;
   --ok:#15803D;
   --warn:#B45309;
-  --display:"Bricolage Grotesque", Manrope, system-ui, sans-serif;
-  --body:Manrope, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --navy-lys:#1E3A8A;
+  --valgt:#EAF0FF;
+  --warn-bg:#FEF3E2;
+  --display:Poppins, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --body:Poppins, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --ground:#0B1124; --surface:#121A33; --ink:#EEF1F8; --muted:#A3ABC2; --line:#243055;
-    --ok:#4ADE80; --warn:#F5B860;
+    --ok:#4ADE80; --warn:#F5B860; --navy-lys:#7C9BEA; --valgt:#1A2650; --warn-bg:#3A2E17;
   }
 }
 :root[data-theme="dark"]{
   --ground:#0B1124; --surface:#121A33; --ink:#EEF1F8; --muted:#A3ABC2; --line:#243055;
-  --ok:#4ADE80; --warn:#F5B860;
+  --ok:#4ADE80; --warn:#F5B860; --navy-lys:#7C9BEA; --valgt:#1A2650; --warn-bg:#3A2E17;
 }
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--ground);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.65 var(--body);-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%;height:auto}
-h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.02em}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
 p{margin:0}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--check);outline-offset:3px;border-radius:6px}
@@ -66,14 +70,14 @@ a{color:inherit}
 /* ---------- Toppen ---------- */
 .topp{background:var(--navy);color:#fff;overflow:hidden}
 .topp-linje{display:flex;justify-content:space-between;align-items:center;padding-block:22px}
-.merke{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:800;font-size:21px;letter-spacing:-.01em;text-decoration:none}
+.merke{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:-.01em;text-decoration:none}
 .merke svg{width:40px;height:40px;border-radius:10px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
 .topp-linje a.lenke{color:var(--navy-ink);font-weight:600;font-size:15px;text-decoration:none}
 .topp-linje a.lenke:hover{color:#fff}
 
 .helt{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:end;padding-top:36px}
 .helt-tekst{padding-bottom:72px}
-.helt h1{font-size:clamp(30px,4.2vw,44px);font-weight:600;line-height:1.12;max-width:16ch}
+.helt h1{font-size:clamp(28px,4vw,42px);font-weight:600;line-height:1.12;max-width:16ch}
 .helt .ingress{color:var(--navy-ink);font-size:18px;max-width:34rem;margin-top:22px}
 .helt .handling{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin-top:32px}
 .helt .handling small{color:var(--navy-ink);font-size:14px}
@@ -83,7 +87,7 @@ a{color:inherit}
 .frist-tjeneste{color:var(--navy-ink);font-size:15px;margin-bottom:6px}
 .frist-rad{display:grid;grid-template-columns:5.5rem 1fr;align-items:baseline;gap:12px}
 .frist-rad .tag{color:var(--navy-ink);font-size:15px;font-weight:600}
-.frist-rad .dato{font-family:var(--display);font-weight:800;white-space:nowrap;font-size:clamp(34px,5vw,60px);line-height:1.04;letter-spacing:-.035em}
+.frist-rad .dato{font-family:var(--display);font-weight:700;white-space:nowrap;font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.035em}
 .frist-rad s.dato{color:rgba(201,213,245,.55);text-decoration-thickness:4px;text-decoration-color:rgba(255,255,255,.7)}
 .frist-rad.ekte .dato{display:inline-flex;align-items:center;gap:.25em}
 .frist-rad.ekte svg{width:.62em;height:.62em;flex:none}
@@ -92,7 +96,7 @@ a{color:inherit}
 
 /* ---------- Seksjoner ---------- */
 .seksjon{padding-block:88px 0}
-.seksjon > .wrap > h2,.seksjon .tittel{font-size:clamp(28px,3.6vw,40px);font-weight:800;line-height:1.1;max-width:22ch}
+.seksjon > .wrap > h2,.seksjon .tittel{font-size:clamp(28px,3.6vw,40px);font-weight:700;line-height:1.1;max-width:22ch}
 .seksjon .forklaring{color:var(--muted);max-width:40rem;margin-top:14px}
 
 /* Reglene */
@@ -123,7 +127,7 @@ a{color:inherit}
 .planer{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
 .plan{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
 .plan h3{font-size:19px;font-weight:600}
-.plan .belop{font-family:var(--display);font-weight:800;font-size:44px;letter-spacing:-.03em;line-height:1;margin-top:14px}
+.plan .belop{font-family:var(--display);font-weight:700;font-size:44px;letter-spacing:-.03em;line-height:1;margin-top:14px}
 .plan .per{color:var(--muted);font-size:14px;margin-top:6px}
 .plan ul{margin:18px 0 0;padding-left:1.1rem;display:grid;gap:6px;font-size:15px}
 .plan.livstid{border:2px solid var(--navy)}
@@ -141,7 +145,7 @@ a{color:inherit}
 /* Bunnen */
 .bunn{margin-top:96px;background:var(--navy);color:#fff}
 .bunn > .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px;padding-block:48px}
-.bunn h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;max-width:20ch}
+.bunn h2{font-size:clamp(26px,3.4vw,36px);font-weight:700;max-width:20ch}
 .bunn-info{border-top:1px solid rgba(255,255,255,.16)}
 .bunn-info .wrap{padding-block:22px;color:var(--navy-ink);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 24px}
 .bunn-info a{color:var(--navy-ink)}
@@ -166,7 +170,111 @@ a{color:inherit}
   @keyframes stryk{from{text-decoration-color:transparent;color:#fff}}
   @keyframes fram{from{opacity:0;transform:translateY(6px)}}
 }
+
+/* ---------- Kalkulatoren ---------- */
+.kalk{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:24px;margin-top:34px;align-items:start}
+.velg{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px}
+.brikker{display:flex;flex-wrap:wrap;gap:10px}
+.brikke{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:6px 14px 6px 6px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);font:500 15px/1.2 var(--body);cursor:pointer;transition:border-color .15s,background-color .15s}
+.brikke:hover{border-color:var(--muted)}
+.brikke[aria-pressed="true"]{border-color:var(--navy-lys);background:var(--valgt)}
+.brikke .hake{width:16px;height:16px;margin-left:-2px;display:none}
+.brikke[aria-pressed="true"] .hake{display:block}
+.flis{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font:700 14px/1 var(--body);flex:none;overflow:hidden}
+.flis img{width:100%;height:100%;object-fit:cover}
+
+.sok{margin-top:22px;position:relative}
+.sok-etikett{display:block;font-size:14px;color:var(--muted);margin-bottom:8px}
+.sok input{width:100%;font:500 16px var(--body);color:var(--ink);background:var(--ground);border:1.5px solid var(--line);border-radius:14px;padding:12px 16px;min-height:48px}
+.sok input:focus{outline:none;border-color:var(--navy-lys)}
+.treff{display:grid;gap:4px;margin-top:6px}
+.treff:empty{display:none}
+.treff button{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-radius:12px;padding:8px 10px;font:500 15px var(--body);color:var(--ink);cursor:pointer;min-height:44px}
+.treff button:hover,.treff button:focus-visible{background:var(--valgt)}
+.treff .kat{margin-left:auto;color:var(--muted);font-size:13px}
+.treff .ingen{color:var(--muted);font-size:14px;padding:8px 10px}
+
+.valgte{margin-top:20px}
+.valgte:empty{display:none}
+.rad{display:grid;grid-template-columns:30px minmax(0,1fr) auto 36px;gap:12px;align-items:start;padding:16px 0;border-top:1px solid var(--line)}
+.rad .navn{font-weight:600;font-size:16px;line-height:1.3}
+.rad select,.rad input{margin-top:8px;width:100%;max-width:100%;font:500 14px var(--body);color:var(--ink);background:var(--ground);border:1px solid var(--line);border-radius:10px;padding:8px 10px;min-height:40px}
+.rad input.pris-felt{max-width:150px}
+.rad .regel-merke{display:inline-block;margin-top:8px;font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--ground);color:var(--muted)}
+.rad .regel-merke.lang{background:var(--warn-bg);color:var(--warn)}
+.rad .belop{font-weight:700;font-size:16px;white-space:nowrap;padding-top:2px;text-align:right}
+.rad .belop small{display:block;font-weight:500;font-size:12px;color:var(--muted)}
+.fjern{width:36px;height:36px;border-radius:10px;border:0;background:none;color:var(--muted);cursor:pointer;display:grid;place-items:center}
+.fjern:hover{background:var(--ground);color:var(--ink)}
+.fjern svg{width:18px;height:18px}
+
+.annet-knapp{margin-top:16px;background:none;border:1.5px dashed var(--line);border-radius:14px;padding:12px 16px;width:100%;font:600 15px var(--body);color:var(--muted);cursor:pointer;min-height:48px}
+.annet-knapp:hover{border-color:var(--muted);color:var(--ink)}
+
+.resultat{position:sticky;top:20px;background:var(--navy);color:#fff;border-radius:22px;padding:28px}
+.res-etikett{color:var(--navy-ink);font-size:15px;font-weight:500}
+.res-ar{white-space:nowrap;font-family:var(--display);font-weight:700;font-size:clamp(40px,5vw,60px);line-height:1.05;letter-spacing:-.03em;margin-top:4px}
+.res-ar span{font-variant-numeric:tabular-nums}
+.res-mnd{color:var(--navy-ink);font-size:16px;margin-top:6px}
+.res-mnd b{color:#fff}
+.res-blokk{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);font-size:15px;line-height:1.5}
+.res-blokk b{color:#fff}
+.res-blokk p+p{margin-top:8px}
+.res-blokk ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.res-blokk li{display:flex;justify-content:space-between;gap:12px;color:var(--navy-ink)}
+.res-blokk li a{color:var(--navy-ink)}
+.res-blokk li span:last-child{color:#fff;font-weight:600;white-space:nowrap}
+.res-blokk .varsel{color:#FFD08A}
+.student{display:flex;align-items:center;gap:12px;margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);font-weight:600;cursor:pointer;min-height:44px}
+.student input{width:22px;height:22px;accent-color:var(--check);margin:0}
+.res-knapp{margin-top:24px;width:100%;justify-content:center}
+.res-liten{color:var(--navy-ink);font-size:14px;margin-top:12px;text-align:center}
+.kilde{color:var(--muted);font-size:13px;margin-top:14px;max-width:46rem}
+
+@media (max-width:820px){
+  .kalk{grid-template-columns:1fr}
+  .brikke:nth-child(n+13){display:none}
+  .brikke{font-size:14px;min-height:42px;padding-right:12px}
+  .resultat{position:static}
+  .velg{padding:18px}
+}
+@media (max-width:420px){
+  .rad{grid-template-columns:30px minmax(0,1fr) 36px}
+  .rad .belop{grid-column:2;text-align:left;padding-top:0}
+  .rad .belop small{display:inline;margin-left:6px}
+  .rad .fjern{grid-row:1;grid-column:3}
+}
+
+#res-tittel{scroll-margin-top:110px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+/* Lenke til kalkulatoren i toppen */
+.bunn h2{line-height:1.15}
+.helt .regn{display:inline-block;margin-top:18px;color:#fff;font-weight:600;font-size:15px;text-underline-offset:4px}
+
+/* Spørsmål og svar */
+.sporsmal{margin-top:30px;border-top:1px solid var(--line);max-width:52rem}
+.sporsmal details{border-bottom:1px solid var(--line)}
+.sporsmal summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-weight:600;font-size:17px}
+.sporsmal summary::-webkit-details-marker{display:none}
+.sporsmal summary svg{width:20px;height:20px;flex:none;color:var(--muted);transition:transform .2s}
+.sporsmal details[open] summary svg{transform:rotate(45deg)}
+.sporsmal details p{color:var(--muted);padding:0 0 22px;max-width:44rem}
+
+/* Fast nedlastingsknapp på mobil */
+.feste{display:none}
+@media (max-width:820px){
+  .feste{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--navy);color:#fff;box-shadow:0 -8px 24px rgba(15,22,48,.18);transform:translateY(110%);transition:transform .25s ease}
+  .feste.vis{transform:none}
+  .feste span{font-size:14px;color:var(--navy-ink);line-height:1.3}
+  .feste span b{display:block;color:#fff;font-size:15px}
+  .feste .last-ned{padding:11px 16px;font-size:15px;white-space:nowrap}
+  body{padding-bottom:84px}
+}
+@media (prefers-reduced-motion:reduce){.feste{transition:none}}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "TrekkSjekk", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "inLanguage": "nb", "url": "https://trekksjekk.no/", "installUrl": "https://apps.apple.com/no/app/id6811947257", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "NOK"}, "description": "Samler abonnementene dine og regner ut når du må si opp for å slippe neste trekk."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hvorfor ikke bare se i nettbanken?", "acceptedAnswer": {"@type": "Answer", "text": "Nettbanken viser trekkene etter at de har skjedd. Da er det ofte for sent å slippe neste. TrekkSjekk viser siste dag du kan si opp, og varsler deg før den går ut."}}, {"@type": "Question", "name": "Må jeg koble til banken eller lage en konto?", "acceptedAnswer": {"@type": "Answer", "text": "Nei. Du legger inn abonnementene selv, eller velger en kontoutskrift du har lastet ned fra nettbanken. Fila leses på telefonen og slettes etterpå."}}, {"@type": "Question", "name": "Hvor kommer oppsigelsesfristene fra?", "acceptedAnswer": {"@type": "Answer", "text": "Fra tjenestenes egne vilkår. Over 140 tjenester har fristen regnet inn. Finner vi ikke regelen, viser appen ingen frist i stedet for å gjette."}}, {"@type": "Question", "name": "Sier appen opp abonnementet for meg?", "acceptedAnswer": {"@type": "Answer", "text": "Nei, det gjør du selv. TrekkSjekk tar deg rett til siden der abonnementet avsluttes og forteller hva du skal trykke på. Er det kjøpt i App Store eller på PlayStation, sendes du dit."}}, {"@type": "Question", "name": "Hva koster TrekkSjekk?", "acceptedAnswer": {"@type": "Answer", "text": "Appen er gratis med opptil fem abonnementer, og du får ett varsel før hvert trekk. Premium koster 39 kr i måneden eller 399 kr én gang."}}, {"@type": "Question", "name": "Finnes TrekkSjekk på Android?", "acceptedAnswer": {"@type": "Answer", "text": "Ikke ennå. Foreløpig finnes appen bare for iPhone."}}]}</script>
 </head>
 <body>
 
@@ -205,6 +313,7 @@ a{color:inherit}
           </a>
           <small>Gratis for iPhone. Ingen konto.</small>
         </div>
+        <a class="regn" href="#kalkulator">Regn ut hva abonnementene dine koster</a>
       </div>
 
       <img class="helt-bilde" src="bilder/frist.webp" width="760" height="1487" alt="TrekkSjekk viser Trener 1: neste trekk 15. oktober, si opp innen 30. september">
@@ -214,10 +323,55 @@ a{color:inherit}
 
 <main>
 
+<section class="seksjon" id="kalkulator" aria-labelledby="kalk-tittel">
+  <div class="wrap">
+    <h2 id="kalk-tittel">Hva betaler du egentlig?</h2>
+    <p class="forklaring">Trykk på abonnementene du har. Du ser hva de koster i året, og hvilke som må sies opp i god tid. Alt regnes ut her på siden, og ingenting sendes noe sted.</p>
+
+    <div class="kalk">
+      <div class="velg">
+        <div class="brikker" id="brikker" role="group" aria-label="Vanlige abonnementer"></div>
+
+        <div class="sok">
+          <label for="sokefelt" class="sok-etikett">Finner du det ikke? Søk blant over 200 tjenester</label>
+          <input id="sokefelt" type="search" autocomplete="off" placeholder="For eksempel Podme eller Wolt" aria-controls="treff">
+          <div id="treff" class="treff" role="listbox" aria-label="Søkeresultater"></div>
+        </div>
+
+        <div id="valgte" class="valgte" aria-live="polite"></div>
+
+        <button type="button" class="annet-knapp" id="annet">+ Legg til noe annet</button>
+      </div>
+
+      <aside class="resultat" aria-labelledby="res-tittel">
+        <p class="res-etikett" id="res-tittel">Du betaler</p>
+        <p class="res-ar"><span id="sum-ar">0</span> kr</p>
+        <p class="res-mnd"><b>i året.</b> <span id="sum-mnd">Velg abonnementene dine for å se summen.</span></p>
+
+        <div id="frist-melding" class="res-blokk" hidden></div>
+
+        <label class="student">
+          <input type="checkbox" id="student">
+          <span>Jeg er student</span>
+        </label>
+        <div id="student-res" class="res-blokk" hidden></div>
+
+        <a class="last-ned res-knapp" href="https://apps.apple.com/no/app/id6811947257">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Få varsel før fristene
+        </a>
+        <p class="res-liten" id="gratis-melding">TrekkSjekk er gratis med opptil fem abonnementer.</p>
+      </aside>
+    </div>
+    <p class="kilde" id="kilde"></p>
+  </div>
+</section>
+
+
 <section class="seksjon" aria-labelledby="regler-tittel">
   <div class="wrap">
     <h2 id="regler-tittel">Dagen før holder sjelden.</h2>
-    <p class="forklaring">De fleste tror de kan si opp kvelden før neste trekk. Hos mange tjenester er det for sent. TrekkSjekk kjenner reglene til over 250 tjenester og regner ut datoen som faktisk gjelder.</p>
+    <p class="forklaring">De fleste tror de kan si opp kvelden før neste trekk. Hos mange tjenester er det for sent. TrekkSjekk har lest oppsigelsesvilkårene til over 140 tjenester og regner ut datoen som faktisk gjelder.</p>
 
     <div class="regler">
       <div class="regel">
@@ -273,7 +427,7 @@ a{color:inherit}
   <div class="wrap privat">
     <div>
       <h2 class="tittel" id="privat-tittel">Ingen konto. Ingen bankkobling.</h2>
-      <p class="forklaring">Abonnementslista di ligger på telefonen din og ingen andre steder. Du trenger ikke logge inn noe sted for å bruke appen.</p>
+      <p class="forklaring">Abonnementslista di ligger på telefonen din og ingen andre steder. Du trenger ikke logge inn noe sted for å bruke appen. Denne nettsiden har heller ingen sporing eller analyseverktøy.</p>
     </div>
     <ul>
       <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--ok)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Ingen brukerkonto og ingen innlogging</li>
@@ -312,6 +466,20 @@ a{color:inherit}
   </div>
 </section>
 
+<section class="seksjon" aria-labelledby="faq-tittel">
+  <div class="wrap">
+    <h2 id="faq-tittel">Spørsmål folk stiller</h2>
+    <div class="sporsmal">
+      <details><summary>Hvorfor ikke bare se i nettbanken?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Nettbanken viser trekkene etter at de har skjedd. Da er det ofte for sent å slippe neste. TrekkSjekk viser siste dag du kan si opp, og varsler deg før den går ut.</p></details>
+      <details><summary>Må jeg koble til banken eller lage en konto?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Nei. Du legger inn abonnementene selv, eller velger en kontoutskrift du har lastet ned fra nettbanken. Fila leses på telefonen og slettes etterpå.</p></details>
+      <details><summary>Hvor kommer oppsigelsesfristene fra?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Fra tjenestenes egne vilkår. Over 140 tjenester har fristen regnet inn. Finner vi ikke regelen, viser appen ingen frist i stedet for å gjette.</p></details>
+      <details><summary>Sier appen opp abonnementet for meg?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Nei, det gjør du selv. TrekkSjekk tar deg rett til siden der abonnementet avsluttes og forteller hva du skal trykke på. Er det kjøpt i App Store eller på PlayStation, sendes du dit.</p></details>
+      <details><summary>Hva koster TrekkSjekk?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Appen er gratis med opptil fem abonnementer, og du får ett varsel før hvert trekk. Premium koster 39 kr i måneden eller 399 kr én gang.</p></details>
+      <details><summary>Finnes TrekkSjekk på Android?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Ikke ennå. Foreløpig finnes appen bare for iPhone.</p></details>
+    </div>
+  </div>
+</section>
+
 <section class="seksjon" id="hjelp" aria-labelledby="hjelp-tittel">
   <div class="wrap">
     <h2 id="hjelp-tittel">Hjelp og kontakt</h2>
@@ -345,7 +513,7 @@ a{color:inherit}
     </div>
     <div class="bunn-info">
       <div class="wrap">
-        <span>TrekkSjekk er laget av Ole André Foss i Norge</span>
+        <span>TrekkSjekk er laget av Ole André Foss i Kristiansand</span>
         <a href="personvern.html">Personvern</a>
         <a href="vilkar.html">Vilkår</a>
       </div>
@@ -353,5 +521,422 @@ a{color:inherit}
   </div>
 </footer>
 
+
+<div class="feste" id="feste" aria-hidden="true">
+  <span id="feste-tekst"><b>TrekkSjekk</b>Gratis for iPhone</span>
+  <a class="last-ned" id="feste-knapp" href="https://apps.apple.com/no/app/id6811947257" tabindex="-1">Last ned</a>
+</div>
+
+<script type="application/json" id="kalk-data">{"checked":"2026-09-28","pop":["netflix.com","spotify.com","viaplay.no","hbomax.com","youtube.com","disneyplus.com","storytel.com","sats.no","openai.com","icloud.com"],"s":[{"n":"Netflix","d":"netflix.com","c":"#E50914","k":"stromming","p":[{"n":"Basis","m":119},{"n":"Standard","m":149},{"n":"Premium","m":219}],"kj":1,"r":"0"},{"n":"Disney+","d":"disneyplus.com","c":"#0063E5","k":"stromming","p":[{"n":"Standard med reklame","m":69},{"n":"Standard","m":109},{"n":"Standard – år","m":90.8,"a":1090},{"n":"Premium","m":159},{"n":"Premium – år","m":132.5,"a":1590}],"al":["disney","disney plus"],"kj":1},{"n":"HBO Max","d":"hbomax.com","c":"#4B2AAD","k":"stromming","p":[{"n":"Basis med reklame","m":89},{"n":"Standard","m":149},{"n":"Premium","m":189},{"n":"Basis med reklame – år","m":74.2,"a":890},{"n":"Standard – år","m":124.2,"a":1490},{"n":"Premium – år","m":157.5,"a":1890}],"al":["hbo","max"],"kj":1,"r":"0"},{"n":"Viaplay","d":"viaplay.no","c":"#EE2E24","k":"stromming","p":[{"n":"Film & Serier med reklame","m":109},{"n":"Film & Serier","m":169},{"n":"Medium","m":399},{"n":"Total","m":799},{"n":"Total Pluss – 6 mnd binding","m":729,"b":1},{"n":"Total Pluss – 12 mnd tilbud","m":699,"b":1}],"al":["via play"],"kj":1,"r":"0","s":{"pc":50,"til":169,"t":"50 % på Film & Serier (84,50 kr) og Film & Serier med reklame (54,50 kr). Gjelder ikke Medium eller Total.","u":"https://viaplay.no/no-nb/studenttilbud"}},{"n":"TV 2 Play","d":"tv2.no","c":"#E30613","k":"stromming","p":[{"n":"Nyheter – fra","m":69,"f":1},{"n":"Start – fra","m":109,"f":1},{"n":"Standard med reklame","m":199},{"n":"Standard","m":279},{"n":"Standard – år","m":233.3,"a":2799},{"n":"Premium med reklame","m":409},{"n":"Premium","m":489},{"n":"Premium – år","m":416.6,"a":4999},{"n":"Premium fotball med reklame","m":389},{"n":"Premium fotball","m":439}],"al":["tv2","tv 2","tv2 play"],"kj":1,"r":"0"},{"n":"Prime Video","d":"primevideo.com","c":"#00A8E1","k":"stromming","p":[{"n":"Prime Video","m":79}],"al":["amazon","prime","amazon prime"],"kj":1},{"n":"Apple TV+","d":"tv.apple.com","c":"#1A1A1A","k":"stromming","p":[{"n":"Apple TV+","m":119}],"al":["apple tv","appletv"],"kj":1},{"n":"SkyShowtime","d":"skyshowtime.com","c":"#0C1B3A","k":"stromming","p":[{"n":"Standard med reklame","m":69},{"n":"Standard med reklame – år","m":45.8,"a":549},{"n":"Standard","m":109},{"n":"Standard – år","m":72.4,"a":869},{"n":"Premium","m":159},{"n":"Premium – år","m":104.2,"a":1250}],"al":["sky","sky showtime"],"kj":1,"r":"0"},{"n":"Allente","d":"allente.no","c":"#00A0DF","k":"stromming","p":[{"n":"Stream Basic","m":399},{"n":"Stream Flex 2","m":499},{"n":"Stream Flex 4","m":599}],"al":["canal digital","viasat"],"kj":1,"r":"n1"},{"n":"RiksTV","d":"rikstv.no","c":"#FF6900","k":"stromming","p":[{"n":"FleksiPakken","m":549},{"n":"StrømmePakken","m":649},{"n":"SportsPakken","m":649},{"n":"RiksPakken","m":999}],"al":["riks tv"],"kj":1,"r":"n2"},{"n":"Crunchyroll","d":"crunchyroll.com","c":"#F47521","k":"stromming","p":[{"n":"Fan","m":79},{"n":"Mega Fan – måned","m":99},{"n":"Mega Fan – år","m":83.3,"a":999},{"n":"Ultimate Fan","m":155}],"al":["crunchy roll"],"kj":1},{"n":"Strim","d":"strim.no","c":"#E8175D","k":"stromming","p":[{"n":"Smart med HBO Max","m":399},{"n":"Smart med Viaplay","m":399},{"n":"Maks","m":499},{"n":"Maks uten reklame","m":599},{"n":"Smart HBO Max + Sportskanaler","m":499},{"n":"Smart Viaplay + TV 2 Sport","m":699},{"n":"Smart HBO Max + Max Sport","m":449},{"n":"Smart HBO Max + Viaplay Total – kampanje","m":699}],"kj":1},{"n":"Spotify","d":"spotify.com","c":"#1DB954","k":"lyd","p":[{"n":"Individual","m":139},{"n":"Duo","m":189},{"n":"Family","m":219}],"kj":1,"r":"0","s":{"p":75,"til":139,"t":"Studentpris i opptil fire år. Verifiseres med SheerID.","u":"https://www.spotify.com/no-nb/student/"}},{"n":"Deezer","d":"deezer.com","c":"#A238FF","k":"lyd","p":[{"n":"Premium","m":129},{"n":"Duo","m":169},{"n":"Family","m":209}],"kj":1,"r":"0"},{"n":"YouTube Premium","d":"youtube.com","c":"#FF0000","k":"lyd","p":[{"n":"YouTube Premium – Individual","m":169},{"n":"YouTube Premium – Family","m":269},{"n":"YouTube Music Premium – Individual","m":139}],"al":["youtube","yt"],"kj":1,"r":"0","s":{"p":99,"til":169,"t":"Inkluderer YouTube Music Premium, reklamefri YouTube, bakgrunnsavspilling og nedlasting. Opptil fire år.","u":"https://support.google.com/youtube/answer/9158808"}},{"n":"Storytel","d":"storytel.com","c":"#F73C4E","k":"lyd","p":[{"n":"Basic","m":149},{"n":"Premium","m":189},{"n":"Unlimited","m":219},{"n":"Family Unlimited","m":349}],"al":["story tel"],"kj":1,"r":"0","s":{"p":74.5,"til":149,"t":"50 % rabatt RESTEN AV LIVET, så lenge abonnementet løper — også etter at du er ferdig å studere. Verifiseres med SheerID.","u":"https://www.storytel.com/no/c/studentforlife"}},{"n":"Fabel","d":"fabel.no","c":"#FF6B35","k":"lyd","p":[{"n":"Standard","m":199},{"n":"Duo","m":249},{"n":"Familie","m":349}],"al":["lydbok"],"kj":1,"r":"0"},{"n":"Podme","d":"podme.com","c":"#6C4BF4","k":"lyd","p":[{"n":"Premium","m":99},{"n":"Premium Duo","m":129},{"n":"Premium Total","m":199},{"n":"Premium Total Duo","m":249}],"al":["pod me","podkast"],"kj":1,"s":{"p":49.5,"til":99,"t":"50 % rabatt. Gjelder Premium-podkaster, ikke Premium Total med lydbøker.","u":"https://podme.com/no/student/"}},{"n":"Tidal","d":"tidal.com","c":"#000000","k":"lyd","p":[{"n":"Individual","m":139},{"n":"Family","m":219},{"n":"DJ Extension","m":199}],"kj":1,"r":"0","s":{"p":75,"til":139,"t":"Studentabonnement via SheerID. Må bekreftes på nytt omtrent hvert år.","u":"https://support.tidal.com/hc/no/articles/360002669818-Student-plan"}},{"n":"Apple Music","d":"music.apple.com","c":"#FA243C","k":"lyd","p":[{"n":"Individual","m":139},{"n":"Family","m":219}],"al":["applemusic"],"kj":1,"r":"0","s":{"p":75,"til":139,"t":"Studentpris i opptil fire år. Apple TV+ er inkludert.","u":"https://www.apple.com/no/apple-music/"}},{"n":"BookBeat","d":"bookbeat.com","c":"#F25C54","k":"lyd","p":[{"n":"Basic","m":99},{"n":"Standard","m":149},{"n":"Premium","m":199}],"al":["book beat"],"kj":1,"r":"0","s":{"p":89,"til":99,"t":"Basic med 20 timer i måneden. Rabatten er oppgitt til 10 kroner.","u":"https://support.bookbeat.com/hc/no/articles/9691748849309"}},{"n":"Nextory","d":"nextory.com","c":"#1B1B3A","k":"lyd","p":[{"n":"Mini","m":89},{"n":"Standard","m":139},{"n":"Plus","m":179},{"n":"Unlimited – fra","m":219,"f":1}],"kj":1,"r":"d1"},{"n":"SATS","d":"sats.no","c":"#E4002B","k":"trening","p":[],"al":["treningssenter","trening"],"kj":1,"r":"n1","s":{"pc":20,"t":"20 % på SATS-medlemskap med gyldig studentbevis. Rabatten må fornyes.","u":"https://www.sats.no/kundeservice/medlemskap/rabattavtaler"}},{"n":"EVO Fitness","d":"evofitness.no","c":"#C8102E","k":"trening","p":[{"n":"Månedsmedlemskap – uten binding","m":459},{"n":"12 måneder binding","m":409,"b":1},{"n":"Årsmedlemskap","m":383.3,"a":4599}],"al":["evo"],"kj":1,"r":"n1"},{"n":"Spenst","d":"spenst.no","c":"#009FE3","k":"trening","p":[],"kj":1},{"n":"Actic","d":"actic.no","c":"#E2001A","k":"trening","p":[{"n":"Studio Start – Fra-pris per måned","m":549,"f":1},{"n":"Gruppetimer Pluss – Fra-pris per måned","m":599,"f":1},{"n":"Yoga Complete – Fra-pris per måned","m":699,"f":1},{"n":"BOXEN HYROX – Fra-pris per måned","m":849,"f":1},{"n":"BOXEN WOD – Fra-pris per måned","m":1249,"f":1},{"n":"BOXEN Premium – Fra-pris per måned","m":1449,"f":1},{"n":"Actic Anywhere – Månedlig online","m":79}],"kj":1,"r":"fs"},{"n":"3T","d":"3t.no","c":"#00AEEF","k":"trening","p":[{"n":"Heldag ordinær","m":699}],"al":["tre t"],"kj":1,"s":{"pc":30,"t":"30 % studentrabatt. Prisen varierer per senter, så avslaget er oppgitt i prosent og ikke i kroner.","u":"https://www.3t.no/medlemskap/vare-medlemskap"}},{"n":"Sporty","d":"fsc.no","c":"#004B87","k":"trening","p":[{"n":"Ordinær – Fra-pris","m":459,"f":1},{"n":"Hånes åpningstilbud – Kampanje","m":459}],"al":["family","family sports club","family sports","fsc"],"kj":1,"r":"n1"},{"n":"Trener 1","d":"trener1.no","c":"#E4002B","k":"trening","p":[{"n":"Ordinært medlem – 12 mnd binding","m":409,"b":1},{"n":"Ordinært + Gruppetrening – 12 mnd binding","m":599,"b":1},{"n":"Ordinært medlem – Uten binding","m":459},{"n":"Ordinært + Gruppetrening – Uten binding","m":749}],"al":["trener1"],"kj":1,"r":"n1"},{"n":"Fresh Fitness","d":"freshfitness.no","c":"#00A0DF","k":"trening","p":[{"n":"Basic – 12 mnd binding","m":349,"b":1},{"n":"Basic – uten binding","m":449},{"n":"Flex – 12 mnd binding","m":399,"b":1},{"n":"Flex – uten binding","m":499},{"n":"Smart – 12 mnd binding","m":549,"b":1},{"n":"Smart – uten binding","m":649}],"al":["fresh"],"kj":1,"r":"n1"},{"n":"Nr1 Fitness","d":"nr1fitness.no","c":"#D0021B","k":"trening","p":[],"al":["nr1"],"kj":1},{"n":"MOVA","d":"mova.no","c":"#00B2A9","k":"trening","p":[{"n":"Fleks – 12 mnd binding","m":649,"b":1},{"n":"Fleks – uten binding","m":749},{"n":"Premium – 12 mnd binding","m":769,"b":1},{"n":"Premium – uten binding","m":869}],"al":["mova trening"],"kj":1,"r":"n1"},{"n":"Stamina Trening","d":"staminatrening.no","c":"#005B9A","k":"trening","p":[],"al":["stamina"],"kj":1},{"n":"VG+","d":"vg.no","c":"#E4002B","k":"avis","p":[{"n":"VG+ – måned","m":119}],"al":["vg","vg pluss"],"kj":1},{"n":"Aftenposten","d":"aftenposten.no","c":"#00305B","k":"avis","p":[{"n":"Digital Basis","m":199},{"n":"Digital Basis – under 30","m":99.5}],"al":["ap","avis"],"kj":1},{"n":"Dagbladet Pluss","d":"dagbladet.no","c":"#D6001C","k":"avis","p":[{"n":"Dagbladet Pluss","m":99},{"n":"Dagbladet Pluss – Årlig","m":66.3,"a":795,"b":1}],"al":["dagbladet","db"],"kj":1},{"n":"Dagens Næringsliv","d":"dn.no","c":"#C8102E","k":"avis","p":[{"n":"DN Basis","m":449},{"n":"DN Basis – under 32","m":225},{"n":"DN Total","m":579},{"n":"DN Total – under 32","m":290},{"n":"DN Total Helg","m":799},{"n":"DN Total Helg – under 32","m":400}],"al":["dn","dagens naeringsliv"],"kj":1,"r":"0"},{"n":"Bergens Tidende","d":"bt.no","c":"#00305B","k":"avis","p":[],"al":["bt"],"kj":1},{"n":"Adresseavisen","d":"adressa.no","c":"#003A70","k":"avis","p":[],"al":["adressa"],"kj":1,"r":"0"},{"n":"Stavanger Aftenblad","d":"aftenbladet.no","c":"#00305B","k":"avis","p":[],"al":["aftenbladet"],"kj":1},{"n":"Nettavisen Pluss","d":"nettavisen.no","c":"#D32F2F","k":"avis","p":[],"al":["nettavisen"],"kj":1},{"n":"ChatGPT","d":"openai.com","c":"#10A37F","k":"programvare","p":[{"n":"Go","m":75,"c":1},{"n":"Plus","m":190,"c":1},{"n":"Pro","m":1860,"c":1}],"al":["openai","gpt","chat gpt"],"kj":1},{"n":"Microsoft 365","d":"microsoft.com","c":"#0078D4","k":"programvare","p":[{"n":"Basic","m":20},{"n":"Basic – år","m":16.6,"a":199},{"n":"Personal","m":121},{"n":"Personal – år","m":99.1,"a":1189},{"n":"Family","m":155},{"n":"Family – år","m":129.9,"a":1559},{"n":"Premium","m":259},{"n":"Premium – år","m":215.8,"a":2589}],"al":["microsoft","office","office 365"],"kj":1,"s":{"pc":50,"til":121,"fra":100,"t":"50 % på Microsoft 365 Personal. Studentstatus må bekreftes på nytt for å beholde rabatten. Går du på en skole med avtale, kan nettversjonene av Word, Excel og PowerPoint være helt gratis – sjekk det først.","u":"https://www.microsoft.com/nb-no/microsoft-365/college-student-pricing"}},{"n":"Adobe Creative Cloud","d":"adobe.com","c":"#FA0F00","k":"programvare","p":[{"n":"Creative Cloud Pro","m":961.25},{"n":"Creative Cloud Standard","m":763.75},{"n":"Fotografering","m":293.75},{"n":"Photoshop","m":320},{"n":"Acrobat Pro","m":293.75},{"n":"Acrobat Standard","m":221.25},{"n":"AI Assistant for Acrobat","m":73.75},{"n":"Adobe Stock AI Studio","m":480},{"n":"Enkeltapp – fra","m":320,"f":1}],"al":["adobe","creative cloud","photoshop"],"kj":1,"s":{"p":190.9,"t":"Creative Cloud Pro til 190,90 kr det første året, mot 961,25 ordinært. Deretter 492,50. Merk at Adobe har ettårsavtale med gebyr hvis du avslutter før tiden.","u":"https://www.adobe.com/no/education/students/creativecloud.html"}},{"n":"Apple One","d":"apple.com","c":"#1A1A1A","k":"annet","p":[{"n":"Individuelt","m":219},{"n":"Familie","m":289}],"al":["appleone"],"kj":1,"r":"0"},{"n":"iCloud+","d":"icloud.com","c":"#3693F3","k":"programvare","p":[{"n":"50 GB","m":12},{"n":"200 GB","m":39},{"n":"2 TB","m":129},{"n":"6 TB","m":399},{"n":"12 TB","m":799}],"al":["icloud","apple"],"kj":1},{"n":"IPTVX","d":"iptvx.app","c":"#1B1B1F","k":"stromming","p":[{"n":"FULL – 1 måned","m":49},{"n":"FULL – år","m":29.6,"a":355},{"n":"FULL – år, familiedeling","m":57.5,"a":690}],"kj":1},{"n":"Apple Arcade","d":"arcade.apple.com","c":"#F35369","k":"spill","p":[{"n":"Apple Arcade","m":89}],"al":["applearcade"],"kj":1,"r":"0"},{"n":"Apple Fitness+","d":"fitness.apple.com","c":"#9BE82E","k":"trening","p":[{"n":"Apple Fitness+","m":119},{"n":"Apple Fitness+ – år","m":79.1,"a":949}],"al":["apple fitness","applefitness","fitness+"],"kj":1,"r":"0"},{"n":"Google One","d":"one.google.com","c":"#4285F4","k":"programvare","p":[{"n":"Basic 100 GB","m":20,"c":1},{"n":"Google AI Plus","m":95,"c":1},{"n":"Google AI Pro","m":190,"c":1}],"al":["google","google drive"],"kj":1},{"n":"Dropbox","d":"dropbox.com","c":"#0061FF","k":"programvare","p":[{"n":"Plus","m":95,"c":1},{"n":"Standard","m":140,"c":1},{"n":"Advanced","m":225,"c":1}],"kj":1,"r":"0"},{"n":"Godtlevert","d":"godtlevert.no","c":"#7AB800","k":"mat","p":[],"al":["godt levert","matkasse"],"kj":1},{"n":"Adams Matkasse","d":"adamsmatkasse.no","c":"#E30613","k":"mat","p":[],"al":["adams"],"kj":1},{"n":"HelloFresh","d":"hellofresh.no","c":"#91C11E","k":"mat","p":[],"al":["hello fresh"],"kj":1},{"n":"Wolt","d":"wolt.com","c":"#00C2E8","k":"mat","p":[{"n":"Wolt+","m":99}],"al":["wolt+","wolt plus"],"kj":1,"r":"0"},{"n":"Foodora","d":"foodora.no","c":"#D70F64","k":"mat","p":[],"kj":1,"r":"0"},{"n":"Claude","d":"claude.ai","c":"#D97757","k":"programvare","p":[{"n":"Pro","m":190,"c":1},{"n":"Pro – Årlig","m":155,"a":1860,"c":1,"b":1},{"n":"Max 5x","m":930,"c":1},{"n":"Max 20x","m":1860,"c":1},{"n":"Team Standard","m":235,"c":1},{"n":"Team Standard – Årlig","m":186.3,"a":2235,"c":1,"b":1},{"n":"Team Premium","m":1165,"c":1},{"n":"Team Premium – Årlig","m":930,"a":11160,"c":1,"b":1}],"al":["anthropic","claude ai"],"kj":1,"r":"0"},{"n":"Notion","d":"notion.so","c":"#000000","k":"programvare","p":[{"n":"Plus – Per medlem / måned","m":95,"c":1},{"n":"Business – Per medlem / måned","m":190,"c":1},{"n":"Free","m":0,"c":1}],"al":["notion labs"],"kj":1,"r":"0"},{"n":"Figma","d":"figma.com","c":"#F24E1E","k":"programvare","p":[{"n":"Professional – Full seat","m":150,"c":1},{"n":"Professional – Dev seat","m":115,"c":1},{"n":"Professional – Collab seat","m":30,"c":1},{"n":"Organization – Full seat","m":515,"c":1,"b":1},{"n":"Organization – Dev seat","m":235,"c":1,"b":1},{"n":"Organization – Collab seat","m":50,"c":1,"b":1},{"n":"Enterprise – Full seat","m":840,"c":1,"b":1},{"n":"Enterprise – Dev seat","m":330,"c":1,"b":1},{"n":"Enterprise – Collab seat","m":50,"c":1,"b":1}],"kj":1,"r":"0"},{"n":"Canva","d":"canva.com","c":"#00C4CC","k":"programvare","p":[{"n":"Canva Pro – måned","m":109},{"n":"Canva Pro – år","m":87.5,"a":1050},{"n":"Canva Business – måned","m":270},{"n":"Canva Teams – måned","m":255}],"kj":1,"r":"0"},{"n":"Grammarly","d":"grammarly.com","c":"#15C39A","k":"programvare","p":[{"n":"Pro","m":280,"c":1},{"n":"Pro – Årlig","m":111.7,"a":1340,"c":1,"b":1}],"kj":1,"r":"0"},{"n":"GitHub","d":"github.com","c":"#181717","k":"programvare","p":[{"n":"Team","m":40,"c":1},{"n":"Enterprise","m":200,"c":1,"f":1}],"al":["git hub"],"kj":1,"r":"0"},{"n":"NordVPN","d":"nordvpn.com","c":"#4687FF","k":"programvare","p":[{"n":"Basic – 2 år + 3 mnd kampanje – månedsverdi","m":35,"c":1,"b":1},{"n":"Basic – 1 år – månedsverdi","m":55,"c":1,"b":1},{"n":"Basic","m":140,"c":1},{"n":"Complete – 2 år + 3 mnd kampanje – månedsverdi","m":45,"c":1,"b":1},{"n":"Complete – 1 år – månedsverdi","m":65,"c":1,"b":1},{"n":"Complete","m":190,"c":1},{"n":"Prime – 2 år + 3 mnd kampanje – månedsverdi","m":70,"c":1,"b":1},{"n":"Prime – 1 år – månedsverdi","m":90,"c":1,"b":1},{"n":"Prime","m":280,"c":1}],"al":["nord vpn","vpn"],"kj":1},{"n":"Domeneshop","d":"domeneshop.no","c":"#1B4F9C","k":"programvare","p":[],"al":["domene"],"kj":1},{"n":"PlayStation Plus","d":"playstation.com","c":"#0070D1","k":"spill","p":[{"n":"Essential – 1 måned","m":115},{"n":"Essential – 12 måneder","m":70,"a":840},{"n":"Extra – 1 måned","m":179},{"n":"Extra – 12 måneder","m":123.8,"a":1485},{"n":"Premium – 1 måned","m":219},{"n":"Premium – 12 måneder","m":149.2,"a":1790},{"n":"Essential – 1 måned (gammel avtale)","m":105},{"n":"Extra – 1 måned (gammel avtale)","m":165},{"n":"Premium – 1 måned (gammel avtale)","m":200}],"al":["playstation","ps plus","psn"],"kj":1},{"n":"EA Play","d":"ea.com","c":"#FF4747","k":"spill","p":[{"n":"EA Play","m":59},{"n":"EA Play – år","m":33.3,"a":399},{"n":"EA Play Pro","m":183},{"n":"EA Play Pro – år","m":99.9,"a":1199}],"al":["eaplay","electronic arts"],"kj":1},{"n":"GTA+","d":"rockstargames.com","c":"#FCAF17","k":"spill","p":[{"n":"GTA+","m":89}],"al":["gta plus","gtaplus","rockstar games"],"kj":1},{"n":"Ubisoft+","d":"ubisoft.com","c":"#0070FF","k":"spill","p":[],"al":["ubisoft","ubisoft plus"],"kj":1},{"n":"Xbox Game Pass","d":"xbox.com","c":"#107C10","k":"spill","p":[{"n":"Essential","m":105},{"n":"Premium","m":149},{"n":"PC Game Pass","m":139},{"n":"Ultimate","m":209}],"al":["xbox","game pass","gamepass"],"kj":1},{"n":"Nintendo Switch Online","d":"nintendo.com","c":"#E60012","k":"spill","p":[{"n":"Individual – 1 måned","m":38},{"n":"Individual – 12 måneder","m":15.8,"a":190},{"n":"Family – 12 måneder","m":27.8,"a":333},{"n":"Expansion Pack – Individual 12 måneder","m":33.3,"a":399},{"n":"Expansion Pack – Family 12 måneder","m":56.6,"a":679}],"al":["nintendo","switch online"],"kj":1},{"n":"Audible","d":"audible.com","c":"#F8991C","k":"spill","p":[],"kj":1,"r":"0"},{"n":"Patreon","d":"patreon.com","c":"#FF424D","k":"spill","p":[],"kj":1,"r":"0"},{"n":"Twitch","d":"twitch.tv","c":"#9146FF","k":"spill","p":[],"kj":1},{"n":"Strava","d":"strava.com","c":"#FC4C02","k":"annet","p":[{"n":"Individual – måned","m":99},{"n":"Individual – år","m":66.6,"a":799},{"n":"Family – år","m":116.6,"a":1399},{"n":"Strava + Runna – år","m":141.6,"a":1699}],"kj":1,"r":"d1"},{"n":"Duolingo","d":"duolingo.com","c":"#58CC02","k":"annet","p":[{"n":"Super Duolingo","m":149},{"n":"Super Duolingo – rabattert månedspris","m":105},{"n":"Super Duolingo – år","m":74.9,"a":899},{"n":"Super Duolingo – år, høyere nivå","m":86.6,"a":1039},{"n":"Super Duolingo – familie","m":108.3,"a":1299}],"al":["duo"],"kj":1},{"n":"Ruter","d":"ruter.no","c":"#B01E20","k":"annet","p":[],"al":["kollektiv","månedskort","manedskort"],"kj":1,"r":"d1"},{"n":"Bilkollektivet","d":"bilkollektivet.no","c":"#0F7B6C","k":"annet","p":[],"al":["bilkollektiv"],"kj":1},{"n":"UDisc","d":"udisc.com","c":"#6C63FF","k":"annet","p":[{"n":"UDisc Pro – år","m":33.3,"a":399}],"al":["udisc pro","u disc","udiscpro"],"kj":1,"r":"0"},{"n":"1Password","d":"1password.com","c":"#0572EC","k":"programvare","p":[{"n":"Individual – Årlig fakturering – månedsverdi","m":40,"c":1,"b":1},{"n":"Individual – Første år kampanje – månedsverdi","m":30,"c":1,"b":1},{"n":"Families – Årlig fakturering – månedsverdi","m":60,"c":1,"b":1},{"n":"Families – Første år kampanje – månedsverdi","m":45,"c":1,"b":1}],"r":"0"},{"n":"ExpressVPN","d":"expressvpn.com","c":"#DA3940","k":"programvare","p":[{"n":"Basic – 24 + 4 mnd kampanje – månedsverdi","m":35,"c":1,"b":1},{"n":"Advanced – 24 + 4 mnd kampanje – månedsverdi","m":45,"c":1,"b":1},{"n":"Pro – 24 + 4 mnd kampanje – månedsverdi","m":70,"c":1,"b":1}],"r":"0"},{"n":"Feel24","d":"feel24.no","c":"#E4002B","k":"trening","p":[{"n":"Feel Basic","m":399,"b":1},{"n":"Free Basic","m":449},{"n":"Basic+","m":449,"b":1},{"n":"Free Basic+","m":499},{"n":"Complete","m":549,"b":1},{"n":"Free Complete","m":599},{"n":"Total","m":549,"b":1},{"n":"Free Total","m":599},{"n":"Total+","m":649,"b":1},{"n":"Free Total+","m":699},{"n":"Balanse","m":749,"b":1},{"n":"Free Balanse","m":799},{"n":"XFIT Istind","m":849,"b":1},{"n":"Free XFIT","m":899},{"n":"Balanse Premium","m":1049,"b":1},{"n":"Free Balanse Premium","m":1149},{"n":"Crossfit Tromsø","m":1249,"b":1},{"n":"Free Crossfit","m":1349}]},{"n":"MUBI","d":"mubi.com","c":"#000000","k":"stromming","p":[{"n":"MUBI","m":140,"c":1},{"n":"MUBI – Årlig","m":92.9,"a":1115,"c":1,"b":1},{"n":"MUBI GO","m":190,"c":1},{"n":"MUBI GO – Årlig","m":130.4,"a":1565,"c":1,"b":1}],"r":"0"},{"n":"SKY Fitness","d":"skyfitness.no","c":"#00AEEF","k":"trening","p":[{"n":"Ordinær – Månedlig – eksempel Fauske","m":419,"b":1},{"n":"Uten binding – Månedlig – eksempel Fauske","m":449}],"al":["skyfitness"]},{"n":"Sammen Trening","d":"sammen.no","c":"#E85B26","k":"trening","p":[{"n":"Ordinær – 12 mnd. binding","m":609,"b":1},{"n":"Ordinær – Uten binding","m":709},{"n":"Ordinær 1 måned kontant – Kontant","m":809},{"n":"Ordinær 12 måneder kontant – Kontant","m":609,"a":7308,"b":1},{"n":"Dagmedlemskap – 12 mnd. binding","m":509,"b":1},{"n":"Dagmedlemskap – Uten binding","m":609},{"n":"Dagmedlemskap 1 måned kontant – Kontant","m":709},{"n":"Dagmedlemskap 12 måneder kontant – Kontant","m":509,"a":6108,"b":1}],"al":["sammen","sammentrening"],"r":"n1"},{"n":"SiO Athletica","d":"sio.no","c":"#0B2D71","k":"trening","p":[{"n":"Ansatt SiO-lærested m/avtale – 12 mnd. binding","m":399,"b":1},{"n":"Ansatt SiO-lærested m/avtale – Uten binding","m":459},{"n":"Kontantmedlemskap – 1 måned","m":1029}],"al":["sio","sioathletica"],"r":"n1"},{"n":"Surfshark","d":"surfshark.com","c":"#178A8A","k":"programvare","p":[{"n":"Starter – 24 + 3 mnd kampanje – månedsverdi","m":25,"c":1,"b":1},{"n":"One – 24 + 3 mnd kampanje – månedsverdi","m":30,"c":1,"b":1},{"n":"One+ – 24 + 3 mnd kampanje – månedsverdi","m":45,"c":1,"b":1}],"r":"0"},{"n":"Airtable","d":"airtable.com","c":"#6C63FF","k":"programvare","p":[{"n":"Team","m":225,"c":1},{"n":"Team – Årlig","m":186.3,"a":2235,"c":1,"b":1},{"n":"Business","m":505,"c":1},{"n":"Business – Årlig","m":418.8,"a":5025,"c":1,"b":1}],"r":"0"},{"n":"Asana","d":"asana.com","c":"#6C63FF","k":"programvare","p":[{"n":"Starter","m":130,"c":1},{"n":"Starter – Årlig","m":102.5,"a":1230,"c":1,"b":1},{"n":"Advanced","m":285,"c":1},{"n":"Advanced – Årlig","m":232.5,"a":2790,"c":1,"b":1}],"r":"0"},{"n":"Babbel","d":"babbel.com","c":"#6C63FF","k":"annet","p":[{"n":"12 måneder – Årlig","m":83.3,"a":1000,"c":1,"b":1}],"r":"0"},{"n":"Bear Cave","d":"bearcave.no","c":"#6C63FF","k":"trening","p":[{"n":"Ordinært medlemskap – 12 mnd binding","m":349,"b":1},{"n":"Kampanje medlemskap – Ingen binding","m":349}],"al":["bearcave"]},{"n":"Bitwarden","d":"bitwarden.com","c":"#6C63FF","k":"programvare","p":[{"n":"Premium – Årlig","m":15.4,"a":185,"c":1,"b":1},{"n":"Families – Årlig","m":37.5,"a":450,"c":1,"b":1},{"n":"Teams – Årlig","m":37.5,"a":450,"c":1,"b":1},{"n":"Enterprise – Årlig","m":55.8,"a":670,"c":1,"b":1}],"r":"0"},{"n":"Bolt.new","d":"bolt.new","c":"#6C63FF","k":"programvare","p":[{"n":"Pro","m":235,"c":1},{"n":"Teams","m":280,"c":1}],"r":"0"},{"n":"Brilliant","d":"brilliant.org","c":"#6C63FF","k":"annet","p":[{"n":"Group – 3 seter – Årlig","m":316.3,"a":3795,"c":1,"b":1}],"r":"0"},{"n":"Calendly","d":"calendly.com","c":"#6C63FF","k":"programvare","p":[{"n":"Standard – Årlig","m":93.3,"a":1120,"c":1,"b":1},{"n":"Teams – Årlig","m":149.2,"a":1790,"c":1,"b":1},{"n":"Enterprise – Årlig","m":11625,"a":139500,"c":1,"b":1}],"r":"0"},{"n":"Coursera","d":"coursera.org","c":"#6C63FF","k":"annet","p":[{"n":"Coursera Plus","m":550,"c":1},{"n":"Coursera Plus – Årlig","m":309.6,"a":3715,"c":1,"b":1},{"n":"Teams – Årlig","m":309.6,"a":3715,"c":1,"b":1}]},{"n":"CrossFit Kristiansand","d":"crossfitkristiansand.no","c":"#6C63FF","k":"trening","p":[{"n":"Under 23","m":500},{"n":"Offshore 4/4","m":600}],"al":["crossfitkristiansand"]},{"n":"Cursor","d":"cursor.com","c":"#6C63FF","k":"programvare","p":[{"n":"Pro","m":190,"c":1},{"n":"Pro+","m":560,"c":1},{"n":"Ultra","m":1860,"c":1},{"n":"Teams Standard","m":375,"c":1},{"n":"Teams Premium","m":1120,"c":1}],"r":"0"},{"n":"Descript","d":"descript.com","c":"#6C63FF","k":"programvare","p":[{"n":"Hobbyist","m":225,"c":1},{"n":"Hobbyist – Årlig","m":149.2,"a":1790,"c":1,"b":1},{"n":"Creator","m":330,"c":1},{"n":"Creator – Årlig","m":223.3,"a":2680,"c":1,"b":1},{"n":"Business","m":605,"c":1},{"n":"Business – Årlig","m":465,"a":5580,"c":1,"b":1}],"r":"0"},{"n":"Discord","d":"discord.com","c":"#6C63FF","k":"spill","p":[{"n":"Nitro Basic","m":30,"c":1},{"n":"Nitro Basic – Årlig","m":23.3,"a":280,"c":1,"b":1},{"n":"Nitro","m":95,"c":1},{"n":"Nitro – Årlig","m":77.5,"a":930,"c":1,"b":1}],"r":"0"},{"n":"ElevenLabs","d":"elevenlabs.io","c":"#6C63FF","k":"programvare","p":[{"n":"Starter","m":60,"c":1},{"n":"Creator","m":205,"c":1},{"n":"Pro","m":925,"c":1},{"n":"Scale","m":2785,"c":1},{"n":"Business","m":9210,"c":1}],"r":"0"},{"n":"Fireflies.ai","d":"fireflies.ai","c":"#6C63FF","k":"programvare","p":[{"n":"Pro","m":170,"c":1},{"n":"Pro – Årlig","m":93.3,"a":1120,"c":1,"b":1},{"n":"Business","m":270,"c":1},{"n":"Business – Årlig","m":177.1,"a":2125,"c":1,"b":1},{"n":"Enterprise – Årlig","m":362.9,"a":4355,"c":1,"b":1}],"r":"0"},{"n":"Fitness24Seven","d":"fitness24seven.com","c":"#6C63FF","k":"trening","p":[{"n":"Standard månedsmedlemskap","m":349},{"n":"Honnør månedsmedlemskap","m":319},{"n":"Standard dagmedlemskap","m":249},{"n":"Standard nattmedlemskap","m":99},{"n":"Honnør dagmedlemskap","m":249},{"n":"Honnør nattmedlemskap","m":99},{"n":"Standard årskort – Årlig","m":366.6,"a":4399,"b":1},{"n":"Honnør årskort – Årlig","m":333.3,"a":3999,"b":1}],"r":"n2","s":{"p":319,"til":349,"t":"Egen Student-pakke til 319 kr/mnd, eller 3999 kr for året. Studentstatus kreves. Startavgift på 249 kr kommer i tillegg.","u":"https://no.fitness24seven.com/medlemskap/"}},{"n":"Friskis Kristiansand","d":"friskissvettis.no","c":"#6C63FF","k":"trening","p":[{"n":"Helårskort – Årlig","m":108.3,"a":1300,"b":1},{"n":"Joggekort 1/1 – Årlig","m":50,"a":600,"b":1}],"al":["friskiskristiansand"]},{"n":"GitHub Copilot","d":"copilot.github.com","c":"#6C63FF","k":"programvare","p":[{"n":"Pro","m":95,"c":1},{"n":"Pro+","m":365,"c":1},{"n":"Business","m":180,"c":1},{"n":"Enterprise","m":365,"c":1}],"al":["githubcopilot"],"r":"0"},{"n":"HeyGen","d":"heygen.com","c":"#6C63FF","k":"programvare","p":[{"n":"Creator","m":270,"c":1},{"n":"Creator – Årlig","m":223.3,"a":2680,"c":1,"b":1},{"n":"Pro","m":460,"c":1},{"n":"Business","m":1390,"c":1}],"r":"0"},{"n":"Krisp","d":"krisp.ai","c":"#6C63FF","k":"programvare","p":[{"n":"Core","m":150,"c":1},{"n":"Core – Årlig","m":74.6,"a":895,"c":1,"b":1},{"n":"Advanced","m":280,"c":1},{"n":"Advanced – Årlig","m":139.6,"a":1675,"c":1,"b":1}],"r":"0"},{"n":"Linear","d":"linear.app","c":"#6C63FF","k":"programvare","p":[{"n":"Basic – Årlig","m":93.3,"a":1120,"c":1,"b":1},{"n":"Business – Årlig","m":149.2,"a":1790,"c":1,"b":1}],"r":"0"},{"n":"Loom","d":"loom.com","c":"#6C63FF","k":"programvare","p":[{"n":"Business","m":170,"c":1},{"n":"Business + AI","m":225,"c":1}],"r":"0"},{"n":"Lovable","d":"lovable.dev","c":"#6C63FF","k":"programvare","p":[{"n":"Pro","m":235,"c":1},{"n":"Pro – Årlig","m":193.8,"a":2325,"c":1,"b":1},{"n":"Business","m":465,"c":1},{"n":"Business – Årlig","m":387.5,"a":4650,"c":1,"b":1}],"r":"0"},{"n":"MUDO Gym","d":"mudogym.no","c":"#6C63FF","k":"trening","p":[{"n":"GYM – Ingen binding","m":449},{"n":"GYM – 6 mnd binding","m":399,"b":1},{"n":"KOMPLETT – Ingen binding","m":799},{"n":"KOMPLETT – 6 mnd binding","m":749,"b":1},{"n":"FITNESSBOXING – Ingen binding","m":599},{"n":"FAMILIE – Ingen binding","m":1599},{"n":"BARN kampsport – Ingen binding","m":699},{"n":"Yoga – Ingen binding","m":599},{"n":"Thaiboxing – Ingen binding","m":599},{"n":"Kickboxing – Ingen binding","m":599}],"al":["mudogym"]},{"n":"Medvind Trening","d":"medvindtrening.no","c":"#6C63FF","k":"trening","p":[{"n":"Alt inkludert","m":399}],"al":["medvindtrening"]},{"n":"Microsoft Copilot","d":"copilot.microsoft.com","c":"#6C63FF","k":"programvare","p":[{"n":"Microsoft 365 Copilot for bedrifter","m":256.2},{"n":"Microsoft 365 Copilot for bedrifter – Årlig – kampanje","m":183,"a":2196,"b":1},{"n":"Microsoft 365 Copilot – enterprise – Årlig","m":305,"a":3660,"b":1}],"al":["microsoftcopilot"]},{"n":"Midjourney","d":"midjourney.com","c":"#6C63FF","k":"programvare","p":[{"n":"Basic","m":95,"c":1},{"n":"Basic – Årlig","m":74.6,"a":895,"c":1,"b":1},{"n":"Standard","m":280,"c":1},{"n":"Standard – Årlig","m":223.3,"a":2680,"c":1,"b":1},{"n":"Pro","m":560,"c":1},{"n":"Pro – Årlig","m":446.7,"a":5360,"c":1,"b":1},{"n":"Mega","m":1120,"c":1},{"n":"Mega – Årlig","m":892.9,"a":10715,"c":1,"b":1}],"r":"0"},{"n":"Miro","d":"miro.com","c":"#6C63FF","k":"programvare","p":[{"n":"Starter – Årlig","m":74.6,"a":895,"c":1,"b":1},{"n":"Business – Årlig","m":186.3,"a":2235,"c":1,"b":1}],"r":"0"},{"n":"Mistral Le Chat","d":"mistral.ai","c":"#6C63FF","k":"programvare","p":[{"n":"Team","m":235,"c":1}],"al":["mistral","mistrallechat"],"r":"0"},{"n":"Otter.ai","d":"otter.ai","c":"#6C63FF","k":"programvare","p":[{"n":"Pro","m":160,"c":1},{"n":"Pro – Årlig","m":77.5,"a":930,"c":1,"b":1},{"n":"Business","m":280,"c":1},{"n":"Business – Årlig","m":186.3,"a":2235,"c":1,"b":1}]},{"n":"PLAY Kristiansand","d":"playkristiansand.no","c":"#6C63FF","k":"trening","p":[{"n":"Ordinær – 12 mnd binding","m":949,"b":1},{"n":"Ungdom under 16 – Løpende","m":549},{"n":"FIT 45+ – Løpende","m":899},{"n":"Ordinær – 1 måned uten binding","m":1199}],"al":["playkristiansand"]},{"n":"Perplexity","d":"perplexity.ai","c":"#6C63FF","k":"programvare","p":[{"n":"Pro","m":190,"c":1},{"n":"Pro – Årlig","m":155,"a":1860,"c":1,"b":1},{"n":"Max","m":1860,"c":1},{"n":"Max – Årlig","m":1550,"a":18600,"c":1,"b":1},{"n":"Enterprise Pro","m":375,"c":1},{"n":"Enterprise Pro – Årlig","m":310,"a":3720,"c":1,"b":1},{"n":"Enterprise Max","m":3025,"c":1},{"n":"Enterprise Max – Årlig","m":2518.8,"a":30225,"c":1,"b":1}],"r":"0"},{"n":"Poe","d":"poe.com","c":"#6C63FF","k":"programvare","p":[{"n":"10k poeng/dag – Årlig","m":38.8,"a":465,"c":1,"b":1},{"n":"660k poeng/mnd – Årlig","m":155,"a":1860,"c":1,"b":1},{"n":"1,65M poeng/mnd – Årlig","m":387.5,"a":4650,"c":1,"b":1},{"n":"3,3M poeng/mnd – Årlig","m":775,"a":9300,"c":1,"b":1},{"n":"8,25M poeng/mnd – Årlig","m":1937.5,"a":23250,"c":1,"b":1}],"r":"0"},{"n":"QuillBot","d":"quillbot.com","c":"#6C63FF","k":"programvare","p":[{"n":"Premium","m":170,"c":1},{"n":"Premium – Årlig","m":58.3,"a":700,"c":1,"b":1}]},{"n":"Replit","d":"replit.com","c":"#6C63FF","k":"programvare","p":[{"n":"Core","m":190,"c":1},{"n":"Core – Årlig","m":167.5,"a":2010,"c":1,"b":1},{"n":"Pro","m":930,"c":1},{"n":"Pro – Årlig","m":837.1,"a":10045,"c":1,"b":1}]},{"n":"Revolut","d":"revolut.com","c":"#6C63FF","k":"annet","p":[{"n":"Plus","m":45.99},{"n":"Premium","m":94.99},{"n":"Metal","m":169.99},{"n":"Ultra","m":700}]},{"n":"Runway","d":"runwayml.com","c":"#6C63FF","k":"programvare","p":[{"n":"Max","m":885,"c":1}],"r":"0"},{"n":"Slack","d":"slack.com","c":"#6C63FF","k":"programvare","p":[{"n":"Pro","m":85,"c":1},{"n":"Pro – Årlig","m":67.5,"a":810,"c":1,"b":1},{"n":"Business+","m":170,"c":1},{"n":"Business+ – Årlig","m":139.6,"a":1675,"c":1,"b":1}]},{"n":"Spicheren","d":"sia.no","c":"#6C63FF","k":"trening","p":[{"n":"Ordinær – 12 mnd binding","m":699,"b":1},{"n":"Ordinær – Løpende uten binding","m":849},{"n":"Ordinær – 1 måned","m":949,"b":1},{"n":"Ordinær før 15:30 – 12 mnd binding","m":519,"b":1},{"n":"Ordinær før 15:30 – Løpende uten binding","m":665},{"n":"Ordinær før 15:30 – 1 måned","m":765,"b":1},{"n":"Senior før 15:30 – Løpende uten binding","m":519},{"n":"Senior før 15:30 – 1 måned","m":665,"b":1},{"n":"Ungdom 16–20 – 12 mnd binding","m":489,"b":1},{"n":"Ungdom 16–20 – Løpende uten binding","m":609},{"n":"Ungdom 16–20 – 1 måned","m":760,"b":1}],"r":"n1"},{"n":"Suno","d":"suno.com","c":"#6C63FF","k":"programvare","p":[{"n":"Pro – Årlig","m":74.6,"a":895,"c":1,"b":1},{"n":"Pro","m":95,"c":1},{"n":"Premier – Årlig","m":223.3,"a":2680,"c":1,"b":1},{"n":"Premier","m":280,"c":1}]},{"n":"Superhuman","d":"superhuman.com","c":"#6C63FF","k":"programvare","p":[{"n":"Starter","m":280,"c":1},{"n":"Starter – Årlig","m":232.5,"a":2790,"c":1,"b":1},{"n":"Business","m":375,"c":1},{"n":"Business – Årlig","m":307.1,"a":3685,"c":1,"b":1}]},{"n":"Synthesia","d":"synthesia.io","c":"#6C63FF","k":"programvare","p":[{"n":"Starter","m":270,"c":1},{"n":"Starter – Årlig","m":205,"a":2460,"c":1,"b":1},{"n":"Creator","m":830,"c":1},{"n":"Creator – Årlig","m":623.3,"a":7480,"c":1,"b":1}],"r":"0"},{"n":"Todoist","d":"todoist.com","c":"#6C63FF","k":"programvare","p":[{"n":"Pro","m":50,"c":1},{"n":"Pro – Årlig","m":46.7,"a":560,"c":1,"b":1},{"n":"Business","m":75,"c":1},{"n":"Business – Årlig","m":74.6,"a":895,"c":1,"b":1}],"r":"0"},{"n":"Trello","d":"trello.com","c":"#6C63FF","k":"programvare","p":[{"n":"Standard","m":60,"c":1},{"n":"Standard – Årlig","m":46.7,"a":560,"c":1,"b":1},{"n":"Premium","m":120,"c":1},{"n":"Premium – Årlig","m":93.3,"a":1120,"c":1,"b":1},{"n":"Enterprise – Årlig","m":162.9,"a":1955,"c":1,"b":1}],"r":"0"},{"n":"Urban Fitness Kristiansand","d":"urbanfitness.no","c":"#6C63FF","k":"trening","p":[{"n":"Måned til måned","m":699},{"n":"Årsmedlemskap – 12 mnd binding","m":549,"b":1}],"al":["urbanfitnesskristiansand"]},{"n":"Zapier","d":"zapier.com","c":"#6C63FF","k":"programvare","p":[{"n":"Professional","m":190,"c":1},{"n":"Team","m":645,"c":1}],"r":"0"},{"n":"monday.com","d":"monday.com","c":"#6C63FF","k":"programvare","p":[{"n":"Basic – Årlig","m":83.8,"a":1005,"c":1,"b":1},{"n":"Standard – Årlig","m":111.7,"a":1340,"c":1,"b":1},{"n":"Pro – Årlig","m":177.1,"a":2125,"c":1,"b":1}],"r":"0"},{"n":"Aktiviteten","d":"aktiviteten.no","c":"#6C63FF","k":"trening","p":[{"n":"Ordinær alle avdelinger","m":525,"b":1},{"n":"Verket","m":265,"b":1},{"n":"Oshallen","m":370,"b":1},{"n":"Hyttemedlemskap","m":210,"b":1}]},{"n":"AllTrails","d":"alltrails.com","c":"#6C63FF","k":"trening","p":[{"n":"Plus – Årlig","m":27.9,"a":335,"c":1,"b":1},{"n":"Peak – Årlig","m":62.1,"a":745,"c":1,"b":1}],"r":"0"},{"n":"Amedia +Alt","d":"amedia.no","c":"#6C63FF","k":"avis","p":[],"al":["amedia","amedia+alt"],"r":"0"},{"n":"Backblaze","d":"backblaze.com","c":"#6C63FF","k":"programvare","p":[{"n":"Personal Backup – Årlig","m":77.1,"a":925,"c":1,"b":1},{"n":"Business Backup – Årlig","m":77.1,"a":925,"c":1,"b":1}]},{"n":"Bumble","d":"bumble.com","c":"#6C63FF","k":"annet","p":[],"r":"0"},{"n":"Calm","d":"calm.com","c":"#6C63FF","k":"trening","p":[],"r":"0"},{"n":"Centr","d":"centr.com","c":"#6C63FF","k":"trening","p":[{"n":"Centr App","m":280,"c":1},{"n":"Centr App – Årlig","m":124.2,"a":1490,"c":1,"b":1}]},{"n":"Chess.com","d":"chess.com","c":"#6C63FF","k":"spill","p":[],"r":"0"},{"n":"Circle K Bilvask","d":"circlek.no","c":"#6C63FF","k":"annet","p":[{"n":"Standard – 30 dager","m":549},{"n":"Standard børsteløs – 30 dager","m":649},{"n":"Polering – 30 dager","m":649},{"n":"Delux Sesong – 30 dager","m":799}],"al":["circlekbilvask","circle k"],"r":"d1"},{"n":"CuriosityStream","d":"curiositystream.com","c":"#6C63FF","k":"stromming","p":[{"n":"Standard","m":50,"c":1},{"n":"Standard – Årlig","m":31.3,"a":375,"c":1,"b":1},{"n":"Smart Bundle","m":95,"c":1},{"n":"Smart Bundle – Årlig","m":54.6,"a":655,"c":1,"b":1}]},{"n":"DAZN","d":"dazn.com","c":"#6C63FF","k":"stromming","p":[],"r":"d30"},{"n":"Dashlane","d":"dashlane.com","c":"#6C63FF","k":"programvare","p":[],"r":"0"},{"n":"Dropout","d":"dropout.tv","c":"#6C63FF","k":"stromming","p":[{"n":"Monthly Membership","m":70,"c":1},{"n":"Annual Membership – Årlig","m":54.6,"a":655,"c":1,"b":1},{"n":"Superfan – Årlig","m":100.8,"a":1210,"c":1,"b":1}]},{"n":"Evernote","d":"evernote.com","c":"#6C63FF","k":"programvare","p":[],"r":"0"},{"n":"Feeld","d":"feeld.co","c":"#6C63FF","k":"annet","p":[],"r":"0"},{"n":"Fitbod","d":"fitbod.me","c":"#6C63FF","k":"trening","p":[{"n":"Fitbod","m":150,"c":1},{"n":"Fitbod – Årlig","m":74.6,"a":895,"c":1,"b":1}],"r":"0"},{"n":"Fortnite Crew","d":"fortnite.com","c":"#6C63FF","k":"spill","p":[{"n":"Fortnite Crew","m":115,"c":1}],"al":["fortnite","fortnitecrew"],"r":"0"},{"n":"Grindr","d":"grindr.com","c":"#6C63FF","k":"annet","p":[],"r":"0"},{"n":"Hayu","d":"hayu.com","c":"#6C63FF","k":"stromming","p":[{"n":"Hayu","m":59},{"n":"Hayu – 12 måneder","m":44.1,"a":529,"b":1}]},{"n":"Headspace","d":"headspace.com","c":"#6C63FF","k":"trening","p":[],"r":"0"},{"n":"Hinge","d":"hinge.co","c":"#6C63FF","k":"annet","p":[],"r":"0"},{"n":"IONITY","d":"ionity.eu","c":"#6C63FF","k":"annet","p":[],"r":"0"},{"n":"Klassekampen","d":"klassekampen.no","c":"#6C63FF","k":"avis","p":[{"n":"Digital","m":399},{"n":"Helgepakka","m":459},{"n":"Komplett","m":539}]},{"n":"LES MILLS+","d":"lesmills.com","c":"#6C63FF","k":"trening","p":[],"al":["lesmills+","les mills"],"r":"0"},{"n":"Lifesum","d":"lifesum.com","c":"#6C63FF","k":"trening","p":[],"r":"d3"},{"n":"LinkedIn Premium","d":"linkedin.com","c":"#6C63FF","k":"programvare","p":[{"n":"Premium Career","m":375,"c":1},{"n":"Premium Career – Årlig","m":186.3,"a":2235,"c":1,"b":1},{"n":"Premium Career Duo","m":560,"c":1},{"n":"Premium Career Duo – Årlig","m":279.2,"a":3350,"c":1,"b":1},{"n":"Premium Business","m":655,"c":1},{"n":"Premium Business – Årlig","m":418.8,"a":5025,"c":1,"b":1},{"n":"Premium Business Duo","m":1110,"c":1},{"n":"Premium Business Duo – Årlig","m":711.7,"a":8540,"c":1,"b":1}],"al":["linkedin","linkedinpremium"]},{"n":"Medium","d":"medium.com","c":"#6C63FF","k":"annet","p":[{"n":"Medium Member","m":50,"c":1},{"n":"Medium Member – Årlig","m":38.8,"a":465,"c":1,"b":1},{"n":"Friend of Medium","m":140,"c":1},{"n":"Friend of Medium – Årlig","m":116.3,"a":1395,"c":1,"b":1}]},{"n":"Minecraft Realms","d":"minecraft.net","c":"#6C63FF","k":"spill","p":[{"n":"Realms – Bedrock","m":40,"c":1},{"n":"Realms Plus – Bedrock","m":75,"c":1},{"n":"Realms – Java","m":75,"c":1}],"al":["minecraft","minecraftrealms"],"r":"0"},{"n":"Morgenbladet","d":"morgenbladet.no","c":"#6C63FF","k":"avis","p":[],"r":"d7"},{"n":"MyFitnessPal","d":"myfitnesspal.com","c":"#6C63FF","k":"trening","p":[],"r":"0"},{"n":"NBA League Pass","d":"nba.com","c":"#6C63FF","k":"stromming","p":[{"n":"League Pass","m":160,"c":1},{"n":"League Pass Premium","m":235,"c":1}],"al":["nba","nbaleaguepass"]},{"n":"Proton","d":"proton.me","c":"#6C63FF","k":"programvare","p":[],"r":"0"},{"n":"Rakuten Viki","d":"viki.com","c":"#6C63FF","k":"stromming","p":[{"n":"Viki Pass Standard","m":75,"c":1},{"n":"Viki Pass Standard – Årlig","m":62.1,"a":745,"c":1,"b":1},{"n":"Viki Pass Plus","m":115,"c":1}],"al":["rakuten","rakutenviki"],"r":"0"},{"n":"Readly","d":"readly.com","c":"#6C63FF","k":"avis","p":[{"n":"Readly","m":199}],"r":"0"},{"n":"Røros Gym","d":"rorosgym.no","c":"#6C63FF","k":"trening","p":[{"n":"Honnør / Familie – 12 mnd binding","m":379,"b":1},{"n":"Honnør / Familie – Uten binding","m":419},{"n":"Ordinær – 12 mnd binding","m":399,"b":1},{"n":"Ordinær – Uten binding","m":449}],"al":["røros","rørosgym"],"r":"n1"},{"n":"Snapchat+","d":"snapchat.com","c":"#6C63FF","k":"annet","p":[],"al":["snapchat"],"r":"0"},{"n":"SoundCloud","d":"soundcloud.com","c":"#6C63FF","k":"lyd","p":[{"n":"SoundCloud Go","m":50,"c":1},{"n":"SoundCloud Go+","m":105,"c":1},{"n":"SoundCloud DJ","m":190,"c":1}],"r":"0"},{"n":"Telegram Premium","d":"telegram.org","c":"#6C63FF","k":"annet","p":[],"al":["telegram","telegrampremium"],"r":"0"},{"n":"Tennis TV","d":"tennistv.com","c":"#6C63FF","k":"stromming","p":[],"al":["tennis","tennistv"],"r":"0"},{"n":"Tesla Premium Connectivity","d":"tesla.com","c":"#6C63FF","k":"annet","p":[{"n":"Premium Connectivity","m":129}],"al":["tesla","teslapremiumconnectivity"],"r":"0"},{"n":"Tinder","d":"tinder.com","c":"#6C63FF","k":"annet","p":[],"r":"0"},{"n":"X Premium","d":"x.com","c":"#6C63FF","k":"annet","p":[{"n":"Basic","m":31.13},{"n":"Basic – Årlig","m":27.6,"a":331.43,"b":1},{"n":"Premium","m":83},{"n":"Premium – Årlig","m":72.5,"a":870,"b":1},{"n":"Premium+","m":445},{"n":"Premium+ – Årlig","m":365.8,"a":4390,"b":1}],"al":["xpremium"],"r":"0"},{"n":"YAZIO","d":"yazio.com","c":"#6C63FF","k":"trening","p":[],"r":"0"},{"n":"Zoom Workplace","d":"zoom.us","c":"#6C63FF","k":"programvare","p":[],"al":["zoom","zoomworkplace"],"r":"0"},{"n":"Zwift","d":"zwift.com","c":"#6C63FF","k":"trening","p":[{"n":"Zwift","m":299},{"n":"Zwift – Årlig","m":155,"a":1860,"c":1,"b":1}]},{"n":"happn","d":"happn.com","c":"#6C63FF","k":"annet","p":[],"r":"0"},{"n":"komoot","d":"komoot.com","c":"#6C63FF","k":"trening","p":[],"r":"0"},{"n":"pCloud","d":"pcloud.com","c":"#6C63FF","k":"programvare","p":[{"n":"Premium 500 GB – Årlig","m":38.8,"a":465,"c":1,"b":1},{"n":"Premium Plus 2 TB – Årlig","m":77.5,"a":930,"c":1,"b":1},{"n":"Ultra 10 TB – Årlig","m":232.5,"a":2790,"c":1,"b":1}],"r":"0"},{"n":"1Blocker","d":"1blocker.com","c":"#6C63FF","k":"programvare","p":[{"n":"Premium","m":30,"c":1},{"n":"Premium – Årlig","m":11.7,"a":140,"c":1,"b":1}],"r":"0"},{"n":"A Better Routeplanner","d":"abetterrouteplanner.com","c":"#6C63FF","k":"annet","p":[],"al":["abetterrouteplanner"],"r":"0"},{"n":"AccuWeather","d":"accuweather.com","c":"#6C63FF","k":"annet","p":[{"n":"Premium","m":29},{"n":"Premium – Årlig","m":14.9,"a":179,"b":1},{"n":"Premium+","m":59},{"n":"Premium+ – Årlig","m":33.3,"a":399,"b":1}],"r":"0"},{"n":"Ancestry","d":"ancestry.com","c":"#6C63FF","k":"annet","p":[{"n":"World Explorer","m":375,"c":1}]},{"n":"AnyList","d":"anylist.com","c":"#6C63FF","k":"annet","p":[{"n":"Complete Individual – Årlig","m":7.9,"a":95,"c":1,"b":1},{"n":"Complete Household – Årlig","m":11.7,"a":140,"c":1,"b":1}],"r":"0"},{"n":"Arlo Secure","d":"arlo.com","c":"#6C63FF","k":"annet","p":[{"n":"Secure","m":65,"c":1}],"al":["arlo","arlosecure"],"r":"0"},{"n":"Buddy","d":"buddy.download","c":"#6C63FF","k":"annet","p":[{"n":"Premium","m":55},{"n":"Premium – Årlig","m":49.9,"a":599,"b":1}],"r":"0"},{"n":"CARROT Weather","d":"meetcarrot.com","c":"#6C63FF","k":"annet","p":[{"n":"Premium","m":59},{"n":"Premium – Årlig","m":19.1,"a":229,"b":1},{"n":"Premium Ultra – Årlig","m":37.9,"a":455,"b":1}],"al":["carrot","carrotweather"]},{"n":"Citymapper","d":"citymapper.com","c":"#6C63FF","k":"annet","p":[{"n":"CLUB+","m":1190}]},{"n":"CleanMyMac","d":"macpaw.com","c":"#6C63FF","k":"annet","p":[],"r":"0"},{"n":"EasyPark","d":"easypark.com","c":"#6C63FF","k":"annet","p":[{"n":"EasyPark GO","m":49}]},{"n":"Flexibits Premium","d":"flexibits.com","c":"#6C63FF","k":"annet","p":[],"al":["flexibits","flexibitspremium"],"r":"0"},{"n":"Flightradar24","d":"flightradar24.com","c":"#6C63FF","k":"annet","p":[],"r":"0"},{"n":"Flighty","d":"flighty.com","c":"#6C63FF","k":"annet","p":[{"n":"Pro","m":129},{"n":"Pro – Årlig","m":66.6,"a":799,"b":1}],"r":"0"},{"n":"Foreca Weather","d":"foreca.com","c":"#6C63FF","k":"annet","p":[{"n":"Ad-free – Årlig","m":4.9,"a":59,"b":1}],"al":["foreca","forecaweather"]},{"n":"Gaia GPS","d":"gaiagps.com","c":"#6C63FF","k":"annet","p":[{"n":"Premium – Årlig","m":60,"a":720,"c":1,"b":1},{"n":"Premium with Outside+ – Årlig","m":96.3,"a":1155,"c":1,"b":1}],"al":["gaia","gaiagps"],"r":"0"},{"n":"Genius Scan","d":"thegrizzlylabs.com","c":"#6C63FF","k":"annet","p":[{"n":"Genius Scan Ultra","m":59},{"n":"Genius Scan Ultra – Årlig","m":41.6,"a":499,"b":1}],"al":["genius","geniusscan"],"r":"0"},{"n":"Home Assistant Cloud","d":"nabucasa.com","c":"#6C63FF","k":"annet","p":[{"n":"Cloud","m":85,"c":1},{"n":"Cloud – Årlig","m":67.5,"a":810,"c":1,"b":1}],"al":["home","homeassistantcloud"]},{"n":"Life360","d":"life360.com","c":"#6C63FF","k":"annet","p":[{"n":"Silver","m":65,"c":1},{"n":"Gold","m":110,"c":1}],"r":"0"},{"n":"MileWiz","d":"milewiz.com","c":"#6C63FF","k":"annet","p":[{"n":"Unlimited Driving","m":50,"c":1},{"n":"Unlimited Driving – Årlig","m":41.7,"a":500,"c":1,"b":1}]},{"n":"Moovit","d":"moovitapp.com","c":"#6C63FF","k":"annet","p":[{"n":"Premium / Monthly plan","m":29},{"n":"Premium / 12 month plan – Årlig","m":14.9,"a":179,"b":1}],"r":"0"},{"n":"PDF Expert","d":"pdfexpert.com","c":"#6C63FF","k":"annet","p":[{"n":"Premium – Årlig","m":62.1,"a":745,"c":1,"b":1}],"al":["pdfexpert"],"r":"0"},{"n":"PeakVisor","d":"peakvisor.com","c":"#6C63FF","k":"annet","p":[{"n":"Hiking & Skiing","m":99},{"n":"Hiking & Skiing – Årlig","m":41.6,"a":499,"b":1}]},{"n":"PictureThis","d":"picturethisai.com","c":"#6C63FF","k":"annet","p":[{"n":"Family Plan","m":599}],"r":"0"},{"n":"PlantIn","d":"myplantin.com","c":"#6C63FF","k":"annet","p":[{"n":"Premium – Årlig","m":33.3,"a":399,"b":1}]},{"n":"Radarbot","d":"radarbot.com","c":"#6C63FF","k":"annet","p":[],"r":"0"},{"n":"Ring","d":"ring.com","c":"#6C63FF","k":"annet","p":[{"n":"Solo","m":45,"c":1},{"n":"Solo – Årlig","m":36.3,"a":435,"c":1,"b":1},{"n":"Multi","m":110,"c":1},{"n":"Multi – Årlig","m":90,"a":1080,"c":1,"b":1},{"n":"Pro","m":220,"c":1},{"n":"Pro – Årlig","m":180,"a":2160,"c":1,"b":1}],"r":"0"},{"n":"Scanner Pro","d":"readdle.com","c":"#6C63FF","k":"annet","p":[],"al":["scanner","scannerpro"],"r":"0"},{"n":"Setapp","d":"setapp.com","c":"#6C63FF","k":"annet","p":[{"n":"Mac","m":140,"c":1},{"n":"Mac + iOS","m":180,"c":1},{"n":"Power User","m":215,"c":1}],"r":"0"},{"n":"Sleep Cycle","d":"sleepcycle.com","c":"#6C63FF","k":"annet","p":[],"al":["sleep","sleepcycle"],"r":"0"},{"n":"Spendee","d":"spendee.com","c":"#6C63FF","k":"annet","p":[{"n":"Plus","m":20,"c":1},{"n":"Plus – Årlig","m":11.7,"a":140,"c":1,"b":1},{"n":"Premium","m":60,"c":1},{"n":"Premium – Årlig","m":27.9,"a":335,"c":1,"b":1}],"r":"0"},{"n":"Splitwise","d":"splitwise.com","c":"#6C63FF","k":"annet","p":[{"n":"Pro","m":59},{"n":"Pro – Årlig","m":41.6,"a":499,"b":1}]},{"n":"SwiftScan","d":"swiftscanapp.com","c":"#6C63FF","k":"annet","p":[{"n":"VIP","m":69},{"n":"VIP – Årlig","m":33.3,"a":399,"b":1},{"n":"Plus","m":85},{"n":"Plus – Årlig","m":66.6,"a":799,"b":1}],"r":"0"},{"n":"Transit","d":"transitapp.com","c":"#6C63FF","k":"annet","p":[],"r":"0"},{"n":"TripIt","d":"tripit.com","c":"#6C63FF","k":"annet","p":[{"n":"TripIt Pro – Årlig","m":44.1,"a":529,"b":1}]},{"n":"Wallet by BudgetBakers","d":"budgetbakers.com","c":"#6C63FF","k":"annet","p":[],"al":["wallet","walletbybudgetbakers"],"r":"0"},{"n":"WaterMinder","d":"waterminder.com","c":"#6C63FF","k":"trening","p":[{"n":"Premium","m":39},{"n":"Premium – Årlig","m":14.9,"a":179,"b":1}],"r":"0"},{"n":"WeatherPro","d":"weatherpro.com","c":"#6C63FF","k":"annet","p":[{"n":"Premium","m":9},{"n":"Premium – Årlig","m":8.3,"a":99,"b":1}]},{"n":"Windfinder","d":"windfinder.com","c":"#6C63FF","k":"annet","p":[{"n":"Plus","m":29},{"n":"Plus – Årlig","m":14.9,"a":179,"b":1},{"n":"Ad-free – Årlig","m":4.9,"a":59,"b":1}],"r":"0"},{"n":"Windy.com","d":"windy.com","c":"#6C63FF","k":"annet","p":[{"n":"Premium","m":35},{"n":"Premium – Årlig","m":26.6,"a":319,"b":1}]},{"n":"YNAB","d":"ynab.com","c":"#6C63FF","k":"annet","p":[{"n":"YNAB","m":140,"c":1},{"n":"YNAB – Årlig","m":84.6,"a":1015,"c":1,"b":1}],"r":"0"}]}</script>
+<script>
+(function () {
+  "use strict";
+
+  /* Prisene og fristene kommer rett fra appens egen database
+     (plans.ts, cancellation.ts og student.ts). Oppdateres dataene i
+     appen, lages denne lista på nytt. */
+  var D = JSON.parse(document.getElementById("kalk-data").textContent);
+  var TJENESTER = D.s;
+  var PER_DOMENE = {};
+  TJENESTER.forEach(function (t) { PER_DOMENE[t.d] = t; });
+
+  /* Ekte logoer kan legges i bilder/logoer/<domene>.png og føres opp
+     her. Tjenester som ikke står her, får forbokstaven i merkefargen. */
+  var LOGOER = [];
+
+  /* Hurtigvalgene, i den rekkefølgen folk kjenner dem igjen. */
+  var POPULAERE = [
+    "netflix.com", "spotify.com", "sats.no", "viaplay.no", "hbomax.com", "trener1.no",
+    "disneyplus.com", "youtube.com", "tv2.no", "storytel.com", "openai.com", "icloud.com",
+    "evofitness.no", "fitness24seven.com", "playstation.com", "podme.com"
+  ].filter(function (d) { return PER_DOMENE[d]; });
+
+  var KATEGORI = {
+    stromming: "Strømming", lyd: "Lyd og musikk", trening: "Trening", avis: "Aviser",
+    programvare: "Programvare", mat: "Mat og levering", spill: "Spill", annet: "Annet"
+  };
+
+  var LAGRING = "trekksjekk-kalkulator";
+  var valgte = [];
+  var student = false;
+
+  function les() {
+    try {
+      var raw = localStorage.getItem(LAGRING);
+      if (!raw) return;
+      var o = JSON.parse(raw);
+      if (Array.isArray(o.valgte)) {
+        valgte = o.valgte.filter(function (v) { return v.egen || PER_DOMENE[v.d]; });
+      }
+      student = !!o.student;
+    } catch (e) { /* privat nettleser o.l. – start tomt */ }
+  }
+  function lagre() {
+    try { localStorage.setItem(LAGRING, JSON.stringify({ valgte: valgte, student: student })); } catch (e) {}
+  }
+
+  /* ---------- Hjelpere ---------- */
+  function kr(n) {
+    var avrundet = Math.round(n);
+    return avrundet.toLocaleString("nb-NO");
+  }
+  function kr1(n) {
+    // Én desimal der prisen har det (74,50), ellers heltall.
+    return (Math.round(n * 100) / 100).toLocaleString("nb-NO", { maximumFractionDigits: 2 });
+  }
+  function el(tag, attrs, barn) {
+    var e = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) {
+      if (k === "text") e.textContent = attrs[k];
+      else if (k === "html") e.innerHTML = attrs[k];
+      else e.setAttribute(k, attrs[k]);
+    });
+    (barn || []).forEach(function (b) { if (b) e.appendChild(b); });
+    return e;
+  }
+  function lysFarge(hex) {
+    var m = /^#?([0-9a-f]{6})$/i.exec(hex || "");
+    if (!m) return false;
+    var v = parseInt(m[1], 16), r = v >> 16 & 255, g = v >> 8 & 255, b = v & 255;
+    return (0.299 * r + 0.587 * g + 0.114 * b) > 170;
+  }
+  function flis(t, navn) {
+    var farge = t ? t.c : "#56607A";
+    var f = el("span", { class: "flis", "aria-hidden": "true" });
+    if (t && LOGOER.indexOf(t.d) !== -1) {
+      f.appendChild(el("img", { src: "bilder/logoer/" + t.d + ".png", alt: "" }));
+      return f;
+    }
+    f.style.background = farge;
+    f.style.color = lysFarge(farge) ? "#0F1630" : "#fff";
+    f.textContent = (navn || (t && t.n) || "?").trim().charAt(0).toUpperCase() || "?";
+    return f;
+  }
+  function hakeSvg() {
+    var s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    s.setAttribute("viewBox", "0 0 24 24"); s.setAttribute("class", "hake"); s.setAttribute("aria-hidden", "true");
+    s.innerHTML = '<path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>';
+    return s;
+  }
+
+  /* Oppsigelsesregelen, i ord. «lang» betyr at dagen før trekket er for sent. */
+  function regel(t) {
+    if (!t || !t.r) return null;
+    var r = t.r;
+    if (r === "0") return { tekst: "Kan sies opp når som helst", lang: false };
+    if (r === "n1") return { tekst: "Løper ut neste måned", lang: true };
+    if (r === "fs") return { tekst: "Må sies opp før måneden starter", lang: true };
+    if (r.charAt(0) === "n") return { tekst: r.slice(1) + " måneder, og så ut måneden", lang: true };
+    if (r.charAt(0) === "d") {
+      var n = parseInt(r.slice(1), 10);
+      return { tekst: n === 1 ? "Senest dagen før trekket" : "Senest " + n + " dager før", lang: n > 7 };
+    }
+    return null;
+  }
+
+  function pakkeFor(v) {
+    var t = PER_DOMENE[v.d];
+    if (!t || !t.p.length) return null;
+    return t.p[Math.min(v.i || 0, t.p.length - 1)];
+  }
+  function maanedspris(v) {
+    if (v.egen || !pakkeFor(v)) {
+      var n = parseFloat(String(v.pris || "").replace(",", "."));
+      return isFinite(n) && n > 0 ? n : 0;
+    }
+    return pakkeFor(v).m;
+  }
+
+  /* Samme regler som appen: studentpris bare for samme produkt. */
+  function studentSparing(v) {
+    var t = PER_DOMENE[v.d];
+    if (!t || !t.s) return null;
+    var o = t.s, pris = maanedspris(v);
+    if (!pris) return null;
+    if (o.fra !== undefined && pris < o.fra - 1) return null;
+    if (o.til !== undefined && pris > o.til + 1) return null;
+    if (o.p !== undefined && o.p !== null) {
+      var s = pris - o.p;
+      return s > 1 ? { mnd: s, o: o } : null;
+    }
+    if (o.pc) {
+      if (o.til !== undefined && pris <= o.til * (100 - o.pc) / 100 + 1) return null;
+      return { mnd: pris * o.pc / 100, o: o };
+    }
+    return null;
+  }
+
+  /* ---------- Hurtigvalg ---------- */
+  var brikker = document.getElementById("brikker");
+  function tegnBrikker() {
+    brikker.innerHTML = "";
+    POPULAERE.forEach(function (d) {
+      var t = PER_DOMENE[d];
+      var valgt = valgte.some(function (v) { return v.d === d; });
+      var b = el("button", { type: "button", class: "brikke", "aria-pressed": valgt ? "true" : "false" },
+        [flis(t), el("span", { text: t.n }), hakeSvg()]);
+      b.addEventListener("click", function () { veksle(d); });
+      brikker.appendChild(b);
+    });
+  }
+  function veksle(d) {
+    var i = valgte.findIndex(function (v) { return v.d === d; });
+    if (i === -1) valgte.push({ d: d, i: 0 });
+    else valgte.splice(i, 1);
+    oppdater();
+  }
+
+  /* ---------- Søk ---------- */
+  var sokefelt = document.getElementById("sokefelt");
+  var treff = document.getElementById("treff");
+  function normal(s) { return s.toLowerCase().replace(/\s+/g, " ").trim(); }
+  function sok(q) {
+    q = normal(q);
+    if (q.length < 2) return [];
+    var start = [], inni = [];
+    TJENESTER.forEach(function (t) {
+      if (valgte.some(function (v) { return v.d === t.d; })) return;
+      var navn = normal(t.n), alias = (t.al || []).map(normal);
+      if (navn.indexOf(q) === 0 || alias.some(function (a) { return a.indexOf(q) === 0; })) start.push(t);
+      else if (navn.indexOf(q) !== -1 || alias.some(function (a) { return a.indexOf(q) !== -1; })) inni.push(t);
+    });
+    var kj = function (a, b) { return (b.kj || 0) - (a.kj || 0); };
+    return start.sort(kj).concat(inni.sort(kj)).slice(0, 6);
+  }
+  function tegnTreff() {
+    var q = sokefelt.value;
+    treff.innerHTML = "";
+    if (normal(q).length < 2) return;
+    var liste = sok(q);
+    if (!liste.length) {
+      treff.appendChild(el("p", { class: "ingen", text: "Ingen treff. Bruk «Legg til noe annet» og skriv inn prisen selv." }));
+      return;
+    }
+    liste.forEach(function (t) {
+      var b = el("button", { type: "button", role: "option" },
+        [flis(t), el("span", { text: t.n }), el("span", { class: "kat", text: KATEGORI[t.k] || "" })]);
+      b.addEventListener("click", function () {
+        valgte.push({ d: t.d, i: 0 });
+        sokefelt.value = "";
+        treff.innerHTML = "";
+        oppdater();
+        sokefelt.focus();
+      });
+      treff.appendChild(b);
+    });
+  }
+  sokefelt.addEventListener("input", tegnTreff);
+  sokefelt.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      var forste = treff.querySelector("button");
+      if (forste) forste.click();
+    } else if (e.key === "ArrowDown") {
+      var b = treff.querySelector("button");
+      if (b) { e.preventDefault(); b.focus(); }
+    }
+  });
+  treff.addEventListener("keydown", function (e) {
+    if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+    var knapper = Array.prototype.slice.call(treff.querySelectorAll("button"));
+    var i = knapper.indexOf(document.activeElement);
+    if (i === -1) return;
+    e.preventDefault();
+    if (e.key === "ArrowDown" && i < knapper.length - 1) knapper[i + 1].focus();
+    else if (e.key === "ArrowUp") (i > 0 ? knapper[i - 1] : sokefelt).focus();
+  });
+
+  document.getElementById("annet").addEventListener("click", function () {
+    valgte.push({ egen: true, navn: "", pris: "" });
+    oppdater();
+    var felter = document.querySelectorAll(".rad input.navn-felt");
+    if (felter.length) felter[felter.length - 1].focus();
+  });
+
+  /* ---------- Valgte abonnementer ---------- */
+  var valgteEl = document.getElementById("valgte");
+  var kryss = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>';
+
+  function tegnValgte() {
+    valgteEl.innerHTML = "";
+    valgte.forEach(function (v, idx) {
+      var t = v.egen ? null : PER_DOMENE[v.d];
+      var info = el("div");
+      var belop = el("div", { class: "belop" });
+
+      if (v.egen) {
+        var navnFelt = el("input", { type: "text", class: "navn-felt", placeholder: "Navn, for eksempel treningssenteret", "aria-label": "Navn på abonnementet", value: v.navn || "" });
+        navnFelt.addEventListener("input", function () { v.navn = navnFelt.value; lagre(); });
+        info.appendChild(el("div", { class: "navn", text: "Noe annet" }));
+        info.appendChild(navnFelt);
+      } else {
+        info.appendChild(el("div", { class: "navn", text: t.n }));
+      }
+
+      if (!v.egen && t.p.length) {
+        var sel = el("select", { "aria-label": "Pakke hos " + t.n });
+        t.p.forEach(function (p, i) {
+          var tekst = p.n + ": " + (p.c ? "ca. " : "") + (p.f ? "fra " : "") +
+            (p.a ? kr(p.a) + " kr i året" : kr1(p.m) + " kr i måneden");
+          var o = el("option", { value: String(i), text: tekst });
+          if (i === (v.i || 0)) o.selected = true;
+          sel.appendChild(o);
+        });
+        sel.addEventListener("change", function () { v.i = parseInt(sel.value, 10); oppdater(); });
+        info.appendChild(sel);
+      } else {
+        var prisFelt = el("input", { type: "text", inputmode: "decimal", class: "pris-felt", placeholder: "Kr i måneden", "aria-label": "Pris i måneden for " + (t ? t.n : "abonnementet"), value: v.pris || "" });
+        prisFelt.addEventListener("input", function () { v.pris = prisFelt.value; oppdaterSum(); lagre(); belop.innerHTML = belopHtml(v); });
+        info.appendChild(prisFelt);
+      }
+
+      var r = regel(t);
+      if (r) info.appendChild(el("span", { class: "regel-merke" + (r.lang ? " lang" : ""), text: r.tekst }));
+
+      belop.innerHTML = belopHtml(v);
+
+      var fjern = el("button", { type: "button", class: "fjern", "aria-label": "Fjern " + (t ? t.n : (v.navn || "abonnementet")) });
+      fjern.innerHTML = kryss;
+      fjern.addEventListener("click", function () { valgte.splice(idx, 1); oppdater(); });
+
+      valgteEl.appendChild(el("div", { class: "rad" }, [flis(t, v.egen ? (v.navn || "+") : null), info, belop, fjern]));
+    });
+  }
+  function belopHtml(v) {
+    var m = maanedspris(v);
+    if (!m) return "<span>–</span>";
+    var p = pakkeFor(v);
+    var ca = p && p.c ? "ca. " : "";
+    return ca + kr(m) + " kr<small>i måneden</small>";
+  }
+
+  /* ---------- Resultatet ---------- */
+  var sumAr = document.getElementById("sum-ar");
+  var visteAr = 0, anim = null;
+  var roligst = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function tellTil(mal) {
+    if (anim) cancelAnimationFrame(anim);
+    if (roligst || Math.abs(mal - visteAr) < 1) { visteAr = mal; sumAr.textContent = kr(mal); return; }
+    var fra = visteAr, t0 = null;
+    function steg(ts) {
+      if (!t0) t0 = ts;
+      var x = Math.min((ts - t0) / 400, 1), e = 1 - Math.pow(1 - x, 3);
+      visteAr = fra + (mal - fra) * e;
+      sumAr.textContent = kr(visteAr);
+      if (x < 1) anim = requestAnimationFrame(steg);
+    }
+    anim = requestAnimationFrame(steg);
+  }
+
+  function oppdaterSum() {
+    var mnd = valgte.reduce(function (s, v) { return s + maanedspris(v); }, 0);
+    tellTil(mnd * 12);
+    document.getElementById("sum-mnd").textContent = valgte.length
+      ? "Det er " + kr(mnd) + " kr i måneden for " + valgte.length + (valgte.length === 1 ? " abonnement." : " abonnementer.")
+      : "Velg abonnementene dine for å se summen.";
+
+    // Fristene
+    var lange = valgte.filter(function (v) { var r = regel(PER_DOMENE[v.d]); return r && r.lang; });
+    var fm = document.getElementById("frist-melding");
+    if (lange.length) {
+      var navn = lange.map(function (v) { return PER_DOMENE[v.d].n; });
+      var liste = navn.length === 1 ? navn[0] : navn.slice(0, -1).join(", ") + " og " + navn[navn.length - 1];
+      fm.innerHTML = "";
+      fm.appendChild(el("p", { class: "varsel", html: "<b>" + liste + "</b> " + (navn.length === 1 ? "må" : navn.length === 2 ? "må begge" : "må alle") + " sies opp i god tid." }));
+      fm.appendChild(el("p", { text: "Sier du opp kvelden før trekket, betaler du minst én måned til. TrekkSjekk regner ut den riktige datoen og varsler deg før den." }));
+      fm.hidden = false;
+    } else {
+      fm.hidden = true;
+    }
+
+    // Studentpris
+    var sr = document.getElementById("student-res");
+    if (student) {
+      var spar = valgte.map(function (v) { var s = studentSparing(v); return s ? { v: v, s: s } : null; }).filter(Boolean);
+      sr.innerHTML = "";
+      if (spar.length) {
+        var total = spar.reduce(function (s, x) { return s + x.s.mnd; }, 0);
+        sr.appendChild(el("p", { html: "Med studentpris kan du spare <b>" + kr(total * 12) + " kr i året</b>." }));
+        var ul = el("ul");
+        spar.forEach(function (x) {
+          var a = el("a", { href: x.s.o.u, target: "_blank", rel: "noopener", text: PER_DOMENE[x.v.d].n });
+          ul.appendChild(el("li", null, [el("span", null, [a]), el("span", { text: "−" + kr(x.s.mnd) + " kr/mnd" })]));
+        });
+        sr.appendChild(ul);
+      } else {
+        sr.appendChild(el("p", { text: valgte.length
+          ? "Ingen av disse har studentpris på pakken du har valgt. I appen ser du alle studenttilbudene vi kjenner til."
+          : "Velg abonnementene dine, så ser du hvilke som har studentpris." }));
+      }
+      sr.hidden = false;
+    } else {
+      sr.hidden = true;
+    }
+
+    window.trekksjekkSum = { ar: mnd * 12, antall: valgte.length };
+    document.dispatchEvent(new Event("kalk-endret"));
+
+    var gm = document.getElementById("gratis-melding");
+    gm.textContent = valgte.length > 5
+      ? "Gratisversjonen holder styr på fem. Med Premium får du med alle " + valgte.length + "."
+      : "TrekkSjekk er gratis med opptil fem abonnementer.";
+  }
+
+  function oppdater() {
+    tegnBrikker();
+    tegnValgte();
+    tegnTreff();
+    oppdaterSum();
+    lagre();
+  }
+
+  var studentBoks = document.getElementById("student");
+  studentBoks.addEventListener("change", function () { student = studentBoks.checked; oppdaterSum(); lagre(); });
+
+  var d = (D.checked || "").split("-");
+  document.getElementById("kilde").textContent =
+    "Prisene er hentet fra tjenestenes egne sider og sist kontrollert " + (d.length === 3 ? d[2] + "." + d[1] + "." + d[0] : "nylig") +
+    ". Velg pakken du faktisk har. Treningssentre har ofte ulik pris fra senter til senter, så der skriver du inn prisen selv. Priser merket «ca.» er regnet om fra utenlandsk valuta.";
+
+  les();
+  studentBoks.checked = student;
+  oppdater();
+})();
+
+(function () {
+  /* Knappen nederst på mobil vises når toppen er ute av syne,
+     og skjules igjen når den store knappen nederst er synlig. */
+  var feste = document.getElementById("feste");
+  var tekst = document.getElementById("feste-tekst"), knapp = document.getElementById("feste-knapp");
+  if (!("IntersectionObserver" in window)) return;
+  var toppSynlig = true, bunnSynlig = false, iKalk = false, resSynlig = false;
+  /* Mens du velger abonnementer på mobil, ligger summen nederst –
+     resultatkortet havner under lista og er ellers ute av syne. */
+  function innhold() {
+    var s = window.trekksjekkSum;
+    if (iKalk && !resSynlig && s && s.antall) {
+      tekst.innerHTML = "<b>" + Math.round(s.ar).toLocaleString("nb-NO") + " kr i året</b>" + s.antall + (s.antall === 1 ? " abonnement" : " abonnementer");
+      knapp.textContent = "Se resultatet";
+      knapp.setAttribute("href", "#res-tittel");
+    } else {
+      tekst.innerHTML = "<b>TrekkSjekk</b>Gratis for iPhone";
+      knapp.textContent = "Last ned";
+      knapp.setAttribute("href", "https://apps.apple.com/no/app/id6811947257");
+    }
+  }
+  document.addEventListener("kalk-endret", function () { innhold(); sett(); });
+  new IntersectionObserver(function (e) { iKalk = e[0].isIntersecting; innhold(); sett(); }).observe(document.querySelector(".velg"));
+  new IntersectionObserver(function (e) { resSynlig = e[0].isIntersecting; innhold(); sett(); }).observe(document.querySelector(".resultat"));
+  function sett() {
+    var vis = !toppSynlig && !bunnSynlig && !(iKalk && resSynlig);
+    feste.classList.toggle("vis", vis);
+    feste.setAttribute("aria-hidden", vis ? "false" : "true");
+    feste.querySelector("a").tabIndex = vis ? 0 : -1;
+  }
+  new IntersectionObserver(function (e) { toppSynlig = e[0].isIntersecting; sett(); }).observe(document.querySelector(".helt .handling"));
+  new IntersectionObserver(function (e) { bunnSynlig = e[0].isIntersecting; sett(); }).observe(document.querySelector(".bunn"));
+})();
+</script>
 </body>
 </html>
