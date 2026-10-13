@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slik sier du opp abonnementer – oppsigelsestider | TrekkSjekk</title>
+<meta name="description" content="Oppsigelsestid og siste frist for treningssentre og strømmetjenester i Norge, hentet fra leverandørenes egne vilkår.">
+<link rel="canonical" href="https://trekksjekk.no/si-opp/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+:root {
+  --ground: #FBFAFC; --surface: #FFFFFF; --ink: #1C1A22; --muted: #5E5A6B;
+  --accent: #5B3FD6; --hairline: #E4E0EC; --flag: #F4F1FB;
+  --sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #15131B; --surface: #1D1A25; --ink: #EEEBF4; --muted: #A7A1B8;
+    --accent: #AC99F7; --hairline: #2E2939; --flag: #221E2E;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #15131B; --surface: #1D1A25; --ink: #EEEBF4; --muted: #A7A1B8;
+  --accent: #AC99F7; --hairline: #2E2939; --flag: #221E2E;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ground); color: var(--ink);
+  font-family: var(--sans); font-size: 16px; line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); }
+.page { max-width: 46rem; margin: 0 auto; padding: 56px 16px 72px; }
+.eyebrow {
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent); margin: 0 0 18px; font-weight: 600;
+}
+h1 {
+  font-weight: 700; font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.1;
+  letter-spacing: -0.015em; text-wrap: balance; margin: 0 0 18px;
+}
+h2 { font-size: 1.3rem; font-weight: 700; line-height: 1.25; margin: 0 0 12px; }
+.lead { font-size: 1.12rem; color: var(--muted); max-width: 36rem; margin: 0 0 32px; }
+section { margin: 0 0 40px; }
+.facts {
+  margin: 0 0 44px; border-top: 1px solid var(--hairline);
+}
+.facts div {
+  display: grid; grid-template-columns: 9rem 1fr; gap: 0 1.2rem;
+  padding: 14px 0; border-bottom: 1px solid var(--hairline);
+}
+.facts dt { font-weight: 600; color: var(--muted); font-size: 0.9rem; padding-top: 1px; }
+.facts dd { margin: 0; }
+@media (max-width: 520px) {
+  .facts div { grid-template-columns: 1fr; gap: 2px; }
+}
+.steps { padding-left: 1.3rem; display: flex; flex-direction: column; gap: 8px; max-width: 36rem; }
+.steps li::marker { color: var(--accent); font-weight: 700; }
+.note {
+  background: var(--flag); border-left: 3px solid var(--accent); padding: 20px 22px;
+}
+.note h2 { font-size: 1.05rem; }
+.note p { margin: 0 0 10px; }
+.note ol { margin: 0; padding-left: 1.2rem; }
+.cta {
+  border: 1px solid var(--hairline); background: var(--surface);
+  border-radius: 14px; padding: 22px 22px 8px;
+}
+.cta p { margin: 0 0 14px; }
+.button {
+  display: inline-block; background: var(--accent); color: #fff;
+  padding: 10px 18px; border-radius: 10px; font-weight: 700; text-decoration: none;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .button { color: #15131B; } }
+.source { font-size: 0.85rem; color: var(--muted); }
+.table-wrap { overflow-x: auto; margin: 0 0 44px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+th, td { text-align: left; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+th { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+footer {
+  margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--hairline);
+  font-size: 0.8rem; color: var(--muted);
+}
+.jump { font-weight: 600; line-height: 2; margin: 0 0 8px; }
+section h2 { scroll-margin-top: 16px; }
+.faq h3 { font-size: 1.02rem; font-weight: 700; margin: 22px 0 4px; }
+.faq p { margin: 0; max-width: 36rem; }
+.meta { font-size: 0.85rem; color: var(--muted); margin: -6px 0 24px; }
+.short { background: var(--flag); border-left: 3px solid var(--accent); padding: 18px 20px; margin-bottom: 36px; }
+.short h2 { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; }
+.short p { margin: 0; font-size: 1.05rem; }
+
+</style>
+<div class="page">
+
+  <p class="eyebrow">Oppsigelsesguider</p>
+  <h1>Når må du si opp?</h1>
+  <p class="lead">«Én måneds oppsigelsestid» betyr sjelden at du kan si opp én måned før trekket. Her er reglene, hentet fra leverandørenes egne vilkår.</p>
+
+  <p class="jump"><a href="#trening">Trening</a> · <a href="#stromming">Strømming</a> · <a href="#lyd">Lyd og musikk</a> · <a href="#avis">Aviser</a> · <a href="#mat">Mat og levering</a> · <a href="#spill">Spill</a> · <a href="#programvare">Programvare</a> · <a href="#annet">Annet</a></p>
+  <p class="source">* Siste dag oppsigelsen må være inne for å slippe trekket 1. februar 2027. 235 tjenester, alle sjekket mot leverandørens egne sider.</p>
+
+  <section id="trening">
+    <h2>Trening</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Tjeneste</th><th>Oppsigelsestid</th><th>Siste frist*</th></tr></thead>
+      <tbody>
+        <tr><td><a href="/si-opp/3t/">3T</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/actic/">Actic</a></td><td>Må være inne før den 1.</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/alltrails/">AllTrails</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/apple-fitness-pluss/">Apple Fitness+</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/calm/">Calm</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/centr/">Centr</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/evo-fitness/">EVO Fitness</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/feel24/">Feel24</a></td><td>3 måneder, så ut måneden</td><td>31. oktober 2026</td></tr>
+        <tr><td><a href="/si-opp/fitbod/">Fitbod</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/fitness24seven/">Fitness24Seven</a></td><td>2 måneder, så ut måneden</td><td>30. november 2026</td></tr>
+        <tr><td><a href="/si-opp/freeletics/">Freeletics</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/fresh-fitness/">Fresh Fitness</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/headspace/">Headspace</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/komoot/">komoot</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/les-mills-pluss/">LES MILLS+</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/lifesum/">Lifesum</a></td><td>3 dager</td><td>29. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/mova/">MOVA</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/mudo-gym/">MUDO Gym</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/myfitnesspal/">MyFitnessPal</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/next-fitness/">NEXT Fitness</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/nr1-fitness/">Nr1 Fitness</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/play-kristiansand/">PLAY Kristiansand</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/runna/">Runna</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/roros-gym/">Røros Gym</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/sammen-trening/">Sammen Trening</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/sats/">SATS</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/sio-athletica/">SiO Athletica</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/sit-trening/">Sit Trening</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/sky-fitness/">SKY Fitness</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/spenst/">Spenst</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/spicheren/">Spicheren</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/sporty/">Sporty</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/stamina-trening/">Stamina Trening</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/trainerroad/">TrainerRoad</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/trainingpeaks/">TrainingPeaks</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/trener-1/">Trener 1</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/waterminder/">WaterMinder</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/yazio/">YAZIO</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/zwift/">Zwift</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="stromming">
+    <h2>Strømming</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Tjeneste</th><th>Oppsigelsestid</th><th>Siste frist*</th></tr></thead>
+      <tbody>
+        <tr><td><a href="/si-opp/allente/">Allente</a></td><td>Løper ut måneden etter</td><td>31. desember 2026</td></tr>
+        <tr><td><a href="/si-opp/apple-tv-pluss/">Apple TV+</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/curiositystream/">CuriosityStream</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/dazn/">DAZN</a></td><td>30 dager</td><td>2. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/f1-tv/">F1 TV</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/hayu/">Hayu</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/hbo-max/">HBO Max</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/mubi/">MUBI</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/nba-league-pass/">NBA League Pass</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/netflix/">Netflix</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/rakuten-viki/">Rakuten Viki</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/rikstv/">RiksTV</a></td><td>2 måneder, så ut måneden</td><td>30. november 2026</td></tr>
+        <tr><td><a href="/si-opp/skyshowtime/">SkyShowtime</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/strim/">Strim</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/tennis-tv/">Tennis TV</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/tv-2-play/">TV 2 Play</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/ufc-fight-pass/">UFC Fight Pass</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/viaplay/">Viaplay</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="lyd">
+    <h2>Lyd og musikk</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Tjeneste</th><th>Oppsigelsestid</th><th>Siste frist*</th></tr></thead>
+      <tbody>
+        <tr><td><a href="/si-opp/apple-music/">Apple Music</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/bookbeat/">BookBeat</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/brain-fm/">Brain.fm</a></td><td>1 dager</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/deezer/">Deezer</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/fabel/">Fabel</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/nextory/">Nextory</a></td><td>1 dager</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/podimo/">Podimo</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/qobuz/">Qobuz</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/soundcloud/">SoundCloud</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/spotify/">Spotify</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/storytel/">Storytel</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/tidal/">Tidal</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/youtube-premium/">YouTube Premium</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="avis">
+    <h2>Aviser</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Tjeneste</th><th>Oppsigelsestid</th><th>Siste frist*</th></tr></thead>
+      <tbody>
+        <tr><td><a href="/si-opp/adresseavisen/">Adresseavisen</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/amedia-plussalt/">Amedia +Alt</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/dagbladet-pluss/">Dagbladet Pluss</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/dagens-naeringsliv/">Dagens Næringsliv</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/flipp/">Flipp</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/klassekampen/">Klassekampen</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/morgenbladet/">Morgenbladet</a></td><td>7 dager</td><td>25. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/readly/">Readly</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="mat">
+    <h2>Mat og levering</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Tjeneste</th><th>Oppsigelsestid</th><th>Siste frist*</th></tr></thead>
+      <tbody>
+        <tr><td><a href="/si-opp/adams-matkasse/">Adams Matkasse</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/foodora/">Foodora</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/godtlevert/">Godtlevert</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/wolt/">Wolt</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="spill">
+    <h2>Spill</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Tjeneste</th><th>Oppsigelsestid</th><th>Siste frist*</th></tr></thead>
+      <tbody>
+        <tr><td><a href="/si-opp/apple-arcade/">Apple Arcade</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/audible/">Audible</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/chess-com/">Chess.com</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/discord/">Discord</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/fortnite-crew/">Fortnite Crew</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/gta-pluss/">GTA+</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/minecraft-realms/">Minecraft Realms</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/nintendo-switch-online/">Nintendo Switch Online</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/nvidia-geforce-now/">NVIDIA GeForce NOW</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/patreon/">Patreon</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/playstation-plus/">PlayStation Plus</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/ubisoft-pluss/">Ubisoft+</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/xbox-game-pass/">Xbox Game Pass</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="programvare">
+    <h2>Programvare</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Tjeneste</th><th>Oppsigelsestid</th><th>Siste frist*</th></tr></thead>
+      <tbody>
+        <tr><td><a href="/si-opp/1blocker/">1Blocker</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/1password/">1Password</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/addy-io/">Addy.io</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/adobe-creative-cloud/">Adobe Creative Cloud</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/airtable/">Airtable</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/amazing-marvin/">Amazing Marvin</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/any-do/">Any.do</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/asana/">Asana</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/backblaze/">Backblaze</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/bitwarden/">Bitwarden</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/bolt-new/">Bolt.new</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/calendly/">Calendly</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/canva/">Canva</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/chatgpt/">ChatGPT</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/claude/">Claude</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/cursor/">Cursor</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/cyberghost/">CyberGhost</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/dashlane/">Dashlane</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/day-one/">Day One</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/descript/">Descript</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/domeneshop/">Domeneshop</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/dropbox/">Dropbox</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/elevenlabs/">ElevenLabs</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/envato-elements/">Envato Elements</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/evernote/">Evernote</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/expressvpn/">ExpressVPN</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/figma/">Figma</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/fireflies-ai/">Fireflies.ai</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/focusmate/">Focusmate</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/github/">GitHub</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/github-copilot/">GitHub Copilot</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/goodnotes/">Goodnotes</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/google-one/">Google One</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/grammarly/">Grammarly</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/heygen/">HeyGen</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/icloud-pluss/">iCloud+</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/inoreader/">Inoreader</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/ivpn/">IVPN</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/jottacloud/">Jottacloud</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/kagi/">Kagi</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/krisp/">Krisp</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/linear/">Linear</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/loom/">Loom</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/lovable/">Lovable</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/microsoft-365/">Microsoft 365</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/microsoft-copilot/">Microsoft Copilot</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/midjourney/">Midjourney</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/miro/">Miro</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/mistral-le-chat/">Mistral Le Chat</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/monday-com/">monday.com</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/mullvad/">Mullvad</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/nordvpn/">NordVPN</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/notion/">Notion</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/otter-ai/">Otter.ai</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/pcloud/">pCloud</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/perplexity/">Perplexity</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/poe/">Poe</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/private-internet-access/">Private Internet Access</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/proton/">Proton</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/quillbot/">QuillBot</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/readwise/">Readwise</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/replit/">Replit</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/rescuetime/">RescueTime</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/runway/">Runway</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/slack/">Slack</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/smugmug/">SmugMug</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/suno/">Suno</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/superhuman/">Superhuman</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/surfshark/">Surfshark</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/synthesia/">Synthesia</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/ticktick/">TickTick</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/todoist/">Todoist</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/toggl-track/">Toggl Track</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/trello/">Trello</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/wallabag/">Wallabag</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/windscribe/">Windscribe</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/zapier/">Zapier</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/zoom-workplace/">Zoom Workplace</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="annet">
+    <h2>Annet</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Tjeneste</th><th>Oppsigelsestid</th><th>Siste frist*</th></tr></thead>
+      <tbody>
+        <tr><td><a href="/si-opp/a-better-routeplanner/">A Better Routeplanner</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/accuweather/">AccuWeather</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/ancestry/">Ancestry</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/anylist/">AnyList</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/apple-one/">Apple One</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/arlo-secure/">Arlo Secure</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/babbel/">Babbel</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/bilkollektivet/">Bilkollektivet</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/brilliant/">Brilliant</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/buddy/">Buddy</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/bumble/">Bumble</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/carrot-weather/">CARROT Weather</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/circle-k-bilvask/">Circle K Bilvask</a></td><td>1 dager</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/citymapper/">Citymapper</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/cleanmymac/">CleanMyMac</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/codecademy/">Codecademy</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/coursera/">Coursera</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/drivstoffappen/">DrivstoffAppen</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/easypark/">EasyPark</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/feeld/">Feeld</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/flexibits-premium/">Flexibits Premium</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/flightradar24/">Flightradar24</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/flighty/">Flighty</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/gaia-gps/">Gaia GPS</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/genius-scan/">Genius Scan</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/grindr/">Grindr</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/happn/">happn</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/hinge/">Hinge</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/home-assistant-cloud/">Home Assistant Cloud</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/ionity/">IONITY</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/life360/">Life360</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/medium/">Medium</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/milewiz/">MileWiz</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/moovit/">Moovit</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/myheritage/">MyHeritage</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/pdf-expert/">PDF Expert</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/peakvisor/">PeakVisor</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/picturethis/">PictureThis</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/plantin/">PlantIn</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/radarbot/">Radarbot</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/revolut/">Revolut</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/ring/">Ring</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/ruter/">Ruter</a></td><td>1 dager</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/scanner-pro/">Scanner Pro</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/setapp/">Setapp</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/sleep-cycle/">Sleep Cycle</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/snapchat-pluss/">Snapchat+</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/spendee/">Spendee</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/splitwise/">Splitwise</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/strava/">Strava</a></td><td>1 dager</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/swiftscan/">SwiftScan</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/telegram-premium/">Telegram Premium</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/tesla-premium-connectivity/">Tesla Premium Connectivity</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/tinder/">Tinder</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/transit/">Transit</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/tripit/">TripIt</a></td><td>Ikke oppgitt</td><td>–</td></tr>
+        <tr><td><a href="/si-opp/udisc/">UDisc</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/wallet-by-budgetbakers/">Wallet by BudgetBakers</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/windfinder/">Windfinder</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/windy-com/">Windy.com</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/x-premium/">X Premium</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+        <tr><td><a href="/si-opp/ynab/">YNAB</a></td><td>Ingen oppsigelsestid</td><td>31. januar 2027</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Glem fristen for godt</h2>
+    <p>TrekkSjekk regner ut siste frist for alle abonnementene dine og varsler deg før den går ut.</p>
+    <p><a class="button" href="https://apps.apple.com/no/app/id6811947257">Last ned i App Store</a></p>
+  </section>
+
+  <footer>
+    <a href="/">TrekkSjekk</a> · <a href="/si-opp/">Alle oppsigelsesguider</a> · Oppdatert 13. oktober 2026
+  </footer>
+</div>
