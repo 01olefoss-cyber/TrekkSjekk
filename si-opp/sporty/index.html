@@ -90,12 +90,25 @@ section h2 { scroll-margin-top: 16px; }
 .short { background: var(--flag); border-left: 3px solid var(--accent); padding: 18px 20px; margin-bottom: 36px; }
 .short h2 { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; }
 .short p { margin: 0; font-size: 1.05rem; }
+.tittel { display: flex; align-items: center; gap: 14px; margin: 0 0 18px; }
+.tittel h1 { margin: 0; }
+.logo { border-radius: 22%; flex: none; object-fit: cover; background: #fff; box-shadow: 0 0 0 1px var(--hairline); }
+.bokstav { display: inline-flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 0.95em; box-shadow: none; }
+.tittel .bokstav { font-size: 1.5rem; }
+.navn { display: inline-flex; align-items: center; gap: 10px; }
+.sok { position: sticky; top: 0; z-index: 2; background: var(--ground); padding: 10px 0; margin: 0 0 8px; }
+.sok input {
+  width: 100%; font: inherit; font-size: 16px; padding: 12px 14px; border-radius: 12px;
+  border: 1px solid var(--hairline); background: var(--surface); color: var(--ink);
+}
+.sok input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+tr[hidden], section[hidden] { display: none; }
 
 </style>
 <div class="page">
 
   <p class="eyebrow">Oppsigelsesguide</p>
-  <h1>Slik sier du opp Sporty</h1>
+  <div class="tittel"><img class="logo" src="/bilder/logoer/fsc.no.webp" alt="" width="52" height="52" loading="lazy"><h1>Slik sier du opp Sporty</h1></div>
   <p class="meta">Steg-for-steg-guide · Hentet fra leverandørens egne sider</p>
 
   <section class="short">
