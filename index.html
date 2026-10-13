@@ -304,6 +304,11 @@ body{padding-bottom:76px}
   .feste{display:none}
   body{padding-bottom:0}
 }
+.guide-lenke{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:28px;padding:18px 20px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);color:var(--ink);text-decoration:none}
+.guide-lenke b{display:block;font-size:17px}
+.guide-lenke small{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+.guide-lenke>span:last-child{font-size:22px;color:var(--navy)}
+.guide-lenke:hover{border-color:var(--ink)}
 </style>
 </head>
 <body>
@@ -315,6 +320,7 @@ body{padding-bottom:76px}
       TrekkSjekk
     </a>
     <div>
+      <a class="lenke" href="si-opp/">Si opp</a>
       <a class="lenke" href="#kalkulator">Kalkulator</a>
       <a class="lenke" href="#pris">Pris</a>
       <a class="lenke" href="#hjelp">Hjelp</a>
@@ -500,6 +506,7 @@ body{padding-bottom:76px}
 
     </div>
     <p class="kilde" style="margin-top:22px">Feil pris eller lenke? Si fra rett i appen, under Innstillinger. Alt annet: <a href="mailto:01ole.foss@gmail.com" style="color:var(--ink);font-weight:600">01ole.foss@gmail.com</a>.</p>
+    <a class="guide-lenke" href="si-opp/"><span><b>Slik sier du opp – 235 tjenester</b><small>Oppsigelsestid, siste frist og fremgangsmåte for Netflix, Spotify, Viaplay og resten</small></span><span aria-hidden="true">→</span></a>
   </div>
 </section>
 
@@ -516,7 +523,7 @@ body{padding-bottom:76px}
   <div class="bunn-info">
     <div class="wrap">
       <span class="org">© TrekkSjekk Foss, Kristiansand</span>
-      <nav class="bunn-lenker" aria-label="Juridisk"><a href="personvern.html">Personvern</a><a href="vilkar.html">Vilkår</a><a href="mailto:01ole.foss@gmail.com">Kontakt</a></nav>
+      <nav class="bunn-lenker" aria-label="Juridisk"><a href="si-opp/">Si opp-guider</a><a href="personvern.html">Personvern</a><a href="vilkar.html">Vilkår</a><a href="mailto:01ole.foss@gmail.com">Kontakt</a></nav>
     </div>
   </div>
 </footer>
