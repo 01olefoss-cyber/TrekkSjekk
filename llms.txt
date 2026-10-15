@@ -2,7 +2,7 @@
 
 > Norsk iPhone-app som holder orden på abonnementene dine, regner ut siste dag du kan si opp fra tjenestens egne vilkår, og varsler deg før trekk, frister og prøveperioder. Ingen bankkobling, ingen konto, selger aldri data. Gratis med opptil 5 abonnementer; Premium 149 kr/år.
 
-Laget av Ole André Foss (TrekkSjekk Foss, Kristiansand). Lansert i App Store 25. september 2026. Bare iPhone foreløpig; Android er under arbeid.
+Laget av Ole André Foss (TrekkSjekk Foss, Kristiansand) fordi appene som fantes manglet det han trengte: ingen frister, bankkobling, feil gjetninger og ingen vei til oppsigelsessiden. Lansert i App Store 25. september 2026. Bare iPhone foreløpig; Android er under arbeid.
 
 ## Hva appen gjør annerledes
 - Abonnementene lagres på telefonen. Ingen brukerkonto, ingen bankkobling.
@@ -11,7 +11,10 @@ Laget av Ole André Foss (TrekkSjekk Foss, Kristiansand). Lansert i App Store 25
 - Oppsigelsesfristen regnes ut fra leverandørens egne vilkår for over 180 tjenester (f.eks. treningssentre med «ut neste måned»). Ukjent regel = ingen frist, aldri gjetning.
 - Over 250 tjenester med logo, pakker, studentpriser og bindingstid, hver pris med kilde og dato.
 - Prisvarsel når pakken din blir dyrere, månedlig innsjekk («brukte du dette?»), bindingstid med nedtelling, delte abonnementer, widgets.
-- Sier ikke opp for deg: tar deg til riktig side hos leverandøren med fremgangsmåte.
+- Rett til oppsigelsessiden: ett trykk til siden der abonnementet avsluttes, med fremgangsmåte. Sier ikke opp for deg.
+- Alle pakkene til hver tjeneste med pris og hva som følger med, og hvilken du trolig har.
+- Viser hvor du kan spare: studentpris du ikke bruker og billigere pakker hos tjenester du har.
+- Prøveperioder med varsel før de begynner å koste. Delte abonnementer: hva du selv betaler, og påminnelse om å be om pengene.
 
 ## Sider
 - [Forsiden](https://trekksjekk.no/): funksjoner, kalkulator, priser, spørsmål og svar

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Om TrekkSjekk – hvorfor appen finnes</title>
-<meta name="description" content="TrekkSjekk er en norsk iPhone-app for abonnementer, laget av en student i Kristiansand. Ingen bankkobling, ingen konto, ingen salg av data. Her er historien og hva appen gjør annerledes.">
+<meta name="description" content="TrekkSjekk er en norsk iPhone-app for abonnementer, laget av én person i Kristiansand. Ingen bankkobling, ingen konto, ingen salg av data. Her er historien og hva appen gjør annerledes.">
 <link rel="canonical" href="https://trekksjekk.no/om.html">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="nb_NO">
@@ -34,7 +34,9 @@ header{border-bottom:1px solid var(--line);background:var(--surface)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
 .merke{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;letter-spacing:-.02em}
 .merke img{width:30px;height:30px;border-radius:8px}
-header nav a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:600;margin-left:18px}
+header nav{white-space:nowrap}
+header nav a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:600;margin-left:16px}
+@media (max-width:420px){header nav a.pris{display:none}}
 main{padding-block:48px 72px}
 h1{font-size:clamp(30px,7vw,46px);line-height:1.08;letter-spacing:-.03em;margin:0 0 14px;max-width:18ch}
 .ingress{font-size:18px;color:var(--muted);margin:0 0 36px;max-width:36rem}
@@ -64,19 +66,19 @@ footer a{margin-right:14px}
 <header>
   <div class="wrap">
     <a class="merke" href="./"><img src="bilder/ikon-64.png" alt="" width="30" height="30">TrekkSjekk</a>
-    <nav aria-label="Hoved"><a href="si-opp/">Si opp-guider</a><a href="./#pris">Pris</a><a href="https://apps.apple.com/no/app/id6811947257">App Store</a></nav>
+    <nav aria-label="Hoved"><a href="si-opp/">Si opp-guider</a><a class="pris" href="./#pris">Pris</a><a href="https://apps.apple.com/no/app/id6811947257">App Store</a></nav>
   </div>
 </header>
 
 <main>
   <div class="wrap">
     <h1>Laget fordi de andre appene gjorde det motsatte.</h1>
-    <p class="ingress">TrekkSjekk er en norsk iPhone-app som holder orden på abonnementene dine, regner ut siste dag du kan si opp, og varsler deg før det er for sent. Den er laget av én person, uten bankkobling og uten å samle inn data om deg.</p>
+    <p class="ingress">TrekkSjekk er en norsk iPhone-app som holder orden på abonnementene dine, regner ut siste dag du kan si opp, tar deg rett til oppsigelsessiden og varsler deg før det er for sent. Laget av én person, uten bankkobling og uten å samle inn data om deg.</p>
 
     <h2>Hvorfor den finnes</h2>
-    <p>TrekkSjekk startet som et studentprosjekt i Kristiansand høsten 2026. Utgangspunktet var et vanlig problem: for mange abonnementer, for lite oversikt, og trekk som kom etter at det var for sent å si opp.</p>
-    <p>Appene som fantes, løste det på samme måte. De ba om tilgang til bankkontoen, hentet alle transaksjonene og gjettet hvilke som var abonnementer. I testing dukket dagligvarebutikken og et betalingskort opp som «abonnementer», mens treningssenteret manglet. Og for å få gjetningen måtte man gi en tredjepart innsyn i hele kontoen.</p>
-    <p>Så TrekkSjekk ble bygget rundt det de manglet: oversikten skulle ligge på telefonen din, ikke hos oss. Fristen skulle regnes ut fra tjenestens egne vilkår, ikke gjettes. Og tjenestene skulle vises med riktig navn og logo, ikke som «APPLE.COM/BILL 129».</p>
+    <p>TrekkSjekk begynte med en vanlig kveld i Kristiansand: en dag skulle jeg sette meg ned og få orden på abonnementene mine. Så jeg testet appene som fantes. Alle manglet noe jeg trengte. De ba om tilgang til bankkontoen, gjettet hvilke trekk som var abonnementer og bommet, viste ingen frister, og ingen av dem fortalte hvor man faktisk sier opp.</p>
+    <p>Da bestemte jeg meg for å lage min egen, med alt de manglet. Oversikten skulle ligge på telefonen, ikke hos en tredjepart. Fristen skulle regnes ut fra tjenestens egne vilkår, ikke gjettes. Tjenestene skulle vises med riktig navn, logo og pakke, ikke som «APPLE.COM/BILL 129». Og når du vil si opp, skal appen ta deg rett til siden der det skjer.</p>
+    <p>Appen ble lansert i App Store 25. september 2026, og utvikles fortsatt av én person.</p>
 
     <div class="fakta">
       <h2>Hva TrekkSjekk gjør annerledes</h2>
@@ -87,6 +89,11 @@ footer a{margin-right:14px}
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Finner ut hva som skjuler seg bak «Apple Bill».</b> <span>Apple, Google Play og PlayStation skriver bare sitt eget navn på trekket. TrekkSjekk matcher beløpet mot prisene til flere hundre tjenester og foreslår hvilke det kan være.</span></div></li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Regner ut fristen fra vilkårene.</b> <span>Oppsigelsestiden til over 180 tjenester er lest fra leverandørenes egne sider og lagt inn som regel. Finnes ikke regelen, viser appen ingen frist i stedet for å gjette.</span></div></li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Ekte logoer og ekte priser.</b> <span>Over 250 tjenester med logo, pakker, studentpriser og bindingstid. Hver pris har en kilde og en dato.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Rett til oppsigelsessiden.</b> <span>Ett trykk tar deg til siden der abonnementet faktisk avsluttes, med stegene du trenger. Du slipper å lete etter den skjulte siden.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Alle pakkene, og hva du får.</b> <span>Du ser pakkene tjenesten selger, hva hver koster og hva som følger med, og hvilken du trolig har.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Viser hvor du kan spare.</b> <span>Studentpris du ikke bruker og billigere pakker hos tjenestene du allerede har, med summen per måned og år.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Delte abonnementer.</b> <span>Deler du Spotify eller Netflix med andre, ser du hva du selv betaler, og får påminnelse om å be om pengene.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Prøveperioder.</b> <span>Legg inn gratisperioden, så får du varsel før den begynner å koste.</span></div></li>
       </ul>
     </div>
 
