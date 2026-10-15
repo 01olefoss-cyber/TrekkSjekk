@@ -1,7 +1,132 @@
 <!doctype html>
 <html lang="no">
+<head>
 <meta charset="utf-8">
-<title>TrekkSjekk</title>
-<link rel="canonical" href="https://trekksjekk.no/">
-<meta http-equiv="refresh" content="0; url=./">
-<p>Siden har flyttet til <a href="./">forsiden</a>.</p>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Om TrekkSjekk – hvorfor appen finnes</title>
+<meta name="description" content="TrekkSjekk er en norsk iPhone-app for abonnementer, laget av en student i Kristiansand. Ingen bankkobling, ingen konto, ingen salg av data. Her er historien og hva appen gjør annerledes.">
+<link rel="canonical" href="https://trekksjekk.no/om.html">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:site_name" content="TrekkSjekk">
+<meta property="og:title" content="Om TrekkSjekk – hvorfor appen finnes">
+<meta property="og:description" content="Laget fordi abonnementsappene som fantes krevde bankkobling, samlet data og gjettet feil. TrekkSjekk gjør det motsatte.">
+<meta property="og:url" content="https://trekksjekk.no/om.html">
+<meta property="og:image" content="https://trekksjekk.no/bilder/ikon-512.png">
+<meta name="theme-color" content="#F5F6FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F1F" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="bilder/ikon-64.png">
+<link rel="apple-touch-icon" href="bilder/ikon-180.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"Om TrekkSjekk","url":"https://trekksjekk.no/om.html","inLanguage":"nb","about":{"@type":"MobileApplication","name":"TrekkSjekk","url":"https://trekksjekk.no/"},"publisher":{"@type":"Organization","name":"TrekkSjekk Foss","url":"https://trekksjekk.no/","address":{"@type":"PostalAddress","addressLocality":"Kristiansand","addressCountry":"NO"},"founder":{"@type":"Person","name":"Ole André Foss"}}}</script>
+<style>
+:root{
+  --ground:#F5F6FA; --surface:#FFFFFF; --ink:#0D1326; --muted:#5A6377; --line:#E4E8F1; --soft:#EEF1F8;
+  --navy:#1E3A8A; --navy-ink:#C7D3F4; --green:#15803D; --check:#4ADE80; --r:20px;
+  --font:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ground:#0A0F1F;--surface:#121A33;--ink:#EEF1F8;--muted:#A1A9BE;--line:#222C4B;--soft:#171F3A;--green:#4ADE80}}
+:root[data-theme="dark"]{--ground:#0A0F1F;--surface:#121A33;--ink:#EEF1F8;--muted:#A1A9BE;--line:#222C4B;--soft:#171F3A;--green:#4ADE80}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.65 var(--font);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:100%;max-width:720px;margin:0 auto;padding-inline:20px}
+header{border-bottom:1px solid var(--line);background:var(--surface)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.merke{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;letter-spacing:-.02em}
+.merke img{width:30px;height:30px;border-radius:8px}
+header nav a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:600;margin-left:18px}
+main{padding-block:48px 72px}
+h1{font-size:clamp(30px,7vw,46px);line-height:1.08;letter-spacing:-.03em;margin:0 0 14px;max-width:18ch}
+.ingress{font-size:18px;color:var(--muted);margin:0 0 36px;max-width:36rem}
+h2{font-size:clamp(22px,5vw,28px);line-height:1.15;letter-spacing:-.02em;margin:44px 0 12px}
+p{margin:0 0 16px}
+.fakta{background:var(--navy);color:#fff;border-radius:var(--r);padding:24px;margin:32px 0}
+.fakta h2{color:#fff;margin:0 0 14px;font-size:20px}
+.fakta ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.fakta li{display:flex;gap:10px;align-items:flex-start;font-size:15px}
+.fakta li svg{width:18px;height:18px;flex:none;margin-top:4px}
+.fakta li span{color:var(--navy-ink)}
+.fakta li b{color:#fff}
+.tabell{width:100%;border-collapse:collapse;margin:16px 0 8px;font-size:15px}
+.tabell th,.tabell td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.tabell th{font-weight:700;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.tabell td:first-child{font-weight:600;width:44%}
+.kilde{font-size:13px;color:var(--muted)}
+.cta{margin-top:48px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.cta b{display:block;font-size:18px;letter-spacing:-.01em}
+.cta span{color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);padding:20px 0 40px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 20px;justify-content:space-between}
+footer a{margin-right:14px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="merke" href="./"><img src="bilder/ikon-64.png" alt="" width="30" height="30">TrekkSjekk</a>
+    <nav aria-label="Hoved"><a href="si-opp/">Si opp-guider</a><a href="./#pris">Pris</a><a href="https://apps.apple.com/no/app/id6811947257">App Store</a></nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Laget fordi de andre appene gjorde det motsatte.</h1>
+    <p class="ingress">TrekkSjekk er en norsk iPhone-app som holder orden på abonnementene dine, regner ut siste dag du kan si opp, og varsler deg før det er for sent. Den er laget av én person, uten bankkobling og uten å samle inn data om deg.</p>
+
+    <h2>Hvorfor den finnes</h2>
+    <p>TrekkSjekk startet som et studentprosjekt i Kristiansand høsten 2026. Utgangspunktet var et vanlig problem: for mange abonnementer, for lite oversikt, og trekk som kom etter at det var for sent å si opp.</p>
+    <p>Appene som fantes, løste det på samme måte. De ba om tilgang til bankkontoen, hentet alle transaksjonene og gjettet hvilke som var abonnementer. I testing dukket dagligvarebutikken og et betalingskort opp som «abonnementer», mens treningssenteret manglet. Og for å få gjetningen måtte man gi en tredjepart innsyn i hele kontoen.</p>
+    <p>Så TrekkSjekk ble bygget rundt det de manglet: oversikten skulle ligge på telefonen din, ikke hos oss. Fristen skulle regnes ut fra tjenestens egne vilkår, ikke gjettes. Og tjenestene skulle vises med riktig navn og logo, ikke som «APPLE.COM/BILL 129».</p>
+
+    <div class="fakta">
+      <h2>Hva TrekkSjekk gjør annerledes</h2>
+      <ul>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Ingen bankkobling og ingen konto.</b> <span>Abonnementene lagres på telefonen. TrekkSjekk har ingen brukerdatabase å lekke fra.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Selger aldri data.</b> <span>Ingen annonsenettverk og ingen sporings-SDK fra Meta eller Google. Det eneste appen sender er anonyme tellinger uten bruker-ID, og logoer hentes én gang per tjeneste.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Leser kontoutskriften på telefonen.</b> <span>Du laster ned en CSV fra nettbanken selv. Fila leses lokalt og slettes etterpå. Gratis å lese.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Finner ut hva som skjuler seg bak «Apple Bill».</b> <span>Apple, Google Play og PlayStation skriver bare sitt eget navn på trekket. TrekkSjekk matcher beløpet mot prisene til flere hundre tjenester og foreslår hvilke det kan være.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Regner ut fristen fra vilkårene.</b> <span>Oppsigelsestiden til over 180 tjenester er lest fra leverandørenes egne sider og lagt inn som regel. Finnes ikke regelen, viser appen ingen frist i stedet for å gjette.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Ekte logoer og ekte priser.</b> <span>Over 250 tjenester med logo, pakker, studentpriser og bindingstid. Hver pris har en kilde og en dato.</span></div></li>
+      </ul>
+    </div>
+
+    <h2>Hva appen gjør</h2>
+    <table class="tabell">
+      <tr><th>Funksjon</th><th>Gratis</th><th>Premium</th></tr>
+      <tr><td>Oversikt med sum per måned og år</td><td>Ja</td><td>Ja</td></tr>
+      <tr><td>Antall abonnementer</td><td>Opptil 5</td><td>Ubegrenset</td></tr>
+      <tr><td>Oppsigelsesfrist regnet fra vilkårene</td><td>Ja</td><td>Ja</td></tr>
+      <tr><td>Varsel før trekk</td><td>Ett per trekk</td><td>Før frist og trekk, når du vil</td></tr>
+      <tr><td>Lese kontoutskrift</td><td>Ja, viser de fem første</td><td>Alt appen finner</td></tr>
+      <tr><td>Prøveperioder med varsel før de koster</td><td>–</td><td>Ja</td></tr>
+      <tr><td>Prisvarsel når pakken din blir dyrere</td><td>Ja</td><td>Ja</td></tr>
+      <tr><td>Bindingstid med nedtelling</td><td>Ja</td><td>Ja</td></tr>
+      <tr><td>Månedlig innsjekk: «brukte du dette?»</td><td>Ja</td><td>Ja, med varsel den 1.</td></tr>
+      <tr><td>Delte abonnementer</td><td>Ja</td><td>Ja</td></tr>
+      <tr><td>Studentpris og billigere pakker</td><td>Summen</td><td>Hele oversikten</td></tr>
+      <tr><td>Rett til oppsigelsessiden med fremgangsmåte</td><td>–</td><td>Ja</td></tr>
+      <tr><td>Widgets på hjem- og låseskjerm</td><td>Ja</td><td>Ja</td></tr>
+    </table>
+    <p class="kilde">Premium koster 149 kr i året med 7 dager gratis, 39 kr i måneden, eller 399 kr én gang. Kjøpes i appen via App Store.</p>
+
+    <h2>Hva appen ikke gjør</h2>
+    <p>Den sier ikke opp abonnementet for deg. Du gjør det selv hos leverandøren, og TrekkSjekk tar deg til riktig side og forteller hva du skal trykke på. Den kobler seg ikke til banken, og den leser ikke e-posten din. Den finnes foreløpig bare for iPhone; Android er under arbeid.</p>
+
+    <h2>Hvem står bak</h2>
+    <p>TrekkSjekk utvikles og drives av Ole André Foss gjennom enkeltpersonforetaket TrekkSjekk Foss i Kristiansand. Appen ble lansert i App Store 25. september 2026. Priser og oppsigelsesvilkår kontrolleres mot leverandørenes egne sider, og feil kan meldes rett fra appen under Innstillinger eller på <a href="mailto:01ole.foss@gmail.com">01ole.foss@gmail.com</a>.</p>
+
+    <div class="cta">
+      <div><b>Gratis for iPhone</b><span>Ingen konto. Tar to minutter å sette opp.</span></div>
+      <a href="https://apps.apple.com/no/app/id6811947257"><img src="bilder/app-store-svart.svg" alt="Last ned i App Store" width="156" height="52"></a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© TrekkSjekk Foss, Kristiansand</span>
+    <nav aria-label="Juridisk"><a href="./">Forsiden</a><a href="si-opp/">Si opp-guider</a><a href="personvern.html">Personvern</a><a href="vilkar.html">Vilkår</a></nav>
+  </div>
+</footer>
+</body>
+</html>

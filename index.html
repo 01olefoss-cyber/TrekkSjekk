@@ -20,7 +20,7 @@
 <link rel="apple-touch-icon" href="bilder/ikon-180.png">
 <link rel="preload" href="fonter/poppins-bold.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="bilder/oversikt.webp" as="image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "TrekkSjekk", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "inLanguage": "nb", "url": "https://trekksjekk.no/", "installUrl": "https://apps.apple.com/no/app/id6811947257", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "NOK"}, "description": "Samler abonnementene dine, viser hva de koster i året og varsler deg før trekk, frister og prøveperioder."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"TrekkSjekk","alternateName":"TrekkSjekk: Abonnementer","operatingSystem":"iOS 16.4 eller nyere","applicationCategory":"FinanceApplication","inLanguage":"nb","url":"https://trekksjekk.no/","installUrl":"https://apps.apple.com/no/app/id6811947257","datePublished":"2026-09-25","countriesSupported":"NO","offers":[{"@type":"Offer","name":"Gratis","price":"0","priceCurrency":"NOK"},{"@type":"Offer","name":"Premium – år","price":"149","priceCurrency":"NOK"},{"@type":"Offer","name":"Premium – måned","price":"39","priceCurrency":"NOK"},{"@type":"Offer","name":"Premium – livstid","price":"399","priceCurrency":"NOK"}],"description":"Norsk app for abonnementer. Samler abonnementene dine på telefonen, viser hva de koster i året, regner ut siste dag du kan si opp fra tjenestens egne vilkår, og varsler deg før trekk, frister og prøveperioder. Ingen bankkobling, ingen konto, selger aldri data.","featureList":["Oversikt med sum per måned og år","Oppsigelsesfrist regnet ut fra leverandørens egne vilkår for over 180 tjenester","Leser kontoutskrift (CSV) lokalt på telefonen og finner faste trekk","Gjenkjenner hva som skjuler seg bak Apple Bill, Google Play og PlayStation ved å matche beløp mot priser","Varsel før trekk, frist og prøveperiode","Prisvarsel når pakken blir dyrere","Månedlig innsjekk: brukte du dette?","Bindingstid med nedtelling","Delte abonnementer","Studentpris og billigere pakker","Over 250 tjenester med logo, pakker og priser","Widgets på hjem- og låseskjerm","Ingen bankkobling, ingen konto, ingen salg av data"],"author":{"@type":"Person","name":"Ole André Foss"},"publisher":{"@type":"Organization","name":"TrekkSjekk Foss","url":"https://trekksjekk.no/","address":{"@type":"PostalAddress","addressLocality":"Kristiansand","addressCountry":"NO"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hvorfor ikke bare se i nettbanken?", "acceptedAnswer": {"@type": "Answer", "text": "Nettbanken viser trekkene etter at de har skjedd. Da er det ofte for sent å slippe neste. TrekkSjekk viser siste dag du kan si opp, og varsler deg før den går ut."}}, {"@type": "Question", "name": "Må jeg koble til banken eller lage en konto?", "acceptedAnswer": {"@type": "Answer", "text": "Nei. Du legger inn abonnementene selv, eller velger en kontoutskrift du har lastet ned fra nettbanken. Fila leses på telefonen og slettes etterpå."}}, {"@type": "Question", "name": "Hvor kommer oppsigelsesfristene fra?", "acceptedAnswer": {"@type": "Answer", "text": "Fra tjenestenes egne vilkår. Over 180 tjenester har fristen regnet inn. Finner vi ikke regelen, viser appen ingen frist i stedet for å gjette."}}, {"@type": "Question", "name": "Sier appen opp abonnementet for meg?", "acceptedAnswer": {"@type": "Answer", "text": "Nei, det gjør du selv. TrekkSjekk tar deg rett til siden der abonnementet avsluttes og forteller hva du skal trykke på. Er det kjøpt i App Store eller på PlayStation, sendes du dit."}}, {"@type": "Question", "name": "Hva koster TrekkSjekk?", "acceptedAnswer": {"@type": "Answer", "text": "Appen er gratis med opptil fem abonnementer, og du får ett varsel før hvert trekk. Premium koster 149 kr i året med 7 dager gratis, eller 39 kr i måneden, eller 399 kr én gang for alltid."}}, {"@type": "Question", "name": "Finnes TrekkSjekk på Android?", "acceptedAnswer": {"@type": "Answer", "text": "Ikke ennå. Appen finnes for iPhone, og Android-versjonen er under arbeid."}}]}</script>
 <style>
 @font-face{font-family:"Poppins";src:url("fonter/poppins-regular.woff") format("woff");font-weight:400;font-display:swap}
@@ -309,6 +309,12 @@ body{padding-bottom:76px}
 .guide-lenke small{display:block;color:var(--muted);font-size:14px;margin-top:2px}
 .guide-lenke>span:last-child{font-size:22px;color:var(--navy)}
 .guide-lenke:hover{border-color:var(--ink)}
+.derfor{background:var(--surface);border-block:1px solid var(--line)}
+.derfor .liste{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:28px}
+.derfor .pkt{background:var(--ground);border:1px solid var(--line);border-radius:var(--r-s);padding:18px}
+.derfor .pkt b{display:block;font-size:16px;letter-spacing:-.01em;margin-bottom:6px}
+.derfor .pkt p{margin:0;font-size:14px;color:var(--muted);line-height:1.5}
+.derfor .mer{display:inline-block;margin-top:22px;font-weight:600;color:var(--navy-lys)}
 </style>
 </head>
 <body>
@@ -424,6 +430,22 @@ body{padding-bottom:76px}
   </div>
 </section>
 
+<section class="sek derfor" id="derfor" aria-labelledby="derfor-tittel">
+  <div class="wrap">
+    <h2 id="derfor-tittel">Laget fordi de andre appene gjorde det motsatte.</h2>
+    <p class="ingress">Abonnementsappene som fantes ba om tilgang til bankkontoen, samlet inn data og gjettet. TrekkSjekk er bygget rundt det de manglet.</p>
+    <div class="liste">
+      <div class="pkt"><b>Ingen bankkobling. Ingen konto.</b><p>Abonnementene dine lagres på telefonen. TrekkSjekk har ingen brukerdatabase, og ingen kan se inn på kontoen din.</p></div>
+      <div class="pkt"><b>Selger aldri data.</b><p>Ingen annonsenettverk og ingen sporings-SDK fra Meta eller Google. Det eneste som sendes er anonyme tellinger uten bruker-ID.</p></div>
+      <div class="pkt"><b>Vet hva «Apple Bill» er.</b><p>Apple, Google Play og PlayStation skriver bare sitt eget navn på trekket. TrekkSjekk matcher beløpet mot prisene til flere hundre tjenester og foreslår hvilke det kan være.</p></div>
+      <div class="pkt"><b>Fristen regnes fra vilkårene.</b><p>Oppsigelsestiden til over 180 tjenester er lest fra leverandørenes egne sider. Finnes ikke regelen, viser appen ingen frist i stedet for å gjette.</p></div>
+      <div class="pkt"><b>Kontoutskriften leses på telefonen.</b><p>Du laster ned en CSV fra nettbanken selv. Fila leses lokalt, og slettes etterpå. Gratis å lese.</p></div>
+      <div class="pkt"><b>Ekte logoer, ekte priser.</b><p>Over 250 tjenester med logo, pakker, studentpris og bindingstid. Hver pris har en kilde og en dato.</p></div>
+    </div>
+    <a class="mer" href="om.html">Les hvorfor TrekkSjekk ble laget →</a>
+  </div>
+</section>
+
 <section class="sek" id="kalkulator" aria-labelledby="kalk-tittel">
   <div class="wrap">
     <h2 id="kalk-tittel">Hva koster abonnementene dine i året?</h2>
@@ -523,7 +545,7 @@ body{padding-bottom:76px}
   <div class="bunn-info">
     <div class="wrap">
       <span class="org">© TrekkSjekk Foss, Kristiansand</span>
-      <nav class="bunn-lenker" aria-label="Juridisk"><a href="si-opp/">Si opp-guider</a><a href="personvern.html">Personvern</a><a href="vilkar.html">Vilkår</a><a href="mailto:01ole.foss@gmail.com">Kontakt</a></nav>
+      <nav class="bunn-lenker" aria-label="Juridisk"><a href="om.html">Om</a><a href="si-opp/">Si opp-guider</a><a href="personvern.html">Personvern</a><a href="vilkar.html">Vilkår</a><a href="mailto:01ole.foss@gmail.com">Kontakt</a></nav>
     </div>
   </div>
 </footer>

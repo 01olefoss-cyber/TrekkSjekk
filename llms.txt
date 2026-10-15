@@ -1,0 +1,22 @@
+# TrekkSjekk
+
+> Norsk iPhone-app som holder orden på abonnementene dine, regner ut siste dag du kan si opp fra tjenestens egne vilkår, og varsler deg før trekk, frister og prøveperioder. Ingen bankkobling, ingen konto, selger aldri data. Gratis med opptil 5 abonnementer; Premium 149 kr/år.
+
+Laget av Ole André Foss (TrekkSjekk Foss, Kristiansand). Lansert i App Store 25. september 2026. Bare iPhone foreløpig; Android er under arbeid.
+
+## Hva appen gjør annerledes
+- Abonnementene lagres på telefonen. Ingen brukerkonto, ingen bankkobling.
+- Leser en kontoutskrift (CSV fra nettbanken) lokalt på telefonen og finner de faste trekkene. Fila slettes etterpå. Gratis å lese; gratis viser de fem første treffene.
+- Finner ut hva som skjuler seg bak «Apple Bill», Google Play og PlayStation ved å matche beløpet mot prisene til flere hundre tjenester.
+- Oppsigelsesfristen regnes ut fra leverandørens egne vilkår for over 180 tjenester (f.eks. treningssentre med «ut neste måned»). Ukjent regel = ingen frist, aldri gjetning.
+- Over 250 tjenester med logo, pakker, studentpriser og bindingstid, hver pris med kilde og dato.
+- Prisvarsel når pakken din blir dyrere, månedlig innsjekk («brukte du dette?»), bindingstid med nedtelling, delte abonnementer, widgets.
+- Sier ikke opp for deg: tar deg til riktig side hos leverandøren med fremgangsmåte.
+
+## Sider
+- [Forsiden](https://trekksjekk.no/): funksjoner, kalkulator, priser, spørsmål og svar
+- [Om TrekkSjekk](https://trekksjekk.no/om.html): hvorfor appen finnes, hva den gjør og ikke gjør, hvem som står bak
+- [Slik sier du opp](https://trekksjekk.no/si-opp/): oppsigelsestid, siste frist og fremgangsmåte for 235 tjenester, én side per tjeneste
+- [Personvern](https://trekksjekk.no/personvern.html)
+- [Vilkår](https://trekksjekk.no/vilkar.html)
+- [App Store](https://apps.apple.com/no/app/id6811947257)
