@@ -57,6 +57,7 @@ p{margin:0 0 16px}
 .tabell th{font-weight:700;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .tabell td:first-child{font-weight:600;width:44%}
 .kilde{font-size:13px;color:var(--muted)}
+.liste{margin:0 0 16px;padding-left:1.2em;display:grid;gap:8px}
 .cta{margin-top:48px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
 .cta b{display:block;font-size:18px;letter-spacing:-.01em}
 .cta span{color:var(--muted);font-size:14px}
@@ -76,7 +77,7 @@ footer a{margin-right:14px}
 <main>
   <div class="wrap">
     <h1>Laget fordi de andre appene gjorde det motsatte.</h1>
-    <p class="ingress">TrekkSjekk er en norsk iPhone-app som holder orden på abonnementene dine, regner ut siste dag du kan si opp, tar deg rett til oppsigelsessiden og varsler deg før det er for sent. Laget av én person, uten bankkobling og uten å samle inn data om deg.</p>
+    <p class="ingress">TrekkSjekk er en norsk iPhone-app som holder orden på abonnementene dine, regner ut siste dag du kan si opp, tar deg rett til oppsigelsessiden og varsler deg før det er for sent. Laget av én person, uten bankkobling, og uten at TrekkSjekk får se abonnementene dine.</p>
 
     <h2>Hvorfor den finnes</h2>
     <p>TrekkSjekk begynte med en vanlig kveld i Kristiansand: en dag skulle jeg sette meg ned og få orden på abonnementene mine. Så jeg testet appene som fantes. Alle manglet noe jeg trengte. De ba om tilgang til bankkontoen, gjettet hvilke trekk som var abonnementer og bommet, viste ingen frister, og ingen av dem fortalte hvor man faktisk sier opp.</p>
@@ -87,7 +88,7 @@ footer a{margin-right:14px}
       <h2>Hva TrekkSjekk gjør annerledes</h2>
       <ul>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Ingen bankkobling og ingen konto.</b> <span>Abonnementene lagres på telefonen. TrekkSjekk har ingen brukerdatabase å lekke fra.</span></div></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Selger aldri data.</b> <span>Ingen annonsenettverk og ingen sporings-SDK fra Meta eller Google. Det eneste appen sender er anonyme tellinger uten bruker-ID, og logoer hentes én gang per tjeneste.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Selger aldri data.</b> <span>Ingen annonsenettverk og ingen sporings-SDK fra Meta eller Google. Abonnementene dine sendes ingen steder. Alt appen sender og henter, står i <a href="personvern.html">personvernerklæringen</a>.</span></div></li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Leser kontoutskriften på telefonen.</b> <span>Du laster ned en CSV fra nettbanken selv. Fila leses lokalt og slettes etterpå. Gratis å lese.</span></div></li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Finner ut hva som skjuler seg bak «Apple Bill».</b> <span>Apple, Google Play og PlayStation skriver bare sitt eget navn på trekket. TrekkSjekk matcher beløpet mot prisene til flere hundre tjenester og foreslår hvilke det kan være.</span></div></li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Regner ut fristen fra vilkårene.</b> <span>Oppsigelsestiden til over 180 tjenester er lest fra leverandørenes egne sider og lagt inn som regel. Finnes ikke regelen, viser appen ingen frist i stedet for å gjette.</span></div></li>
@@ -123,6 +124,14 @@ footer a{margin-right:14px}
     <p>Den sier ikke opp abonnementet for deg. Du gjør det selv hos leverandøren, og TrekkSjekk tar deg til riktig side og forteller hva du skal trykke på. Den kobler seg ikke til banken, og den leser ikke e-posten din. Den finnes foreløpig bare for iPhone; Android er under arbeid.</p>
 
     <p>Lurer du på hvordan TrekkSjekk står seg mot nettbanken og andre apper? Se <a href="sammenlign.html">den ærlige sammenligningen</a>.</p>
+
+    <h2>Slik holdes informasjonen riktig</h2>
+    <ul class="liste">
+      <li>Hver oppsigelsesregel er lest på leverandørens egen side, og guiden lenker til kilden. Finnes ikke regelen, viser appen ingen frist i stedet for å gjette.</li>
+      <li>Datoen du ser, er regnet ut av TrekkSjekk fra regelen og trekkdatoen din. Leverandørens vilkår gjelder alltid foran utregningen.</li>
+      <li>Hver pris på <a href="priser/">prisoversikten</a> har en kilde og datoen den sist ble kontrollert.</li>
+      <li>Ser du noe som er feil, kan du melde det rett fra appen, under Innstillinger eller på hvert abonnement, eller på <a href="mailto:01ole.foss@gmail.com">e-post</a>. Jeg leser alle meldingene selv.</li>
+    </ul>
 
     <h2>Hvem står bak</h2>
     <p>TrekkSjekk utvikles og drives av Ole André Foss gjennom enkeltpersonforetaket TrekkSjekk Foss i Kristiansand. Appen ble lansert i App Store 25. september 2026. Priser og oppsigelsesvilkår kontrolleres mot leverandørenes egne sider, og feil kan meldes rett fra appen under Innstillinger eller på <a href="mailto:01ole.foss@gmail.com">01ole.foss@gmail.com</a>.</p>
