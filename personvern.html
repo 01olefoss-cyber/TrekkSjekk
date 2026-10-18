@@ -320,7 +320,7 @@
   <div class="stamp">
     <span>Sist oppdatert 18. oktober 2026</span>
     <span>Gjelder TrekkSjekk for iPhone og Android</span>
-    <span>Versjon 1.1</span>
+    <span>Versjon 1.2</span>
   </div>
 
   <div class="summary">
@@ -587,6 +587,19 @@
         finnes det ingen kvittering, og da får RevenueCat bare den tilfeldige
         ID-en, telefonmodell og versjon, og IP-adressen i loggene sine.
       </p>
+      <p>
+        <strong>Annonser i App Store (bare iPhone).</strong> TrekkSjekk
+        annonserer i søket i App Store. For å vite om en annonse virker,
+        henter appen ved oppstart et attribusjonstoken fra Apple
+        (AdServices) og sender det til RevenueCat. RevenueCat spør Apple om
+        nedlastingen kom fra en annonse, og får i så fall vite hvilken
+        kampanje og hvilket søkeord – ikke hvem du er. Tokenet inneholder
+        ingen opplysninger om deg eller telefonen din, og Apple krever ikke
+        at du godtar sporing for dette. Svaret kobles til den tilfeldige ID-en
+        hos RevenueCat, slik at jeg kan se hvilke søkeord som gir kjøp.
+        Ingenting sendes tilbake til Apple om deg, og ingenting brukes til å
+        vise deg annonser.
+      </p>
     </div>
   </article>
 
@@ -689,8 +702,12 @@
       details. To check whether you have Premium, the app asks RevenueCat
       (USA) each time it starts; RevenueCat receives a random app-generated
       ID, any purchase receipt, device model and iOS or Android version, and
-      your IP address in its logs — nothing about your subscriptions. No data
-      is sold or used for advertising.
+      your IP address in its logs — nothing about your subscriptions. On
+      iPhone the app also passes Apple's anonymous AdServices attribution
+      token to RevenueCat, so I can see whether an install came from an App
+      Store search ad and which keyword; the token contains nothing about you
+      and does not require tracking consent. No data is sold or used to show
+      you advertising.
       For access, correction or deletion requests, contact the address in
       section 01.
     </p>
