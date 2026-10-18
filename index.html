@@ -203,51 +203,51 @@ button{font:inherit;color:inherit}
 .baner-tekst{margin-top:22px;text-align:center;font-size:14px;color:var(--muted);padding-inline:20px}
 @keyframes rull{to{transform:translateX(-50%)}}
 
-/* ---------- Fristen: scroll = tiden går ---------- */
-.frist{position:relative}
-.frist-scene{padding:96px 0 40px}
-.frist h2{color:#fff}
-.ur{margin-top:30px}
-.ur-etikett{font-size:13px;font-weight:600;color:var(--blek)}
-.ur-dato{font-size:clamp(46px,13vw,96px);font-weight:700;line-height:1;letter-spacing:-.05em;margin-top:6px;white-space:nowrap}
-.ur-status{display:flex;align-items:flex-start;gap:10px;margin-top:14px;font-weight:600;font-size:16px;line-height:1.4;min-height:2.8em;max-width:30rem;color:#fff;transition:color .3s}
-.ur-status i{width:10px;height:10px;margin-top:.45em;border-radius:50%;flex:none;background:var(--signal);box-shadow:0 0 0 4px rgba(74,222,128,.2);transition:background-color .3s,box-shadow .3s}
-.ur-status[data-tilstand="sent"]{color:var(--rav)}
-.ur-status[data-tilstand="sent"] i{background:var(--rav);box-shadow:0 0 0 4px rgba(255,192,97,.22)}
-
-.tidslinje{position:relative;height:112px;margin-top:30px}
-.tidslinje .linje{position:absolute;left:0;right:0;top:54px;height:6px;border-radius:3px;background:rgba(255,255,255,.12);overflow:hidden}
-.tidslinje .fyll{position:absolute;inset:0;background:linear-gradient(90deg,var(--signal) 0,var(--signal) var(--fx),var(--rav) var(--fx),var(--rav) 100%);clip-path:inset(0 calc(100% - var(--p,100%)) 0 0)}
-.tidslinje .pinne{position:absolute;top:51px;left:var(--x);width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--natt);border:2px solid rgba(255,255,255,.6)}
-.tidslinje .pinne.frist-pinne{border-color:var(--signal);background:var(--signal)}
-.tidslinje .merkelapp{position:absolute;left:var(--x);font-size:12px;line-height:1.3;white-space:nowrap;color:var(--blek)}
-.tidslinje .merkelapp b{display:block;color:#fff;font-size:14px;font-weight:600}
-.tidslinje .merkelapp.under{top:74px;transform:translateX(-12px)}
-.tidslinje .merkelapp.over{top:0}
-.tidslinje .merkelapp.hoyre{transform:translateX(calc(-100% + 8px));text-align:right}
-.tidslinje .frist-lapp b{color:var(--signal)}
-.tidslinje .i-dag{position:absolute;top:42px;left:var(--x,0%);width:2px;height:30px;margin-left:-1px;background:#fff;border-radius:1px;display:none}
-.tidslinje .i-dag::after{content:"";position:absolute;left:50%;top:-6px;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.18)}
-.frist .push{margin-top:22px;max-width:380px}
-.frist-hint{display:none}
-.regler-sek{padding:24px 0 96px}
+/* ---------- Varslene: låseskjermen ----------
+   Egen telefon (.laas), ikke .telefon: den har regler for bilder og
+   festing som ikke skal gjelde her. */
+.varsler{position:relative;overflow:hidden;isolation:isolate;padding:96px 0}
+.varsler::before{content:"";position:absolute;z-index:-1;right:-30%;top:22%;width:900px;height:900px;background:radial-gradient(closest-side,rgba(48,88,214,.42),rgba(48,88,214,0))}
+.varsler-grid{display:grid;gap:48px}
+.varsler-merk{margin-top:18px;font-size:14px;color:var(--blek);max-width:30rem;padding-left:14px;border-left:2px solid var(--signal)}
+.laas-figur{margin:0;display:grid;justify-items:center}
+.laas{position:relative;width:min(80vw,320px);aspect-ratio:640/1348;border-radius:50px;padding:9px;background:linear-gradient(150deg,#4a4f5c,#1a1c23 38%,#0d0e13);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1),0 0 0 1px rgba(0,0,0,.5),0 60px 100px -40px rgba(0,0,0,.85)}
+.laas-skjerm{position:relative;height:100%;border-radius:41px;overflow:hidden;display:flex;flex-direction:column;align-items:center;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",system-ui,sans-serif;background:radial-gradient(75% 45% at 88% 16%,rgba(120,150,255,.6),rgba(120,150,255,0) 70%),radial-gradient(90% 50% at 8% 96%,rgba(74,222,128,.34),rgba(74,222,128,0) 70%),linear-gradient(165deg,#2949A8 0%,#1A2F7A 45%,#0B1538 100%)}
+.laas-oy{position:absolute;top:10px;left:50%;width:31%;height:27px;transform:translateX(-50%);border-radius:20px;background:#000}
+.laas-status{align-self:stretch;height:46px;display:flex;justify-content:flex-end;align-items:center;gap:5px;padding:4px 22px 0}
+.laas-status svg{display:block}
+.laas-dato{margin-top:10px;font-size:15px;font-weight:600;letter-spacing:.01em;opacity:.92}
+.laas-klokke{font-size:78px;font-weight:700;line-height:1;letter-spacing:-.025em;text-shadow:0 2px 24px rgba(0,0,0,.18)}
+.lv-liste{align-self:stretch;display:flex;flex-direction:column;padding:0 9px;margin-top:22px}
+.lv{display:flex;gap:10px;align-items:flex-start;margin-top:8px;padding:10px 12px 11px 10px;border-radius:20px;background:rgba(246,247,251,.86);-webkit-backdrop-filter:blur(20px) saturate(1.6);backdrop-filter:blur(20px) saturate(1.6);color:#0D1326;box-shadow:0 10px 28px -16px rgba(0,0,0,.5);overflow:hidden}
+.lv-ikon{position:relative;flex:none;width:38px;height:38px;margin-top:1px}
+.lv-ikon img{display:block;width:38px;height:38px;border-radius:9px;background:#fff}
+.lv-ikon svg{position:absolute;right:-5px;bottom:-5px;width:18px;height:18px;border-radius:5px;box-shadow:0 0 0 2px #F6F7FB}
+.lv-tekst{flex:1;min-width:0;line-height:1.28}
+.lv-topp{display:flex;align-items:baseline;gap:8px}
+.lv-topp b{flex:1;min-width:0;font-size:13.5px;font-weight:600}
+.lv-topp span{flex:none;font-size:11.5px;color:#6B7183}
+.lv-tekst p{font-size:13px;color:#262B3A;margin-top:1px}
+.laas-bunn{margin-top:auto;align-self:stretch;display:flex;justify-content:space-between;padding:0 28px 30px}
+.laas-knapp{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(8,14,40,.38);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.laas-knapp svg{width:21px;height:21px}
+.laas-strek{position:absolute;left:50%;bottom:8px;width:36%;height:5px;transform:translateX(-50%);border-radius:3px;background:#fff}
+/* Animasjonen: skjermen sover til det første varselet kommer. Hvert nytt
+   varsel legges øverst og dytter de andre ned, og telefonen summer. */
+.anim .laas-skjerm::after{content:"";position:absolute;inset:0;z-index:3;background:#000;opacity:.62;pointer-events:none;transition:opacity .8s var(--glid)}
+.anim .laas.vaaken .laas-skjerm::after{opacity:0}
+.anim .lv{max-height:0;margin-top:0;padding-block:0;opacity:0;transform:translateY(-18px) scale(.9);transition:max-height .6s var(--glid),margin-top .6s var(--glid),padding .6s var(--glid),opacity .35s .1s,transform .8s var(--fjaer)}
+.anim .lv.vis{max-height:150px;margin-top:8px;padding-block:10px 11px;opacity:1;transform:none}
+.anim .laas.summ{animation:summ .36s linear}
+@keyframes summ{0%,100%{transform:none}20%{transform:translateX(-2px) rotate(-.4deg)}40%{transform:translateX(2px) rotate(.4deg)}60%{transform:translateX(-1.5px) rotate(-.2deg)}80%{transform:translateX(1.5px)}}
+.igjen-laas{position:static;margin-top:18px}
+.regler-tittel{font-size:18px;font-weight:600;letter-spacing:-.01em;margin-bottom:16px;color:#fff}
 .regler{display:grid;gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);overflow:hidden}
-.regel{background:var(--natt);padding:18px 20px;display:grid;gap:3px}
+.regel{background:var(--natt);padding:18px 20px;display:grid;gap:3px;align-content:start}
 .regel b{font-size:15px;font-weight:600}
 .regel span{font-size:13px;color:var(--blek)}
 .regel .nar{font-size:14px;font-weight:600;color:#fff;margin-top:2px}
 .regel .nar.lang{color:var(--rav)}
-
-.anim .frist{height:calc(100vh + 160vh);height:calc(100svh + 160svh)}
-.anim .frist-scene{position:sticky;top:0;height:100vh;height:100svh;display:flex;align-items:center;padding:calc(var(--topp) + 8px) 0 16px;overflow:hidden}
-.anim .frist-scene>.wrap{width:100%}
-.anim .tidslinje .i-dag{display:block}
-.anim .frist .push{opacity:0;transform:translateY(12px);transition:opacity .4s,transform .5s var(--glid)}
-.anim .frist .push.vis{opacity:1;transform:none}
-.anim .frist-hint{display:flex;align-items:center;gap:8px;margin-top:18px;font-size:13px;font-weight:600;color:var(--blek);transition:opacity .4s}
-.anim .frist-hint.borte{opacity:0}
-.frist-hint svg{width:16px;height:16px;animation:dupp 1.6s ease-in-out infinite}
-@keyframes dupp{50%{transform:translateY(4px)}}
 
 /* ---------- Telefonen ---------- */
 .fortelling{position:relative;background:var(--ground)}
@@ -434,7 +434,7 @@ button{font:inherit;color:inherit}
   .lofter{grid-template-columns:1fr 1fr;column-gap:48px}
   .mer-liste{grid-template-columns:1fr 1fr;column-gap:48px}
   .planer{grid-template-columns:1fr 1fr;max-width:860px}
-  .regler{grid-template-columns:repeat(4,1fr)}
+  .regler{grid-template-columns:1fr 1fr}
   .kalk{grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:24px;align-items:start}
   .velg{padding:24px}
   .brikke:nth-child(n+11){display:inline-flex}
@@ -444,7 +444,6 @@ button{font:inherit;color:inherit}
   .fjern{grid-column:4}
   .resultat{position:sticky;top:88px;padding:28px}
   .feste{display:none}
-  .tidslinje .merkelapp{font-size:13px}
   .guide-lenke{grid-template-columns:auto minmax(0,1fr) auto;padding:20px 24px}
   .guide-lenke .stabel{grid-column:auto}
 }
@@ -462,6 +461,12 @@ button{font:inherit;color:inherit}
   .total{font-size:32px}
   .demo .push{left:-72px;right:48px;bottom:-66px}
   .fortelling-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:64px}
+  .varsler{padding:128px 0}
+  .varsler-grid{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"tekst telefon" "regler telefon";column-gap:80px;row-gap:44px}
+  .varsler-tekst{grid-area:tekst;align-self:end}
+  .laas-figur{grid-area:telefon;align-self:center}
+  .varsler-regler{grid-area:regler;align-self:start}
+  .laas{width:auto;height:min(720px,calc(100svh - 112px))}
   .telefon{width:auto;height:min(76vh,700px)}
   .fortelling-tekst{align-self:center}
   .anim .fortelling-scene{padding-top:var(--topp)}
@@ -471,13 +476,6 @@ button{font:inherit;color:inherit}
   .anim .steg li{position:relative;inset:auto;opacity:.38;transform:none;pointer-events:auto;cursor:pointer;padding:14px 0 14px 22px;border-left:2px solid var(--line);transition:opacity .35s,border-color .35s}
   .anim .steg li.aktiv{opacity:1;border-left-color:var(--ink)}
   .anim .steg-prikker{display:none}
-  .frist-scene .wrap{position:relative}
-  .frist .push{position:absolute;right:20px;top:0;width:380px;margin:0}
-  .frist .tittel,.frist .ingress{max-width:calc(100% - 440px)}
-  .frist .ur{display:grid;grid-template-columns:auto 1fr;align-items:end;column-gap:48px}
-  .frist .ur-etikett{grid-column:1/-1}
-  .frist .ur-status{margin:0 0 12px}
-  .tidslinje{margin-top:56px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -598,46 +596,39 @@ button{font:inherit;color:inherit}
   <p class="baner-tekst">Netflix, Spotify, Viaplay, HBO Max og de andre du faktisk har.</p>
 </section>
 
-<section class="frist scene" id="frist" aria-labelledby="frist-tittel">
-  <div class="frist-scene">
-    <div class="wrap">
-      <h2 class="tittel" id="frist-tittel">Når er det for sent å si opp?</h2>
-      <p class="ingress">Treningssenteret ditt trekker 1. desember. Når må du si opp?</p>
-      <div class="ur">
-        <p class="ur-etikett" id="ur-etikett">Siste frist</p>
-        <p class="ur-dato" id="ur-dato">31. oktober</p>
-        <p class="ur-status" id="ur-status" data-tilstand="ok"><i aria-hidden="true"></i><span>Én måneds oppsigelsestid løper ut neste måned. Sier du opp 30. november, betaler du for desember også.</span></p>
-      </div>
-      <div class="tidslinje" id="tidslinje" aria-hidden="true" style="--fx:25.58%">
-        <div class="linje"><div class="fyll"></div></div>
-        <span class="pinne frist-pinne" style="--x:25.58%"></span>
-        <span class="pinne" style="--x:95.35%"></span>
-        <span class="pinne" style="--x:97.67%"></span>
-        <span class="merkelapp under frist-lapp" style="--x:25.58%"><b>31. okt</b>Siste frist</span>
-        <span class="merkelapp over hoyre" style="--x:95.35%"><b>30. nov</b>Du tror</span>
-        <span class="merkelapp under hoyre" style="--x:97.67%"><b>1. des</b>Trekket</span>
-        <span class="i-dag"></span>
-      </div>
-      <div class="push" id="frist-push" aria-hidden="true">
-        <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1E3A8A"/><path d="M50 22 A28 28 0 1 1 25.75 36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><polyline points="16.2,38.6 26.8,34.3 28.4,45.6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><polyline points="39,51 47,59 62,43" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div>
-          <div class="v-topp"><b>TrekkSjekk</b><span>09:00</span></div>
-          <div class="v-tittel" data-tittel>Siste frist om 3 dager: Treningssenteret</div>
-          <div class="v-tekst">Si opp innen 31. oktober, så slipper du trekket 1. desember.</div>
+<section class="varsler scene" id="varsler" aria-labelledby="varsler-tittel">
+  <div class="wrap varsler-grid">
+    <div class="varsler-tekst">
+      <h2 class="tittel" id="varsler-tittel">Beskjed før pengene går.</h2>
+      <p class="ingress">Nettbanken viser trekket etter at det har skjedd. TrekkSjekk varsler deg før fristen for å si opp, før prøveperioden går ut og før selve trekket.</p>
+      <p class="varsler-merk">Gratis: ett varsel per trekk. Premium: varsler før frist og trekk når du vil, og for prøveperioder.</p>
+    </div>
+    <figure class="laas-figur">
+      <div class="laas" id="laas" role="img" aria-label="Låseskjerm med tre varsler fra TrekkSjekk: fristen for å si opp Allente, et trekk fra Spotify i morgen og en prøveperiode hos Storytel som snart går ut.">
+        <div class="laas-skjerm" aria-hidden="true">
+          <span class="laas-oy"></span>
+          <div class="laas-status"><svg viewBox="0 0 18 12" width="17" height="11" fill="#fff"><rect x="0" y="8" width="3" height="4" rx=".8"/><rect x="5" y="5.5" width="3" height="6.5" rx=".8"/><rect x="10" y="3" width="3" height="9" rx=".8"/><rect x="15" y="0" width="3" height="12" rx=".8"/></svg><svg viewBox="0 0 16 12" width="15" height="11" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round"><path d="M1.6 4.7a9 9 0 0 1 12.8 0"/><path d="M4.1 7.3a5.5 5.5 0 0 1 7.8 0"/><circle cx="8" cy="10.1" r="1.3" fill="#fff" stroke="none"/></svg><svg viewBox="0 0 27 13" width="25" height="12"><rect x=".5" y=".5" width="23" height="12" rx="3.6" fill="none" stroke="#fff" stroke-opacity=".5"/><rect x="2.5" y="2.5" width="16" height="8" rx="2" fill="#fff"/><path d="M25 4.4v4.2c.9-.3 1.5-1.1 1.5-2.1s-.6-1.8-1.5-2.1z" fill="#fff" fill-opacity=".5"/></svg></div>
+          <p class="laas-dato" data-laas="dato">Søndag 18. oktober</p>
+          <p class="laas-klokke">9:41</p>
+          <div class="lv-liste">
+            <div class="lv"><span class="lv-ikon"><img src="bilder/logoer/allente.no.webp" alt="" width="38" height="38"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1E3A8A"/><path d="M50 22 A28 28 0 1 1 25.75 36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><polyline points="16.2,38.6 26.8,34.3 28.4,45.6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><polyline points="39,51 47,59 62,43" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div class="lv-tekst"><div class="lv-topp"><b>Frist: Allente</b><span>nå</span></div><p>Si opp innen <span data-laas="frist">31.&nbsp;oktober</span> for å slippe trekket <span data-laas="trekk">1.&nbsp;desember</span> på 399&nbsp;kr.</p></div></div>
+            <div class="lv"><span class="lv-ikon"><img src="bilder/logoer/spotify.com.webp" alt="" width="38" height="38"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1E3A8A"/><path d="M50 22 A28 28 0 1 1 25.75 36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><polyline points="16.2,38.6 26.8,34.3 28.4,45.6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><polyline points="39,51 47,59 62,43" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div class="lv-tekst"><div class="lv-topp"><b>Spotify</b><span>09:00</span></div><p>Trekkes i morgen – 139&nbsp;kr.</p></div></div>
+            <div class="lv"><span class="lv-ikon"><img src="bilder/logoer/storytel.com.webp" alt="" width="38" height="38"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1E3A8A"/><path d="M50 22 A28 28 0 1 1 25.75 36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><polyline points="16.2,38.6 26.8,34.3 28.4,45.6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><polyline points="39,51 47,59 62,43" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div class="lv-tekst"><div class="lv-topp"><b>Prøveperioden går ut: Storytel</b><span>i går</span></div><p><span data-laas="prove">20.&nbsp;oktober</span> begynner den å koste 149&nbsp;kr. Si opp før det hvis du ikke vil fortsette.</p></div></div>
+          </div>
+          <div class="laas-bunn"><span class="laas-knapp"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M8 3h8v3.2l-2 3.6V20a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9.8L8 6.2z"/><path d="M8 6.2h8M12 13v2.4"/></svg></span><span class="laas-knapp"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"><path d="M3.5 8.2h3.6L8.7 6h6.6l1.6 2.2h3.6V19H3.5z"/><circle cx="12" cy="13.4" r="3.3"/></svg></span></div>
+          <span class="laas-strek"></span>
         </div>
       </div>
-      <p class="frist-hint" id="frist-hint" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/></svg>Scroll, så går dagene</p>
-    </div>
-  </div>
-</section>
-
-<section class="regler-sek scene" aria-label="Oppsigelsesregler">
-  <div class="wrap">
-    <div class="regler">
-      <div class="regel"><b>Strømming og apper</b><span>Netflix, Spotify, HBO Max</span><span class="nar">Dagen før trekket</span></div>
-      <div class="regel"><b>Treningssenter</b><span>De fleste kjedene</span><span class="nar lang">Ut neste måned, opptil to måneder før</span></div>
-      <div class="regel"><b>TV-pakker</b><span>RiksTV, Allente</span><span class="nar lang">Opptil tre måneder før</span></div>
-      <div class="regel"><b>Prøveperioder</b><span>Viaplay, Disney+, Nextory</span><span class="nar">Før gratisperioden går ut</span></div>
+      <button class="igjen igjen-laas" id="laas-igjen" type="button" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.6-5.9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M20 4v5h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>Spill av igjen</button>
+    </figure>
+    <div class="varsler-regler">
+      <h3 class="regler-tittel">Fristen varierer fra tjeneste til tjeneste</h3>
+      <div class="regler">
+        <div class="regel"><b>Strømming og apper</b><span>Netflix, Spotify, HBO Max</span><span class="nar">Dagen før trekket</span></div>
+        <div class="regel"><b>Treningssenter</b><span>De fleste kjedene</span><span class="nar lang">Ut neste måned, opptil to måneder før</span></div>
+        <div class="regel"><b>TV-pakker</b><span>RiksTV, Allente</span><span class="nar lang">Opptil tre måneder før</span></div>
+        <div class="regel"><b>Prøveperioder</b><span>Storytel, Nextory, Spotify</span><span class="nar">Før gratisperioden går ut</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -649,7 +640,7 @@ button{font:inherit;color:inherit}
         <h2 id="funk-tittel">Alt på ett sted. Og fristen regnet ut.</h2>
         <ol class="steg" id="steg">
           <li class="aktiv"><h3>Hva du egentlig betaler</h3><p>Alle abonnementene samlet, per måned og per år, med neste trekk øverst.</p></li>
-          <li><h3>Varsel før det koster</h3><p>Prøveperioder og frister regnes ut fra tjenestens egne vilkår. Du får beskjed før de går ut.</p></li>
+          <li><h3>Siste dag du kan si opp</h3><p>For abonnementer og prøveperioder, regnet ut fra tjenestens egne vilkår.</p></li>
           <li><h3>Studentpris du ikke bruker</h3><p>Er du student, ser du rabattene du har krav på, og hva du sparer i året.</p></li>
           <li><h3>Rett til oppsigelsen</h3><p>Ett trykk tar deg til siden der abonnementet faktisk avsluttes, med stegene du trenger.</p></li>
         </ol>
@@ -1358,49 +1349,54 @@ button{font:inherit;color:inherit}
     io.observe(kort);
   })();
 
-  /* ---------- Fristen: scroll, så går dagene ---------- */
-  var fristTegn = function () {};
-  var fristSek = document.getElementById("frist");
-  if (fristSek && ANIM) (function () {
-    var N = 43, FRIST = 11, TROR = 41;
-    var linje = document.getElementById("tidslinje");
-    var iDag = linje.querySelector(".i-dag");
-    var etikett = document.getElementById("ur-etikett");
-    var urDato = document.getElementById("ur-dato");
-    var status = document.getElementById("ur-status");
-    var statusTekst = status.querySelector("span");
-    var push = document.getElementById("frist-push");
-    var pushTittel = push.querySelector("[data-tittel]");
-    var hint = document.getElementById("frist-hint");
-    var sist = -1;
-    etikett.textContent = "I dag";
-    fristTegn = function () {
-      if (!iSyne(fristSek)) return;
-      var p = framdrift(fristSek), x = p * N, i = Math.round(x);
-      linje.style.setProperty("--p", (p * 100).toFixed(2) + "%");
-      iDag.style.setProperty("--x", (p * 100).toFixed(2) + "%");
-      hint.classList.toggle("borte", p > .03);
-      if (i === sist) return;
-      sist = i;
-      var d = new Date(2025, 9, 20 + i, 12);
-      urDato.textContent = d.getDate() + ". " + MND[d.getMonth()];
-      var igjen = FRIST - i, tilstand = "ok", tekst;
-      if (igjen > 1) tekst = "Du rekker det. " + igjen + " dager igjen til fristen.";
-      else if (igjen === 1) tekst = "Du rekker det. Fristen er i morgen.";
-      else if (igjen === 0) tekst = "Siste dag. Sier du opp i dag, slipper du trekket 1. desember.";
-      else {
-        tilstand = "sent";
-        tekst = i < TROR ? "For sent. Sier du opp nå, betaler du for desember også."
-          : i === TROR ? "Her tror de fleste at de rekker det. De er en måned for sene."
-          : "Trekket går. Desember er betalt.";
-      }
-      status.setAttribute("data-tilstand", tilstand);
-      statusTekst.textContent = tekst;
-      var vis = igjen >= 0 && igjen <= 3;
-      if (vis) pushTittel.textContent = igjen === 0 ? "Siste frist i dag: Treningssenteret"
-        : "Siste frist om " + igjen + (igjen === 1 ? " dag" : " dager") + ": Treningssenteret";
-      push.classList.toggle("vis", vis);
-    };
+  /* ---------- Låseskjermen: varslene kommer ett og ett ----------
+     Tekstene er skrevet slik appen skriver varslene (notifications.ts),
+     og datoene regnes fra i dag. Allente løper ut neste måned, så for å
+     slippe trekket den 1. om to måneder er fristen siste dag denne
+     måneden. Skjermen våkner når det første varselet kommer; hvert nytt
+     legges øverst og dytter de andre ned. */
+  var laas = document.getElementById("laas");
+  if (laas) (function () {
+    var DAGER = ["søndag", "mandag", "tirsdag", "onsdag", "torsdag", "fredag", "lørdag"];
+    function kort(d) { return (dato(d) + (d.getFullYear() !== I_DAG.getFullYear() ? " " + d.getFullYear() : "")).replace(/ /g, "\u00a0"); }
+    function sett(navn, tekst) { var el = laas.querySelector('[data-laas="' + navn + '"]'); if (el) el.textContent = tekst; }
+    var dag = DAGER[I_DAG.getDay()];
+    var aar = I_DAG.getFullYear(), mnd = I_DAG.getMonth();
+    sett("dato", dag.charAt(0).toUpperCase() + dag.slice(1) + " " + dato(I_DAG));
+    sett("frist", kort(new Date(aar, mnd + 1, 0, 12)));
+    sett("trekk", kort(new Date(aar, mnd + 2, 1, 12)));
+    sett("prove", kort(new Date(aar, mnd, I_DAG.getDate() + 2, 12)));
+
+    var varsler = alle(".lv", laas);
+    var knapp = document.getElementById("laas-igjen");
+    var tid = [];
+    function spill() {
+      tid.forEach(clearTimeout); tid = [];
+      laas.classList.remove("vaaken", "summ");
+      varsler.forEach(function (v) { v.classList.remove("vis"); });
+      knapp.hidden = true;
+      varsler.slice().reverse().forEach(function (v, i) {
+        tid.push(setTimeout(function () {
+          laas.classList.add("vaaken");
+          v.classList.add("vis");
+          laas.classList.remove("summ"); void laas.offsetWidth; laas.classList.add("summ");
+        }, 600 + i * 1400));
+      });
+      tid.push(setTimeout(function () { knapp.hidden = false; }, 600 + varsler.length * 1400 + 400));
+    }
+    knapp.addEventListener("click", spill);
+    if (!ANIM || !("IntersectionObserver" in window)) {
+      laas.classList.add("vaaken");
+      varsler.forEach(function (v) { v.classList.add("vis"); });
+      return;
+    }
+    /* Start når klokka er i øverste 70 % av skjermen, så det første
+       varselet havner over knappen nederst på mobil. */
+    var lio = new IntersectionObserver(function (e) {
+      if (!e[0].isIntersecting) return;
+      lio.disconnect(); spill();
+    }, { threshold: 1, rootMargin: "0px 0px -30% 0px" });
+    lio.observe(laas.querySelector(".laas-klokke"));
   })();
 
   /* ---------- Telefonen: skjermene skifter mens du scroller ---------- */
@@ -1445,7 +1441,7 @@ button{font:inherit;color:inherit}
     var tekst = document.getElementById("feste-tekst"), knapp = document.getElementById("feste-knapp");
     if (!feste || !("IntersectionObserver" in window)) return;
     var toppSynlig = true, bunnSynlig = false, iKalk = false, resSynlig = false;
-    var scener = alle(".frist, .fortelling");
+    var scener = alle(".fortelling");
     function innhold() {
       var s = window.trekksjekkSum;
       if (iKalk && !resSynlig && s && s.antall) {
@@ -1490,7 +1486,6 @@ button{font:inherit;color:inherit}
   function tegnAlt() {
     venter = false;
     toppTegn();
-    fristTegn();
     fortTegn();
     festeSett();
   }
