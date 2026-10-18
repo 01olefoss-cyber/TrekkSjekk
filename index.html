@@ -308,9 +308,11 @@ button{font:inherit;color:inherit}
 .rad input.pris-felt{max-width:150px}
 .rad .regel-merke{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--soft);color:var(--muted)}
 .rad .regel-merke.lang{background:var(--warn-bg);color:var(--warn)}
-.rad .belop{grid-column:2;font-weight:700;font-size:15px;margin-top:6px}
+.rad>.flis{grid-column:1;grid-row:1}
+.rad>div:not(.belop){grid-column:2;grid-row:1;min-width:0}
+.rad .belop{grid-column:2;grid-row:2;font-weight:700;font-size:15px;margin-top:-4px;white-space:nowrap}
 .rad .belop small{font-weight:500;font-size:12px;color:var(--muted);margin-left:6px}
-.fjern{width:36px;height:36px;border-radius:10px;border:0;background:none;color:var(--muted);cursor:pointer;display:grid;place-items:center;grid-row:1;grid-column:3}
+.fjern{width:36px;height:36px;border-radius:10px;border:0;background:none;color:var(--muted);cursor:pointer;display:grid;place-items:center;grid-row:1;grid-column:3;justify-self:end}
 .fjern:hover{background:var(--soft);color:var(--ink)}
 .fjern svg{width:18px;height:18px}
 .annet-knapp{margin-top:14px;background:none;border:1.5px dashed var(--line);border-radius:var(--r-s);padding:12px 16px;width:100%;font:600 14px var(--font);color:var(--muted);cursor:pointer;min-height:46px}
@@ -437,9 +439,9 @@ button{font:inherit;color:inherit}
   .velg{padding:24px}
   .brikke:nth-child(n+11){display:inline-flex}
   .rad{grid-template-columns:32px minmax(0,1fr) auto 36px}
-  .rad .belop{grid-column:auto;text-align:right;margin-top:2px}
+  .rad .belop{grid-column:3;grid-row:1;text-align:right;margin-top:2px}
   .rad .belop small{display:block;margin:0}
-  .fjern{grid-column:auto}
+  .fjern{grid-column:4}
   .resultat{position:sticky;top:88px;padding:28px}
   .feste{display:none}
   .tidslinje .merkelapp{font-size:13px}
@@ -599,7 +601,7 @@ button{font:inherit;color:inherit}
 <section class="frist scene" id="frist" aria-labelledby="frist-tittel">
   <div class="frist-scene">
     <div class="wrap">
-      <h2 class="tittel" id="frist-tittel">Dagen før holder sjelden.</h2>
+      <h2 class="tittel" id="frist-tittel">Når er det for sent å si opp?</h2>
       <p class="ingress">Treningssenteret ditt trekker 1. desember. Når må du si opp?</p>
       <div class="ur">
         <p class="ur-etikett" id="ur-etikett">Siste frist</p>
