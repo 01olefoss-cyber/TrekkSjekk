@@ -13,167 +13,281 @@
 <meta property="og:title" content="TrekkSjekk – si opp abonnementer i tide">
 <meta property="og:description" content="Fristen for å si opp er ofte tidligere enn du tror. TrekkSjekk regner den ut og varsler deg.">
 <meta property="og:url" content="https://trekksjekk.no/">
-<meta property="og:image" content="https://trekksjekk.no/bilder/ikon-512.png">
-<meta name="theme-color" content="#F5F6FA" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0A0F1F" media="(prefers-color-scheme: dark)">
+<meta property="og:image" content="https://trekksjekk.no/bilder/del.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TrekkSjekk: abonnementene dine, og siste dag du kan si opp.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B1538">
 <link rel="icon" type="image/png" href="bilder/ikon-64.png">
 <link rel="apple-touch-icon" href="bilder/ikon-180.png">
 <link rel="preload" href="fonter/poppins-bold.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="bilder/oversikt.webp" as="image">
+<script>(function(d){d.className+=" js";try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)d.className+=" anim"}catch(e){}})(document.documentElement)</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"TrekkSjekk","alternateName":"TrekkSjekk: Abonnementer","operatingSystem":"iOS 16.4 eller nyere","applicationCategory":"FinanceApplication","inLanguage":"nb","url":"https://trekksjekk.no/","installUrl":"https://apps.apple.com/no/app/id6811947257","datePublished":"2026-09-25","countriesSupported":"NO","offers":[{"@type":"Offer","name":"Gratis","price":"0","priceCurrency":"NOK"},{"@type":"Offer","name":"Premium – år","price":"149","priceCurrency":"NOK"},{"@type":"Offer","name":"Premium – måned","price":"39","priceCurrency":"NOK"},{"@type":"Offer","name":"Premium – livstid","price":"399","priceCurrency":"NOK"}],"description":"Norsk app for abonnementer. Samler abonnementene dine på telefonen, viser hva de koster i året, regner ut siste dag du kan si opp fra tjenestens egne vilkår, og varsler deg før trekk, frister og prøveperioder. Ingen bankkobling, ingen konto, selger aldri data.","featureList":["Oversikt med sum per måned og år","Oppsigelsesfrist regnet ut fra leverandørens egne vilkår for over 180 tjenester","Leser kontoutskrift (CSV) lokalt på telefonen og finner faste trekk","Gjenkjenner hva som skjuler seg bak Apple Bill, Google Play og PlayStation ved å matche beløp mot priser","Varsel før trekk, frist og prøveperiode","Prisvarsel når pakken blir dyrere","Månedlig innsjekk: brukte du dette?","Bindingstid med nedtelling","Delte abonnementer","Studentpris og billigere pakker","Over 250 tjenester med logo, pakker og priser","Widgets på hjem- og låseskjerm","Ingen bankkobling, ingen konto, ingen salg av data"],"author":{"@type":"Person","name":"Ole André Foss"},"publisher":{"@type":"Organization","name":"TrekkSjekk Foss","url":"https://trekksjekk.no/","address":{"@type":"PostalAddress","addressLocality":"Kristiansand","addressCountry":"NO"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hvorfor ikke bare se i nettbanken?", "acceptedAnswer": {"@type": "Answer", "text": "Nettbanken viser trekkene etter at de har skjedd. Da er det ofte for sent å slippe neste. TrekkSjekk viser siste dag du kan si opp, og varsler deg før den går ut."}}, {"@type": "Question", "name": "Må jeg koble til banken eller lage en konto?", "acceptedAnswer": {"@type": "Answer", "text": "Nei. Du legger inn abonnementene selv, eller velger en kontoutskrift du har lastet ned fra nettbanken. Fila leses på telefonen og slettes etterpå."}}, {"@type": "Question", "name": "Hvor kommer oppsigelsesfristene fra?", "acceptedAnswer": {"@type": "Answer", "text": "Fra tjenestenes egne vilkår. Over 180 tjenester har fristen regnet inn. Finner vi ikke regelen, viser appen ingen frist i stedet for å gjette."}}, {"@type": "Question", "name": "Sier appen opp abonnementet for meg?", "acceptedAnswer": {"@type": "Answer", "text": "Nei, det gjør du selv. TrekkSjekk tar deg rett til siden der abonnementet avsluttes og forteller hva du skal trykke på. Er det kjøpt i App Store eller på PlayStation, sendes du dit."}}, {"@type": "Question", "name": "Hva koster TrekkSjekk?", "acceptedAnswer": {"@type": "Answer", "text": "Appen er gratis med opptil fem abonnementer, og du får ett varsel før hvert trekk. Premium koster 149 kr i året med 7 dager gratis, eller 39 kr i måneden, eller 399 kr én gang for alltid."}}, {"@type": "Question", "name": "Finnes TrekkSjekk på Android?", "acceptedAnswer": {"@type": "Answer", "text": "Ikke ennå. Appen finnes for iPhone, og Android-versjonen er under arbeid."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://trekksjekk.no/#org","name":"TrekkSjekk","url":"https://trekksjekk.no/","logo":{"@type":"ImageObject","url":"https://trekksjekk.no/bilder/ikon-512.png","width":512,"height":512},"email":"01ole.foss@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Kristiansand","addressCountry":"NO"},"sameAs":["https://apps.apple.com/no/app/id6811947257"]},{"@type":"WebSite","@id":"https://trekksjekk.no/#site","name":"TrekkSjekk","url":"https://trekksjekk.no/","inLanguage":"nb","publisher":{"@id":"https://trekksjekk.no/#org"}}]}</script>
 <style>
 @font-face{font-family:"Poppins";src:url("fonter/poppins-regular.woff") format("woff");font-weight:400;font-display:swap}
 @font-face{font-family:"Poppins";src:url("fonter/poppins-medium.woff") format("woff");font-weight:500 600;font-display:swap}
 @font-face{font-family:"Poppins";src:url("fonter/poppins-bold.woff") format("woff");font-weight:700 800;font-display:swap}
 
 :root{
-  --ground:#F5F6FA; --surface:#FFFFFF; --ink:#0D1326; --muted:#5A6377; --line:#E4E8F1; --soft:#EEF1F8;
-  --navy:#1E3A8A; --navy-deep:#142C6E; --navy-ink:#C7D3F4; --navy-lys:#3B5BC2;
-  --green:#15803D; --check:#4ADE80; --warn:#B45309; --warn-bg:#FEF3E2; --valgt:#E9EFFF;
+  --natt:#0B1538; --natt-2:#13235A; --navy:#1E3A8A; --navy-lys:#3B5BC2; --blek:#C3CEF0; --blek-2:#8E9CC9;
+  --ground:#F3F5FA; --surface:#FFFFFF; --ink:#0D1326; --muted:#566079; --line:#E1E6F0; --soft:#EBEEF6; --valgt:#E7EDFF;
+  --signal:#4ADE80; --gronn:#15803D; --rav:#FFC061; --rav-ink:#9A5B00; --rav-bg:#FFF3DD;
+  --papir:#FAFBFD; --papir-linje:#E3E7EF; --papir-tekst:#262C3F; --papir-dempet:#868CA0;
+  --app-bg:#131119; --app-kort:#1C1C25; --app-linje:#25242E; --app-tekst:#EDEDF2; --app-dempet:#8F8E9C; --app-lilla:#BCB0ED; --app-gronn:#58D999;
   --font:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif;
-  --r:20px; --r-s:14px;
-  --shadow:0 24px 60px -24px rgba(13,19,38,.35);
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Roboto Mono",monospace;
+  --r:22px; --r-s:14px; --topp:60px;
+  --glid:cubic-bezier(.2,.75,.2,1); --fjaer:cubic-bezier(.3,1.4,.55,1);
+  /* Navn kalkulatoren bruker */
+  --navy-ink:var(--blek); --check:var(--signal); --green:var(--gronn); --warn:var(--rav-ink); --warn-bg:var(--rav-bg);
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --ground:#0A0F1F; --surface:#121A33; --ink:#EEF1F8; --muted:#A1A9BE; --line:#222C4B; --soft:#171F3A;
-  --green:#4ADE80; --warn:#F5B860; --warn-bg:#3A2E17; --valgt:#1B2650; --navy-lys:#7C9BEA;
-  --shadow:0 24px 60px -24px rgba(0,0,0,.7);
+  --ground:#080D1F; --surface:#111934; --ink:#EEF1F8; --muted:#A1A9BE; --line:#212B4A; --soft:#172040; --valgt:#1B2650;
+  --gronn:#4ADE80; --rav-ink:#FFC061; --rav-bg:#3A2E17; --navy-lys:#7C9BEA;
 }}
 :root[data-theme="dark"]{
-  --ground:#0A0F1F; --surface:#121A33; --ink:#EEF1F8; --muted:#A1A9BE; --line:#222C4B; --soft:#171F3A;
-  --green:#4ADE80; --warn:#F5B860; --warn-bg:#3A2E17; --valgt:#1B2650; --navy-lys:#7C9BEA;
-  --shadow:0 24px 60px -24px rgba(0,0,0,.7);
+  --ground:#080D1F; --surface:#111934; --ink:#EEF1F8; --muted:#A1A9BE; --line:#212B4A; --soft:#172040; --valgt:#1B2650;
+  --gronn:#4ADE80; --rav-ink:#FFC061; --rav-bg:#3A2E17; --navy-lys:#7C9BEA;
 }
 
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.6 var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.6 var(--font);-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{display:block;max-width:100%;height:auto}
-h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.025em;text-wrap:balance}
+h1,h2,h3{margin:0;font-weight:700;text-wrap:balance}
 p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--check);outline-offset:3px;border-radius:8px}
-button{font:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:8px}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding-inline:20px}
+.sek{padding-block:88px}
+.sek h2,.tittel{font-size:clamp(32px,8.4vw,56px);line-height:1.04;letter-spacing:-.038em;max-width:16ch}
+.ingress{color:var(--muted);font-size:17px;line-height:1.55;margin-top:16px;max-width:36rem}
+.scene{background:var(--natt);color:#fff}
+.scene .ingress{color:var(--blek)}
+.badge{display:inline-block;line-height:0;border-radius:10px;flex:none;transition:transform .2s var(--glid)}
+.badge img{height:52px;width:auto}
+.badge:hover{transform:translateY(-1px)}
+.badge:active{transform:scale(.98)}
+.skjult{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-.wrap{width:100%;max-width:1080px;margin:0 auto;padding-inline:20px}
-.sek{padding-block:64px}
-.sek h2{font-size:clamp(26px,6.6vw,40px);line-height:1.1;max-width:20ch}
-.sek .ingress{color:var(--muted);margin-top:12px;max-width:38rem;font-size:16px}
-.badge{display:inline-block;line-height:0;border-radius:9px;flex:none}
-.badge img{height:52px;width:auto;display:block}
-.badge:hover{opacity:.9}
-.mark{width:28px;height:28px;border-radius:7px;flex:none}
+/* ---------- Toppen ---------- */
+.topp{position:fixed;inset:0 0 auto;z-index:50;height:var(--topp);color:#fff;transition:color .3s}
+.topp::before{content:"";position:absolute;inset:0;background:rgba(11,21,56,.6);-webkit-backdrop-filter:saturate(1.5) blur(16px);backdrop-filter:saturate(1.5) blur(16px);border-bottom:1px solid rgba(255,255,255,.08);opacity:0;transition:opacity .3s,background-color .3s,border-color .3s}
+.topp.flyter::before{opacity:1}
+.topp.lys{color:var(--ink)}
+.topp.lys::before{opacity:1;background:color-mix(in srgb,var(--ground) 84%,transparent);border-bottom-color:var(--line)}
+.topp .wrap{position:relative;height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.merke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;letter-spacing:-.02em;text-decoration:none}
+.merke svg{width:32px;height:32px;border-radius:8px;flex:none}
+.topp nav{display:flex;align-items:center;gap:24px}
+.topp nav a.lenke{display:none;font-size:15px;font-weight:500;text-decoration:none;opacity:.78;transition:opacity .2s}
+.topp nav a.lenke:hover{opacity:1}
+.topp .badge img{height:36px}
+.topp .badge .pa-lys{display:none}
+.topp.lys .badge .pa-lys{display:block}
+.topp.lys .badge .pa-natt{display:none}
 
-/* ---------- Topp ---------- */
-.topp{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 86%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .2s}
-.topp.skygge{border-bottom-color:var(--line)}
-.topp .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.merke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;letter-spacing:-.01em;text-decoration:none}
-.merke .mark{width:32px;height:32px;border-radius:8px}
-.topp .badge img{height:34px}
-.topp .lenke{display:none;color:var(--muted);font-weight:500;font-size:15px;text-decoration:none;margin-right:22px}
-.topp .lenke:hover{color:var(--ink)}
+/* ---------- Helten ---------- */
+.helt{position:relative;overflow:hidden;isolation:isolate;padding:calc(var(--topp) + 22px) 0 104px}
+.helt::before{content:"";position:absolute;z-index:-1;left:50%;top:72%;width:1100px;height:1100px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(48,88,214,.55),rgba(48,88,214,.18) 55%,rgba(48,88,214,0));pointer-events:none}
+.helt-grid{display:grid;gap:52px}
+.helt h1{font-size:clamp(34px,10.6vw,72px);line-height:1.02;letter-spacing:-.045em;max-width:12ch}
+.ord{display:inline-block}
+.helt .under{font-size:17px;line-height:1.55;color:var(--blek);margin-top:18px;max-width:31rem}
+.handling{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px}
+.handling .badge img{height:54px}
+.trygg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13.5px;font-weight:600;color:var(--blek)}
+.trygg li{display:inline-flex;align-items:center;gap:6px}
+.trygg svg{width:16px;height:16px;flex:none;color:var(--signal)}
 
-/* ---------- Helt ---------- */
-.helt{position:relative;overflow:hidden;padding-top:28px}
-.helt .wrap{display:grid;gap:28px}
-.helt-tekst{text-align:left}
-.pille{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px 6px 8px;font-size:13px;font-weight:600;color:var(--muted)}
-.pille .prikk{width:8px;height:8px;border-radius:50%;background:var(--check);box-shadow:0 0 0 3px color-mix(in srgb,var(--check) 25%,transparent)}
-.helt h1{font-size:clamp(34px,9.4vw,60px);line-height:1.04;margin-top:18px;max-width:14ch}
-.helt .under{color:var(--muted);font-size:17px;margin-top:16px;max-width:30rem}
-.helt .handling{margin-top:24px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
-.helt .handling .badge img{height:56px}
-.trygg{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;font-weight:600;color:var(--muted)}
-.trygg span{display:inline-flex;align-items:center;gap:6px}
-.trygg svg{width:16px;height:16px;flex:none}
+/* Kontoutskriften som blir til TrekkSjekk */
+.demo{position:relative;margin:0;width:100%;max-width:440px;justify-self:center}
+.demo-kort{--rad:44px;--hode:96px;position:relative;height:calc(var(--hode) + 7 * var(--rad));border-radius:var(--r);overflow:hidden;background:var(--papir);box-shadow:0 60px 100px -50px rgba(0,0,0,.85),0 24px 40px -24px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.12)}
+.lag{position:absolute;inset:0;display:flex;flex-direction:column}
+.lag-topp{flex:none;height:var(--hode);padding:0 16px}
+.lag .rader li{height:var(--rad);display:flex;align-items:center;gap:10px;padding:0 16px}
 
-.helt-bilde{position:relative;margin:4px auto 0;width:min(78%,340px)}
-.helt-bilde::before{content:"";position:absolute;inset:8% -30% auto;height:70%;background:radial-gradient(closest-side,color-mix(in srgb,var(--navy) 22%,transparent),transparent);filter:blur(10px);z-index:0}
-.helt-bilde img{position:relative;z-index:1;filter:drop-shadow(0 30px 40px rgba(13,19,38,.35))}
-.helt-bilde .tlf{aspect-ratio:640/1348;overflow:hidden;border-radius:52px 52px 0 0;max-height:520px;-webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent)}
-.varsel{position:absolute;z-index:2;left:-18px;right:-18px;top:186px;display:flex;gap:10px;align-items:flex-start;background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;padding:11px 13px;box-shadow:0 18px 40px -16px rgba(13,19,38,.45)}
-.varsel img{width:36px;height:36px;border-radius:9px;flex:none;background:#fff;box-shadow:0 0 0 1px var(--line)}
-.v-topp{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
-.v-topp b{color:var(--ink);font-weight:600}
-.v-tittel{font-weight:600;font-size:13.5px;line-height:1.3;margin-top:1px}
-.v-tekst{font-size:12.5px;color:var(--muted);line-height:1.35;margin-top:1px}
-@media (prefers-reduced-motion:no-preference){
-  .varsel{animation:varsel-inn .55s .35s cubic-bezier(.2,.8,.2,1) both}
-  @keyframes varsel-inn{from{opacity:0;transform:translateY(-14px)}}
-}
+.papir{color:var(--papir-tekst);background:var(--papir)}
+.papir .lag-topp{display:flex;flex-direction:column;justify-content:center;gap:3px;border-bottom:1px solid var(--papir-linje)}
+.papir .lag-topp b{font-weight:600;font-size:15px;letter-spacing:-.01em;margin-bottom:2px}
+.papir .lag-topp span{font:12px/1.35 var(--mono);color:var(--papir-dempet)}
+.papir .rader li{font:12.5px/1 var(--mono);border-bottom:1px dashed var(--papir-linje)}
+.papir .dato{flex:none;width:3.6em;color:var(--papir-dempet)}
+.papir .tekst{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.papir .sum{flex:none}
 
-/* ---------- Tall ---------- */
-.tall{border-block:1px solid var(--line);background:var(--surface)}
-.tall .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding-block:18px}
-.tall b{display:block;font-size:22px;letter-spacing:-.02em;line-height:1.1}
-.tall span{display:block;font-size:12px;color:var(--muted);line-height:1.3;margin-top:3px}
+.app{color:var(--app-tekst);background:var(--app-bg)}
+.app .lag-topp{display:flex;flex-direction:column;justify-content:center;gap:10px;border-bottom:1px solid var(--app-linje);background:linear-gradient(180deg,#191726,var(--app-bg))}
+.app-linje{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.app-merke{display:flex;align-items:center;gap:8px;font-weight:600;font-size:13.5px;letter-spacing:-.01em}
+.app-merke svg{width:20px;height:20px;border-radius:5px}
+.fant{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;color:var(--app-gronn);background:rgba(88,217,153,.12);padding:3px 10px 3px 8px;border-radius:999px;white-space:nowrap}
+.fant svg{width:13px;height:13px}
+.du-betaler{display:flex;align-items:flex-end;justify-content:space-between;gap:10px}
+.db-tekst{font-size:12px;font-weight:600;color:var(--app-tekst);line-height:1.3}
+.db-tekst small{display:block;font-size:11.5px;font-weight:500;color:var(--app-dempet)}
+.total{display:flex;align-items:baseline;gap:6px;font-weight:700;font-size:28px;line-height:1;letter-spacing:-.03em;white-space:nowrap}
+.total small{font-size:12px;font-weight:500;color:var(--app-dempet);letter-spacing:0}
+.app .rader li{border-bottom:1px solid var(--app-linje)}
+.app .rader img,.app .ikon{width:30px;height:30px;border-radius:8px;flex:none}
+.app .ikon{display:grid;place-items:center;background:var(--app-kort);color:var(--app-dempet)}
+.app .ikon svg{width:16px;height:16px}
+.app .navn{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px;line-height:1.25}
+.app .navn b{font-weight:600;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.app .navn small{font-size:11px;color:var(--app-dempet);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.app .navn small.fr{color:var(--app-lilla)}
+.app .navn small.apple{color:var(--app-gronn)}
+.app .pris{flex:none;font-weight:700;font-size:13.5px}
+.app li.ikke b{color:var(--app-dempet);text-decoration:line-through;text-decoration-color:rgba(255,255,255,.35)}
+.app li.ikke .pris{color:var(--app-dempet);font-weight:500}
 
-/* ---------- Logoer ---------- */
-.logoer{padding-block:44px 0}
-.logoer p{text-align:center;color:var(--muted);font-size:14px;font-weight:500;padding-inline:20px}
-.bane{overflow:hidden;margin-top:20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
-.spor{display:flex;gap:14px;width:max-content;animation:rull 60s linear infinite}
-.spor img{width:46px;height:46px;border-radius:12px;background:#fff;box-shadow:0 0 0 1px var(--line)}
+.odo{display:inline-flex;height:1.05em;line-height:1.05em;overflow:hidden}
+.odo .siffer{display:block;width:.62em;height:1.05em;overflow:hidden;text-align:center;transition:width .35s var(--glid)}
+.odo .rull{display:flex;flex-direction:column}
+.odo .rull span{display:block;height:1.05em}
+.odo .mellom{display:block;width:.24em;transition:width .35s var(--glid)}
+.odo .av{width:0}
+
+.skanner{position:absolute;left:0;right:0;top:0;height:0;z-index:2;opacity:0;transform:translateY(var(--y,0px));pointer-events:none}
+.skanner::before{content:"";position:absolute;left:0;right:0;bottom:0;height:64px;background:linear-gradient(to top,rgba(74,222,128,.28),rgba(74,222,128,0))}
+.skanner::after{content:"";position:absolute;left:0;right:0;top:-1px;height:2px;background:var(--signal);box-shadow:0 0 14px 2px rgba(74,222,128,.75)}
+.skanner span{position:absolute;right:12px;top:0;transform:translateY(-50%);background:var(--signal);color:#05301A;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 16px -6px rgba(74,222,128,.8)}
+
+.push{display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:20px;background:rgba(244,246,251,.9);-webkit-backdrop-filter:blur(20px) saturate(1.6);backdrop-filter:blur(20px) saturate(1.6);color:#0D1326;box-shadow:0 28px 50px -20px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.5) inset}
+.push svg{width:38px;height:38px;border-radius:9px;flex:none}
+.push .v-topp{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;color:#5E6476;line-height:1.3}
+.push .v-topp b{color:#0D1326;font-weight:600}
+.push .v-tittel{font-weight:600;font-size:13.5px;line-height:1.3;margin-top:1px}
+.push .v-tekst{font-size:12.5px;line-height:1.38;color:#3E4458;margin-top:1px}
+.demo .push{position:absolute;z-index:4;left:-8px;right:-8px;bottom:-40px}
+.igjen{position:absolute;right:0;top:-38px;display:inline-flex;align-items:center;gap:7px;background:none;border:0;padding:6px 2px;font-size:13px;font-weight:600;color:var(--blek);cursor:pointer;opacity:.8;transition:opacity .2s}
+.igjen:hover{opacity:1}
+.igjen svg{width:16px;height:16px}
+.igjen[hidden]{display:none}
+
+/* Animert tilstand */
+.anim .helt h1 .ord,.anim .helt .under,.anim .helt .handling{animation:opp .8s var(--glid) both}
+.anim .helt h1 .ord{animation-delay:calc(var(--i) * 55ms + 60ms)}
+.anim .helt .under{animation-delay:.42s}
+.anim .helt .handling{animation-delay:.55s}
+.anim .demo{animation:demo-inn 1s .35s var(--glid) both}
+@keyframes opp{from{opacity:0;transform:translateY(.5em)}}
+@keyframes demo-inn{from{opacity:0;transform:translateY(28px) scale(.97)}}
+
+.js .app{clip-path:inset(0 0 calc(100% - var(--y,0px)) 0)}
+.js .demo.ferdig .app{clip-path:none}
+.js .app .rader li>*{opacity:0;transform:translateX(-6px)}
+.js .app .rader li img,.js .app .rader li .ikon{transform:scale(.4)}
+.js .app .rader li.inn>*{opacity:1;transform:none;transition:opacity .35s var(--glid),transform .55s var(--fjaer)}
+.js .app .rader li.inn .pris{transition-delay:.08s}
+.js .skanner.pa{opacity:1;transition:opacity .2s}
+.js .demo .push{opacity:0;transform:translateY(16px) scale(.95);pointer-events:none}
+.js .demo .push.vis{opacity:1;transform:none;transition:opacity .45s,transform .7s var(--fjaer)}
+.js .demo:not(.ferdig) .fant svg{display:none}
+
+/* ---------- Tall og logoer ---------- */
+.kjenner{padding:80px 0 72px;background:var(--ground);overflow:hidden}
+.tall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tall b{display:block;font-size:clamp(36px,10vw,72px);font-weight:700;letter-spacing:-.045em;line-height:1}
+.tall span{display:block;font-size:13px;line-height:1.4;color:var(--muted);margin-top:10px;max-width:15ch}
+.baner{margin-top:52px;display:grid;gap:12px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.bane-rad{display:flex;width:max-content;animation:rull var(--tid,80s) linear infinite}
+.kopi{display:flex;gap:12px;padding-right:12px}
+.bane-rad.mot{animation-direction:reverse}
+.bane-rad img{width:54px;height:54px;border-radius:14px;background:#fff;box-shadow:0 0 0 1px var(--line),0 6px 14px -8px rgba(13,19,38,.25)}
+.baner-tekst{margin-top:22px;text-align:center;font-size:14px;color:var(--muted);padding-inline:20px}
 @keyframes rull{to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion:reduce){.spor{animation:none;flex-wrap:wrap;width:auto;justify-content:center;padding-inline:20px}.bane{mask-image:none;-webkit-mask-image:none}}
 
-/* ---------- Funksjoner ---------- */
-.kort-rekke{display:grid;grid-auto-flow:column;grid-auto-columns:min(78%,300px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:28px 20px 10px;margin-inline:-20px;scrollbar-width:none}
-.kort-rekke::-webkit-scrollbar{display:none}
-.fk{scroll-snap-align:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;margin:0}
-.fk figcaption{padding:20px 20px 14px}
-.fk h3{font-size:19px;font-weight:600;line-height:1.2}
-.fk p{color:var(--muted);font-size:14px;line-height:1.5;margin-top:6px}
-.fk .skjerm{margin:auto 22px 0;overflow:hidden;border-radius:30px 30px 0 0;max-height:330px}
-.fk .skjerm img{width:100%}
-.fk.ku .skjerm{max-height:262px}
-.fk.morkt{background:var(--navy);border-color:transparent;color:#fff}
-.fk.morkt p{color:var(--navy-ink)}
-.prikker{display:flex;gap:6px;justify-content:center;margin-top:14px}
-.prikker i{width:6px;height:6px;border-radius:50%;background:var(--line);transition:background .2s,width .2s}
-.prikker i.aktiv{background:var(--ink);width:18px;border-radius:3px}
+/* ---------- Fristen: scroll = tiden går ---------- */
+.frist{position:relative}
+.frist-scene{padding:96px 0 40px}
+.frist h2{color:#fff}
+.ur{margin-top:30px}
+.ur-etikett{font-size:13px;font-weight:600;color:var(--blek)}
+.ur-dato{font-size:clamp(46px,13vw,96px);font-weight:700;line-height:1;letter-spacing:-.05em;margin-top:6px;white-space:nowrap}
+.ur-status{display:flex;align-items:flex-start;gap:10px;margin-top:14px;font-weight:600;font-size:16px;line-height:1.4;min-height:2.8em;max-width:30rem;color:#fff;transition:color .3s}
+.ur-status i{width:10px;height:10px;margin-top:.45em;border-radius:50%;flex:none;background:var(--signal);box-shadow:0 0 0 4px rgba(74,222,128,.2);transition:background-color .3s,box-shadow .3s}
+.ur-status[data-tilstand="sent"]{color:var(--rav)}
+.ur-status[data-tilstand="sent"] i{background:var(--rav);box-shadow:0 0 0 4px rgba(255,192,97,.22)}
 
-/* ---------- Regelen ---------- */
-.regel-sek{background:var(--navy);color:#fff;position:relative;overflow:hidden}
-.regel-sek::after{content:"";position:absolute;right:-20%;top:-30%;width:70%;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.08),transparent)}
-.regel-sek .wrap{position:relative}
-.regel-sek h2{color:#fff}
-.regel-sek .ingress{color:var(--navy-ink)}
-.datoer{margin-top:28px;display:grid;gap:14px}
-.dato{display:grid;grid-template-columns:5.2rem 1fr;align-items:baseline;gap:12px}
-.dato .t{font-size:13px;font-weight:600;color:var(--navy-ink)}
-.dato .d{font-weight:700;font-size:clamp(32px,9vw,56px);line-height:1;letter-spacing:-.03em;white-space:nowrap}
-.dato s.d{color:rgba(199,211,244,.5);text-decoration-thickness:4px;text-decoration-color:rgba(255,255,255,.75)}
-.dato.ekte .d{display:inline-flex;align-items:center;gap:.2em}
-.dato.ekte svg{width:.6em;height:.6em}
-.datoer .hvorfor{color:var(--navy-ink);font-size:15px;max-width:34rem;margin-top:2px}
-.regler{margin-top:30px;display:grid;gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);overflow:hidden}
-.regel{background:var(--navy);padding:16px 18px;display:grid;gap:4px}
-.regel b{font-size:15px}
-.regel span{font-size:13px;color:var(--navy-ink)}
-.regel .nar{font-size:14px;font-weight:600;color:#fff}
-.regel .nar.lang{color:#FFD08A}
-@media (prefers-reduced-motion:no-preference){
-  .datoer.spill s.d{animation:stryk .5s .2s ease-out both}
-  .datoer.spill .ekte{animation:fram .45s .6s ease-out both}
-  @keyframes stryk{from{text-decoration-color:transparent;color:#fff}}
-  @keyframes fram{from{opacity:0;transform:translateY(8px)}}
-}
+.tidslinje{position:relative;height:112px;margin-top:30px}
+.tidslinje .linje{position:absolute;left:0;right:0;top:54px;height:6px;border-radius:3px;background:rgba(255,255,255,.12);overflow:hidden}
+.tidslinje .fyll{position:absolute;inset:0;background:linear-gradient(90deg,var(--signal) 0,var(--signal) var(--fx),var(--rav) var(--fx),var(--rav) 100%);clip-path:inset(0 calc(100% - var(--p,100%)) 0 0)}
+.tidslinje .pinne{position:absolute;top:51px;left:var(--x);width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--natt);border:2px solid rgba(255,255,255,.6)}
+.tidslinje .pinne.frist-pinne{border-color:var(--signal);background:var(--signal)}
+.tidslinje .merkelapp{position:absolute;left:var(--x);font-size:12px;line-height:1.3;white-space:nowrap;color:var(--blek)}
+.tidslinje .merkelapp b{display:block;color:#fff;font-size:14px;font-weight:600}
+.tidslinje .merkelapp.under{top:74px;transform:translateX(-12px)}
+.tidslinje .merkelapp.over{top:0}
+.tidslinje .merkelapp.hoyre{transform:translateX(calc(-100% + 8px));text-align:right}
+.tidslinje .frist-lapp b{color:var(--signal)}
+.tidslinje .i-dag{position:absolute;top:42px;left:var(--x,0%);width:2px;height:30px;margin-left:-1px;background:#fff;border-radius:1px;display:none}
+.tidslinje .i-dag::after{content:"";position:absolute;left:50%;top:-6px;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.18)}
+.frist .push{margin-top:22px;max-width:380px}
+.frist-hint{display:none}
+.regler-sek{padding:24px 0 96px}
+.regler{display:grid;gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);overflow:hidden}
+.regel{background:var(--natt);padding:18px 20px;display:grid;gap:3px}
+.regel b{font-size:15px;font-weight:600}
+.regel span{font-size:13px;color:var(--blek)}
+.regel .nar{font-size:14px;font-weight:600;color:#fff;margin-top:2px}
+.regel .nar.lang{color:var(--rav)}
+
+.anim .frist{height:calc(100vh + 160vh);height:calc(100svh + 160svh)}
+.anim .frist-scene{position:sticky;top:0;height:100vh;height:100svh;display:flex;align-items:center;padding:calc(var(--topp) + 8px) 0 16px;overflow:hidden}
+.anim .frist-scene>.wrap{width:100%}
+.anim .tidslinje .i-dag{display:block}
+.anim .frist .push{opacity:0;transform:translateY(12px);transition:opacity .4s,transform .5s var(--glid)}
+.anim .frist .push.vis{opacity:1;transform:none}
+.anim .frist-hint{display:flex;align-items:center;gap:8px;margin-top:18px;font-size:13px;font-weight:600;color:var(--blek);transition:opacity .4s}
+.anim .frist-hint.borte{opacity:0}
+.frist-hint svg{width:16px;height:16px;animation:dupp 1.6s ease-in-out infinite}
+@keyframes dupp{50%{transform:translateY(4px)}}
+
+/* ---------- Telefonen ---------- */
+.fortelling{position:relative;background:var(--ground)}
+.fortelling-scene{padding:96px 0 40px}
+.fortelling-grid{display:grid;gap:28px}
+.fortelling h2{font-size:clamp(30px,7.6vw,56px);line-height:1.04;letter-spacing:-.038em;max-width:15ch}
+.steg{margin-top:22px;display:grid;gap:22px}
+.steg h3{font-size:20px;font-weight:600;letter-spacing:-.02em;line-height:1.25}
+.steg p{color:var(--muted);font-size:15.5px;line-height:1.5;margin-top:6px;max-width:28rem}
+.steg-prikker{display:none}
+.telefon{position:relative;width:min(72vw,300px);aspect-ratio:640/1348;margin:0 auto;border-radius:48px;padding:9px;background:linear-gradient(150deg,#454a57,#1a1c23 38%,#0d0e13);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08),0 50px 90px -40px rgba(13,19,38,.6),0 20px 30px -20px rgba(13,19,38,.4)}
+.telefon-skjerm{position:relative;width:100%;height:100%;border-radius:39px;overflow:hidden;background:var(--app-bg)}
+.telefon-skjerm img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.telefon-skjerm img+img{display:none}
+
+.anim .fortelling{height:calc(100vh + 4 * 55vh);height:calc(100svh + 4 * 55svh)}
+.anim .fortelling-scene{position:sticky;top:0;height:100vh;height:100svh;padding:calc(var(--topp) + 20px) 0 0;overflow:hidden}
+.anim .fortelling-grid{height:100%;grid-template-rows:auto minmax(0,1fr);gap:18px}
+.anim .steg{position:relative;display:block;height:8.4em;margin-top:18px}
+.anim .steg li{position:absolute;inset:0 0 auto;opacity:0;transform:translateY(12px);transition:opacity .35s,transform .5s var(--glid);pointer-events:none}
+.anim .steg li.aktiv{opacity:1;transform:none;pointer-events:auto}
+.anim .steg-prikker{display:flex;gap:6px;margin-top:4px}
+.anim .steg-prikker i{height:4px;width:22px;border-radius:2px;background:var(--line);overflow:hidden;position:relative}
+.anim .steg-prikker i::after{content:"";position:absolute;inset:0;background:var(--ink);transform:scaleX(var(--f,0));transform-origin:left}
+.anim .telefon{align-self:start;-webkit-mask-image:linear-gradient(#000 80%,transparent);mask-image:linear-gradient(#000 80%,transparent)}
+.anim .telefon-skjerm img{display:block;opacity:0;transform:translateY(5%) scale(.97);transition:opacity .45s,transform .7s var(--glid)}
+.anim .telefon-skjerm img.aktiv{opacity:1;transform:none}
 
 /* ---------- Kalkulator ---------- */
-.kalk{display:grid;gap:16px;margin-top:26px}
+.kalk{display:grid;gap:16px;margin-top:30px}
 .velg{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px}
 .brikker{display:flex;flex-wrap:wrap;gap:8px}
-.brikke{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:5px 12px 5px 5px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);font:500 14px/1.2 var(--font);cursor:pointer;transition:border-color .15s,background-color .15s}
+.brikke{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:5px 13px 5px 5px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);font:500 14px/1.2 var(--font);cursor:pointer;transition:border-color .15s,background-color .15s,transform .15s}
 .brikke:hover{border-color:var(--muted)}
+.brikke:active{transform:scale(.97)}
 .brikke[aria-pressed="true"]{border-color:var(--navy-lys);background:var(--valgt)}
 .brikke .hake{width:15px;height:15px;margin-left:-2px;display:none;color:var(--navy-lys)}
 .brikke[aria-pressed="true"] .hake{display:block}
 .brikke:nth-child(n+11){display:none}
-.flis{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font:700 14px/1 var(--font);flex:none;overflow:hidden}
+.flis{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;font:700 14px/1 var(--font);flex:none;overflow:hidden}
 .flis img{width:100%;height:100%;object-fit:cover}
 .flis.logo{background:#fff;box-shadow:0 0 0 1px var(--line)}
 .sok{margin-top:16px;position:relative}
@@ -188,7 +302,7 @@ button{font:inherit}
 .treff .ingen{color:var(--muted);font-size:14px;padding:8px 10px}
 .valgte{margin-top:16px}
 .valgte:empty{display:none}
-.rad{display:grid;grid-template-columns:30px minmax(0,1fr) 36px;gap:10px;align-items:start;padding:14px 0;border-top:1px solid var(--line)}
+.rad{display:grid;grid-template-columns:32px minmax(0,1fr) 36px;gap:10px;align-items:start;padding:14px 0;border-top:1px solid var(--line)}
 .rad .navn{font-weight:600;font-size:15px;line-height:1.3}
 .rad select,.rad input{margin-top:8px;width:100%;max-width:100%;font:500 14px var(--font);color:var(--ink);background:var(--ground);border:1px solid var(--line);border-radius:10px;padding:8px 10px;min-height:40px}
 .rad input.pris-felt{max-width:150px}
@@ -201,227 +315,322 @@ button{font:inherit}
 .fjern svg{width:18px;height:18px}
 .annet-knapp{margin-top:14px;background:none;border:1.5px dashed var(--line);border-radius:var(--r-s);padding:12px 16px;width:100%;font:600 14px var(--font);color:var(--muted);cursor:pointer;min-height:46px}
 .annet-knapp:hover{border-color:var(--muted);color:var(--ink)}
-.resultat{background:var(--navy);color:#fff;border-radius:var(--r);padding:24px}
-.res-etikett{color:var(--navy-ink);font-size:14px;font-weight:500}
-.res-ar{white-space:nowrap;font-weight:700;font-size:clamp(40px,11vw,60px);line-height:1;letter-spacing:-.03em;margin-top:2px}
-.res-ar span{font-variant-numeric:tabular-nums}
-.res-mnd{color:var(--navy-ink);font-size:15px;margin-top:6px}
+.resultat{position:relative;background:var(--natt);color:#fff;border-radius:var(--r);padding:24px;overflow:hidden;isolation:isolate}
+.resultat::before{content:"";position:absolute;z-index:-1;right:-30%;top:-40%;width:90%;aspect-ratio:1;background:radial-gradient(closest-side,rgba(48,88,214,.5),rgba(48,88,214,0))}
+.res-etikett{color:var(--blek);font-size:14px;font-weight:500}
+.res-ar{white-space:nowrap;font-weight:700;font-size:clamp(42px,11.5vw,64px);line-height:1;letter-spacing:-.04em;margin-top:4px}
+.res-mnd{color:var(--blek);font-size:15px;margin-top:8px}
 .res-mnd b{color:#fff}
-.res-blokk{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);font-size:14px;line-height:1.5}
+.res-blokk{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.16);font-size:14px;line-height:1.5}
 .res-blokk b{color:#fff}
 .res-blokk p+p{margin-top:6px}
 .res-blokk ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:5px}
-.res-blokk li{display:flex;justify-content:space-between;gap:12px;color:var(--navy-ink)}
-.res-blokk li a{color:var(--navy-ink)}
+.res-blokk li{display:flex;justify-content:space-between;gap:12px;color:var(--blek)}
+.res-blokk li a{color:var(--blek)}
 .res-blokk li span:last-child{color:#fff;font-weight:600;white-space:nowrap}
-.res-blokk .varsel{color:#FFD08A}
-.student{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);font-weight:600;cursor:pointer;min-height:44px;font-size:15px}
-.student input{width:22px;height:22px;accent-color:var(--check);margin:0}
+.res-blokk .varsel{color:var(--rav)}
+.student{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.16);font-weight:600;cursor:pointer;min-height:44px;font-size:15px}
+.student input{width:22px;height:22px;accent-color:var(--signal);margin:0}
 .res-cta{margin-top:20px;font-weight:600;font-size:15px}
 .res-knapp{margin-top:10px}
-.res-liten{color:var(--navy-ink);font-size:13px;margin-top:10px}
+.res-liten{color:var(--blek);font-size:13px;margin-top:10px}
 .kilde{color:var(--muted);font-size:12.5px;margin-top:14px;max-width:46rem;line-height:1.5}
+#res-tittel{scroll-margin-top:90px}
+
+/* ---------- Personvern ---------- */
+.personvern{position:relative;overflow:hidden;isolation:isolate}
+.personvern::before{content:"";position:absolute;z-index:-1;left:-20%;bottom:-50%;width:900px;height:900px;background:radial-gradient(closest-side,rgba(48,88,214,.35),rgba(48,88,214,0))}
+.lofter{display:grid;gap:0;margin-top:40px;border-top:1px solid rgba(255,255,255,.14)}
+.lofter li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:4px 16px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.lofter svg{grid-row:span 2;width:40px;height:40px;padding:9px;border-radius:12px;background:rgba(74,222,128,.12);color:var(--signal)}
+.lofter b{font-size:18px;font-weight:600;letter-spacing:-.015em;line-height:1.3}
+.lofter p{color:var(--blek);font-size:15px;line-height:1.55}
+.videre{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:30px}
+.videre a{font-weight:600;color:#fff;text-decoration:none;border-bottom:2px solid rgba(74,222,128,.6);padding-bottom:2px;transition:border-color .2s}
+.videre a:hover{border-color:var(--signal)}
+
+/* ---------- Mer ---------- */
+.mer-liste{display:grid;gap:0;margin-top:36px;border-top:1px solid var(--line)}
+.mer-liste li{padding:20px 0;border-bottom:1px solid var(--line)}
+.mer-liste b{display:block;font-size:17px;font-weight:600;letter-spacing:-.015em}
+.mer-liste p{color:var(--muted);font-size:15px;line-height:1.55;margin-top:4px;max-width:34rem}
 
 /* ---------- Pris ---------- */
-.planer{display:grid;gap:14px;margin-top:26px}
-.plan{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
-.plan h3{font-size:18px;font-weight:600}
-.plan .belop{font-weight:700;font-size:40px;letter-spacing:-.03em;line-height:1;margin-top:12px}
-.plan .belop small{font-size:16px;font-weight:500;color:var(--muted);letter-spacing:0;margin-left:4px}
-.plan .per{color:var(--muted);font-size:14px;margin-top:6px}
-.plan ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:8px;font-size:15px}
-.plan li{display:flex;gap:10px;align-items:flex-start}
-.plan li svg{width:18px;height:18px;flex:none;margin-top:3px}
-.plan.premium{background:var(--navy);color:#fff;border-color:transparent;position:relative}
-.plan.premium .per,.plan.premium .belop small{color:var(--navy-ink)}
-.plan.premium .merke-lapp{position:absolute;top:18px;right:18px;background:var(--check);color:#0D1326;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px}
-.plan.premium .alt{color:var(--navy-ink);font-size:13px;margin-top:14px}
-.plan .badge{margin-top:18px}
+.planer{display:grid;gap:14px;margin-top:32px}
+.plan{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.plan h3{font-size:18px;font-weight:600;letter-spacing:-.01em}
+.plan .belop{font-weight:700;font-size:44px;letter-spacing:-.04em;line-height:1;margin-top:14px}
+.plan .belop small{font-size:16px;font-weight:500;color:var(--muted);letter-spacing:0;margin-left:6px}
+.plan .per{color:var(--muted);font-size:14px;margin-top:8px}
+.plan ul{margin-top:20px;display:grid;gap:10px;font-size:15px}
+.plan li{display:flex;gap:10px;align-items:flex-start;line-height:1.45}
+.plan li svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--gronn)}
+.plan.premium{background:var(--natt);color:#fff;border-color:transparent;overflow:hidden;isolation:isolate}
+.plan.premium::before{content:"";position:absolute;z-index:-1;right:-40%;top:-50%;width:110%;aspect-ratio:1;background:radial-gradient(closest-side,rgba(48,88,214,.55),rgba(48,88,214,0))}
+.plan.premium li svg{color:var(--signal)}
+.plan.premium .per,.plan.premium .belop small{color:var(--blek)}
+.plan .lapp{position:absolute;top:22px;right:22px;background:var(--signal);color:#05301A;font-size:12px;font-weight:700;padding:4px 11px;border-radius:999px}
+.plan .alt{color:var(--blek);font-size:13.5px;margin-top:16px}
+.plan .badge{margin-top:20px}
 
 /* ---------- Spørsmål ---------- */
-.sporsmal{margin-top:22px;border-top:1px solid var(--line);max-width:52rem}
+.sporsmal{margin-top:28px;border-top:1px solid var(--line);max-width:52rem}
 .sporsmal details{border-bottom:1px solid var(--line)}
-.sporsmal summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;font-weight:600;font-size:16px}
+.sporsmal summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-weight:600;font-size:17px;letter-spacing:-.01em}
 .sporsmal summary::-webkit-details-marker{display:none}
-.sporsmal summary svg{width:20px;height:20px;flex:none;color:var(--muted);transition:transform .2s}
+.sporsmal summary svg{width:22px;height:22px;flex:none;color:var(--muted);transition:transform .25s var(--glid)}
 .sporsmal details[open] summary svg{transform:rotate(45deg)}
-.sporsmal details p{color:var(--muted);padding:0 0 20px;max-width:44rem;font-size:15px}
+.sporsmal details p{color:var(--muted);padding:0 0 22px;max-width:44rem;font-size:15.5px}
+.kontakt{color:var(--muted);font-size:14px;margin-top:24px}
+.kontakt a{color:var(--ink);font-weight:600}
+.nyttig{display:grid;gap:12px;margin-top:32px;max-width:52rem}
+.guide-lenke{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:14px 16px;padding:20px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);text-decoration:none;max-width:52rem;transition:border-color .2s}
+.guide-lenke:hover{border-color:var(--ink)}
+.guide-lenke .stabel{display:flex;grid-column:1/-1}
+.guide-lenke .stabel img{width:40px;height:40px;border-radius:11px;background:#fff;box-shadow:0 0 0 3px var(--surface),0 0 0 4px var(--line)}
+.guide-lenke .stabel img+img{margin-left:-8px}
+.guide-lenke b{display:block;font-size:17px;letter-spacing:-.015em;line-height:1.3}
+.guide-lenke small{display:block;color:var(--muted);font-size:14px;margin-top:4px;line-height:1.45}
+.guide-lenke .pil{width:22px;height:22px;flex:none;color:var(--muted)}
 
-/* ---------- Bunn ---------- */
-.bunn{background:var(--navy);color:#fff;margin-top:24px}
-.bunn .cta{padding-block:56px;display:grid;gap:20px;justify-items:start}
-.bunn h2{font-size:clamp(26px,6.6vw,40px);line-height:1.1;max-width:18ch}
-.bunn .cta p{color:var(--navy-ink);max-width:34rem}
-.bunn-info{border-top:1px solid rgba(255,255,255,.16)}
-.bunn-info .wrap{padding-block:22px;color:var(--navy-ink);font-size:13px;display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
-.bunn-info a{color:var(--navy-ink)}
+/* ---------- Slutten ---------- */
+.slutt{position:relative;overflow:hidden;isolation:isolate}
+.slutt::before{content:"";position:absolute;z-index:-1;left:50%;top:30%;width:1000px;height:1000px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(48,88,214,.5),rgba(48,88,214,0))}
+.slutt .cta{padding-block:96px 80px;display:grid;justify-items:center;text-align:center}
+.tegn{width:88px;height:88px}
+.slutt h2{margin-top:28px;font-size:clamp(34px,9vw,64px);line-height:1.03;letter-spacing:-.042em;max-width:14ch}
+.slutt .cta p{color:var(--blek);margin-top:16px;max-width:30rem;font-size:17px}
+.slutt .badge{margin-top:28px}
+.slutt .badge img{height:56px}
+.anim .tegn .bakgrunn{transform-origin:50% 50%;transform:scale(.6);opacity:0}
+.anim .tegn .bue{stroke-dasharray:100;stroke-dashoffset:100}
+.anim .tegn .pil-hode{opacity:0}
+.anim .tegn .hake{stroke-dasharray:100;stroke-dashoffset:100}
+.anim .tegn.tegnet .bakgrunn{transform:none;opacity:1;transition:transform .7s var(--fjaer),opacity .3s}
+.anim .tegn.tegnet .bue{stroke-dashoffset:0;transition:stroke-dashoffset .9s .25s cubic-bezier(.65,0,.35,1)}
+.anim .tegn.tegnet .pil-hode{opacity:1;transition:opacity .2s 1.05s}
+.anim .tegn.tegnet .hake{stroke-dashoffset:0;transition:stroke-dashoffset .45s 1.15s var(--glid)}
+.bunn-info{border-top:1px solid rgba(255,255,255,.14)}
+.bunn-info .wrap{padding-block:24px;color:var(--blek);font-size:13px;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}
 .bunn-info .org{margin-right:auto}
-.bunn-lenker{display:flex;gap:18px}
+.bunn-info nav{display:flex;flex-wrap:wrap;gap:8px 18px}
+.bunn-info a{color:var(--blek)}
 
-/* ---------- Fast knapp ---------- */
-.feste{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s ease}
+/* ---------- Fast knapp på mobil ---------- */
+.feste{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--surface) 90%,transparent);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .3s var(--glid)}
 .feste.vis{transform:none}
 .feste span{font-size:13px;color:var(--muted);line-height:1.3}
 .feste span b{display:block;color:var(--ink);font-size:15px}
 .feste .badge img{height:44px}
-.se-res{display:inline-flex;align-items:center;background:var(--navy);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:12px 16px;border-radius:12px;white-space:nowrap}
-body{padding-bottom:76px}
-@media (prefers-reduced-motion:reduce){.feste{transition:none}}
-#res-tittel{scroll-margin-top:90px}
+.se-res{display:inline-flex;align-items:center;background:var(--natt);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:12px 16px;border-radius:12px;white-space:nowrap}
 
 /* ---------- Større skjermer ---------- */
 @media (min-width:720px){
   body{font-size:17px}
-  .sek{padding-block:96px}
-  .topp .lenke{display:inline}
-  .helt{padding-top:56px}
-  .helt .wrap{grid-template-columns:1.05fr .95fr;align-items:end;gap:40px}
-  .helt-tekst{padding-bottom:64px}
-  .helt .handling{flex-direction:row;align-items:center;gap:20px}
-  .helt-bilde{width:min(100%,400px);margin:0 auto}
-  .helt-bilde .tlf{max-height:600px}
-  .varsel{left:-70px;right:-40px;top:244px;padding:13px 15px}
-  .v-tittel{font-size:14.5px}.v-tekst{font-size:13px}
-  .tall .wrap{padding-block:24px;gap:24px}
-  .tall b{font-size:28px}
-  .tall span{font-size:14px}
-  .kort-rekke{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible;margin-inline:0;padding-inline:0}
-  .fk .skjerm{max-height:360px}
-  .fk.ku .skjerm{max-height:300px}
-  .prikker{display:none}
-  .regel-sek .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-  .regler{margin-top:0}
+  .sek{padding-block:128px}
+  .tall span{font-size:15px}
+  .lofter{grid-template-columns:1fr 1fr;column-gap:48px}
+  .mer-liste{grid-template-columns:1fr 1fr;column-gap:48px}
+  .planer{grid-template-columns:1fr 1fr;max-width:860px}
+  .regler{grid-template-columns:repeat(4,1fr)}
   .kalk{grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:24px;align-items:start}
   .velg{padding:24px}
   .brikke:nth-child(n+11){display:inline-flex}
-  .rad{grid-template-columns:30px minmax(0,1fr) auto 36px}
+  .rad{grid-template-columns:32px minmax(0,1fr) auto 36px}
   .rad .belop{grid-column:auto;text-align:right;margin-top:2px}
   .rad .belop small{display:block;margin:0}
   .fjern{grid-column:auto}
-  .resultat{position:sticky;top:80px;padding:28px}
-  .planer{grid-template-columns:1fr 1fr;max-width:820px}
-  .bunn .cta{grid-template-columns:1fr auto;align-items:center;padding-block:72px}
+  .resultat{position:sticky;top:88px;padding:28px}
   .feste{display:none}
-  body{padding-bottom:0}
+  .tidslinje .merkelapp{font-size:13px}
+  .guide-lenke{grid-template-columns:auto minmax(0,1fr) auto;padding:20px 24px}
+  .guide-lenke .stabel{grid-column:auto}
 }
-.guide-lenke{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:28px;padding:18px 20px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);color:var(--ink);text-decoration:none}
-.guide-lenke b{display:block;font-size:17px}
-.guide-lenke small{display:block;color:var(--muted);font-size:14px;margin-top:2px}
-.guide-lenke>span:last-child{font-size:22px;color:var(--navy)}
-.guide-lenke:hover{border-color:var(--ink)}
-.derfor{background:var(--surface);border-block:1px solid var(--line)}
-.derfor .liste{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:28px}
-.derfor .pkt{background:var(--ground);border:1px solid var(--line);border-radius:var(--r-s);padding:18px}
-.derfor .pkt b{display:block;font-size:16px;letter-spacing:-.01em;margin-bottom:6px}
-.derfor .pkt p{margin:0;font-size:14px;color:var(--muted);line-height:1.5}
-.derfor .mer{display:inline-block;margin-top:22px;font-weight:600;color:var(--navy-lys)}
+@media (min-width:960px){
+  .topp nav a.lenke{display:inline}
+  .helt{padding:calc(var(--topp) + 80px) 0 128px}
+  .helt-grid{grid-template-columns:minmax(0,1fr) minmax(380px,440px);align-items:center;gap:64px}
+  .helt h1{font-size:clamp(44px,calc((min(100vw,1120px) - 544px) / 8.2),72px)}
+  .helt .under{font-size:19px}
+  .demo{justify-self:end}
+  .demo-kort{--rad:50px;--hode:104px}
+  .papir .rader li{font-size:13.5px}
+  .app .navn b,.app .pris{font-size:14.5px}
+  .app .navn small{font-size:12px}
+  .total{font-size:32px}
+  .demo .push{left:-72px;right:48px;bottom:-66px}
+  .fortelling-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:64px}
+  .telefon{width:auto;height:min(76vh,700px)}
+  .fortelling-tekst{align-self:center}
+  .anim .fortelling-scene{padding-top:var(--topp)}
+  .anim .fortelling-grid{grid-template-rows:none;align-items:center}
+  .anim .telefon{align-self:center;-webkit-mask-image:none;mask-image:none;height:min(78svh,700px)}
+  .anim .steg{height:auto;display:grid;gap:8px;margin-top:34px}
+  .anim .steg li{position:relative;inset:auto;opacity:.38;transform:none;pointer-events:auto;cursor:pointer;padding:14px 0 14px 22px;border-left:2px solid var(--line);transition:opacity .35s,border-color .35s}
+  .anim .steg li.aktiv{opacity:1;border-left-color:var(--ink)}
+  .anim .steg-prikker{display:none}
+  .frist-scene .wrap{position:relative}
+  .frist .push{position:absolute;right:20px;top:0;width:380px;margin:0}
+  .frist .tittel,.frist .ingress{max-width:calc(100% - 440px)}
+  .frist .ur{display:grid;grid-template-columns:auto 1fr;align-items:end;column-gap:48px}
+  .frist .ur-etikett{grid-column:1/-1}
+  .frist .ur-status{margin:0 0 12px}
+  .tidslinje{margin-top:56px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .bane-rad{animation:none;width:auto;justify-content:center}
+  .kopi{flex-wrap:wrap;justify-content:center;padding:0}
+  .kopi+.kopi{display:none}
+  .baner{-webkit-mask-image:none;mask-image:none;padding-inline:20px}
+  .feste,.badge,.brikke{transition:none}
+}
+
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://trekksjekk.no/#org","name":"TrekkSjekk","url":"https://trekksjekk.no/","logo":{"@type":"ImageObject","url":"https://trekksjekk.no/bilder/ikon-512.png","width":512,"height":512},"email":"01ole.foss@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Kristiansand","addressCountry":"NO"},"sameAs":["https://apps.apple.com/no/app/id6811947257"]},{"@type":"WebSite","@id":"https://trekksjekk.no/#site","name":"TrekkSjekk","url":"https://trekksjekk.no/","inLanguage":"nb","publisher":{"@id":"https://trekksjekk.no/#org"}}]}</script>
 </head>
 <body>
-
 <header class="topp" id="topp">
   <div class="wrap">
     <a class="merke" href="./" aria-label="TrekkSjekk, til forsiden">
-      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1E3A8A"/><path d="M50 22 A28 28 0 1 1 25.75 36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><polyline points="16.2,38.6 26.8,34.3 28.4,45.6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><polyline points="39,51 47,59 62,43" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1E3A8A"/><path d="M50 22 A28 28 0 1 1 25.75 36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><polyline points="16.2,38.6 26.8,34.3 28.4,45.6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><polyline points="39,51 47,59 62,43" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
       TrekkSjekk
     </a>
-    <div>
-      <a class="lenke" href="si-opp/">Si opp</a>
+    <nav aria-label="Hovedmeny">
+      <a class="lenke" href="si-opp/">Si opp-guider</a>
       <a class="lenke" href="#kalkulator">Kalkulator</a>
       <a class="lenke" href="#pris">Pris</a>
-      <a class="lenke" href="#hjelp">Hjelp</a>
-      <a class="badge" href="https://apps.apple.com/no/app/id6811947257"><picture><source srcset="bilder/app-store-hvit.svg" media="(prefers-color-scheme: dark)"><img src="bilder/app-store-svart.svg" alt="Last ned i App Store" width="102" height="34"></picture></a>
-    </div>
+      <a class="lenke" href="#hjelp">Spørsmål</a>
+      <a class="badge" href="https://apps.apple.com/no/app/id6811947257"><img class="pa-natt" src="bilder/app-store-hvit.svg" alt="Last ned i App Store" width="108" height="36"><img class="pa-lys" src="bilder/app-store-svart.svg" alt="Last ned i App Store" width="108" height="36"></a>
+    </nav>
   </div>
 </header>
 
 <main>
 
-<section class="helt">
-  <div class="wrap">
+<section class="helt scene" aria-labelledby="helt-tittel">
+  <div class="wrap helt-grid">
     <div class="helt-tekst">
-      <span class="pille"><span class="prikk"></span>Gratis for iPhone</span>
-      <h1>Abonnementene dine koster mer enn du tror.</h1>
-      <p class="under">TrekkSjekk samler Netflix, Spotify, Viaplay og resten på ett sted, viser hva det koster i året, og varsler deg før trekk, frister og prøveperioder som går ut.</p>
+      <h1 id="helt-tittel"><span class="ord" style="--i:0">Abonnementene</span> <span class="ord" style="--i:1">dine</span> <span class="ord" style="--i:2">koster</span> <span class="ord" style="--i:3">mer</span> <span class="ord" style="--i:4">enn</span> <span class="ord" style="--i:5">du</span> <span class="ord" style="--i:6">tror.</span></h1>
+      <p class="under">TrekkSjekk finner abonnementene dine, regner ut siste dag du kan si opp, og varsler deg før pengene trekkes.</p>
       <div class="handling">
-        <a class="badge" href="https://apps.apple.com/no/app/id6811947257"><picture><source srcset="bilder/app-store-hvit.svg" media="(prefers-color-scheme: dark)"><img src="bilder/app-store-svart.svg" alt="Last ned i App Store" width="168" height="56"></picture></a>
-        <div class="trygg">
-          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--green)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Ingen konto</span>
-          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--green)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Ingen bankkobling</span>
-          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--green)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Laget i Norge</span>
-        </div>
+        <a class="badge" href="https://apps.apple.com/no/app/id6811947257"><img src="bilder/app-store-hvit.svg" alt="Last ned i App Store" width="162" height="54"></a>
+        <ul class="trygg">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Gratis</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Ingen konto</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Ingen bankkobling</li>
+        </ul>
       </div>
     </div>
 
-    <div class="helt-bilde">
-      <div class="varsel" role="group" aria-label="Eksempel på varsel fra TrekkSjekk">
-        <img src="bilder/logoer/viaplay.no.webp" alt="" width="36" height="36">
+    <figure class="demo" id="demo">
+      <div class="demo-kort" role="img" aria-label="Eksempel: TrekkSjekk leser en kontoutskrift, hopper over dagligvarer og Vipps, og finner fem abonnementer: iCloud+, Netflix, Spotify, Viaplay og Disney+. Til sammen 695 kroner i måneden, 8 340 kroner i året.">
+        <div class="lag papir" aria-hidden="true">
+          <div class="lag-topp">
+            <b>Kontoutskrift</b>
+            <span>Brukskonto 1234.56.78901</span>
+            <span data-periode>Periode 01.09.–30.09.</span>
+          </div>
+          <ol class="rader">
+            <li><span class="dato" data-dag="14">14.09</span><span class="tekst">APPLE.COM/BILL</span><span class="sum">−129,00</span></li>
+            <li><span class="dato" data-dag="15">15.09</span><span class="tekst">NETFLIX.COM</span><span class="sum">−149,00</span></li>
+            <li><span class="dato" data-dag="16">16.09</span><span class="tekst">KIWI 412 GRIM</span><span class="sum">−312,40</span></li>
+            <li><span class="dato" data-dag="17">17.09</span><span class="tekst">SPOTIFY P2B7C9A1</span><span class="sum">−139,00</span></li>
+            <li><span class="dato" data-dag="19">19.09</span><span class="tekst">VIPPS*KARI NORDMANN</span><span class="sum">−250,00</span></li>
+            <li><span class="dato" data-dag="20">20.09</span><span class="tekst">VIAPLAY GROUP</span><span class="sum">−169,00</span></li>
+            <li><span class="dato" data-dag="24">24.09</span><span class="tekst">DISNEY PLUS</span><span class="sum">−109,00</span></li>
+          </ol>
+        </div>
+
+        <div class="lag app" aria-hidden="true">
+          <div class="lag-topp">
+            <div class="app-linje">
+              <span class="app-merke"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1E3A8A"/><path d="M50 22 A28 28 0 1 1 25.75 36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><polyline points="16.2,38.6 26.8,34.3 28.4,45.6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><polyline points="39,51 47,59 62,43" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>TrekkSjekk</span>
+              <span class="fant"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg><span id="fant-tekst">5 abonnementer</span></span>
+            </div>
+            <div class="du-betaler">
+              <span class="db-tekst">Du betaler<small id="per-mnd">695 kr i måneden</small></span>
+              <span class="total"><span class="odo" id="odo">8 340</span><small>kr i året</small></span>
+            </div>
+          </div>
+          <ol class="rader">
+            <li data-dag="14" data-navn="iCloud+" data-pris="129"><img src="bilder/logoer/icloud.com.webp" alt="" width="48" height="48"><span class="navn"><b>iCloud+ 2 TB</b><small class="apple">Funnet bak «Apple Bill»</small></span><span class="pris">129 kr</span></li>
+            <li data-dag="15" data-navn="Netflix" data-pris="149"><img src="bilder/logoer/netflix.com.webp" alt="" width="48" height="48"><span class="navn"><b>Netflix</b><small class="fr">Si opp senest dagen før trekket</small></span><span class="pris">149 kr</span></li>
+            <li class="ikke"><span class="ikon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6.2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><circle cx="9.5" cy="19.5" r="1.3" fill="currentColor"/><circle cx="17" cy="19.5" r="1.3" fill="currentColor"/></svg></span><span class="navn"><b>Kiwi</b><small>Dagligvarer, ikke et abonnement</small></span><span class="pris">–</span></li>
+            <li data-dag="17" data-navn="Spotify" data-pris="139"><img src="bilder/logoer/spotify.com.webp" alt="" width="48" height="48"><span class="navn"><b>Spotify</b><small class="fr">Si opp senest dagen før trekket</small></span><span class="pris">139 kr</span></li>
+            <li class="ikke"><span class="ikon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span><span class="navn"><b>Vipps til Kari</b><small>Overføring, hoppes over</small></span><span class="pris">–</span></li>
+            <li data-dag="20" data-navn="Viaplay" data-pris="169"><img src="bilder/logoer/viaplay.no.webp" alt="" width="48" height="48"><span class="navn"><b>Viaplay</b><small class="fr">Si opp senest dagen før trekket</small></span><span class="pris">169 kr</span></li>
+            <li data-dag="24" data-navn="Disney+" data-pris="109"><img src="bilder/logoer/disneyplus.com.webp" alt="" width="48" height="48"><span class="navn"><b>Disney+</b><small class="fr">Si opp senest dagen før trekket</small></span><span class="pris">109 kr</span></li>
+          </ol>
+        </div>
+
+        <div class="skanner" aria-hidden="true"><span>Leser kontoutskriften</span></div>
+      </div>
+
+      <div class="push" id="demo-push" aria-hidden="true">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1E3A8A"/><path d="M50 22 A28 28 0 1 1 25.75 36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><polyline points="16.2,38.6 26.8,34.3 28.4,45.6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><polyline points="39,51 47,59 62,43" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <div>
           <div class="v-topp"><b>TrekkSjekk</b><span>nå</span></div>
-          <div class="v-tittel">Prøveperioden går ut: Viaplay</div>
-          <div class="v-tekst">Fra i morgen koster den 169 kr. Si opp i dag for å slippe trekket.</div>
+          <div class="v-tittel" data-tittel>Snart trekk: Viaplay</div>
+          <div class="v-tekst" data-tekst>Si opp senest dagen før, så slipper du trekket på 169 kr.</div>
         </div>
       </div>
-      <div class="tlf"><img src="bilder/oversikt.webp" width="640" height="1348" alt="TrekkSjekk-oversikten: 1 362 kr i måneden, 16 344 kr i året, fordelt på kategorier" fetchpriority="high"></div>
+
+      <button class="igjen" id="igjen" type="button" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.6-5.9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M20 4v5h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>Spill av igjen</button>
+    </figure>
+  </div>
+</section>
+
+<section class="kjenner" aria-labelledby="kjenner-tittel">
+  <div class="wrap">
+    <h2 class="skjult" id="kjenner-tittel">TrekkSjekk i tall</h2>
+    <div class="tall">
+      <div><b>250+</b><span>tjenester med logo, pakker og priser</span></div>
+      <div><b>180+</b><span>oppsigelsesfrister lest fra vilkårene</span></div>
+      <div><b>0</b><span>kontoer og bankkoblinger du trenger</span></div>
     </div>
   </div>
-</section>
-
-<div class="tall" aria-label="Nøkkeltall">
-  <div class="wrap">
-    <div><b>250+</b><span>tjenester med logo og priser</span></div>
-    <div><b>180+</b><span>oppsigelsesfrister lest fra vilkårene</span></div>
-    <div><b>0</b><span>kontoer og bankkoblinger du trenger</span></div>
+  <div class="baner" aria-hidden="true">
+    <div class="bane-rad" style="--tid:90s"><span class="kopi"><img src="bilder/logoer/netflix.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/viaplay.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/disneyplus.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/tv2.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/icloud.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/wolt.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/nextory.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/music.apple.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/storytel.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/dropbox.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/strava.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/canva.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/claude.ai.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/audible.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/crunchyroll.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/tidal.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/aftenposten.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/foodora.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/nintendo.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/skyshowtime.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/allente.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/dagbladet.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/github.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/microsoft.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/strim.no.webp" alt="" width="54" height="54" loading="lazy"></span><span class="kopi"><img src="bilder/logoer/netflix.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/viaplay.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/disneyplus.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/tv2.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/icloud.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/wolt.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/nextory.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/music.apple.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/storytel.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/dropbox.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/strava.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/canva.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/claude.ai.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/audible.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/crunchyroll.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/tidal.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/aftenposten.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/foodora.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/nintendo.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/skyshowtime.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/allente.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/dagbladet.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/github.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/microsoft.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/strim.no.webp" alt="" width="54" height="54" loading="lazy"></span></div>
+    <div class="bane-rad mot" style="--tid:110s"><span class="kopi"><img src="bilder/logoer/spotify.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/hbomax.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/youtube.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/openai.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/podme.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/playstation.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/vg.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/primevideo.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/xbox.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/duolingo.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/nordvpn.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/notion.so.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/figma.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/twitch.tv.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/deezer.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/bookbeat.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/dn.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/hellofresh.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/ea.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/rikstv.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/adobe.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/fabel.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/patreon.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/one.google.com.webp" alt="" width="54" height="54" loading="lazy"></span><span class="kopi"><img src="bilder/logoer/spotify.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/hbomax.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/youtube.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/openai.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/podme.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/playstation.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/vg.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/primevideo.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/xbox.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/duolingo.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/nordvpn.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/notion.so.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/figma.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/twitch.tv.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/deezer.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/bookbeat.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/dn.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/hellofresh.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/ea.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/rikstv.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/adobe.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/fabel.no.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/patreon.com.webp" alt="" width="54" height="54" loading="lazy"><img src="bilder/logoer/one.google.com.webp" alt="" width="54" height="54" loading="lazy"></span></div>
   </div>
-</div>
-
-<section class="logoer" aria-label="Tjenester TrekkSjekk kjenner">
-  <p>Netflix, Spotify, Viaplay, HBO Max og de andre du faktisk har.</p>
-  <div class="bane"><div class="spor" id="spor"></div></div>
+  <p class="baner-tekst">Netflix, Spotify, Viaplay, HBO Max og de andre du faktisk har.</p>
 </section>
 
-<section class="sek" aria-labelledby="funk-tittel">
-  <div class="wrap">
-    <h2 id="funk-tittel">Alt på ett sted. Og fristen regnet ut.</h2>
-    <p class="ingress">Legg inn abonnementene, eller la appen lese kontoutskriften din. Resten gjør TrekkSjekk.</p>
-    <div class="kort-rekke" id="kort" tabindex="0" aria-label="Skjermbilder fra appen, bla sidelengs">
-      <figure class="fk">
-        <figcaption><h3>Hva du egentlig betaler</h3><p>Alle abonnementene samlet, per måned og per år.</p></figcaption>
-        <div class="skjerm"><img src="bilder/oversikt.webp" width="640" height="1348" loading="lazy" alt="Oversikten: 1 362 kr i måneden fordelt på kategorier"></div>
-      </figure>
-      <figure class="fk morkt">
-        <figcaption><h3>Siste dag du kan si opp</h3><p>Prøveperioder og frister regnes ut fra tjenestens egne vilkår. Du får varsel før de går ut.</p></figcaption>
-        <div class="skjerm"><img src="bilder/proveperiode.webp" width="640" height="1348" loading="lazy" alt="Varsel om at prøveperioden hos Nextory går ut"></div>
-      </figure>
-      <figure class="fk ku">
-        <figcaption><h3>Leser kontoutskriften</h3><p>Finner de faste trekkene, også det som skjuler seg bak «Apple Bill».</p></figcaption>
-        <div class="skjerm"><img src="bilder/kontoutskrift.webp" width="640" height="1348" loading="lazy" alt="Faste trekk funnet i kontoutskriften"></div>
-      </figure>
-      <figure class="fk">
-        <figcaption><h3>Studentpris du ikke bruker</h3><p>Er du student, ser du rabattene du har krav på.</p></figcaption>
-        <div class="skjerm"><img src="bilder/studentpris.webp" width="640" height="1348" loading="lazy" alt="Studentpris-siden med Storytel, YouTube Premium og Spotify"></div>
-      </figure>
-      <figure class="fk">
-        <figcaption><h3>Rett til oppsigelsen</h3><p>Ett trykk til siden der abonnementet faktisk avsluttes.</p></figcaption>
-        <div class="skjerm"><img src="bilder/oppsigelse.webp" width="640" height="1348" loading="lazy" alt="Avslutt Netflix: knapp til oppsigelsessiden"></div>
-      </figure>
-    </div>
-    <div class="prikker" id="prikker" aria-hidden="true"></div>
-  </div>
-</section>
-
-<section class="sek regel-sek" aria-labelledby="regel-tittel">
-  <div class="wrap">
-    <div>
-      <h2 id="regel-tittel">Dagen før holder sjelden.</h2>
-      <p class="ingress">Strømming kan du si opp kvelden før. Treningssentre og TV-pakker har oppsigelsestid, og da betaler du minst én måned til. TrekkSjekk vet hvilken regel som gjelder.</p>
-      <div class="datoer" id="datoer">
-        <p class="hvorfor">Treningssenteret ditt trekker 1. desember:</p>
-        <div class="dato"><span class="t">Du tror</span><s class="d">30. november</s></div>
-        <div class="dato ekte"><span class="t">Fristen</span><strong class="d">31. oktober<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="#4ADE80" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></strong></div>
+<section class="frist scene" id="frist" aria-labelledby="frist-tittel">
+  <div class="frist-scene">
+    <div class="wrap">
+      <h2 class="tittel" id="frist-tittel">Dagen før holder sjelden.</h2>
+      <p class="ingress">Treningssenteret ditt trekker 1. desember. Når må du si opp?</p>
+      <div class="ur">
+        <p class="ur-etikett" id="ur-etikett">Siste frist</p>
+        <p class="ur-dato" id="ur-dato">31. oktober</p>
+        <p class="ur-status" id="ur-status" data-tilstand="ok"><i aria-hidden="true"></i><span>Én måneds oppsigelsestid løper ut neste måned. Sier du opp 30. november, betaler du for desember også.</span></p>
       </div>
+      <div class="tidslinje" id="tidslinje" aria-hidden="true" style="--fx:25.58%">
+        <div class="linje"><div class="fyll"></div></div>
+        <span class="pinne frist-pinne" style="--x:25.58%"></span>
+        <span class="pinne" style="--x:95.35%"></span>
+        <span class="pinne" style="--x:97.67%"></span>
+        <span class="merkelapp under frist-lapp" style="--x:25.58%"><b>31. okt</b>Siste frist</span>
+        <span class="merkelapp over hoyre" style="--x:95.35%"><b>30. nov</b>Du tror</span>
+        <span class="merkelapp under hoyre" style="--x:97.67%"><b>1. des</b>Trekket</span>
+        <span class="i-dag"></span>
+      </div>
+      <div class="push" id="frist-push" aria-hidden="true">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1E3A8A"/><path d="M50 22 A28 28 0 1 1 25.75 36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><polyline points="16.2,38.6 26.8,34.3 28.4,45.6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><polyline points="39,51 47,59 62,43" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div>
+          <div class="v-topp"><b>TrekkSjekk</b><span>09:00</span></div>
+          <div class="v-tittel" data-tittel>Siste frist om 3 dager: Treningssenteret</div>
+          <div class="v-tekst">Si opp innen 31. oktober, så slipper du trekket 1. desember.</div>
+        </div>
+      </div>
+      <p class="frist-hint" id="frist-hint" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/></svg>Scroll, så går dagene</p>
     </div>
+  </div>
+</section>
+
+<section class="regler-sek scene" aria-label="Oppsigelsesregler">
+  <div class="wrap">
     <div class="regler">
       <div class="regel"><b>Strømming og apper</b><span>Netflix, Spotify, HBO Max</span><span class="nar">Dagen før trekket</span></div>
       <div class="regel"><b>Treningssenter</b><span>De fleste kjedene</span><span class="nar lang">Ut neste måned, opptil to måneder før</span></div>
@@ -431,22 +640,28 @@ body{padding-bottom:76px}
   </div>
 </section>
 
-<section class="sek derfor" id="derfor" aria-labelledby="derfor-tittel">
-  <div class="wrap">
-    <h2 id="derfor-tittel">Laget fordi de andre appene gjorde det motsatte.</h2>
-    <p class="ingress">Abonnementsappene som fantes ba om tilgang til bankkontoen, gjettet feil og fortalte aldri hvor man sier opp. TrekkSjekk er bygget rundt det de manglet.</p>
-    <div class="liste">
-      <div class="pkt"><b>Ingen bankkobling. Ingen konto.</b><p>Abonnementene dine lagres på telefonen. TrekkSjekk har ingen brukerdatabase, og ingen kan se inn på kontoen din.</p></div>
-      <div class="pkt"><b>Selger aldri data.</b><p>Ingen annonsenettverk og ingen sporings-SDK fra Meta eller Google. Det eneste som sendes er anonyme tellinger uten bruker-ID.</p></div>
-      <div class="pkt"><b>Vet hva «Apple Bill» er.</b><p>Apple, Google Play og PlayStation skriver bare sitt eget navn på trekket. TrekkSjekk matcher beløpet mot prisene til flere hundre tjenester og foreslår hvilke det kan være.</p></div>
-      <div class="pkt"><b>Fristen regnes fra vilkårene.</b><p>Oppsigelsestiden til over 180 tjenester er lest fra leverandørenes egne sider. Finnes ikke regelen, viser appen ingen frist i stedet for å gjette.</p></div>
-      <div class="pkt"><b>Kontoutskriften leses på telefonen.</b><p>Du laster ned en CSV fra nettbanken selv. Fila leses lokalt, og slettes etterpå. Gratis å lese.</p></div>
-      <div class="pkt"><b>Ekte logoer, ekte priser.</b><p>Over 250 tjenester med logo, pakker, studentpris og bindingstid. Hver pris har en kilde og en dato.</p></div>
-      <div class="pkt"><b>Rett til oppsigelsessiden.</b><p>Ett trykk tar deg til siden der abonnementet faktisk avsluttes, med stegene du trenger. Ingen leting etter den skjulte siden.</p></div>
-      <div class="pkt"><b>Alle pakkene, og hvor du kan spare.</b><p>Se hva hver pakke koster og hva som følger med. Studentpris du ikke bruker og billigere pakker vises med summen per år.</p></div>
-      <div class="pkt"><b>Delte abonnementer og prøveperioder.</b><p>Se hva du selv betaler når dere deler, og få varsel før en gratisperiode begynner å koste.</p></div>
+<section class="fortelling" id="funksjoner" aria-labelledby="funk-tittel">
+  <div class="fortelling-scene">
+    <div class="wrap fortelling-grid">
+      <div class="fortelling-tekst">
+        <h2 id="funk-tittel">Alt på ett sted. Og fristen regnet ut.</h2>
+        <ol class="steg" id="steg">
+          <li class="aktiv"><h3>Hva du egentlig betaler</h3><p>Alle abonnementene samlet, per måned og per år, med neste trekk øverst.</p></li>
+          <li><h3>Varsel før det koster</h3><p>Prøveperioder og frister regnes ut fra tjenestens egne vilkår. Du får beskjed før de går ut.</p></li>
+          <li><h3>Studentpris du ikke bruker</h3><p>Er du student, ser du rabattene du har krav på, og hva du sparer i året.</p></li>
+          <li><h3>Rett til oppsigelsen</h3><p>Ett trykk tar deg til siden der abonnementet faktisk avsluttes, med stegene du trenger.</p></li>
+        </ol>
+        <div class="steg-prikker" id="steg-prikker" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="telefon">
+        <div class="telefon-skjerm" id="skjermer">
+          <img class="aktiv" src="bilder/oversikt.webp" width="640" height="1348" loading="lazy" alt="Oversikten i TrekkSjekk: 1 362 kr i måneden, 16 344 kr i året, fordelt på kategorier">
+          <img src="bilder/proveperiode.webp" width="640" height="1348" loading="lazy" alt="Varsel om at prøveperioden hos Nextory går ut, med siste dag å si opp">
+          <img src="bilder/studentpris.webp" width="640" height="1348" loading="lazy" alt="Studentpris-siden: Storytel, YouTube Premium og Spotify har studentpris">
+          <img src="bilder/oppsigelse.webp" width="640" height="1348" loading="lazy" alt="Avslutt Netflix: knapp rett til oppsigelsessiden og siste frist">
+        </div>
+      </div>
     </div>
-    <a class="mer" href="om.html">Les hvorfor TrekkSjekk ble laget →</a>
   </div>
 </section>
 
@@ -483,8 +698,35 @@ body{padding-bottom:76px}
   </div>
 </section>
 
+<section class="sek scene personvern" aria-labelledby="pv-tittel">
+  <div class="wrap">
+    <h2 id="pv-tittel">Ingen bank. Ingen konto. Ingen salg av data.</h2>
+    <p class="ingress">Abonnementsappene som fantes ba om tilgang til bankkontoen, gjettet feil og fortalte aldri hvor man sier opp. TrekkSjekk er bygget rundt det de manglet.</p>
+    <ul class="lofter">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg><b>Ingen bankkobling. Ingen konto.</b><p>Abonnementene lagres på telefonen din. TrekkSjekk har ingen brukerdatabase, og ingen kan se inn på kontoen din.</p></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.3-7.5 9.5-4.3-1.2-7.5-4.9-7.5-9.5V6L12 3z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg><b>Selger aldri data.</b><p>Ingen annonsenettverk og ingen sporing fra Meta eller Google. Det eneste som sendes er anonyme tellinger uten bruker-ID.</p></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.8" width="11" height="18.4" rx="2.6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M10.5 18h3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg><b>Kontoutskriften leses på telefonen.</b><p>Du laster ned en CSV fra nettbanken selv. Fila leses lokalt og slettes etterpå. Gratis å lese.</p></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.8" y="5" width="16.4" height="15" rx="2.6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M3.8 9.5h16.4M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M9 14.5l2 2 4-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg><b>Fristen regnes fra vilkårene.</b><p>Oppsigelsestiden til over 180 tjenester er lest fra leverandørenes egne sider. Finnes ikke regelen, viser appen ingen frist i stedet for å gjette.</p></li>
+    </ul>
+    <p class="videre"><a href="om.html">Les hvorfor TrekkSjekk ble laget</a><a href="sammenlign.html">Sammenlign med nettbanken og andre apper</a></p>
+  </div>
+</section>
 
-<section class="sek" id="pris" aria-labelledby="pris-tittel">
+<section class="sek" aria-labelledby="mer-tittel">
+  <div class="wrap">
+    <h2 id="mer-tittel">Og alt det andre du ikke orker å huske på.</h2>
+    <ul class="mer-liste">
+      <li><b>Vet hva «Apple Bill» er.</b><p>Apple, Google Play og PlayStation skriver bare sitt eget navn på trekket. TrekkSjekk matcher beløpet mot prisene til flere hundre tjenester og foreslår hvilke det kan være.</p></li>
+      <li><b>Ekte logoer, ekte priser.</b><p>Over 250 tjenester med logo, pakker, studentpris og bindingstid. Hver pris har en kilde og en dato.</p></li>
+      <li><b>Alle pakkene, og hvor du kan spare.</b><p>Se hva hver pakke koster og hva som følger med. Billigere pakker og studentpris vises med summen per år.</p></li>
+      <li><b>Prisvarsel og bindingstid.</b><p>Du får beskjed når pakken din blir dyrere, og ser hvor lenge det er igjen av bindingstiden.</p></li>
+      <li><b>Brukte du det forrige måned?</b><p>En gang i måneden spør appen om du faktisk brukte abonnementene dine, så du ser hva du kan kutte.</p></li>
+      <li><b>Delte abonnementer.</b><p>Deler du Spotify eller Netflix, ser du hva du selv betaler, og får påminnelse om å be om pengene.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sek" id="pris" aria-labelledby="pris-tittel" style="padding-top:0">
   <div class="wrap">
     <h2 id="pris-tittel">Gratis å bruke. Premium når du vil ha alt på automatikk.</h2>
     <div class="planer">
@@ -493,24 +735,24 @@ body{padding-bottom:76px}
         <div class="belop">0 kr</div>
         <div class="per">for alltid</div>
         <ul>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--green)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Opptil 5 abonnementer</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--green)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Trekkdatoer og frister</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--green)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Ett varsel per trekk</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--green)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Sum per måned og år</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="var(--green)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Les kontoutskriften og se de fem første</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Opptil 5 abonnementer</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Trekkdatoer og frister</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Ett varsel per trekk</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Sum per måned og år</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Les kontoutskriften og se de fem første</li>
         </ul>
       </div>
       <div class="plan premium">
-        <span class="merke-lapp">7 dager gratis</span>
+        <span class="lapp">7 dager gratis</span>
         <h3>Premium</h3>
         <div class="belop">149 kr<small>i året</small></div>
         <div class="per">Det er 12 kr i måneden. Si opp når du vil.</div>
         <ul>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Ubegrenset antall abonnementer</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alt kontoutskriften finner, ikke bare fem</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Varsler før frist og trekk, når du vil</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Oppsigelse rett fra appen</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#4ADE80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Prøveperioder og hele spareoversikten</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Ubegrenset antall abonnementer</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Alt kontoutskriften finner, ikke bare fem</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Varsler før frist og trekk, når du vil</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Oppsigelse rett fra appen</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/></svg>Prøveperioder og hele spareoversikten</li>
         </ul>
         <p class="alt">Eller 39 kr i måneden, eller 399 kr én gang for alltid. Kjøpes i appen via App Store.</p>
         <a class="badge" href="https://apps.apple.com/no/app/id6811947257"><img src="bilder/app-store-hvit.svg" alt="Last ned i App Store" width="156" height="52"></a>
@@ -523,33 +765,47 @@ body{padding-bottom:76px}
   <div class="wrap">
     <h2 id="faq-tittel">Spørsmål folk stiller</h2>
     <div class="sporsmal">
-      <details><summary>Hvorfor ikke bare se i nettbanken?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Nettbanken viser trekkene etter at de har skjedd. Da er det ofte for sent å slippe neste. TrekkSjekk viser siste dag du kan si opp, og varsler deg før den går ut.</p></details>
-      <details><summary>Må jeg koble til banken eller lage en konto?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Nei. Du legger inn abonnementene selv, eller velger en kontoutskrift du har lastet ned fra nettbanken. Fila leses på telefonen og slettes etterpå.</p></details>
-      <details><summary>Hvor kommer oppsigelsesfristene fra?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Fra tjenestenes egne vilkår. Over 180 tjenester har fristen regnet inn. Finner vi ikke regelen, viser appen ingen frist i stedet for å gjette.</p></details>
-      <details><summary>Sier appen opp abonnementet for meg?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Nei, det gjør du selv. TrekkSjekk tar deg rett til siden der abonnementet avsluttes og forteller hva du skal trykke på. Er det kjøpt i App Store eller på PlayStation, sendes du dit.</p></details>
-      <details><summary>Hva koster TrekkSjekk?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Appen er gratis med opptil fem abonnementer, og du får ett varsel før hvert trekk. Premium koster 149 kr i året med 7 dager gratis, eller 39 kr i måneden, eller 399 kr én gang for alltid.</p></details>
-      <details><summary>Finnes TrekkSjekk på Android?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><p>Ikke ennå. Appen finnes for iPhone, og Android-versjonen er under arbeid.</p></details>
-
+      <details><summary>Hvorfor ikke bare se i nettbanken?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/></svg></summary><p>Nettbanken viser trekkene etter at de har skjedd. Da er det ofte for sent å slippe neste. TrekkSjekk viser siste dag du kan si opp, og varsler deg før den går ut.</p></details>
+      <details><summary>Må jeg koble til banken eller lage en konto?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/></svg></summary><p>Nei. Du legger inn abonnementene selv, eller velger en kontoutskrift du har lastet ned fra nettbanken. Fila leses på telefonen og slettes etterpå.</p></details>
+      <details><summary>Hvor kommer oppsigelsesfristene fra?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/></svg></summary><p>Fra tjenestenes egne vilkår. Over 180 tjenester har fristen regnet inn. Finner vi ikke regelen, viser appen ingen frist i stedet for å gjette.</p></details>
+      <details><summary>Sier appen opp abonnementet for meg?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/></svg></summary><p>Nei, det gjør du selv. TrekkSjekk tar deg rett til siden der abonnementet avsluttes og forteller hva du skal trykke på. Er det kjøpt i App Store eller på PlayStation, sendes du dit.</p></details>
+      <details><summary>Hva koster TrekkSjekk?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/></svg></summary><p>Appen er gratis med opptil fem abonnementer, og du får ett varsel før hvert trekk. Premium koster 149 kr i året med 7 dager gratis, eller 39 kr i måneden, eller 399 kr én gang for alltid.</p></details>
+      <details><summary>Finnes TrekkSjekk på Android?<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/></svg></summary><p>Ikke ennå. Appen finnes for iPhone, og Android-versjonen er under arbeid.</p></details>
     </div>
-    <p class="kilde" style="margin-top:22px">Feil pris eller lenke? Si fra rett i appen, under Innstillinger. Alt annet: <a href="mailto:01ole.foss@gmail.com" style="color:var(--ink);font-weight:600">01ole.foss@gmail.com</a>.</p>
-    <a class="guide-lenke" href="si-opp/"><span><b>Slik sier du opp – 235 tjenester</b><small>Oppsigelsestid, siste frist og fremgangsmåte for Netflix, Spotify, Viaplay og resten</small></span><span aria-hidden="true">→</span></a>
+    <p class="kontakt">Feil pris eller lenke? Si fra rett i appen, under Innstillinger. Alt annet: <a href="mailto:01ole.foss@gmail.com">01ole.foss@gmail.com</a>.</p>
+    <div class="nyttig">
+      <a class="guide-lenke" href="si-opp/">
+        <span class="stabel" aria-hidden="true"><img src="bilder/logoer/netflix.com.webp" alt="" width="48" height="48" loading="lazy"><img src="bilder/logoer/spotify.com.webp" alt="" width="48" height="48" loading="lazy"><img src="bilder/logoer/viaplay.no.webp" alt="" width="48" height="48" loading="lazy"></span>
+        <span><b>Slik sier du opp: 235 tjenester</b><small>Oppsigelsestid, siste frist og fremgangsmåte for Netflix, Spotify, Viaplay og resten</small></span>
+        <svg class="pil" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+      </a>
+      <a class="guide-lenke" href="priser/">
+        <span class="stabel" aria-hidden="true"><img src="bilder/logoer/hbomax.com.webp" alt="" width="48" height="48" loading="lazy"><img src="bilder/logoer/disneyplus.com.webp" alt="" width="48" height="48" loading="lazy"><img src="bilder/logoer/tv2.no.webp" alt="" width="48" height="48" loading="lazy"></span>
+        <span><b>Hva koster abonnementene? Priser for 170 tjenester</b><small>Alle pakkene til Netflix, HBO Max, Disney+ og de andre, med dato for når prisen ble sjekket</small></span>
+        <svg class="pil" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+      </a>
+      <a class="guide-lenke" href="studentrabatt/">
+        <span class="stabel" aria-hidden="true"><img src="bilder/logoer/youtube.com.webp" alt="" width="48" height="48" loading="lazy"><img src="bilder/logoer/storytel.com.webp" alt="" width="48" height="48" loading="lazy"><img src="bilder/logoer/podme.com.webp" alt="" width="48" height="48" loading="lazy"></span>
+        <span><b>Studentrabatt: 21 tilbud</b><small>Studentpris på Spotify, YouTube Premium, Storytel og flere, og hva du sparer i året</small></span>
+        <svg class="pil" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+      </a>
+    </div>
   </div>
 </section>
 
 </main>
 
-<footer class="bunn">
+<footer class="slutt scene" aria-labelledby="slutt-tittel">
   <div class="wrap cta">
-    <div>
-      <h2>Si opp det du ikke bruker, før det trekkes.</h2>
-      <p>Gratis å laste ned. Tar to minutter å sette opp. Ingen konto.</p>
-    </div>
+    <svg class="tegn" id="tegn" viewBox="0 0 100 100" aria-hidden="true"><rect class="bakgrunn" width="100" height="100" rx="22" fill="#1E3A8A"/><path class="bue" pathLength="100" d="M50 22 A28 28 0 1 1 25.75 36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path class="pil-hode" d="M16.2 38.6 L26.8 34.3 L28.4 45.6" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path class="hake" pathLength="100" d="M39 51 L47 59 L62 43" fill="none" stroke="#4ADE80" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <h2 id="slutt-tittel">Abonnementene dine. Ikke dataene dine.</h2>
+    <p>Si opp det du ikke bruker, før det trekkes. Gratis for iPhone, og du trenger ingen konto.</p>
     <a class="badge" href="https://apps.apple.com/no/app/id6811947257"><img src="bilder/app-store-hvit.svg" alt="Last ned i App Store" width="168" height="56"></a>
   </div>
   <div class="bunn-info">
     <div class="wrap">
       <span class="org">© TrekkSjekk Foss, Kristiansand</span>
-      <nav class="bunn-lenker" aria-label="Juridisk"><a href="om.html">Om</a><a href="si-opp/">Si opp-guider</a><a href="personvern.html">Personvern</a><a href="vilkar.html">Vilkår</a><a href="mailto:01ole.foss@gmail.com">Kontakt</a></nav>
+      <nav aria-label="Mer på trekksjekk.no"><a href="om.html">Om</a><a href="sammenlign.html">Sammenlign</a><a href="si-opp/">Si opp-guider</a><a href="priser/">Priser</a><a href="studentrabatt/">Studentrabatt</a><a href="personvern.html">Personvern</a><a href="vilkar.html">Vilkår</a><a href="mailto:01ole.foss@gmail.com">Kontakt</a></nav>
     </div>
   </div>
 </footer>
@@ -575,13 +831,13 @@ body{padding-bottom:76px}
 
   /* Ekte logoer kan legges i bilder/logoer/<domene>.png og føres opp
      her. Tjenester som ikke står her, får forbokstaven i merkefargen. */
-  var LOGOER = window.LOGOER = ["3t.no", "actic.no", "adamsmatkasse.no", "adobe.com", "adressa.no", "aftenbladet.no", "aftenposten.no", "allente.no", "apple.com", "audible.com", "bilkollektivet.no", "bookbeat.com", "bt.no", "canva.com", "claude.ai", "crunchyroll.com", "dagbladet.no", "deezer.com", "disneyplus.com", "dn.no", "dropbox.com", "duolingo.com", "ea.com", "evofitness.no", "fabel.no", "figma.com", "fitness.apple.com", "foodora.no", "freshfitness.no", "fsc.no", "github.com", "godtlevert.no", "grammarly.com", "hbomax.com", "hellofresh.no", "icloud.com", "iptvx.app", "microsoft.com", "mova.no", "music.apple.com", "netflix.com", "nettavisen.no", "nextory.com", "nintendo.com", "nordvpn.com", "notion.so", "one.google.com", "openai.com", "patreon.com", "playstation.com", "podme.com", "primevideo.com", "rikstv.no", "rockstargames.com", "sats.no", "skyshowtime.com", "spenst.no", "spotify.com", "strava.com", "strim.no", "tidal.com", "trener1.no", "tv.apple.com", "tv2.no", "twitch.tv", "ubisoft.com", "udisc.com", "vg.no", "viaplay.no", "wolt.com", "xbox.com", "youtube.com"];
+  var LOGOER = window.LOGOER = ["3t.no", "actic.no", "adamsmatkasse.no", "adobe.com", "adressa.no", "aftenbladet.no", "aftenposten.no", "allente.no", "apple.com", "audible.com", "bilkollektivet.no", "bookbeat.com", "bt.no", "canva.com", "claude.ai", "crunchyroll.com", "dagbladet.no", "deezer.com", "disneyplus.com", "dn.no", "dropbox.com", "duolingo.com", "ea.com", "evofitness.no", "fabel.no", "figma.com", "fitness.apple.com", "foodora.no", "freshfitness.no", "fsc.no", "github.com", "godtlevert.no", "grammarly.com", "hbomax.com", "hellofresh.no", "icloud.com", "iptvx.app", "microsoft.com", "mova.no", "music.apple.com", "netflix.com", "nettavisen.no", "nextory.com", "nintendo.com", "nordvpn.com", "notion.so", "one.google.com", "openai.com", "patreon.com", "playstation.com", "podme.com", "primevideo.com", "rikstv.no", "rockstargames.com", "sats.no", "skyshowtime.com", "spenst.no", "spotify.com", "storytel.com", "strava.com", "strim.no", "tidal.com", "trener1.no", "tv.apple.com", "tv2.no", "twitch.tv", "ubisoft.com", "udisc.com", "vg.no", "viaplay.no", "wolt.com", "xbox.com", "youtube.com"];
 
   /* Hurtigvalgene, i den rekkefølgen folk kjenner dem igjen. */
   var POPULAERE = [
     "netflix.com", "spotify.com", "viaplay.no", "hbomax.com", "disneyplus.com",
     "youtube.com", "tv2.no", "storytel.com", "openai.com", "icloud.com",
-    "podme.com", "wolt.com", "playstation.com", "sats.no", "evofitness.no", "nextory.com"
+    "podme.com", "wolt.com", "playstation.com", "music.apple.com", "evofitness.no", "nextory.com"
   ].filter(function (d) { return PER_DOMENE[d]; });
 
   var KATEGORI = {
@@ -939,74 +1195,309 @@ body{padding-bottom:76px}
 })();
 
 (function () {
-  /* Knappen nederst på mobil vises når toppen er ute av syne,
-     og skjules igjen når den store knappen nederst er synlig. */
-  var feste = document.getElementById("feste");
-  var tekst = document.getElementById("feste-tekst"), knapp = document.getElementById("feste-knapp");
-  if (!("IntersectionObserver" in window)) return;
-  var toppSynlig = true, bunnSynlig = false, iKalk = false, resSynlig = false;
-  /* Mens du velger abonnementer på mobil, ligger summen nederst –
-     resultatkortet havner under lista og er ellers ute av syne. */
-  function innhold() {
-    var s = window.trekksjekkSum;
-    if (iKalk && !resSynlig && s && s.antall) {
-      tekst.innerHTML = "<b>" + Math.round(s.ar).toLocaleString("nb-NO") + " kr i året</b>" + s.antall + (s.antall === 1 ? " abonnement" : " abonnementer");
-      knapp.textContent = "Se resultatet";
-      knapp.className = "se-res";
-      knapp.setAttribute("href", "#res-tittel");
-    } else {
-      tekst.innerHTML = "<b>TrekkSjekk</b>Gratis for iPhone";
-      knapp.className = "badge";
-      knapp.innerHTML = '<picture><source srcset="bilder/app-store-hvit.svg" media="(prefers-color-scheme: dark)"><img src="bilder/app-store-svart.svg" alt="Last ned i App Store" width="132" height="44"></picture>';
-      knapp.setAttribute("href", "https://apps.apple.com/no/app/id6811947257");
+  "use strict";
+
+  var html = document.documentElement;
+  var ANIM = html.classList.contains("anim");
+  var MND = ["januar", "februar", "mars", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "desember"];
+  var I_DAG = new Date(); I_DAG.setHours(12, 0, 0, 0);
+  var DOGN = 864e5;
+  function dagerTil(d) { return Math.round((d - I_DAG) / DOGN); }
+  function dato(d) { return d.getDate() + ". " + MND[d.getMonth()]; }
+  function to(n) { return (n < 10 ? "0" : "") + n; }
+  function alle(sel, rot) { return Array.prototype.slice.call((rot || document).querySelectorAll(sel)); }
+  function framdrift(el) {
+    var r = el.getBoundingClientRect(), lengde = r.height - window.innerHeight;
+    if (lengde <= 0) return r.top <= 0 ? 1 : 0;
+    return Math.min(Math.max(-r.top / lengde, 0), 1);
+  }
+  function iSyne(el) { var r = el.getBoundingClientRect(); return r.bottom > 0 && r.top < window.innerHeight; }
+
+  /* ---------- Kontoutskriften i toppen ----------
+     Papiret er forrige måned. Fristene regnes fra i dag, med samme regel
+     som i appen: senest dagen før neste trekk. Summen øverst ruller opp
+     etter hvert som abonnementene blir funnet. */
+  var demo = document.getElementById("demo");
+  if (demo) (function () {
+    var kort = demo.querySelector(".demo-kort");
+    var app = demo.querySelector(".app");
+    var skanner = demo.querySelector(".skanner");
+    var push = document.getElementById("demo-push");
+    var igjen = document.getElementById("igjen");
+    var fantTekst = document.getElementById("fant-tekst");
+    var perMnd = document.getElementById("per-mnd");
+    var rader = alle(".rader li", app);
+
+    var forrige = new Date(I_DAG.getFullYear(), I_DAG.getMonth() - 1, 1, 12);
+    var sisteDag = new Date(I_DAG.getFullYear(), I_DAG.getMonth(), 0, 12).getDate();
+    var mm = to(forrige.getMonth() + 1);
+    demo.querySelector("[data-periode]").textContent = "Periode 01." + mm + ".–" + sisteDag + "." + mm + ".";
+    alle(".papir [data-dag]", demo).forEach(function (el) { el.textContent = to(+el.getAttribute("data-dag")) + "." + mm; });
+
+    var forst = null;
+    rader.forEach(function (li) {
+      var dag = +li.getAttribute("data-dag");
+      if (!dag) return;
+      var neste = new Date(I_DAG.getFullYear(), I_DAG.getMonth(), dag, 12);
+      if (neste <= I_DAG) neste = new Date(I_DAG.getFullYear(), I_DAG.getMonth() + 1, dag, 12);
+      var frist = new Date(neste.getFullYear(), neste.getMonth(), neste.getDate() - 1, 12);
+      var n = dagerTil(frist);
+      var f = li.querySelector(".fr");
+      if (f) f.textContent = n <= 0 ? "Si opp i dag" : n === 1 ? "Si opp innen i morgen" : "Si opp innen " + dato(frist);
+      if (!forst || frist < forst.frist) forst = { li: li, frist: frist, neste: neste, n: n };
+    });
+    if (forst) {
+      var navn = forst.li.getAttribute("data-navn"), pris = forst.li.getAttribute("data-pris");
+      var nar = forst.n <= 0 ? "i dag" : forst.n === 1 ? "innen i morgen" : "innen " + dato(forst.frist);
+      push.querySelector("[data-tittel]").textContent =
+        (forst.n <= 0 ? "Siste frist i dag" : forst.n === 1 ? "Siste frist i morgen" : "Snart trekk") + ": " + navn;
+      push.querySelector("[data-tekst]").textContent =
+        dato(forst.neste) + " trekkes " + pris + " kr. Si opp " + nar + " for å slippe trekket.";
     }
-  }
-  document.addEventListener("kalk-endret", function () { innhold(); sett(); });
-  new IntersectionObserver(function (e) { iKalk = e[0].isIntersecting; innhold(); sett(); }).observe(document.querySelector(".velg"));
-  new IntersectionObserver(function (e) { resSynlig = e[0].isIntersecting; innhold(); sett(); }).observe(document.querySelector(".resultat"));
-  function sett() {
-    var vis = !toppSynlig && !bunnSynlig && !(iKalk && resSynlig);
-    feste.classList.toggle("vis", vis);
-    feste.setAttribute("aria-hidden", vis ? "false" : "true");
-    feste.querySelector("a").tabIndex = vis ? 0 : -1;
-  }
-  new IntersectionObserver(function (e) { toppSynlig = e[0].isIntersecting; sett(); }).observe(document.querySelector(".helt .handling"));
-  new IntersectionObserver(function (e) { bunnSynlig = e[0].isIntersecting; sett(); }).observe(document.querySelector(".bunn .cta"));
-})();
 
-(function () {
-  /* Logo-båndet: to runder av de samme logoene, så det ruller sømløst. */
-  var spor = document.getElementById("spor");
-  var rekkefolge = ["netflix.com","spotify.com","viaplay.no","hbomax.com","disneyplus.com","youtube.com","tv2.no","storytel.com","openai.com","icloud.com","podme.com","wolt.com","playstation.com","nextory.com","vg.no","music.apple.com","primevideo.com","xbox.com","dropbox.com","duolingo.com","strava.com","sats.no","evofitness.no","nordvpn.com","canva.com","notion.so","claude.ai","figma.com","audible.com","twitch.tv","crunchyroll.com","deezer.com","tidal.com","bookbeat.com","aftenposten.no","dn.no","foodora.no","hellofresh.no","nintendo.com","ea.com"];
-  if (!spor) return;
-  rekkefolge = rekkefolge.filter(function (d) { return LOGOER.indexOf(d) !== -1; });
-  var html = "";
-  for (var r = 0; r < 2; r++) rekkefolge.forEach(function (d) { html += '<img src="bilder/logoer/' + d + '.webp" alt="" width="46" height="46" loading="lazy">'; });
-  spor.innerHTML = html;
+    /* Telleverket: hvert siffer ruller alltid framover, med fast bredde. */
+    var odo = document.getElementById("odo"), kolonner = [], skiller = [];
+    odo.textContent = "";
+    (function () {
+      var antall = 4, h = "";
+      for (var k = 0; k < 80; k++) h += "<span>" + (k % 10) + "</span>";
+      for (var i = 0; i < antall; i++) {
+        if (i > 0 && (antall - i) % 3 === 0) {
+          var m = document.createElement("span"); m.className = "mellom"; odo.appendChild(m);
+          skiller.push({ el: m, for: i });
+        }
+        var s = document.createElement("span"), r = document.createElement("span");
+        s.className = "siffer"; r.className = "rull"; r.innerHTML = h;
+        s.appendChild(r); odo.appendChild(s);
+        kolonner.push({ el: s, rull: r, pos: 0 });
+      }
+    })();
+    function settTall(n, straks) {
+      var t = String(Math.round(n)), forsteSynlig = kolonner.length;
+      kolonner.forEach(function (k, i) {
+        var idx = t.length - (kolonner.length - i), synlig = idx >= 0;
+        if (synlig && forsteSynlig === kolonner.length) forsteSynlig = i;
+        k.el.classList.toggle("av", !synlig);
+        var d = synlig ? +t.charAt(idx) : 0;
+        if (straks) k.pos = d;
+        else k.pos += (d - k.pos % 10 + 10) % 10;
+        k.rull.style.transition = straks ? "none" : "transform 1s cubic-bezier(.15,.85,.25,1)";
+        k.rull.style.transform = "translateY(-" + (k.pos * 1.05).toFixed(2) + "em)";
+      });
+      skiller.forEach(function (s) { s.el.classList.toggle("av", s.for <= forsteSynlig); });
+    }
+    function settFunnet(antall, mnd, straks) {
+      settTall(mnd * 12, straks);
+      perMnd.textContent = mnd.toLocaleString("nb-NO") + " kr i måneden";
+      fantTekst.textContent = antall ? antall + (antall === 1 ? " abonnement" : " abonnementer") : "Leser …";
+    }
 
-  /* Prikker under skjermbildekortene på mobil. */
-  var rekke = document.getElementById("kort"), prikker = document.getElementById("prikker");
-  if (rekke && prikker && "IntersectionObserver" in window) {
-    var kort = Array.prototype.slice.call(rekke.children);
-    prikker.innerHTML = kort.map(function () { return "<i></i>"; }).join("");
+    var raf = 0, tidtakere = [];
+    function vent(fn, ms) { tidtakere.push(setTimeout(fn, ms)); }
+    function stopp() { cancelAnimationFrame(raf); tidtakere.forEach(clearTimeout); tidtakere = []; }
+    function summer() {
+      var antall = 0, mnd = 0;
+      rader.forEach(function (r) {
+        var p = +r.getAttribute("data-pris");
+        if (p && r.classList.contains("inn")) { antall++; mnd += p; }
+      });
+      return { antall: antall, mnd: mnd };
+    }
+
+    function sluttbilde() {
+      stopp();
+      skanner.classList.remove("pa");
+      demo.classList.add("ferdig");
+      rader.forEach(function (r) { r.classList.add("inn"); });
+      var s = summer(); settFunnet(s.antall, s.mnd, true);
+      push.classList.add("vis");
+    }
+
+    function spill() {
+      stopp();
+      demo.classList.remove("ferdig");
+      push.classList.remove("vis");
+      igjen.hidden = true;
+      rader.forEach(function (r) { r.classList.remove("inn"); });
+      kolonner.forEach(function (k) { k.pos = 0; });
+      settFunnet(0, 0, true);
+      kort.style.setProperty("--y", "0px");
+      skanner.classList.add("pa");
+      var til = kort.offsetHeight, varighet = 3200, t0 = 0;
+      function steg(ts) {
+        if (!t0) t0 = ts;
+        var x = Math.min((ts - t0) / varighet, 1);
+        var e = x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+        var y = til * e, ny = false;
+        kort.style.setProperty("--y", y.toFixed(1) + "px");
+        rader.forEach(function (r) {
+          if (!r.classList.contains("inn") && r.offsetTop + r.offsetHeight * .55 <= y) { r.classList.add("inn"); ny = true; }
+        });
+        if (ny) { var s = summer(); settFunnet(s.antall, s.mnd, false); }
+        if (x < 1) { raf = requestAnimationFrame(steg); return; }
+        skanner.classList.remove("pa");
+        demo.classList.add("ferdig");
+        vent(function () { push.classList.add("vis"); }, 900);
+        vent(function () { igjen.hidden = false; }, 2400);
+      }
+      vent(function () { raf = requestAnimationFrame(steg); }, 500);
+    }
+
+    igjen.addEventListener("click", spill);
+
+    if (!ANIM || !("IntersectionObserver" in window)) { sluttbilde(); return; }
+    settFunnet(0, 0, true);
+    var startet = false;
     var io = new IntersectionObserver(function (e) {
-      e.forEach(function (x) { if (x.isIntersecting) { var i = kort.indexOf(x.target); Array.prototype.forEach.call(prikker.children, function (p, j) { p.classList.toggle("aktiv", j === i); }); } });
-    }, { root: rekke, threshold: .6 });
-    kort.forEach(function (k) { io.observe(k); });
+      if (startet || !e[0].isIntersecting) return;
+      startet = true; io.disconnect();
+      vent(spill, 250);
+    }, { threshold: .3 });
+    io.observe(kort);
+  })();
+
+  /* ---------- Fristen: scroll, så går dagene ---------- */
+  var fristTegn = function () {};
+  var fristSek = document.getElementById("frist");
+  if (fristSek && ANIM) (function () {
+    var N = 43, FRIST = 11, TROR = 41;
+    var linje = document.getElementById("tidslinje");
+    var iDag = linje.querySelector(".i-dag");
+    var etikett = document.getElementById("ur-etikett");
+    var urDato = document.getElementById("ur-dato");
+    var status = document.getElementById("ur-status");
+    var statusTekst = status.querySelector("span");
+    var push = document.getElementById("frist-push");
+    var pushTittel = push.querySelector("[data-tittel]");
+    var hint = document.getElementById("frist-hint");
+    var sist = -1;
+    etikett.textContent = "I dag";
+    fristTegn = function () {
+      if (!iSyne(fristSek)) return;
+      var p = framdrift(fristSek), x = p * N, i = Math.round(x);
+      linje.style.setProperty("--p", (p * 100).toFixed(2) + "%");
+      iDag.style.setProperty("--x", (p * 100).toFixed(2) + "%");
+      hint.classList.toggle("borte", p > .03);
+      if (i === sist) return;
+      sist = i;
+      var d = new Date(2025, 9, 20 + i, 12);
+      urDato.textContent = d.getDate() + ". " + MND[d.getMonth()];
+      var igjen = FRIST - i, tilstand = "ok", tekst;
+      if (igjen > 1) tekst = "Du rekker det. " + igjen + " dager igjen til fristen.";
+      else if (igjen === 1) tekst = "Du rekker det. Fristen er i morgen.";
+      else if (igjen === 0) tekst = "Siste dag. Sier du opp i dag, slipper du trekket 1. desember.";
+      else {
+        tilstand = "sent";
+        tekst = i < TROR ? "For sent. Sier du opp nå, betaler du for desember også."
+          : i === TROR ? "Her tror de fleste at de rekker det. De er en måned for sene."
+          : "Trekket går. Desember er betalt.";
+      }
+      status.setAttribute("data-tilstand", tilstand);
+      statusTekst.textContent = tekst;
+      var vis = igjen >= 0 && igjen <= 3;
+      if (vis) pushTittel.textContent = igjen === 0 ? "Siste frist i dag: Treningssenteret"
+        : "Siste frist om " + igjen + (igjen === 1 ? " dag" : " dager") + ": Treningssenteret";
+      push.classList.toggle("vis", vis);
+    };
+  })();
+
+  /* ---------- Telefonen: skjermene skifter mens du scroller ---------- */
+  var fortTegn = function () {};
+  var fort = document.getElementById("funksjoner");
+  if (fort && ANIM) (function () {
+    var steg = alle("#steg li"), bilder = alle("#skjermer img"), prikker = alle("#steg-prikker i");
+    var n = steg.length, aktiv = 0;
+    fortTegn = function () {
+      if (!iSyne(fort)) return;
+      var p = framdrift(fort), f = p * n, k = Math.min(n - 1, Math.floor(f));
+      prikker.forEach(function (pr, j) { pr.style.setProperty("--f", j < k ? 1 : j > k ? 0 : Math.min(f - k, 1).toFixed(3)); });
+      if (k === aktiv) return;
+      aktiv = k;
+      steg.forEach(function (s, j) { s.classList.toggle("aktiv", j === k); });
+      bilder.forEach(function (b, j) { b.classList.toggle("aktiv", j === k); });
+    };
+    steg.forEach(function (s, j) {
+      s.addEventListener("click", function () {
+        var r = fort.getBoundingClientRect(), lengde = r.height - window.innerHeight;
+        window.scrollTo({ top: window.scrollY + r.top + lengde * (j + .5) / n, behavior: "smooth" });
+      });
+    });
+  })();
+
+  /* ---------- Logoen tegner seg selv nederst ---------- */
+  var tegn = document.getElementById("tegn");
+  if (tegn && ANIM && "IntersectionObserver" in window) {
+    var tio = new IntersectionObserver(function (e) {
+      if (e[0].isIntersecting) { tegn.classList.add("tegnet"); tio.disconnect(); }
+    }, { threshold: .6 });
+    tio.observe(tegn);
   }
 
-  /* Strek over datoen først når seksjonen er i syne. */
-  var datoer = document.getElementById("datoer");
-  if (datoer && "IntersectionObserver" in window) {
-    new IntersectionObserver(function (e, o) { if (e[0].isIntersecting) { datoer.classList.add("spill"); o.disconnect(); } }, { threshold: .5 }).observe(datoer);
-  } else if (datoer) { datoer.classList.add("spill"); }
+  /* ---------- Knappen nederst på mobil ----------
+     Vises når toppen er ute av syne, skjules når den store knappen nederst
+     er synlig og mens en av de festede scenene fyller skjermen. Mens du
+     velger abonnementer, viser den summen i stedet. */
+  var festeSett = function () {};
+  (function () {
+    var feste = document.getElementById("feste");
+    var tekst = document.getElementById("feste-tekst"), knapp = document.getElementById("feste-knapp");
+    if (!feste || !("IntersectionObserver" in window)) return;
+    var toppSynlig = true, bunnSynlig = false, iKalk = false, resSynlig = false;
+    var scener = alle(".frist, .fortelling");
+    function innhold() {
+      var s = window.trekksjekkSum;
+      if (iKalk && !resSynlig && s && s.antall) {
+        tekst.innerHTML = "<b>" + Math.round(s.ar).toLocaleString("nb-NO") + " kr i året</b>" + s.antall + (s.antall === 1 ? " abonnement" : " abonnementer");
+        knapp.textContent = "Se resultatet";
+        knapp.className = "se-res";
+        knapp.setAttribute("href", "#res-tittel");
+      } else if (knapp.className !== "badge") {
+        tekst.innerHTML = "<b>TrekkSjekk</b>Gratis for iPhone";
+        knapp.className = "badge";
+        knapp.innerHTML = '<picture><source srcset="bilder/app-store-hvit.svg" media="(prefers-color-scheme: dark)"><img src="bilder/app-store-svart.svg" alt="Last ned i App Store" width="132" height="44"></picture>';
+        knapp.setAttribute("href", "https://apps.apple.com/no/app/id6811947257");
+      }
+    }
+    festeSett = function () {
+      var iScene = ANIM && scener.some(function (s) { var r = s.getBoundingClientRect(); return r.top <= 1 && r.bottom >= window.innerHeight - 1; });
+      var vis = !toppSynlig && !bunnSynlig && !(iKalk && resSynlig) && !iScene;
+      if (feste.classList.contains("vis") === vis) return;
+      feste.classList.toggle("vis", vis);
+      feste.setAttribute("aria-hidden", vis ? "false" : "true");
+      knapp.tabIndex = vis ? 0 : -1;
+    };
+    document.addEventListener("kalk-endret", function () { innhold(); festeSett(); });
+    new IntersectionObserver(function (e) { iKalk = e[0].isIntersecting; innhold(); festeSett(); }).observe(document.querySelector(".velg"));
+    new IntersectionObserver(function (e) { resSynlig = e[0].isIntersecting; innhold(); festeSett(); }).observe(document.querySelector(".resultat"));
+    new IntersectionObserver(function (e) { toppSynlig = e[0].isIntersecting; festeSett(); }).observe(document.querySelector(".helt .handling"));
+    new IntersectionObserver(function (e) { bunnSynlig = e[0].isIntersecting; festeSett(); }).observe(document.querySelector(".slutt .cta"));
+  })();
 
-  /* Strek under toppen når man har scrollet. */
+  /* ---------- Toppen: mørk over mørke seksjoner, lys ellers ---------- */
   var topp = document.getElementById("topp");
-  function skygge() { topp.classList.toggle("skygge", window.scrollY > 8); }
-  window.addEventListener("scroll", skygge, { passive: true }); skygge();
-})();
+  var morke = alle(".scene");
+  var morkModus = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  function toppTegn() {
+    var y = topp.offsetHeight / 2;
+    var over = morke.some(function (s) { var r = s.getBoundingClientRect(); return r.top <= y && r.bottom >= y; });
+    topp.classList.toggle("lys", !over);
+    topp.classList.toggle("flyter", window.scrollY > 8);
+  }
 
+  var venter = false;
+  function tegnAlt() {
+    venter = false;
+    toppTegn();
+    fristTegn();
+    fortTegn();
+    festeSett();
+  }
+  function paScroll() { if (!venter) { venter = true; requestAnimationFrame(tegnAlt); } }
+  window.addEventListener("scroll", paScroll, { passive: true });
+  window.addEventListener("resize", paScroll);
+  if (morkModus && morkModus.addEventListener) morkModus.addEventListener("change", paScroll);
+  tegnAlt();
+})();
 </script>
 </body>
 </html>

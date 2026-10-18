@@ -19,10 +19,13 @@
 <link rel="apple-touch-icon" href="bilder/ikon-180.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"Om TrekkSjekk","url":"https://trekksjekk.no/om.html","inLanguage":"nb","about":{"@type":"MobileApplication","name":"TrekkSjekk","url":"https://trekksjekk.no/"},"publisher":{"@type":"Organization","name":"TrekkSjekk Foss","url":"https://trekksjekk.no/","address":{"@type":"PostalAddress","addressLocality":"Kristiansand","addressCountry":"NO"},"founder":{"@type":"Person","name":"Ole André Foss"}}}</script>
 <style>
+@font-face{font-family:"Poppins";src:url("fonter/poppins-regular.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Poppins";src:url("fonter/poppins-medium.woff") format("woff");font-weight:500 600;font-display:swap}
+@font-face{font-family:"Poppins";src:url("fonter/poppins-bold.woff") format("woff");font-weight:700 800;font-display:swap}
 :root{
   --ground:#F5F6FA; --surface:#FFFFFF; --ink:#0D1326; --muted:#5A6377; --line:#E4E8F1; --soft:#EEF1F8;
   --navy:#1E3A8A; --navy-ink:#C7D3F4; --green:#15803D; --check:#4ADE80; --r:20px;
-  --font:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --font:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ground:#0A0F1F;--surface:#121A33;--ink:#EEF1F8;--muted:#A1A9BE;--line:#222C4B;--soft:#171F3A;--green:#4ADE80}}
 :root[data-theme="dark"]{--ground:#0A0F1F;--surface:#121A33;--ink:#EEF1F8;--muted:#A1A9BE;--line:#222C4B;--soft:#171F3A;--green:#4ADE80}
@@ -119,6 +122,8 @@ footer a{margin-right:14px}
     <h2>Hva appen ikke gjør</h2>
     <p>Den sier ikke opp abonnementet for deg. Du gjør det selv hos leverandøren, og TrekkSjekk tar deg til riktig side og forteller hva du skal trykke på. Den kobler seg ikke til banken, og den leser ikke e-posten din. Den finnes foreløpig bare for iPhone; Android er under arbeid.</p>
 
+    <p>Lurer du på hvordan TrekkSjekk står seg mot nettbanken og andre apper? Se <a href="sammenlign.html">den ærlige sammenligningen</a>.</p>
+
     <h2>Hvem står bak</h2>
     <p>TrekkSjekk utvikles og drives av Ole André Foss gjennom enkeltpersonforetaket TrekkSjekk Foss i Kristiansand. Appen ble lansert i App Store 25. september 2026. Priser og oppsigelsesvilkår kontrolleres mot leverandørenes egne sider, og feil kan meldes rett fra appen under Innstillinger eller på <a href="mailto:01ole.foss@gmail.com">01ole.foss@gmail.com</a>.</p>
 
@@ -132,7 +137,7 @@ footer a{margin-right:14px}
 <footer>
   <div class="wrap">
     <span>© TrekkSjekk Foss, Kristiansand</span>
-    <nav aria-label="Juridisk"><a href="./">Forsiden</a><a href="si-opp/">Si opp-guider</a><a href="personvern.html">Personvern</a><a href="vilkar.html">Vilkår</a></nav>
+    <nav aria-label="Juridisk"><a href="./">Forsiden</a><a href="sammenlign.html">Sammenlign</a><a href="si-opp/">Si opp-guider</a><a href="personvern.html">Personvern</a><a href="vilkar.html">Vilkår</a></nav>
   </div>
 </footer>
 </body>

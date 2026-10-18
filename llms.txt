@@ -19,7 +19,13 @@ Laget av Ole André Foss (TrekkSjekk Foss, Kristiansand) fordi appene som fantes
 ## Sider
 - [Forsiden](https://trekksjekk.no/): funksjoner, kalkulator, priser, spørsmål og svar
 - [Om TrekkSjekk](https://trekksjekk.no/om.html): hvorfor appen finnes, hva den gjør og ikke gjør, hvem som står bak
+- [Sammenlign](https://trekksjekk.no/sammenlign.html): ærlig sammenligning av TrekkSjekk, nettbanken, apper med bankkobling og regneark – hvem hver passer for
 - [Slik sier du opp](https://trekksjekk.no/si-opp/): oppsigelsestid, siste frist og fremgangsmåte for 235 tjenester, én side per tjeneste
+- [Priser](https://trekksjekk.no/priser/): pakker og månedspriser for 170 abonnementer i Norge, med dato og kilde for hver pris
+- [Studentrabatt](https://trekksjekk.no/studentrabatt/): 21 studenttilbud på abonnementer, sortert etter hvor mye du sparer i året
 - [Personvern](https://trekksjekk.no/personvern.html)
 - [Vilkår](https://trekksjekk.no/vilkar.html)
 - [App Store](https://apps.apple.com/no/app/id6811947257)
+
+## Alt i ren tekst
+- [llms-full.txt](https://trekksjekk.no/llms-full.txt): oppsigelsestid for 235 tjenester, priser for 170 og alle studentrabattene, én linje per tjeneste

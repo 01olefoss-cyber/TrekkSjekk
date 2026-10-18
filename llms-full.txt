@@ -1,0 +1,440 @@
+# TrekkSjekk: oppsigelsestider, priser og studentrabatter i Norge
+
+> TrekkSjekk er en norsk iPhone-app som holder orden på abonnementene dine, regner ut siste dag du kan si opp fra tjenestens egne vilkår, og varsler deg før trekk, frister og prøveperioder. Ingen bankkobling, ingen konto, selger aldri data. Gratis med opptil 5 abonnementer; Premium 149 kr i året.
+
+Oppdatert 2026-10-18. Tallene er hentet fra leverandørenes egne sider; hver linje har en lenke til siden med kilde og dato. Nettside: https://trekksjekk.no/
+
+## Oppsigelsestid (235 tjenester)
+
+- 1Blocker: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/1blocker/
+- 1Password: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/1password/
+- 3T: Se guiden. https://trekksjekk.no/si-opp/3t/
+- A Better Routeplanner: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/a-better-routeplanner/
+- AccuWeather: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/accuweather/
+- Actic: Må være inne før den 1. https://trekksjekk.no/si-opp/actic/
+- Adams Matkasse: Tjenesten finnes ikke lenger. Abonnementet ditt ligger hos Godtlevert, og følger deres vilkår. https://trekksjekk.no/si-opp/adams-matkasse/
+- Addy.io: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/addy-io/
+- Adobe Creative Cloud: Du beholder tilgangen til faktureringsperioden er over. Sier du opp innen 14 dager etter første bestilling: «refunderes hele beløpet.» https://trekksjekk.no/si-opp/adobe-creative-cloud/
+- Adresseavisen: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/adresseavisen/
+- Airtable: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/airtable/
+- Allente: Løper ut måneden etter. https://trekksjekk.no/si-opp/allente/
+- AllTrails: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/alltrails/
+- Amazing Marvin: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/amazing-marvin/
+- Amedia +Alt: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/amedia-plussalt/
+- Ancestry: Månedsabonnement må sies opp «at any time prior to two business days before your renewal date». To VIRKEDAGER – faller det over en helg, må du være tidligere ute. TrekkSjekk regner ingen dato på dette. https://trekksjekk.no/si-opp/ancestry/
+- Any.do: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/any-do/
+- AnyList: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/anylist/
+- Apple Arcade: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/apple-arcade/
+- Apple Fitness+: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/apple-fitness-pluss/
+- Apple Music: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/apple-music/
+- Apple One: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/apple-one/
+- Apple TV+: Se guiden. https://trekksjekk.no/si-opp/apple-tv-pluss/
+- Arlo Secure: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/arlo-secure/
+- Asana: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/asana/
+- Audible: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/audible/
+- Babbel: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/babbel/
+- Backblaze: Backblaze oppgir ingen oppsigelsestid. Support kan ikke si opp for deg. https://trekksjekk.no/si-opp/backblaze/
+- Bilkollektivet: Se guiden. https://trekksjekk.no/si-opp/bilkollektivet/
+- Bitwarden: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/bitwarden/
+- Bolt.new: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/bolt-new/
+- BookBeat: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/bookbeat/
+- Brain.fm: 1 dager. https://trekksjekk.no/si-opp/brain-fm/
+- Brilliant: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/brilliant/
+- Buddy: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/buddy/
+- Bumble: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/bumble/
+- Calendly: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/calendly/
+- Calm: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/calm/
+- Canva: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/canva/
+- CARROT Weather: «The subscription automatically renews unless it is canceled at least 24 hours before the end of the current period.» Si opp senest dagen før fornyelsen; inneværende periode kan ikke avbrytes. https://trekksjekk.no/si-opp/carrot-weather/
+- Centr: «You must cancel at least 24 hours before your renewal date.» Og: «Cancellation does not automatically include a refund.» https://trekksjekk.no/si-opp/centr/
+- ChatGPT: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/chatgpt/
+- Chess.com: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/chess-com/
+- Circle K Bilvask: 1 dager. https://trekksjekk.no/si-opp/circle-k-bilvask/
+- Citymapper: Se guiden. https://trekksjekk.no/si-opp/citymapper/
+- Claude: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/claude/
+- CleanMyMac: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/cleanmymac/
+- Codecademy: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/codecademy/
+- Coursera: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/coursera/
+- CuriosityStream: CuriosityStream oppgir ingen oppsigelsestid på hjelpesiden. Vi regner ingen dato når leverandøren ikke sier noe. https://trekksjekk.no/si-opp/curiositystream/
+- Cursor: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/cursor/
+- CyberGhost: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/cyberghost/
+- Dagbladet Pluss: Se guiden. https://trekksjekk.no/si-opp/dagbladet-pluss/
+- Dagens Næringsliv: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/dagens-naeringsliv/
+- Dashlane: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/dashlane/
+- Day One: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/day-one/
+- DAZN: 30 dager. https://trekksjekk.no/si-opp/dazn/
+- Deezer: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/deezer/
+- Descript: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/descript/
+- Discord: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/discord/
+- Domeneshop: Domeneshop oppgir ingen oppsigelsestid. Et domene som er satt til å ikke fornyes, slettes automatisk etter utløp. https://trekksjekk.no/si-opp/domeneshop/
+- DrivstoffAppen: DrivstoffAppen oppgir ingen oppsigelsestid. https://trekksjekk.no/si-opp/drivstoffappen/
+- Dropbox: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/dropbox/
+- EasyPark: EasyPark oppgir ingen oppsigelsestid. https://trekksjekk.no/si-opp/easypark/
+- ElevenLabs: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/elevenlabs/
+- Envato Elements: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/envato-elements/
+- Evernote: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/evernote/
+- EVO Fitness: Løper ut måneden etter. https://trekksjekk.no/si-opp/evo-fitness/
+- ExpressVPN: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/expressvpn/
+- F1 TV: F1 TV oppgir ingen oppsigelsestid på hjelpesiden. Kjøpte du i App Store, ligger oppsigelsen hos Apple. https://trekksjekk.no/si-opp/f1-tv/
+- Fabel: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/fabel/
+- Feel24: 3 måneder, så ut måneden. https://trekksjekk.no/si-opp/feel24/
+- Feeld: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/feeld/
+- Figma: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/figma/
+- Fireflies.ai: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/fireflies-ai/
+- Fitbod: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/fitbod/
+- Fitness24Seven: 2 måneder, så ut måneden. https://trekksjekk.no/si-opp/fitness24seven/
+- Flexibits Premium: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/flexibits-premium/
+- Flightradar24: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/flightradar24/
+- Flighty: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/flighty/
+- Flipp: «Senest to virkedager før ny periode starter.» Ingen bindingstid. Etter oppsigelse «har du tilgang til Flipp så lenge nåværende betalte periode varer». https://trekksjekk.no/si-opp/flipp/
+- Focusmate: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/focusmate/
+- Foodora: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/foodora/
+- Fortnite Crew: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/fortnite-crew/
+- Freeletics: Freeletics oppgir ingen oppsigelsestid. https://trekksjekk.no/si-opp/freeletics/
+- Fresh Fitness: Løper ut måneden etter. https://trekksjekk.no/si-opp/fresh-fitness/
+- Gaia GPS: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/gaia-gps/
+- Genius Scan: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/genius-scan/
+- GitHub: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/github/
+- GitHub Copilot: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/github-copilot/
+- Godtlevert: Ingen bindingstid. Men endring eller avbestilling av en kommende levering må gjøres innen tirsdag klokka 23.59. https://trekksjekk.no/si-opp/godtlevert/
+- Goodnotes: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/goodnotes/
+- Google One: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/google-one/
+- Grammarly: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/grammarly/
+- Grindr: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/grindr/
+- GTA+: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/gta-pluss/
+- happn: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/happn/
+- Hayu: Ingen oppsigelsestid oppgitt. hayus egen hjelpeside beskriver App Store-veien, som er den vanlige i Norge. https://trekksjekk.no/si-opp/hayu/
+- HBO Max: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/hbo-max/
+- Headspace: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/headspace/
+- HeyGen: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/heygen/
+- Hinge: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/hinge/
+- Home Assistant Cloud: Nabu Casa oppgir ingen fast frist – sluttdatoen avhenger av om du betaler månedlig eller årlig, og vises på plansiden. https://trekksjekk.no/si-opp/home-assistant-cloud/
+- iCloud+: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/icloud-pluss/
+- Inoreader: «By default, all subscriptions (monthly and annual) are recurring … If you want to prevent auto-renewal, you need to disable it from the billing section of your account.» Ved oppsigelse «your account will be downgraded, and limitations will apply». https://trekksjekk.no/si-opp/inoreader/
+- IONITY: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/ionity/
+- IVPN: Se guiden. https://trekksjekk.no/si-opp/ivpn/
+- Jottacloud: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/jottacloud/
+- Kagi: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/kagi/
+- Klassekampen: Klassekampen oppgir ingen oppsigelsestid i vilkårene. Angrerett finnes: «Du har rett til å gå fra avtalen ved å sende inn en melding til Klassekampen innen 14 dager etter at avisbestillingen er mottatt.» https://trekksjekk.no/si-opp/klassekampen/
+- komoot: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/komoot/
+- Krisp: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/krisp/
+- LES MILLS+: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/les-mills-pluss/
+- Life360: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/life360/
+- Lifesum: 3 dager. https://trekksjekk.no/si-opp/lifesum/
+- Linear: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/linear/
+- Loom: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/loom/
+- Lovable: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/lovable/
+- Medium: «Uninstalling the app or deleting your Medium account will not automatically cancel your membership subscription purchased through iTunes.» https://trekksjekk.no/si-opp/medium/
+- Microsoft 365: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/microsoft-365/
+- Microsoft Copilot: Microsoft oppgir ingen fast oppsigelsestid for Copilot Pro. Prorata refusjon tilbys i noen land, ellers bare for abonnement lengre enn én måned. https://trekksjekk.no/si-opp/microsoft-copilot/
+- Midjourney: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/midjourney/
+- MileWiz: «Subscriptions renew automatically unless cancelled at least 24 hours before the current period ends.» https://trekksjekk.no/si-opp/milewiz/
+- Minecraft Realms: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/minecraft-realms/
+- Miro: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/miro/
+- Mistral Le Chat: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/mistral-le-chat/
+- monday.com: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/monday-com/
+- Moovit: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/moovit/
+- Morgenbladet: 7 dager. https://trekksjekk.no/si-opp/morgenbladet/
+- MOVA: Løper ut måneden etter. https://trekksjekk.no/si-opp/mova/
+- MUBI: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/mubi/
+- MUDO Gym: «Oppsigelsestid kan variere fra senter til senter. Ta kontakt med ditt senter for å finne ut hva som gjelder for deg.» MUDO sier det selv rett ut, så TrekkSjekk kan ikke regne en dato for deg her. https://trekksjekk.no/si-opp/mudo-gym/
+- Mullvad: «The service is activated as soon as the payment is credited and time starts counting down.» «These terms will expire at the end of the period purchased.» Tilgangen varer til den betalte tiden er brukt opp. https://trekksjekk.no/si-opp/mullvad/
+- MyFitnessPal: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/myfitnesspal/
+- MyHeritage: MyHeritage oppgir ingen oppsigelsestid i hjelpeartikkelen. Vi regner ingen dato. https://trekksjekk.no/si-opp/myheritage/
+- NBA League Pass: NBA oppgir ingen oppsigelsestid. Kjøpte du gjennom App Store, Google Play, Roku, Amazon eller Samsung, må du si opp der. https://trekksjekk.no/si-opp/nba-league-pass/
+- Netflix: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/netflix/
+- NEXT Fitness: «Vi minner om at vi har én måneds oppsigelsestid fra du sender oss en skriftlig oppsigelse. Du vil med andre ord motta en ekstra faktura for oppsigelsesmåneden din, som må betales etter at du har avsluttet medlemskapet ditt.» Regn altså med én faktura til etter at e-posten er sendt. https://trekksjekk.no/si-opp/next-fitness/
+- Nextory: 1 dager. https://trekksjekk.no/si-opp/nextory/
+- Nintendo Switch Online: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/nintendo-switch-online/
+- NordVPN: NordVPN oppgir ingen oppsigelsestid på hjelpesiden. Vi regner ingen dato når leverandøren ikke sier noe. https://trekksjekk.no/si-opp/nordvpn/
+- Notion: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/notion/
+- Nr1 Fitness: Løper ut måneden etter. https://trekksjekk.no/si-opp/nr1-fitness/
+- NVIDIA GeForce NOW: NVIDIA oppgir ingen oppsigelsestid. Men: «PAYMENTS ARE NON-REFUNDABLE AND THERE ARE NO REFUNDS OR CREDITS FOR PARTIALLY USED PERIODS.» https://trekksjekk.no/si-opp/nvidia-geforce-now/
+- Otter.ai: «Cancel your subscription at least 24 hours before the next billing date to avoid an unwanted charge.» Og: «Subscriptions are non-refundable.» https://trekksjekk.no/si-opp/otter-ai/
+- Patreon: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/patreon/
+- pCloud: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/pcloud/
+- PDF Expert: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/pdf-expert/
+- PeakVisor: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/peakvisor/
+- Perplexity: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/perplexity/
+- PictureThis: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/picturethis/
+- PlantIn: «And don't forget to cancel 24h before the end date! Otherwise, the payment for the next period will be made automatically.» https://trekksjekk.no/si-opp/plantin/
+- PLAY Kristiansand: «Oppsigelsestiden er én (1) måned fra neste trekkdato.» Fristen regnes fra trekkdatoen din, ikke fra månedsskiftet, så TrekkSjekk regner ingen dato her – sjekk trekkdatoen på kontoutskriften. https://trekksjekk.no/si-opp/play-kristiansand/
+- PlayStation Plus: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/playstation-plus/
+- Podimo: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/podimo/
+- Poe: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/poe/
+- Private Internet Access: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/private-internet-access/
+- Proton: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/proton/
+- Qobuz: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/qobuz/
+- QuillBot: QuillBot oppgir ingen fast frist. «Refunds are issued only if required by law.» https://trekksjekk.no/si-opp/quillbot/
+- Radarbot: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/radarbot/
+- Rakuten Viki: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/rakuten-viki/
+- Readly: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/readly/
+- Readwise: «You can cancel any time at your Account Preferences.» https://trekksjekk.no/si-opp/readwise/
+- Replit: Replit oppgir ingen fast frist. AI-bruk og domeneregistrering refunderes aldri, «because each charge reflects compute that Replit already used». https://trekksjekk.no/si-opp/replit/
+- RescueTime: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/rescuetime/
+- Revolut: Revolut oppgir ingen oppsigelsestid, men årsplanen er verdt å lese nøye. https://trekksjekk.no/si-opp/revolut/
+- RiksTV: 2 måneder, så ut måneden. https://trekksjekk.no/si-opp/rikstv/
+- Ring: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/ring/
+- Runna: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/runna/
+- Runway: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/runway/
+- Ruter: 1 dager. https://trekksjekk.no/si-opp/ruter/
+- Røros Gym: Løper ut måneden etter. https://trekksjekk.no/si-opp/roros-gym/
+- Sammen Trening: Løper ut måneden etter. https://trekksjekk.no/si-opp/sammen-trening/
+- SATS: Løper ut måneden etter. https://trekksjekk.no/si-opp/sats/
+- Scanner Pro: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/scanner-pro/
+- Setapp: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/setapp/
+- SiO Athletica: Løper ut måneden etter. https://trekksjekk.no/si-opp/sio-athletica/
+- Sit Trening: Løper ut måneden etter. https://trekksjekk.no/si-opp/sit-trening/
+- SKY Fitness: «Merk at medlemskapet har én måned oppsigelsestid utover inneværende treningsperiode.» SKY regner fra treningsperioden din og ikke fra kalendermåneden, så TrekkSjekk regner ingen dato – spør senteret hva perioden din løper til. https://trekksjekk.no/si-opp/sky-fitness/
+- SkyShowtime: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/skyshowtime/
+- Slack: Slack oppgir ikke eksplisitt om tilgangen varer ut perioden. Velg «ved fornyelse» hvis du vil være sikker på å bruke opp det du har betalt for. https://trekksjekk.no/si-opp/slack/
+- Sleep Cycle: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/sleep-cycle/
+- SmugMug: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/smugmug/
+- Snapchat+: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/snapchat-pluss/
+- SoundCloud: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/soundcloud/
+- Spendee: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/spendee/
+- Spenst: Se guiden. https://trekksjekk.no/si-opp/spenst/
+- Spicheren: Løper ut måneden etter. https://trekksjekk.no/si-opp/spicheren/
+- Splitwise: Splitwise oppgir ingen oppsigelsestid. https://trekksjekk.no/si-opp/splitwise/
+- Sporty: Løper ut måneden etter. https://trekksjekk.no/si-opp/sporty/
+- Spotify: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/spotify/
+- Stamina Trening: Løper ut måneden etter. https://trekksjekk.no/si-opp/stamina-trening/
+- Storytel: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/storytel/
+- Strava: 1 dager. https://trekksjekk.no/si-opp/strava/
+- Strim: Se guiden. https://trekksjekk.no/si-opp/strim/
+- Suno: Suno oppgir ingen fast frist. «Payments made by you hereunder are final and non-refundable, unless otherwise determined by Suno.» https://trekksjekk.no/si-opp/suno/
+- Superhuman: Superhuman oppgir ingen oppsigelsestid. https://trekksjekk.no/si-opp/superhuman/
+- Surfshark: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/surfshark/
+- SwiftScan: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/swiftscan/
+- Synthesia: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/synthesia/
+- Telegram Premium: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/telegram-premium/
+- Tennis TV: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/tennis-tv/
+- Tesla Premium Connectivity: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/tesla-premium-connectivity/
+- TickTick: «You may cancel your subscription renewal through your online account management page.» Abonnementet fornyes automatisk til du stopper fornyelsen. https://trekksjekk.no/si-opp/ticktick/
+- Tidal: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/tidal/
+- Tinder: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/tinder/
+- Todoist: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/todoist/
+- Toggl Track: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/toggl-track/
+- TrainerRoad: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/trainerroad/
+- TrainingPeaks: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/trainingpeaks/
+- Transit: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/transit/
+- Trello: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/trello/
+- Trener 1: Løper ut måneden etter. https://trekksjekk.no/si-opp/trener-1/
+- TripIt: Prøveperioden må sies opp «prior to the end of the 30th day». Og: gebyrer som allerede er belastet, inkludert uønskede årsfornyelser, refunderes ikke. https://trekksjekk.no/si-opp/tripit/
+- TV 2 Play: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/tv-2-play/
+- Ubisoft+: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/ubisoft-pluss/
+- UDisc: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/udisc/
+- UFC Fight Pass: UFC oppgir ingen oppsigelsestid i sin FAQ. Kjøpte du i App Store, ligger oppsigelsen hos Apple. https://trekksjekk.no/si-opp/ufc-fight-pass/
+- Viaplay: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/viaplay/
+- Wallabag: «A subscription is valid for 3 months or 1 year, and it’s up to you to renew it at the end of the period.» Utløper av seg selv uten nytt kjøp. https://trekksjekk.no/si-opp/wallabag/
+- Wallet by BudgetBakers: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/wallet-by-budgetbakers/
+- WaterMinder: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/waterminder/
+- Windfinder: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/windfinder/
+- Windscribe: Se guiden. https://trekksjekk.no/si-opp/windscribe/
+- Windy.com: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/windy-com/
+- Wolt: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/wolt/
+- X Premium: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/x-premium/
+- Xbox Game Pass: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/xbox-game-pass/
+- YAZIO: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/yazio/
+- YNAB: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/ynab/
+- YouTube Premium: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/youtube-premium/
+- Zapier: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/zapier/
+- Zoom Workplace: Ingen oppsigelsestid. https://trekksjekk.no/si-opp/zoom-workplace/
+- Zwift: «Your membership remains active until the end of your current billing cycle. Cancel at least 24 hours before your next billing date to avoid renewal.» Betaler du med avtalegiro (Direct Debit), trengs minst 7 dagers varsel. https://trekksjekk.no/si-opp/zwift/
+
+## Priser i norske kroner (170 tjenester, https://trekksjekk.no/priser/)
+
+- Netflix: Basis 119 kr i måneden; Standard 149 kr i måneden; Premium 219 kr i måneden (kontrollert 2026-10-08)
+- Disney+: Standard med reklame 69 kr i måneden; Standard 109 kr i måneden; Standard – år 1 090 kr i året; Premium 159 kr i måneden; Premium – år 1 590 kr i året; Standard med reklame – 6 mnd binding 59 kr i måneden; Standard – 6 mnd binding 89 kr i måneden; Premium – 6 mnd binding 119 kr i måneden (kontrollert 2026-10-08)
+- HBO Max: Basis med reklame 89 kr i måneden; Standard 149 kr i måneden; Premium 189 kr i måneden; Basis med reklame – år 890 kr i året; Standard – år 1 490 kr i året; Premium – år 1 890 kr i året (kontrollert 2026-10-08)
+- Viaplay: Film & Serier med reklame 109 kr i måneden; Film & Serier 169 kr i måneden; Medium 399 kr i måneden; Total 799 kr i måneden; Total Pluss – 6 mnd binding 729 kr i måneden; Total Pluss – 12 mnd tilbud 699 kr i måneden (kontrollert 2026-10-08)
+- TV 2 Play: Nyheter fra 69 kr i måneden; Start fra 109 kr i måneden; Standard med reklame 199 kr i måneden; Standard 279 kr i måneden; Standard – år 2 799 kr i året; Premium med reklame 409 kr i måneden; Premium 489 kr i måneden; Premium – år 4 999 kr i året; Premium fotball med reklame 389 kr i måneden; Premium fotball 439 kr i måneden (kontrollert 2026-10-08)
+- Prime Video: Prime Video 79 kr i måneden (kontrollert 2026-09-13)
+- Apple TV+: Apple TV+ 119 kr i måneden (kontrollert 2026-10-08)
+- SkyShowtime: Standard med reklame 69 kr i måneden; Standard med reklame – år 549 kr i året; Standard 109 kr i måneden; Standard – år 869 kr i året; Premium 159 kr i måneden; Premium – år 1 250 kr i året (kontrollert 2026-10-08)
+- Allente: Stream Basic 399 kr i måneden; Stream Flex 2 499 kr i måneden; Stream Flex 4 599 kr i måneden (kontrollert 2026-09-13)
+- RiksTV: FleksiPakken 549 kr i måneden; StrømmePakken 649 kr i måneden; SportsPakken 649 kr i måneden; RiksPakken 999 kr i måneden (kontrollert 2026-10-08)
+- Crunchyroll: Fan 79 kr i måneden; Mega Fan – måned 99 kr i måneden; Mega Fan – år 999 kr i året; Ultimate Fan 155 kr i måneden (kontrollert 2026-09-13)
+- Strim: Smart med HBO Max 399 kr i måneden; Smart med Viaplay 399 kr i måneden; Maks 499 kr i måneden; Maks uten reklame 599 kr i måneden; Smart HBO Max + Sportskanaler 499 kr i måneden; Smart Viaplay + TV 2 Sport 699 kr i måneden; Smart HBO Max + Max Sport 449 kr i måneden; Smart HBO Max + Viaplay Total – kampanje 699 kr i måneden (kontrollert 2026-09-13)
+- Spotify: Individual 139 kr i måneden; Duo 189 kr i måneden; Family 219 kr i måneden (kontrollert 2026-10-08)
+- Deezer: Premium 129 kr i måneden; Duo 169 kr i måneden; Family 209 kr i måneden (kontrollert 2026-09-13)
+- YouTube Premium: Individual 169 kr i måneden; Family 269 kr i måneden; YouTube Music Premium – Individual 139 kr i måneden (kontrollert 2026-09-13)
+- Storytel: Basic 149 kr i måneden; Premium 189 kr i måneden; Unlimited 219 kr i måneden; Family fra 289 kr i måneden (kontrollert 2026-10-08)
+- Fabel: Standard 199 kr i måneden; Duo 249 kr i måneden; Familie 349 kr i måneden (kontrollert 2026-10-08)
+- Podme: Premium 99 kr i måneden; Premium Duo 129 kr i måneden; Premium Total 199 kr i måneden; Premium Total Duo 249 kr i måneden (kontrollert 2026-09-13)
+- Tidal: Individual 139 kr i måneden; Family 219 kr i måneden; DJ Extension 199 kr i måneden (kontrollert 2026-09-13)
+- Apple Music: Individual 139 kr i måneden; Family 219 kr i måneden (kontrollert 2026-10-08)
+- BookBeat: Basic 99 kr i måneden; Standard 149 kr i måneden; Premium 199 kr i måneden (kontrollert 2026-10-08)
+- Nextory: Mini 89 kr i måneden; Standard 139 kr i måneden; Plus 179 kr i måneden; Unlimited fra 219 kr i måneden (kontrollert 2026-10-08)
+- EVO Fitness: Månedsmedlemskap – uten binding 459 kr i måneden; 12 måneder binding 409 kr i måneden; Årsmedlemskap 4 599 kr i året (kontrollert 2026-10-08)
+- Actic: Studio Start – Fra-pris per måned fra 549 kr i måneden; Gruppetimer Pluss – Fra-pris per måned fra 599 kr i måneden; Yoga Complete – Fra-pris per måned fra 699 kr i måneden; BOXEN HYROX – Fra-pris per måned fra 849 kr i måneden; BOXEN WOD – Fra-pris per måned fra 1 249 kr i måneden; BOXEN Premium – Fra-pris per måned fra 1 449 kr i måneden; Actic Anywhere – Månedlig online 79 kr i måneden (kontrollert 2026-10-08)
+- 3T: Heldag ordinær 729 kr i måneden; Lokal – Orkanger, Levanger eller Steinkjer 529 kr i måneden (kontrollert 2026-10-08)
+- Sporty: Ordinær – Fra-pris fra 459 kr i måneden; Hånes åpningstilbud – Kampanje 459 kr i måneden (kontrollert 2026-09-15)
+- Trener 1: Ordinært medlem – 12 mnd binding 409 kr i måneden; Ordinært + Gruppetrening – 12 mnd binding 599 kr i måneden; Ordinært medlem – Uten binding 459 kr i måneden; Ordinært + Gruppetrening – Uten binding 749 kr i måneden (kontrollert 2026-10-08)
+- Fresh Fitness: Basic – 12 mnd binding 299 kr i måneden; Basic – uten binding 449 kr i måneden; Flex – 12 mnd binding 349 kr i måneden; Flex – uten binding 499 kr i måneden; Smart – 12 mnd binding 499 kr i måneden; Smart – uten binding 649 kr i måneden (kontrollert 2026-10-08)
+- MOVA: Lokal – 12 mnd binding 399–699 NOK; Lokal – uten binding 499–799 NOK; Fleks – 12 mnd binding 699 kr i måneden; Fleks – uten binding 799 kr i måneden; Premium – 12 mnd binding 799 kr i måneden; Premium – uten binding 899 kr i måneden (kontrollert 2026-10-08)
+- VG+: måned 119 kr i måneden; uke 59 kr i uka (kontrollert 2026-09-13)
+- Aftenposten: Basis 199 kr i måneden; Basis – under 30 99,5 kr i måneden; Standard fra 299 kr i måneden; Full tilgang fra 379 kr i måneden; A-magasinet 559 kr i måneden; Helg 639 kr i måneden; Uke 849 kr i måneden (kontrollert 2026-10-08)
+- Dagbladet Pluss: Dagbladet Pluss 99 kr i måneden; Kvartalsvis 249 kr i kvartalet; Årlig 795 kr i året (kontrollert 2026-09-15)
+- Dagens Næringsliv: DN Basis 449 kr i måneden; DN Basis – under 32 225 kr i måneden; DN Total 579 kr i måneden; DN Total – under 32 290 kr i måneden; DN Total Helg 799 kr i måneden; DN Total Helg – under 32 400 kr i måneden (kontrollert 2026-09-13)
+- ChatGPT: Go ca. 75 kr i måneden; Plus ca. 190 kr i måneden; Pro ca. 1 860 kr i måneden (kontrollert 2026-09-13)
+- Microsoft 365: Basic 20 kr i måneden; Basic – år 199 kr i året; Personal 121 kr i måneden; Personal – år 1 189 kr i året; Family 155 kr i måneden; Family – år 1 559 kr i året; Premium 259 kr i måneden; Premium – år 2 589 kr i året (kontrollert 2026-10-08)
+- Adobe Creative Cloud: Creative Cloud Pro 961,25 kr i måneden; Creative Cloud Standard 763,75 kr i måneden; Fotografering 293,75 kr i måneden; Photoshop 320 kr i måneden; Acrobat Pro 293,75 kr i måneden; Acrobat Standard 221,25 kr i måneden; AI Assistant for Acrobat 73,75 kr i måneden; Adobe Stock AI Studio 480 kr i måneden; Enkeltapp fra 320 kr i måneden; Lightroom 178,75 kr i måneden (kontrollert 2026-10-08)
+- Apple One: Individuelt 219 kr i måneden; Familie 289 kr i måneden (kontrollert 2026-10-08)
+- iCloud+: 50 GB 12 kr i måneden; 200 GB 39 kr i måneden; 2 TB 129 kr i måneden; 6 TB 399 kr i måneden; 12 TB 799 kr i måneden (kontrollert 2026-10-08)
+- IPTVX: FULL – 1 måned 49 kr i måneden; FULL – 3 måneder 125 kr i kvartalet; FULL – år 355 kr i året; FULL – år, familiedeling 690 kr i året (kontrollert 2026-10-08)
+- Apple Arcade: Apple Arcade 89 kr i måneden (kontrollert 2026-10-08)
+- Apple Fitness+: Apple Fitness+ 119 kr i måneden; år 949 kr i året (kontrollert 2026-10-08)
+- Google One: Basic 100 GB ca. 20 kr i måneden; Google AI Plus ca. 95 kr i måneden; Google AI Pro ca. 190 kr i måneden; Andre Standard/Ultra-nivåer Pris vises i kjøpsløp (kontrollert 2026-09-13)
+- Dropbox: Plus ca. 95 kr i måneden; Standard ca. 140 kr i måneden; Advanced ca. 225 kr i måneden; Family Pris vises i kjøpsløpet; Essentials Pris vises i kjøpsløpet; Enterprise Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Wolt: Wolt+ 99 kr i måneden (kontrollert 2026-10-08)
+- Claude: Pro ca. 190 kr i måneden; Pro – Årlig ca. 1 860 kr i året; Max 5x ca. 930 kr i måneden; Max 20x ca. 1 860 kr i måneden; Team Standard ca. 235 kr i måneden; Team Standard – Årlig ca. 2 235 kr i året; Team Premium ca. 1 165 kr i måneden; Team Premium – Årlig ca. 11 160 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Notion: Plus – Per medlem / måned ca. 95 kr i måneden; Business – Per medlem / måned ca. 190 kr i måneden; Free ca. 0 kr i måneden (kontrollert 2026-10-08)
+- Figma: Professional – Full seat ca. 150 kr i måneden; Professional – Dev seat ca. 115 kr i måneden; Professional – Collab seat ca. 30 kr i måneden; Organization – Full seat ca. 515 kr i måneden; Organization – Dev seat ca. 235 kr i måneden; Organization – Collab seat ca. 50 kr i måneden; Enterprise – Full seat ca. 840 kr i måneden; Enterprise – Dev seat ca. 330 kr i måneden; Enterprise – Collab seat ca. 50 kr i måneden (kontrollert 2026-10-08)
+- Canva: Canva Pro – måned 109 kr i måneden; Canva Pro – år 1 600 kr i året; Canva for bedrifter – år 2 700 kr i året; Canva Business – måned 270 kr i måneden; Canva Teams – måned 255 kr i måneden (kontrollert 2026-10-08)
+- Grammarly: Pro ca. 280 kr i måneden; Pro – Kvartalsvis ca. 560 kr i kvartalet; Pro – Årlig ca. 1 340 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- GitHub: Team ca. 40 kr i måneden; Enterprise fra ca. 200 kr i måneden (kontrollert 2026-10-08)
+- NordVPN: Basic – 2 år + 3 mnd kampanje – månedsverdi ca. 35 kr i måneden; Basic – 1 år – månedsverdi ca. 55 kr i måneden; Basic ca. 140 kr i måneden; Complete – 2 år + 3 mnd kampanje – månedsverdi ca. 45 kr i måneden; Complete – 1 år – månedsverdi ca. 65 kr i måneden; Complete ca. 190 kr i måneden; Prime – 2 år + 3 mnd kampanje – månedsverdi ca. 70 kr i måneden; Prime – 1 år – månedsverdi ca. 90 kr i måneden; Prime ca. 280 kr i måneden (kontrollert 2026-10-08)
+- PlayStation Plus: Essential – 1 måned 115 kr i måneden; Essential – 3 måneder 319 kr i kvartalet; Essential – 12 måneder 840 kr i året; Extra – 1 måned 179 kr i måneden; Extra – 3 måneder 519 kr i kvartalet; Extra – 12 måneder 1 485 kr i året; Premium – 1 måned 219 kr i måneden; Premium – 3 måneder 649 kr i kvartalet; Premium – 12 måneder 1 790 kr i året; Essential – 1 måned (gammel avtale) 105 kr i måneden; Extra – 1 måned (gammel avtale) 165 kr i måneden; Premium – 1 måned (gammel avtale) 200 kr i måneden (kontrollert 2026-09-13)
+- EA Play: EA Play 59 kr i måneden; år 399 kr i året; EA Play Pro 183 kr i måneden; EA Play Pro – år 1 199 kr i året (kontrollert 2026-10-08)
+- GTA+: GTA+ 89 kr i måneden (kontrollert 2026-10-08)
+- Xbox Game Pass: Essential 105 kr i måneden; Premium 149 kr i måneden; PC Game Pass 139 kr i måneden; Ultimate 209 kr i måneden (kontrollert 2026-10-08)
+- Nintendo Switch Online: Individual – 1 måned 38 kr i måneden; Individual – 3 måneder 86 kr i kvartalet; Individual – 12 måneder 190 kr i året; Family – 12 måneder 333 kr i året; Expansion Pack – Individual 12 måneder 399 kr i året; Expansion Pack – Family 12 måneder 679 kr i året (kontrollert 2026-09-13)
+- Strava: Individual – måned 99 kr i måneden; Individual – år 799 kr i året; Family – år 1 399 kr i året; Strava + Runna – år 1 699 kr i året (kontrollert 2026-09-13)
+- Duolingo: Super Duolingo 149 kr i måneden; Super Duolingo – rabattert månedspris 105 kr i måneden; Super Duolingo – år 899 kr i året; Super Duolingo – år, høyere nivå 1 039 kr i året; Super Duolingo – familie 1 299 kr i året (kontrollert 2026-10-08)
+- UDisc: UDisc Pro – år 399 kr i året (kontrollert 2026-10-08)
+- 1Password: Individual – Årlig fakturering – månedsverdi ca. 40 kr i måneden; Individual – Første år kampanje – månedsverdi ca. 30 kr i måneden; Families – Årlig fakturering – månedsverdi ca. 60 kr i måneden; Families – Første år kampanje – månedsverdi ca. 45 kr i måneden (kontrollert 2026-10-08)
+- ExpressVPN: Basic – 24 + 4 mnd kampanje – månedsverdi ca. 30 kr i måneden; Advanced – 24 + 4 mnd kampanje – månedsverdi ca. 45 kr i måneden; Pro – 24 + 4 mnd kampanje – månedsverdi ca. 70 kr i måneden (kontrollert 2026-10-08)
+- Feel24: Feel Basic 399 kr i måneden; Free Basic 449 kr i måneden; Basic+ 449 kr i måneden; Free Basic+ 499 kr i måneden; Complete 549 kr i måneden; Free Complete 599 kr i måneden; Total 549 kr i måneden; Free Total 599 kr i måneden; Total+ 649 kr i måneden; Free Total+ 699 kr i måneden; Balanse 749 kr i måneden; Free Balanse 799 kr i måneden; XFIT Istind 849 kr i måneden; Free XFIT 899 kr i måneden; Balanse Premium 1 049 kr i måneden; Free Balanse Premium 1 149 kr i måneden; Crossfit Tromsø 1 249 kr i måneden; Free Crossfit 1 349 kr i måneden (kontrollert 2026-10-08)
+- MUBI: MUBI ca. 140 kr i måneden; Årlig ca. 1 115 kr i året; MUBI GO ca. 190 kr i måneden; MUBI GO – Årlig ca. 1 565 kr i året (kontrollert 2026-10-08)
+- SKY Fitness: Medlemskap – uten binding fra 349 kr i måneden (kontrollert 2026-10-08)
+- Sammen Trening: Ordinær – 12 mnd. binding 609 kr i måneden; Ordinær – Uten binding 709 kr i måneden; Ordinær 1 måned kontant – Kontant 809 kr i måneden; Ordinær 12 måneder kontant – Kontant 7 308 kr i året; Dagmedlemskap – 12 mnd. binding 509 kr i måneden; Dagmedlemskap – Uten binding 609 kr i måneden; Dagmedlemskap 1 måned kontant – Kontant 709 kr i måneden; Dagmedlemskap 12 måneder kontant – Kontant 6 108 kr i året (kontrollert 2026-10-08)
+- SiO Athletica: Ansatt SiO-lærested m/avtale – 12 mnd. binding 399 kr i måneden; Ikke-student – 12 mnd. binding 759 kr i måneden; Ansatt SiO-lærested m/avtale – Uten binding 459 kr i måneden; Ikke-student – Uten binding 815 kr i måneden; Kontantmedlemskap – 1 måned 1 029 kr i måneden (kontrollert 2026-10-08)
+- Sit Trening: Ikke-student – 12 mnd. binding 300 kr i måneden; Ikke-student – Uten binding 400 kr i måneden (kontrollert 2026-10-08)
+- Surfshark: Starter – 24 + 3 mnd kampanje – månedsverdi ca. 25 kr i måneden; One – 24 + 3 mnd kampanje – månedsverdi ca. 30 kr i måneden; One+ – 24 + 3 mnd kampanje – månedsverdi ca. 45 kr i måneden (kontrollert 2026-10-08)
+- Airtable: Team ca. 225 kr i måneden; Team – Årlig ca. 2 235 kr i året; Business ca. 505 kr i måneden; Business – Årlig ca. 5 025 kr i året; Enterprise Scale – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Asana: Starter ca. 130 kr i måneden; Starter – Årlig ca. 1 230 kr i året; Advanced ca. 285 kr i måneden; Advanced – Årlig ca. 2 790 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet; Enterprise+ – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Babbel: 1 måned Pris vises i kjøpsløpet; 3 måneder – 3 mnd Pris vises i kjøpsløpet; 6 måneder – 6 mnd 755 kr per 6 måneder (omregnet fra 80,7 USD); 12 måneder – Årlig ca. 1 000 kr i året (kontrollert 2026-10-08)
+- Bear Cave: Ordinært medlemskap – 12 mnd binding 349 kr i måneden; Kampanje medlemskap – Ingen binding 349 kr i måneden (kontrollert 2026-09-15)
+- Bitwarden: Premium – Årlig ca. 185 kr i året; Families – Årlig ca. 450 kr i året; Teams – Årlig ca. 450 kr i året; Enterprise – Årlig ca. 670 kr i året (kontrollert 2026-10-08)
+- Bolt.new: Pro ca. 235 kr i måneden; Teams ca. 280 kr i måneden; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Brilliant: Premium Individual – Månedlig/årlig Pris vises i kjøpsløpet; Premium Family – Årlig Pris vises i kjøpsløpet; Group – 3 seter – Årlig ca. 3 795 kr i året (kontrollert 2026-09-15)
+- Calendly: Standard – Årlig ca. 1 120 kr i året; Teams – Årlig ca. 1 790 kr i året; Enterprise – Årlig ca. 139 500 kr i året (kontrollert 2026-10-08)
+- Coursera: Coursera Plus ca. 550 kr i måneden; Coursera Plus – Årlig ca. 3 715 kr i året; Teams – Årlig ca. 3 715 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- CrossFit Kristiansand: Under 23 500 kr i måneden; Offshore 4/4 600 kr i måneden (kontrollert 2026-09-15)
+- Cursor: Pro ca. 190 kr i måneden; Pro+ ca. 560 kr i måneden; Ultra ca. 1 860 kr i måneden; Teams Standard ca. 375 kr i måneden; Teams Premium ca. 1 120 kr i måneden; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Descript: Hobbyist ca. 225 kr i måneden; Hobbyist – Årlig ca. 1 790 kr i året; Creator ca. 330 kr i måneden; Creator – Årlig ca. 2 680 kr i året; Business ca. 605 kr i måneden; Business – Årlig ca. 5 580 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Discord: Nitro Basic ca. 30 kr i måneden; Nitro Basic – Årlig ca. 280 kr i året; Nitro ca. 95 kr i måneden; Nitro – Årlig ca. 930 kr i året (kontrollert 2026-10-08)
+- ElevenLabs: Starter ca. 60 kr i måneden; Creator ca. 205 kr i måneden; Pro ca. 925 kr i måneden; Scale ca. 2 785 kr i måneden; Business ca. 9 210 kr i måneden; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Fireflies.ai: Pro ca. 170 kr i måneden; Pro – Årlig ca. 1 120 kr i året; Business ca. 270 kr i måneden; Business – Årlig ca. 2 125 kr i året; Enterprise – Årlig ca. 4 355 kr i året (kontrollert 2026-10-08)
+- Fitness24Seven: Standard månedsmedlemskap 349 kr i måneden; Honnør månedsmedlemskap 319 kr i måneden; Standard dagmedlemskap 249 kr i måneden; Standard nattmedlemskap 99 kr i måneden; Honnør dagmedlemskap 249 kr i måneden; Honnør nattmedlemskap 99 kr i måneden; Standard årskort – Årlig 4 399 kr i året; Honnør årskort – Årlig 3 999 kr i året; Standard halvårskort – 6 måneder 2895 kr per 6 måneder; Honnør halvårskort – 6 måneder 2895 kr per 6 måneder (kontrollert 2026-10-08)
+- Friskis Kristiansand: Helårskort – Årlig 1 300 kr i året; Halvårskort – Semester 800 kr per 6 måneder; Joggekort 1/1 – Årlig 600 kr i året; Joggekort 1/2 – Halvår 300 kr per 6 måneder (kontrollert 2026-09-15)
+- GitHub Copilot: Pro ca. 95 kr i måneden; Pro+ ca. 365 kr i måneden; Business ca. 180 kr i måneden; Enterprise ca. 365 kr i måneden (kontrollert 2026-10-08)
+- HeyGen: Creator ca. 270 kr i måneden; Creator – Årlig ca. 2 680 kr i året; Pro ca. 460 kr i måneden; Business ca. 1 390 kr i måneden; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Krisp: Core ca. 150 kr i måneden; Core – Årlig ca. 895 kr i året; Advanced ca. 280 kr i måneden; Advanced – Årlig ca. 1 675 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Linear: Basic – Årlig ca. 1 120 kr i året; Business – Årlig ca. 1 790 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Loom: Business ca. 170 kr i måneden; Business + AI ca. 225 kr i måneden; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Lovable: Pro ca. 235 kr i måneden; Pro – Årlig ca. 2 325 kr i året; Business ca. 465 kr i måneden; Business – Årlig ca. 4 650 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- MUDO Gym: GYM – Ingen binding 449 kr i måneden; GYM – 6 mnd binding 399 kr i måneden; KOMPLETT – Ingen binding 799 kr i måneden; KOMPLETT – 6 mnd binding 749 kr i måneden; FITNESSBOXING – Ingen binding 599 kr i måneden; FAMILIE – Ingen binding 1 599 kr i måneden; BARN kampsport – Ingen binding 699 kr i måneden; Yoga – Ingen binding 599 kr i måneden; Thaiboxing – Ingen binding 599 kr i måneden; Kickboxing – Ingen binding 599 kr i måneden (kontrollert 2026-10-08)
+- Medvind Trening: Alt inkludert 399 kr i måneden (kontrollert 2026-10-08)
+- Microsoft Copilot: Microsoft 365 Copilot for bedrifter 256,2 kr i måneden; Microsoft 365 Copilot for bedrifter – Årlig – kampanje 2 196 kr i året; Microsoft 365 Copilot – enterprise – Årlig 3 660 kr i året; Microsoft 365 Copilot – enterprise – Månedlig betaling 320,25 kr i måneden; Microsoft 365 Business Standard + Copilot for bedrifter 286,66 kr i måneden; Microsoft 365 Business Premium + Copilot for bedrifter 390,35 kr i måneden (kontrollert 2026-10-08)
+- Midjourney: Basic ca. 95 kr i måneden; Basic – Årlig ca. 895 kr i året; Standard ca. 280 kr i måneden; Standard – Årlig ca. 2 680 kr i året; Pro ca. 560 kr i måneden; Pro – Årlig ca. 5 360 kr i året; Mega ca. 1 120 kr i måneden; Mega – Årlig ca. 10 715 kr i året (kontrollert 2026-10-08)
+- Miro: Starter – Årlig ca. 895 kr i året; Business – Årlig ca. 2 235 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Mistral Le Chat: Pro ca. 140 kr i måneden; Team ca. 235 kr i måneden; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Otter.ai: Pro ca. 160 kr i måneden; Pro – Årlig ca. 930 kr i året; Business ca. 280 kr i måneden; Business – Årlig ca. 2 235 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- PLAY Kristiansand: Ordinær – 12 mnd binding 949 kr i måneden; Ungdom under 16 – Løpende 549 kr i måneden; FIT 45+ – Løpende 899 kr i måneden; Ordinær – 1 måned uten binding 1 199 kr i måneden (kontrollert 2026-10-08)
+- Perplexity: Pro ca. 190 kr i måneden; Pro – Årlig ca. 1 860 kr i året; Max ca. 1 860 kr i måneden; Max – Årlig ca. 18 600 kr i året; Enterprise Pro ca. 375 kr i måneden; Enterprise Pro – Årlig ca. 3 720 kr i året; Enterprise Max ca. 3 025 kr i måneden; Enterprise Max – Årlig ca. 30 225 kr i året (kontrollert 2026-09-15)
+- Poe: 10k poeng/dag – Årlig ca. 465 kr i året; 660k poeng/mnd – Årlig ca. 1 860 kr i året; 1,65M poeng/mnd – Årlig ca. 4 650 kr i året; 3,3M poeng/mnd – Årlig ca. 9 300 kr i året; 8,25M poeng/mnd – Årlig ca. 23 250 kr i året (kontrollert 2026-09-15)
+- QuillBot: Premium ca. 170 kr i måneden; Premium – Kvartalsvis ca. 320 kr i kvartalet; Premium – Årlig ca. 930 kr i året; Team – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Replit: Core ca. 190 kr i måneden; Core – Årlig ca. 2 010 kr i året; Pro ca. 930 kr i måneden; Pro – Årlig ca. 10 045 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Revolut: Plus 45,99 kr i måneden; Premium 94,99 kr i måneden; Metal 169,99 kr i måneden; Ultra 700 kr i måneden (kontrollert 2026-10-08)
+- Runway: Standard Pris vises i kjøpsløpet; Pro Pris vises i kjøpsløpet; Team Pris vises i kjøpsløpet; Max ca. 885 kr i måneden; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-09-15)
+- Slack: Pro ca. 85 kr i måneden; Pro – Årlig ca. 810 kr i året; Business+ ca. 170 kr i måneden; Business+ – Årlig ca. 1 675 kr i året; Enterprise+ – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Spicheren: Ordinær – 12 mnd binding 699 kr i måneden; Ordinær – Løpende uten binding 849 kr i måneden; Ordinær – 1 måned 949 kr i måneden; Ordinær før 15:30 – 12 mnd binding 519 kr i måneden; Ordinær før 15:30 – Løpende uten binding 665 kr i måneden; Ordinær før 15:30 – 1 måned 765 kr i måneden; Senior før 15:30 – Løpende uten binding 519 kr i måneden; Senior før 15:30 – 1 måned 665 kr i måneden; Ungdom 16–20 – 12 mnd binding 489 kr i måneden; Ungdom 16–20 – Løpende uten binding 609 kr i måneden; Ungdom 16–20 – 1 måned 760 kr i måneden (kontrollert 2026-09-15)
+- Suno: Pro – Årlig ca. 895 kr i året; Pro ca. 95 kr i måneden; Premier – Årlig ca. 2 680 kr i året; Premier ca. 280 kr i måneden (kontrollert 2026-10-08)
+- Superhuman: Starter ca. 280 kr i måneden; Starter – Årlig ca. 2 790 kr i året; Business ca. 375 kr i måneden; Business – Årlig ca. 3 685 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Synthesia: Starter ca. 270 kr i måneden; Starter – Årlig ca. 2 460 kr i året; Pro ca. 830 kr i måneden; Pro – Årlig ca. 7 480 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Todoist: Pro ca. 50 kr i måneden; Pro – Årlig ca. 560 kr i året; Business ca. 75 kr i måneden; Business – Årlig ca. 895 kr i året (kontrollert 2026-09-15)
+- Trello: Standard ca. 60 kr i måneden; Standard – Årlig ca. 560 kr i året; Premium ca. 120 kr i måneden; Premium – Årlig ca. 1 120 kr i året; Enterprise – Årlig ca. 1 955 kr i året (kontrollert 2026-10-08)
+- Urban Fitness Kristiansand: Måned til måned 699 kr i måneden; Årsmedlemskap – 12 mnd binding 549 kr i måneden (kontrollert 2026-09-15)
+- Zapier: Professional ca. 190 kr i måneden; Team ca. 645 kr i måneden; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- monday.com: Basic – Årlig ca. 1 005 kr i året; Standard – Årlig ca. 1 340 kr i året; Pro – Årlig ca. 2 125 kr i året; Enterprise – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Aktiviteten: Ordinær alle avdelinger 525 kr i måneden; Verket 265 kr i måneden; Oshallen 370 kr i måneden; Hyttemedlemskap 210 kr i måneden (kontrollert 2026-09-15)
+- AllTrails: Plus – Årlig ca. 335 kr i året; Peak – Årlig ca. 745 kr i året (kontrollert 2026-09-15)
+- Backblaze: Personal Backup – Årlig ca. 925 kr i året; Business Backup – Årlig ca. 925 kr i året; Enterprise Control – Avtale Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Centr: Centr App ca. 280 kr i måneden; Centr App – Kvartalsvis ca. 745 kr i kvartalet; Centr App – Årlig ca. 1 490 kr i året (kontrollert 2026-10-08)
+- Circle K Bilvask: Standard – 30 dager 549 kr i måneden; Standard børsteløs – 30 dager 649 kr i måneden; Polering – 30 dager 649 kr i måneden; Delux Sesong – 30 dager 799 kr i måneden (kontrollert 2026-10-08)
+- CuriosityStream: Standard ca. 50 kr i måneden; Standard – Årlig ca. 375 kr i året; Smart Bundle ca. 95 kr i måneden; Smart Bundle – Årlig ca. 655 kr i året (kontrollert 2026-10-08)
+- Dropout: Monthly Membership ca. 70 kr i måneden; Annual Membership – Årlig ca. 655 kr i året; Superfan – Årlig ca. 1 210 kr i året (kontrollert 2026-10-08)
+- Fitbod: Fitbod ca. 150 kr i måneden; Årlig ca. 895 kr i året (kontrollert 2026-09-15)
+- Fortnite Crew: Fortnite Crew ca. 115 kr i måneden (kontrollert 2026-10-08)
+- Hayu: Hayu 59 kr i måneden; 6 måneder 289 kr per 6 måneder; 12 måneder 529 kr i året (kontrollert 2026-10-08)
+- Klassekampen: Digital 399 kr i måneden; Helgepakka 459 kr i måneden; Komplett 539 kr i måneden (kontrollert 2026-10-08)
+- LinkedIn Premium: Premium Career ca. 375 kr i måneden; Premium Career – Årlig ca. 2 235 kr i året; Premium Career Duo ca. 560 kr i måneden; Premium Career Duo – Årlig ca. 3 350 kr i året; Premium Business ca. 655 kr i måneden; Premium Business – Årlig ca. 5 025 kr i året; Premium Business Duo ca. 1 110 kr i måneden; Premium Business Duo – Årlig ca. 8 540 kr i året (kontrollert 2026-10-08)
+- Medium: Medium Member ca. 50 kr i måneden; Medium Member – Årlig ca. 465 kr i året; Friend of Medium ca. 140 kr i måneden; Friend of Medium – Årlig ca. 1 395 kr i året (kontrollert 2026-10-08)
+- Minecraft Realms: Realms – Bedrock ca. 40 kr i måneden; Realms Plus – Bedrock ca. 75 kr i måneden; Realms – Java ca. 75 kr i måneden (kontrollert 2026-10-08)
+- NBA League Pass: League Pass ca. 160 kr i måneden; League Pass Premium ca. 235 kr i måneden; League Pass – Sesong ca. 1 025 kr i året; League Pass Premium – Sesong ca. 1 490 kr i året; League Pass – Årlig via NBA-app Pris vises i kjøpsløpet (kontrollert 2026-10-08)
+- Rakuten Viki: Viki Pass Standard ca. 75 kr i måneden; Viki Pass Standard – Årlig ca. 745 kr i året; Viki Pass Plus ca. 115 kr i måneden; Viki Pass Plus – Årlig Pris vises i kjøpsløpet (kontrollert 2026-09-15)
+- Readly: Readly 199 kr i måneden (kontrollert 2026-10-08)
+- Røros Gym: Ungdom 13–15 – 249 Pris vises i kjøpsløpet; Pendler – 249 Pris vises i kjøpsløpet; Honnør / Familie – 12 mnd binding 379 kr i måneden; Honnør / Familie – Uten binding 419 kr i måneden; Ordinær – 12 mnd binding 399 kr i måneden; Ordinær – Uten binding 449 kr i måneden (kontrollert 2026-09-15)
+- SoundCloud: SoundCloud Go ca. 50 kr i måneden; SoundCloud Go+ ca. 105 kr i måneden; SoundCloud DJ ca. 190 kr i måneden (kontrollert 2026-09-15)
+- Tesla Premium Connectivity: Premium Connectivity 129 kr i måneden (kontrollert 2026-10-08)
+- X Premium: Basic 31,13 kr i måneden; Basic – Årlig 331,43 kr i året; Premium 83 kr i måneden; Premium – Årlig 870 kr i året; Premium+ 445 kr i måneden; Premium+ – Årlig 4 390 kr i året (kontrollert 2026-10-08)
+- Zwift: Zwift 299 kr i måneden; Årlig ca. 1 860 kr i året (kontrollert 2026-09-15)
+- pCloud: Premium 500 GB – Årlig ca. 465 kr i året; Premium Plus 2 TB – Årlig ca. 930 kr i året; Ultra 10 TB – Årlig ca. 2 790 kr i året (kontrollert 2026-10-08)
+- 1Blocker: Premium 35 kr i måneden; Premium – Årlig 199 kr i året (kontrollert 2026-10-08)
+- AccuWeather: Premium 29 kr i måneden; Premium – Årlig 179 kr i året; Premium+ 59 kr i måneden; Premium+ – Årlig 399 kr i året; Premium+ Family Plan – Årlig 999 kr i året (kontrollert 2026-10-08)
+- Ancestry: World Explorer ca. 375 kr i måneden; World Explorer – 6 måneder 1 665 kr per 6 måneder (omregnet fra 179 USD) (kontrollert 2026-09-15)
+- AnyList: Complete Individual – Årlig 129 kr i året; Complete Household – Årlig 199 kr i året (kontrollert 2026-10-08)
+- Arlo Secure: Secure ca. 65 kr i måneden; Secure Plus Pris vises i kjøpsløpet; Secure Pro Pris vises i kjøpsløpet; Single Camera Pris vises i kjøpsløpet; Multi Camera Pris vises i kjøpsløpet (kontrollert 2026-09-15)
+- Buddy: Premium 55 kr i måneden; Premium – Årlig 599 kr i året (kontrollert 2026-10-08)
+- CARROT Weather: Premium 59 kr i måneden; Premium – Årlig 229 kr i året; Premium Ultra – Årlig 455 kr i året (kontrollert 2026-10-08)
+- Citymapper: CLUB Pris vises i kjøpsløpet; CLUB+ 1 190 kr i måneden (kontrollert 2026-10-08)
+- EasyPark: EasyPark GO 49 kr i måneden; EasyPark Small 0 kr i måneden (kontrollert 2026-10-08)
+- Flighty: Pro – Pay-As-You-Go – Per tur/periode 59 kr per tur; Pro 129 kr i måneden; Pro – Årlig 799 kr i året; Pro Family 169 kr i måneden; Pro Family – Årlig 1 490 kr i året (kontrollert 2026-10-08)
+- Foreca Weather: Ad-free – 3 måneder 19 kr i kvartalet; Ad-free – Årlig 59 kr i året; Ad-free + Family Sharing – Årlig 79 kr i året (kontrollert 2026-10-08)
+- Gaia GPS: Premium – Årlig 799 kr i året; Premium with Outside+ – Årlig 999 kr i året (kontrollert 2026-10-08)
+- Genius Scan: Genius Scan Plus 29 kr i måneden; Genius Scan Plus – Årlig 149 kr i året; Genius Scan Ultra 59 kr i måneden; Genius Scan Ultra – Årlig 499 kr i året (kontrollert 2026-10-08)
+- Home Assistant Cloud: Cloud ca. 65 kr i måneden; Cloud – Årlig ca. 605 kr i året (kontrollert 2026-10-08)
+- Life360: Silver ca. 65 kr i måneden; Gold ca. 110 kr i måneden (kontrollert 2026-10-08)
+- MileWiz: Unlimited Driving 55 kr i måneden; Unlimited Driving – Årlig 549 kr i året (kontrollert 2026-10-08)
+- Moovit: Premium / Monthly plan 29 kr i måneden; Premium / 3 month plan – 3 måneder 69 kr i kvartalet; Premium / 6 month plan – 6 måneder 129 kr per 6 måneder; Premium / 12 month plan – Årlig 179 kr i året (kontrollert 2026-10-08)
+- PDF Expert: Essential – Årlig ca. 465 kr i året; Premium – Årlig ca. 745 kr i året (kontrollert 2026-10-08)
+- PeakVisor: Hiking & Skiing 99 kr i måneden; Hiking & Skiing – Årlig 499 kr i året (kontrollert 2026-10-08)
+- PictureThis: Pro Pris vises i kjøpsløpet; Family Plan 599 kr i måneden (kontrollert 2026-10-08)
+- PlantIn: Premium – Ukentlig 99 kr i uka; Premium 129 kr i måneden; Premium – Årlig 399 kr i året (kontrollert 2026-10-08)
+- Ring: Solo ca. 45 kr i måneden; Solo – Årlig ca. 435 kr i året; Multi ca. 110 kr i måneden; Multi – Årlig ca. 1 080 kr i året; Pro ca. 220 kr i måneden; Pro – Årlig ca. 2 160 kr i året (kontrollert 2026-10-08)
+- Setapp: Mac ca. 140 kr i måneden; Mac + iOS ca. 180 kr i måneden; Power User ca. 215 kr i måneden (kontrollert 2026-10-08)
+- Spendee: Plus ca. 20 kr i måneden; Plus – Årlig ca. 140 kr i året; Premium ca. 60 kr i måneden; Premium – Årlig ca. 335 kr i året (kontrollert 2026-10-08)
+- Splitwise: Pro 59 kr i måneden; Pro – Årlig 499 kr i året (kontrollert 2026-10-08)
+- SwiftScan: VIP 69 kr i måneden; VIP – Årlig 399 kr i året; Plus 85 kr i måneden; Plus – Årlig 799 kr i året (kontrollert 2026-10-08)
+- TripIt: TripIt Pro – Årlig 529 kr i året (kontrollert 2026-10-08)
+- WaterMinder: Premium 39 kr i måneden; Premium – Årlig 179 kr i året (kontrollert 2026-10-08)
+- WeatherPro: Premium 9 kr i måneden; Premium – 3 måneder 29 kr i kvartalet; Premium – Årlig 99 kr i året (kontrollert 2026-10-08)
+- Windfinder: Plus 29 kr i måneden; Plus – Årlig 179 kr i året; Ad-free – 3 måneder 29 kr i kvartalet; Ad-free – 6 måneder 49 kr per 6 måneder; Ad-free – Årlig 59 kr i året (kontrollert 2026-10-08)
+- Windy.com: Premium 35 kr i måneden; Premium – Årlig 319 kr i året (kontrollert 2026-10-08)
+- YNAB: YNAB ca. 140 kr i måneden; Årlig ca. 1 015 kr i året (kontrollert 2026-10-08)
+
+## Studentrabatter (21 tjenester, https://trekksjekk.no/studentrabatt/)
+
+- Viaplay: 50 % rabatt. 50 % på Film & Serier (84,50 kr) og Film & Serier med reklame (54,50 kr). Gjelder ikke Medium eller Total. https://viaplay.no/no-nb/studenttilbud
+- Storytel: 74,5 kr i måneden i stedet for 149 kr. 50 % rabatt RESTEN AV LIVET, så lenge abonnementet løper — også etter at du er ferdig å studere. Verifiseres med SheerID. https://www.storytel.com/no/c/studentforlife
+- YouTube Premium: 99 kr i måneden i stedet for 169 kr. Inkluderer YouTube Music Premium, reklamefri YouTube, bakgrunnsavspilling og nedlasting. Opptil fire år. https://support.google.com/youtube/answer/9158808 (ikke lest hos leverandøren)
+- Apple Music: 75 kr i måneden i stedet for 139 kr. Studentpris i opptil fire år. Apple TV+ er inkludert. https://www.apple.com/no/apple-music/ (ikke lest hos leverandøren)
+- Spotify: 75 kr i måneden i stedet for 139 kr. Studentpris i opptil fire år. Verifiseres med SheerID. https://www.spotify.com/no-nb/student/
+- Tidal: 75 kr i måneden i stedet for 139 kr. Studentabonnement via SheerID. Må bekreftes på nytt omtrent hvert år. https://support.tidal.com/hc/no/articles/360002669818-Student-plan (ikke lest hos leverandøren)
+- Microsoft 365: 50 % rabatt. 50 % på Microsoft 365 Personal. Studentstatus må bekreftes på nytt for å beholde rabatten. Går du på en skole med avtale, kan nettversjonene av Word, Excel og PowerPoint være helt gratis – sjekk det først. https://www.microsoft.com/nb-no/microsoft-365/college-student-pricing (ikke lest hos leverandøren)
+- Podme: 49,5 kr i måneden i stedet for 99 kr. 50 % rabatt. Gjelder Premium-podkaster, ikke Premium Total med lydbøker. https://podme.com/no/student/ (ikke lest hos leverandøren)
+- Fitness24Seven: 319 kr i måneden i stedet for 349 kr. Egen Student-pakke til 319 kr/mnd, eller 3999 kr for året. Studentstatus kreves. Startavgift på 249 kr kommer i tillegg. https://no.fitness24seven.com/medlemskap/ (ikke lest hos leverandøren)
+- BookBeat: 89 kr i måneden i stedet for 99 kr. Basic med 20 timer i måneden. Rabatten er oppgitt til 10 kroner. https://support.bookbeat.com/hc/no/articles/9691748849309 (ikke lest hos leverandøren)
+- 3T: 30 % rabatt. 30 % studentrabatt. Prisen varierer per senter, så avslaget er oppgitt i prosent og ikke i kroner. https://www.3t.no/medlemskap/vare-medlemskap (ikke lest hos leverandøren)
+- Adobe Creative Cloud: 190,9 kr i måneden. Creative Cloud Pro til 190,90 kr det første året, mot 961,25 ordinært. Deretter 492,50. Merk at Adobe har ettårsavtale med gebyr hvis du avslutter før tiden. https://www.adobe.com/no/education/students/creativecloud.html (ikke lest hos leverandøren)
+- Apple TV+: Gratis med Apple Music Student. Apple TV+ er inkludert uten ekstra kostnad så lenge du har Apple Music Student. Betaler du for begge, betaler du dobbelt. https://www.apple.com/no/apple-music/ (ikke lest hos leverandøren)
+- Disney+: 15 % rabatt. 15 % på årsabonnement, via en gratis UNiDAYS-konto. Gjelder ikke månedsabonnement. https://www.myunidays.com/NO/nb-NO/partners/disney/view (ikke lest hos leverandøren)
+- Fabel: Eget studenttilbud. Seks uker gratis via Studentkortet. Ikke en varig studentpris – etterpå betaler du ordinært. https://www.studentkortet.no/rabatter/boeker/annet/fabel (ikke lest hos leverandøren)
+- GitHub Copilot: Eget studenttilbud. Gratis for verifiserte studenter gjennom GitHub Education. Gjelder Copilot Pro, ikke Pro+ eller Max. https://github.com/education/students (ikke lest hos leverandøren)
+- MOVA: Eget studenttilbud. MOVA har egen studentbrukertype. Prisen avhenger av senteret ditt, så den står ikke som et tall her. https://www.mova.no/bli-medlem/velg-brukertype (ikke lest hos leverandøren)
+- Nextory: Eget studenttilbud. Åtte uker gratis via Studentkortet, deretter vanlig pris. Ikke en varig studentpris, og gjelder bare nye kunder. https://studentkortet.no/rabatter/boeker/annet/nextory (ikke lest hos leverandøren)
+- Obsidian: 40 % rabatt. 40 % for kvalifiserte studenter. Gjelder Sync og Publish, ikke selve appen — den er gratis. https://obsidian.md/pricing (ikke lest hos leverandøren)
+- SATS: 20 % rabatt. 20 % på SATS-medlemskap med gyldig studentbevis. Rabatten må fornyes. https://www.sats.no/kundeservice/medlemskap/rabattavtaler (ikke lest hos leverandøren)
+- Strava: 50 % rabatt. Omtrent halv pris på årsabonnement (39,99 USD i året ved kontroll). Prisen oppgis i dollar. https://www.strava.com/subscribe/student (ikke lest hos leverandøren)
