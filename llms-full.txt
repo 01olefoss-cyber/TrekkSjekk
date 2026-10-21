@@ -1,6 +1,6 @@
 # TrekkSjekk: oppsigelsestider, priser og studentrabatter i Norge
 
-> TrekkSjekk er en norsk iPhone-app som holder orden på abonnementene dine, regner ut siste dag du kan si opp fra tjenestens egne vilkår, og varsler deg før trekk, frister og prøveperioder. Ingen bankkobling, ingen konto, selger aldri data. Gratis med opptil 5 abonnementer; Premium 149 kr i året.
+> TrekkSjekk er en norsk app for iPhone og Android som holder orden på abonnementene dine, regner ut siste dag du kan si opp fra tjenestens egne vilkår, og varsler deg før trekk, frister og prøveperioder. Ingen bankkobling, ingen konto, selger aldri data. Gratis med opptil 5 abonnementer; Premium 149 kr i året.
 
 Oppdatert 2026-10-18. Tallene er hentet fra leverandørenes egne sider; hver linje har en lenke til siden med kilde og dato. Nettside: https://trekksjekk.no/
 

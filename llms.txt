@@ -1,6 +1,6 @@
 # TrekkSjekk
 
-> Norsk iPhone-app som holder orden på abonnementene dine, regner ut siste dag du kan si opp fra tjenestens egne vilkår, og varsler deg før trekk, frister og prøveperioder. Ingen bankkobling, ingen konto, selger aldri data. Gratis med opptil 5 abonnementer; Premium 149 kr/år.
+> Norsk app for iPhone og Android som holder orden på abonnementene dine, regner ut siste dag du kan si opp fra tjenestens egne vilkår, og varsler deg før trekk, frister og prøveperioder. Ingen bankkobling, ingen konto, selger aldri data. Gratis med opptil 5 abonnementer; Premium 149 kr/år.
 
 Laget av Ole André Foss (TrekkSjekk Foss, Kristiansand) fordi appene som fantes manglet det han trengte: ingen frister, bankkobling, feil gjetninger og ingen vei til oppsigelsessiden. Lansert i App Store 25. september 2026. Bare iPhone foreløpig; Android er under arbeid.
 
@@ -26,6 +26,7 @@ Laget av Ole André Foss (TrekkSjekk Foss, Kristiansand) fordi appene som fantes
 - [Personvern](https://trekksjekk.no/personvern.html)
 - [Vilkår](https://trekksjekk.no/vilkar.html)
 - [App Store](https://apps.apple.com/no/app/id6811947257)
+- [Google Play](https://play.google.com/store/apps/details?id=com.oleandrefoss.abbo)
 
 ## Alt i ren tekst
 - [llms-full.txt](https://trekksjekk.no/llms-full.txt): oppsigelsestid for 235 tjenester, priser for 170 og alle studentrabattene, én linje per tjeneste
