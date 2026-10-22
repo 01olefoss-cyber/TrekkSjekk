@@ -245,7 +245,7 @@ Oppdatert 2026-10-18. Tallene er hentet fra leverandørenes egne sider; hver lin
 ## Priser i norske kroner (170 tjenester, https://trekksjekk.no/priser/)
 
 - Netflix: Basis 119 kr i måneden; Standard 149 kr i måneden; Premium 219 kr i måneden (kontrollert 2026-10-08)
-- Disney+: Standard med reklame 69 kr i måneden; Standard 109 kr i måneden; Standard – år 1 090 kr i året; Premium 159 kr i måneden; Premium – år 1 590 kr i året; Standard med reklame – 6 mnd binding 59 kr i måneden; Standard – 6 mnd binding 89 kr i måneden; Premium – 6 mnd binding 119 kr i måneden (kontrollert 2026-10-08)
+- Disney+: Standard med reklame 89 kr i måneden; Standard 129 kr i måneden; Standard – år 1 290 kr i året; Premium 179 kr i måneden; Premium – år 1 790 kr i året; Standard med reklame – 6 mnd binding 79 kr i måneden; Standard – 6 mnd binding 109 kr i måneden; Premium – 6 mnd binding 139 kr i måneden (kontrollert 2026-10-22)
 - HBO Max: Basis med reklame 89 kr i måneden; Standard 149 kr i måneden; Premium 189 kr i måneden; Basis med reklame – år 890 kr i året; Standard – år 1 490 kr i året; Premium – år 1 890 kr i året (kontrollert 2026-10-08)
 - Viaplay: Film & Serier med reklame 109 kr i måneden; Film & Serier 169 kr i måneden; Medium 399 kr i måneden; Total 799 kr i måneden; Total Pluss – 6 mnd binding 729 kr i måneden; Total Pluss – 12 mnd tilbud 699 kr i måneden (kontrollert 2026-10-08)
 - TV 2 Play: Nyheter fra 69 kr i måneden; Start fra 109 kr i måneden; Standard med reklame 199 kr i måneden; Standard 279 kr i måneden; Standard – år 2 799 kr i året; Premium med reklame 409 kr i måneden; Premium 489 kr i måneden; Premium – år 4 999 kr i året; Premium fotball med reklame 389 kr i måneden; Premium fotball 439 kr i måneden (kontrollert 2026-10-08)
