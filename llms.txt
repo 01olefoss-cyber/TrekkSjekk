@@ -24,6 +24,7 @@ Laget av Ole André Foss (TrekkSjekk Foss, Kristiansand) fordi appene som fantes
 - [Priser](https://trekksjekk.no/priser/): pakker og månedspriser for 170 abonnementer i Norge, med dato og kilde for hver pris
 - [Studentrabatt](https://trekksjekk.no/studentrabatt/): 21 studenttilbud på abonnementer, sortert etter hvor mye du sparer i året
 - [Hva er APPLE.COM/BILL?](https://trekksjekk.no/apple-com-bill/): hva trekket på kontoutskriften er, hvordan du finner ut hva det gjelder, og hvordan du sier opp
+- [Hva er GOOGLE *-trekk?](https://trekksjekk.no/google-trekk/): hva GOOGLE*-trekk fra Google Play på kontoutskriften er, hvordan du finner kjøpet i bestillingsloggen, og hvordan du sier opp
 - [Personvern](https://trekksjekk.no/personvern.html)
 - [Vilkår](https://trekksjekk.no/vilkar.html)
 - [App Store](https://apps.apple.com/no/app/id6811947257)
