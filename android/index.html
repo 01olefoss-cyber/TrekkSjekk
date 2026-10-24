@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finnes TrekkSjekk på Android? | TrekkSjekk</title>
+<meta name="description" content="Ja. TrekkSjekk finnes for Android i Google Play (Android 7.0 eller nyere) og for iPhone i App Store. Gratis, uten konto og uten bankkobling.">
+<link rel="canonical" href="https://trekksjekk.no/android/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:site_name" content="TrekkSjekk">
+<meta property="og:title" content="Finnes TrekkSjekk på Android? | TrekkSjekk">
+<meta property="og:description" content="Ja. TrekkSjekk finnes for Android i Google Play (Android 7.0 eller nyere) og for iPhone i App Store. Gratis, uten konto og uten bankkobling.">
+<meta property="og:url" content="https://trekksjekk.no/android/">
+<meta property="og:image" content="https://trekksjekk.no/bilder/ikon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FBFAFC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15131B" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="/bilder/ikon-64.png">
+<link rel="apple-touch-icon" href="/bilder/ikon-180.png">
+<link rel="preload" href="/fonter/poppins-bold.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/fonter/poppins-regular.woff" as="font" type="font/woff" crossorigin>
+<style>
+@font-face{font-family:"Poppins";src:url("/fonter/poppins-regular.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Poppins";src:url("/fonter/poppins-medium.woff") format("woff");font-weight:500 600;font-display:swap}
+@font-face{font-family:"Poppins";src:url("/fonter/poppins-bold.woff") format("woff");font-weight:700 800;font-display:swap}
+</style>
+<style>
+:root {
+  --ground: #F3F5FA; --surface: #FFFFFF; --ink: #0D1326; --muted: #566079;
+  --accent: #1E3A8A; --hairline: #E1E6F0; --flag: #EBEEF6; --green: #15803D;
+  --sans: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #080D1F; --surface: #111934; --ink: #EEF1F8; --muted: #A1A9BE;
+    --accent: #9DB4FF; --hairline: #212B4A; --flag: #172040; --green: #4ADE80;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #080D1F; --surface: #111934; --ink: #EEF1F8; --muted: #A1A9BE;
+  --accent: #9DB4FF; --hairline: #212B4A; --flag: #172040; --green: #4ADE80;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ground); color: var(--ink);
+  font-family: var(--sans); font-size: 16px; line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); }
+.page { max-width: 46rem; margin: 0 auto; padding: 56px 16px 72px; }
+.eyebrow {
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent); margin: 0 0 18px; font-weight: 600;
+}
+h1 {
+  font-weight: 700; font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.1;
+  letter-spacing: -0.015em; text-wrap: balance; margin: 0 0 18px;
+}
+h2 { font-size: 1.3rem; font-weight: 700; line-height: 1.25; margin: 0 0 12px; }
+.lead { font-size: 1.12rem; color: var(--muted); max-width: 36rem; margin: 0 0 32px; }
+section { margin: 0 0 40px; }
+.facts {
+  margin: 0 0 44px; border-top: 1px solid var(--hairline);
+}
+.facts div {
+  display: grid; grid-template-columns: 9rem 1fr; gap: 0 1.2rem;
+  padding: 14px 0; border-bottom: 1px solid var(--hairline);
+}
+.facts dt { font-weight: 600; color: var(--muted); font-size: 0.9rem; padding-top: 1px; }
+.facts dd { margin: 0; }
+@media (max-width: 520px) {
+  .facts div { grid-template-columns: 1fr; gap: 2px; }
+}
+.steps { padding-left: 1.3rem; display: flex; flex-direction: column; gap: 8px; max-width: 36rem; }
+.steps li::marker { color: var(--accent); font-weight: 700; }
+.note {
+  background: var(--flag); border-left: 3px solid var(--accent); padding: 20px 22px;
+}
+.note h2 { font-size: 1.05rem; }
+.note p { margin: 0 0 10px; }
+.note ol { margin: 0; padding-left: 1.2rem; }
+.cta {
+  border: 1px solid var(--hairline); background: var(--surface);
+  border-radius: 14px; padding: 22px 22px 8px;
+}
+.cta p { margin: 0 0 14px; }
+.cta .button { margin: 0 8px 8px 0; }
+.button {
+  display: inline-block; background: var(--accent); color: #fff;
+  padding: 10px 18px; border-radius: 10px; font-weight: 700; text-decoration: none;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .button { color: #080D1F; } }
+:root[data-theme="dark"] .button { color: #080D1F; }
+.source { font-size: 0.85rem; color: var(--muted); }
+.table-wrap { overflow-x: auto; margin: 0 0 44px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+th, td { text-align: left; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+th { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+footer {
+  margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--hairline);
+  font-size: 0.8rem; color: var(--muted);
+}
+.jump { font-weight: 600; line-height: 2; margin: 0 0 8px; }
+section h2 { scroll-margin-top: 16px; }
+.faq h3 { font-size: 1.02rem; font-weight: 700; margin: 22px 0 4px; }
+.faq p { margin: 0; max-width: 36rem; }
+.meta { font-size: 0.85rem; color: var(--muted); margin: -6px 0 24px; }
+.short { background: var(--flag); border-left: 3px solid var(--accent); padding: 18px 20px; margin-bottom: 36px; }
+.short h2 { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; }
+.short p { margin: 0; font-size: 1.05rem; }
+.tittel { display: flex; align-items: center; gap: 14px; margin: 0 0 18px; }
+.tittel h1 { margin: 0; }
+.logo { border-radius: 22%; flex: none; object-fit: cover; background: #fff; box-shadow: 0 0 0 1px var(--hairline); }
+.bokstav { display: inline-flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 0.95em; box-shadow: none; }
+.tittel .bokstav { font-size: 1.5rem; }
+.navn { display: inline-flex; align-items: center; gap: 10px; }
+.sok { position: sticky; top: 0; z-index: 2; background: var(--ground); padding: 10px 0; margin: 0 0 8px; }
+.sok input {
+  width: 100%; font: inherit; font-size: 16px; padding: 12px 14px; border-radius: 12px;
+  border: 1px solid var(--hairline); background: var(--surface); color: var(--ink);
+}
+.sok input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+tr[hidden], section[hidden] { display: none; }
+.source a { overflow-wrap: anywhere; }
+.steps a, p a, .faq p { overflow-wrap: anywhere; }
+
+/* Brødsmuler og beslektede guider */
+.crumbs { font-size: 14px; color: var(--muted); margin: 0 0 18px; }
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+.related ul { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 6px; }
+.related li a { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--hairline); border-radius: 12px; color: var(--ink); text-decoration: none; background: var(--surface); }
+.related li a:hover { border-color: var(--accent); }
+.related .logo { width: 24px; height: 24px; border-radius: 7px; font-size: 12px; }
+
+/* Priser og studentrabatter */
+.tj-gruppe { margin: 0 0 44px; }
+.tj-gruppe h2 { font-size: 1.5rem; letter-spacing: -0.02em; margin: 0; }
+details.tj-gruppe { border-top: 1px solid var(--hairline); margin: 0; }
+details.tj-gruppe:last-of-type { border-bottom: 1px solid var(--hairline); margin-bottom: 44px; }
+details.tj-gruppe > summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 12px; padding: 18px 0; scroll-margin-top: 80px; }
+details.tj-gruppe > summary::-webkit-details-marker { display: none; }
+details.tj-gruppe > summary::after { content: "+"; margin-left: auto; font-size: 1.5rem; line-height: 1; color: var(--muted); transition: transform .2s; }
+details.tj-gruppe[open] > summary::after { transform: rotate(45deg); }
+.antall { font-size: 0.85rem; color: var(--muted); }
+details[hidden] { display: none; }
+.tj { padding: 20px 0; border-bottom: 1px solid var(--hairline); }
+.tj[hidden] { display: none; }
+.tj-hode { display: flex; align-items: center; gap: 12px; }
+.tj-hode h3 { margin: 0; font-size: 1.08rem; letter-spacing: -0.01em; }
+.tj-lenke, .spar { margin-left: auto; font-size: 0.85rem; white-space: nowrap; }
+.tj-lenke { font-weight: 600; text-decoration: none; }
+.tj-lenke:hover { text-decoration: underline; }
+.spar { font-weight: 700; color: var(--green); background: var(--flag); padding: 3px 10px; border-radius: 999px; }
+.priser { margin: 10px 0 8px; font-size: 0.95rem; }
+.priser th, .priser td { border: 0; padding: 7px 0; vertical-align: top; }
+.priser tr + tr th, .priser tr + tr td { border-top: 1px dashed var(--hairline); }
+.priser th { font-size: 0.95rem; font-weight: 500; color: var(--ink); padding-right: 16px; }
+.priser th small { display: block; font-size: 0.78rem; font-weight: 400; color: var(--muted); }
+.priser td { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.priser td.tekst { white-space: normal; font-weight: 500; }
+.valuta { white-space: normal; }
+.valuta { display: block; font-size: 0.75rem; font-weight: 400; color: var(--muted); }
+.tilbud { font-weight: 700; font-size: 1.05rem; margin: 10px 0 2px; }
+.tilbud-tekst { margin: 0 0 6px; max-width: 38rem; }
+.tj .source { margin: 4px 0 0; }
+@media (max-width: 520px) {
+  .tj-hode { flex-wrap: wrap; }
+  .spar { margin-left: 48px; }
+}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TrekkSjekk", "item": "https://trekksjekk.no/"}, {"@type": "ListItem", "position": 2, "name": "TrekkSjekk på Android", "item": "https://trekksjekk.no/android/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Finnes TrekkSjekk på Android?", "inLanguage": "nb-NO", "datePublished": "2026-10-24", "dateModified": "2026-10-24", "mainEntityOfPage": "https://trekksjekk.no/android/", "author": {"@type": "Person", "name": "Ole André Foss"}, "publisher": {"@type": "Organization", "name": "TrekkSjekk Foss", "url": "https://trekksjekk.no/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Finnes TrekkSjekk på Android?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. TrekkSjekk finnes i Google Play for Android-telefoner med Android 7.0 eller nyere, og i App Store for iPhone med iOS 16.4 eller nyere. Appen er gratis å laste ned, og du trenger verken konto eller bankkobling."}}, {"@type": "Question", "name": "Hva koster TrekkSjekk på Android?", "acceptedAnswer": {"@type": "Answer", "text": "Appen er gratis med opptil fem abonnementer. Premium koster 149 kr i året med 7 dager gratis for nye kunder, 39 kr i måneden eller 399 kr én gang. På Android kjøpes Premium i appen via Google Play."}}, {"@type": "Question", "name": "Kan TrekkSjekk lese kontoutskriften på Android?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Du laster ned en kontoutskrift (CSV) fra nettbanken og velger fila i appen. Den leses på telefonen og slettes etterpå. Appen finner de faste trekkene og foreslår hva som skjuler seg bak GOOGLE*-trekk og Google Play-trekk uten appnavn."}}, {"@type": "Question", "name": "Er det noen forskjell på TrekkSjekk for Android og iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Funksjonene er de samme. Unntaket er widgets på hjem- og låseskjermen, som foreløpig bare finnes på iPhone. På Android kjøpes og sies Premium opp i Google Play, på iPhone i App Store."}}, {"@type": "Question", "name": "Hvordan sier jeg opp TrekkSjekk Premium på Android?", "acceptedAnswer": {"@type": "Answer", "text": "Gå til play.google.com/store/account/subscriptions, eller åpne Google Play, trykk på profilbildet og velg Betalinger og abonnementer og så Abonnementer. Velg TrekkSjekk og trykk Si opp abonnementet. Det holder ikke å avinstallere appen."}}]}</script>
+</head>
+<body>
+<div class="page">
+
+  <nav class="crumbs" aria-label="Du er her"><a href="/">TrekkSjekk</a> › TrekkSjekk på Android</nav>
+  <p class="eyebrow">Om appen</p>
+  <h1>Finnes TrekkSjekk på Android?</h1>
+
+  <div class="short">
+    <h2>Kort svar</h2>
+    <p>Ja. TrekkSjekk finnes i <a href="https://play.google.com/store/apps/details?id=com.oleandrefoss.abbo">Google Play</a> for Android-telefoner med Android 7.0 eller nyere, og i <a href="https://apps.apple.com/no/app/id6811947257">App Store</a> for iPhone. Appen er gratis å laste ned, og du trenger verken konto eller bankkobling. Abonnementene lagres på telefonen din.</p>
+  </div>
+
+  <dl class="facts">
+    <div><dt>Android</dt><dd>Google Play, Android 7.0 eller nyere</dd></div>
+    <div><dt>iPhone</dt><dd>App Store, iOS 16.4 eller nyere</dd></div>
+    <div><dt>Pris</dt><dd>Gratis med opptil 5 abonnementer. Premium 149&nbsp;kr i året (7 dager gratis), 39&nbsp;kr i måneden eller 399&nbsp;kr én gang</dd></div>
+    <div><dt>Konto</dt><dd>Nei, du trenger ingen konto</dd></div>
+    <div><dt>Bankkobling</dt><dd>Nei. Du kan velge en kontoutskrift (CSV) fra nettbanken, som leses på telefonen</dd></div>
+    <div><dt>Laget av</dt><dd>Ole André Foss, TrekkSjekk Foss i Kristiansand</dd></div>
+  </dl>
+
+  <section>
+    <h2>Slik får du TrekkSjekk på Android</h2>
+    <ol class="steps">
+      <li>Åpne <a href="https://play.google.com/store/apps/details?id=com.oleandrefoss.abbo">TrekkSjekk i Google Play</a> på telefonen, eller åpne Google Play-appen og søk etter <b>TrekkSjekk</b>.</li>
+      <li>Trykk <b>Installer</b>. Appen er gratis.</li>
+      <li>Legg inn abonnementene dine, eller velg en kontoutskrift du har lastet ned fra nettbanken, så finner appen de faste trekkene.</li>
+      <li>Tillat varsler, så får du beskjed før trekk, frister og prøveperioder.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Hva TrekkSjekk gjør på Android</h2>
+    <ul class="steps">
+      <li><b>Oversikt</b> over abonnementene med sum per måned og år.</li>
+      <li><b>Siste dag du kan si opp</b>, regnet ut fra tjenestens egne vilkår for over 180 tjenester. Finner vi ikke regelen, viser appen ingen frist i stedet for å gjette.</li>
+      <li><b>Varsel</b> før trekk, før fristen for å si opp og før en prøveperiode begynner å koste.</li>
+      <li><b>Leser kontoutskriften på telefonen.</b> Du velger en CSV-fil fra nettbanken, fila leses lokalt og slettes etterpå.</li>
+      <li><b>Finner ut hva GOOGLE*-trekk er.</b> Står det bare Google Play på trekket, matcher appen beløpet mot prisene til flere hundre tjenester og foreslår hvilke det kan være. Les mer om <a href="/google-trekk/">GOOGLE *-trekk på kontoutskriften</a>.</li>
+      <li><b>Rett til oppsigelsessiden</b> med fremgangsmåte. Er abonnementet kjøpt i Google Play, sender appen deg til Google Play for å avslutte det.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Forskjeller fra iPhone</h2>
+    <p>Funksjonene er de samme på Android og iPhone. Unntaket er widgets på hjem- og låseskjermen, som foreløpig bare finnes på iPhone. På Android kjøpes Premium i appen via Google Play, og det er der du sier det opp. Fordi TrekkSjekk ikke har brukerkontoer, lagres abonnementene bare på telefonen du bruker.</p>
+  </section>
+
+  <section>
+    <h2>Slik sier du opp TrekkSjekk Premium på Android</h2>
+    <ol class="steps">
+      <li>Gå til <a href="https://play.google.com/store/account/subscriptions" rel="nofollow noopener">play.google.com/store/account/subscriptions</a>, eller åpne Google Play → profilbildet → <b>Betalinger og abonnementer</b> → <b>Abonnementer</b>.</li>
+      <li>Velg <b>TrekkSjekk</b>.</li>
+      <li>Trykk <b>Si opp abonnementet</b>.</li>
+    </ol>
+    <p>Det holder ikke å avinstallere appen. Du beholder Premium ut perioden du har betalt for.</p>
+  </section>
+
+  <section class="faq">
+    <h2>Vanlige spørsmål</h2>
+    <h3>Finnes TrekkSjekk på Android?</h3>
+    <p>Ja. TrekkSjekk finnes i Google Play for Android-telefoner med Android 7.0 eller nyere, og i App Store for iPhone med iOS 16.4 eller nyere. Appen er gratis å laste ned, og du trenger verken konto eller bankkobling.</p>
+    <h3>Hva koster TrekkSjekk på Android?</h3>
+    <p>Appen er gratis med opptil fem abonnementer. Premium koster 149 kr i året med 7 dager gratis for nye kunder, 39 kr i måneden eller 399 kr én gang. På Android kjøpes Premium i appen via Google Play.</p>
+    <h3>Kan TrekkSjekk lese kontoutskriften på Android?</h3>
+    <p>Ja. Du laster ned en kontoutskrift (CSV) fra nettbanken og velger fila i appen. Den leses på telefonen og slettes etterpå. Appen finner de faste trekkene og foreslår hva som skjuler seg bak GOOGLE*-trekk og Google Play-trekk uten appnavn.</p>
+    <h3>Er det noen forskjell på TrekkSjekk for Android og iPhone?</h3>
+    <p>Funksjonene er de samme. Unntaket er widgets på hjem- og låseskjermen, som foreløpig bare finnes på iPhone. På Android kjøpes og sies Premium opp i Google Play, på iPhone i App Store.</p>
+    <h3>Hvordan sier jeg opp TrekkSjekk Premium på Android?</h3>
+    <p>Gå til play.google.com/store/account/subscriptions, eller åpne Google Play, trykk på profilbildet og velg Betalinger og abonnementer og så Abonnementer. Velg TrekkSjekk og trykk Si opp abonnementet. Det holder ikke å avinstallere appen.</p>
+  </section>
+
+  <section class="cta">
+    <h2>Last ned TrekkSjekk</h2>
+    <p>Si opp det du ikke bruker, før det trekkes. Gratis for Android og iPhone, uten konto og uten bankkobling.</p>
+    <p><a class="button" href="https://play.google.com/store/apps/details?id=com.oleandrefoss.abbo">Last ned i Google Play</a> <a class="button" href="https://apps.apple.com/no/app/id6811947257">Last ned i App Store</a></p>
+  </section>
+  <p class="source">Kilde: TrekkSjekk (appen og butikksidene i Google Play og App Store). Se også <a href="/om.html">Om TrekkSjekk</a> og <a href="/sammenlign.html">sammenligningen</a>.</p>
+
+  <footer>
+    <a href="/">TrekkSjekk</a> · <a href="/si-opp/">Alle oppsigelsesguider</a> · <a href="/priser/">Priser</a> · <a href="/studentrabatt/">Studentrabatt</a> · <a href="/om.html">Om</a> · <a href="/personvern.html">Personvern</a> · Oppdatert 24. oktober 2026
+  </footer>
+</div>
+</body>
+</html>
