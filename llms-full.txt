@@ -251,7 +251,7 @@ Oppdatert 2026-10-18. Tallene er hentet fra leverandørenes egne sider; hver lin
 - TV 2 Play: Nyheter fra 69 kr i måneden; Start fra 109 kr i måneden; Standard med reklame 199 kr i måneden; Standard 279 kr i måneden; Standard – år 2 799 kr i året; Premium med reklame 409 kr i måneden; Premium 489 kr i måneden; Premium – år 4 999 kr i året; Premium fotball med reklame 389 kr i måneden; Premium fotball 439 kr i måneden (kontrollert 2026-10-08)
 - Prime Video: Prime Video 79 kr i måneden (kontrollert 2026-09-13)
 - Apple TV+: Apple TV+ 119 kr i måneden (kontrollert 2026-10-08)
-- SkyShowtime: Standard med reklame 69 kr i måneden; Standard med reklame – år 549 kr i året; Standard 109 kr i måneden; Standard – år 869 kr i året; Premium 159 kr i måneden; Premium – år 1 250 kr i året (kontrollert 2026-10-08)
+- SkyShowtime: Standard med reklame 69 kr i måneden; Standard med reklame – år 549 kr i året; Standard 109 kr i måneden; Standard – 6 mnd binding 89 kr i måneden; Standard – 12 mnd binding 79 kr i måneden; Premium 159 kr i måneden; Premium – 6 mnd binding 129 kr i måneden; Premium – 12 mnd binding 119 kr i måneden (kontrollert 2026-10-25)
 - Allente: Stream Basic 399 kr i måneden; Stream Flex 2 499 kr i måneden; Stream Flex 4 599 kr i måneden (kontrollert 2026-09-13)
 - RiksTV: FleksiPakken 549 kr i måneden; StrømmePakken 649 kr i måneden; SportsPakken 649 kr i måneden; RiksPakken 999 kr i måneden (kontrollert 2026-10-08)
 - Crunchyroll: Fan 79 kr i måneden; Mega Fan – måned 99 kr i måneden; Mega Fan – år 999 kr i året; Ultimate Fan 155 kr i måneden (kontrollert 2026-09-13)
