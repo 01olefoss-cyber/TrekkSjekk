@@ -30,7 +30,7 @@ Laget av Ole André Foss (TrekkSjekk Foss, Kristiansand) fordi appene som fantes
 - [Personvern](https://trekksjekk.no/personvern.html)
 - [Vilkår](https://trekksjekk.no/vilkar.html)
 - [App Store](https://apps.apple.com/no/app/id6811947257)
-- [Google Play](https://play.google.com/store/apps/details?id=com.oleandrefoss.abbo)
+- [Google Play](https://play.google.com/store/apps/details?id=com.oleandrefoss.abbo&referrer=utm_source%3Dnettside%26utm_medium%3Dweb)
 
 ## Alt i ren tekst
 - [llms-full.txt](https://trekksjekk.no/llms-full.txt): oppsigelsestid for 235 tjenester, priser for 170 og alle studentrabattene, én linje per tjeneste
