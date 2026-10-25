@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hvordan finner jeg alle abonnementene jeg betaler for? | TrekkSjekk</title>
+<meta name="description" content="Gå gjennom kontoutskriften 12 måneder tilbake, og sjekk Abonnementer på iPhone, Google Play, PayPal, AvtaleGiro og mobilregningen. Sjekkliste i 7 steg.">
+<link rel="canonical" href="https://trekksjekk.no/finn-abonnementer/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:site_name" content="TrekkSjekk">
+<meta property="og:title" content="Hvordan finner jeg alle abonnementene jeg betaler for? | TrekkSjekk">
+<meta property="og:description" content="Gå gjennom kontoutskriften 12 måneder tilbake, og sjekk Abonnementer på iPhone, Google Play, PayPal, AvtaleGiro og mobilregningen. Sjekkliste i 7 steg.">
+<meta property="og:url" content="https://trekksjekk.no/finn-abonnementer/">
+<meta property="og:image" content="https://trekksjekk.no/bilder/ikon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FBFAFC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15131B" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="/bilder/ikon-64.png">
+<link rel="apple-touch-icon" href="/bilder/ikon-180.png">
+<link rel="preload" href="/fonter/poppins-bold.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/fonter/poppins-regular.woff" as="font" type="font/woff" crossorigin>
+<style>
+@font-face{font-family:"Poppins";src:url("/fonter/poppins-regular.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Poppins";src:url("/fonter/poppins-medium.woff") format("woff");font-weight:500 600;font-display:swap}
+@font-face{font-family:"Poppins";src:url("/fonter/poppins-bold.woff") format("woff");font-weight:700 800;font-display:swap}
+</style>
+<style>
+:root {
+  --ground: #F3F5FA; --surface: #FFFFFF; --ink: #0D1326; --muted: #566079;
+  --accent: #1E3A8A; --hairline: #E1E6F0; --flag: #EBEEF6; --green: #15803D;
+  --sans: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #080D1F; --surface: #111934; --ink: #EEF1F8; --muted: #A1A9BE;
+    --accent: #9DB4FF; --hairline: #212B4A; --flag: #172040; --green: #4ADE80;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #080D1F; --surface: #111934; --ink: #EEF1F8; --muted: #A1A9BE;
+  --accent: #9DB4FF; --hairline: #212B4A; --flag: #172040; --green: #4ADE80;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ground); color: var(--ink);
+  font-family: var(--sans); font-size: 16px; line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); }
+.page { max-width: 46rem; margin: 0 auto; padding: 56px 16px 72px; }
+.eyebrow {
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent); margin: 0 0 18px; font-weight: 600;
+}
+h1 {
+  font-weight: 700; font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.1;
+  letter-spacing: -0.015em; text-wrap: balance; margin: 0 0 18px;
+}
+h2 { font-size: 1.3rem; font-weight: 700; line-height: 1.25; margin: 0 0 12px; }
+.lead { font-size: 1.12rem; color: var(--muted); max-width: 36rem; margin: 0 0 32px; }
+section { margin: 0 0 40px; }
+.facts {
+  margin: 0 0 44px; border-top: 1px solid var(--hairline);
+}
+.facts div {
+  display: grid; grid-template-columns: 9rem 1fr; gap: 0 1.2rem;
+  padding: 14px 0; border-bottom: 1px solid var(--hairline);
+}
+.facts dt { font-weight: 600; color: var(--muted); font-size: 0.9rem; padding-top: 1px; }
+.facts dd { margin: 0; }
+@media (max-width: 520px) {
+  .facts div { grid-template-columns: 1fr; gap: 2px; }
+}
+.steps { padding-left: 1.3rem; display: flex; flex-direction: column; gap: 8px; max-width: 36rem; }
+.steps li::marker { color: var(--accent); font-weight: 700; }
+.note {
+  background: var(--flag); border-left: 3px solid var(--accent); padding: 20px 22px;
+}
+.note h2 { font-size: 1.05rem; }
+.note p { margin: 0 0 10px; }
+.note ol { margin: 0; padding-left: 1.2rem; }
+.cta {
+  border: 1px solid var(--hairline); background: var(--surface);
+  border-radius: 14px; padding: 22px 22px 8px;
+}
+.cta p { margin: 0 0 14px; }
+.cta .button { margin: 0 8px 8px 0; }
+.button {
+  display: inline-block; background: var(--accent); color: #fff;
+  padding: 10px 18px; border-radius: 10px; font-weight: 700; text-decoration: none;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .button { color: #080D1F; } }
+:root[data-theme="dark"] .button { color: #080D1F; }
+.source { font-size: 0.85rem; color: var(--muted); }
+.table-wrap { overflow-x: auto; margin: 0 0 44px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+th, td { text-align: left; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+th { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+footer {
+  margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--hairline);
+  font-size: 0.8rem; color: var(--muted);
+}
+.jump { font-weight: 600; line-height: 2; margin: 0 0 8px; }
+section h2 { scroll-margin-top: 16px; }
+.faq h3 { font-size: 1.02rem; font-weight: 700; margin: 22px 0 4px; }
+.faq p { margin: 0; max-width: 36rem; }
+.meta { font-size: 0.85rem; color: var(--muted); margin: -6px 0 24px; }
+.short { background: var(--flag); border-left: 3px solid var(--accent); padding: 18px 20px; margin-bottom: 36px; }
+.short h2 { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; }
+.short p { margin: 0; font-size: 1.05rem; }
+.tittel { display: flex; align-items: center; gap: 14px; margin: 0 0 18px; }
+.tittel h1 { margin: 0; }
+.logo { border-radius: 22%; flex: none; object-fit: cover; background: #fff; box-shadow: 0 0 0 1px var(--hairline); }
+.bokstav { display: inline-flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 0.95em; box-shadow: none; }
+.tittel .bokstav { font-size: 1.5rem; }
+.navn { display: inline-flex; align-items: center; gap: 10px; }
+.sok { position: sticky; top: 0; z-index: 2; background: var(--ground); padding: 10px 0; margin: 0 0 8px; }
+.sok input {
+  width: 100%; font: inherit; font-size: 16px; padding: 12px 14px; border-radius: 12px;
+  border: 1px solid var(--hairline); background: var(--surface); color: var(--ink);
+}
+.sok input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+tr[hidden], section[hidden] { display: none; }
+.source a { overflow-wrap: anywhere; }
+.steps a, p a, .faq p { overflow-wrap: anywhere; }
+
+/* Brødsmuler og beslektede guider */
+.crumbs { font-size: 14px; color: var(--muted); margin: 0 0 18px; }
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+.related ul { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 6px; }
+.related li a { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--hairline); border-radius: 12px; color: var(--ink); text-decoration: none; background: var(--surface); }
+.related li a:hover { border-color: var(--accent); }
+.related .logo { width: 24px; height: 24px; border-radius: 7px; font-size: 12px; }
+
+/* Priser og studentrabatter */
+.tj-gruppe { margin: 0 0 44px; }
+.tj-gruppe h2 { font-size: 1.5rem; letter-spacing: -0.02em; margin: 0; }
+details.tj-gruppe { border-top: 1px solid var(--hairline); margin: 0; }
+details.tj-gruppe:last-of-type { border-bottom: 1px solid var(--hairline); margin-bottom: 44px; }
+details.tj-gruppe > summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 12px; padding: 18px 0; scroll-margin-top: 80px; }
+details.tj-gruppe > summary::-webkit-details-marker { display: none; }
+details.tj-gruppe > summary::after { content: "+"; margin-left: auto; font-size: 1.5rem; line-height: 1; color: var(--muted); transition: transform .2s; }
+details.tj-gruppe[open] > summary::after { transform: rotate(45deg); }
+.antall { font-size: 0.85rem; color: var(--muted); }
+details[hidden] { display: none; }
+.tj { padding: 20px 0; border-bottom: 1px solid var(--hairline); }
+.tj[hidden] { display: none; }
+.tj-hode { display: flex; align-items: center; gap: 12px; }
+.tj-hode h3 { margin: 0; font-size: 1.08rem; letter-spacing: -0.01em; }
+.tj-lenke, .spar { margin-left: auto; font-size: 0.85rem; white-space: nowrap; }
+.tj-lenke { font-weight: 600; text-decoration: none; }
+.tj-lenke:hover { text-decoration: underline; }
+.spar { font-weight: 700; color: var(--green); background: var(--flag); padding: 3px 10px; border-radius: 999px; }
+.priser { margin: 10px 0 8px; font-size: 0.95rem; }
+.priser th, .priser td { border: 0; padding: 7px 0; vertical-align: top; }
+.priser tr + tr th, .priser tr + tr td { border-top: 1px dashed var(--hairline); }
+.priser th { font-size: 0.95rem; font-weight: 500; color: var(--ink); padding-right: 16px; }
+.priser th small { display: block; font-size: 0.78rem; font-weight: 400; color: var(--muted); }
+.priser td { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.priser td.tekst { white-space: normal; font-weight: 500; }
+.valuta { white-space: normal; }
+.valuta { display: block; font-size: 0.75rem; font-weight: 400; color: var(--muted); }
+.tilbud { font-weight: 700; font-size: 1.05rem; margin: 10px 0 2px; }
+.tilbud-tekst { margin: 0 0 6px; max-width: 38rem; }
+.tj .source { margin: 4px 0 0; }
+@media (max-width: 520px) {
+  .tj-hode { flex-wrap: wrap; }
+  .spar { margin-left: 48px; }
+}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TrekkSjekk", "item": "https://trekksjekk.no/"}, {"@type": "ListItem", "position": 2, "name": "Finn alle abonnementene dine", "item": "https://trekksjekk.no/finn-abonnementer/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Hvordan finner jeg alle abonnementene jeg betaler for?", "inLanguage": "nb-NO", "datePublished": "2026-10-25", "dateModified": "2026-10-25", "mainEntityOfPage": "https://trekksjekk.no/finn-abonnementer/", "author": {"@type": "Person", "name": "Ole André Foss"}, "publisher": {"@type": "Organization", "name": "TrekkSjekk Foss", "url": "https://trekksjekk.no/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hvordan finner jeg alle abonnementene jeg betaler for?", "acceptedAnswer": {"@type": "Answer", "text": "Gå gjennom kontoutskriften for de siste 12 månedene og se etter beløp som går igjen. Sjekk så Abonnementer i Innstillinger på iPhone, Betalinger og abonnementer i Google Play, automatiske betalinger i PayPal, AvtaleGiro og eFaktura i nettbanken og mobilregningen. Søk også i e-posten etter kvittering og fornyes."}}, {"@type": "Question", "name": "Hvorfor finner jeg ikke abonnementet på kontoutskriften?", "acceptedAnswer": {"@type": "Answer", "text": "Abonnementer betalt gjennom App Store, Google Play eller PayPal står med navnet til Apple, Google eller PayPal, ikke tjenesten. Flere kjøp kan være slått sammen til ett trekk. Årlige abonnementer vises bare én gang i året."}}, {"@type": "Question", "name": "Hvordan ser jeg abonnementene mine på iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Åpne Innstillinger, trykk på navnet ditt og velg Abonnementer. Der ligger alt du betaler gjennom Apple-kontoen, og der kan du også avslutte."}}, {"@type": "Question", "name": "Hvordan ser jeg abonnementene mine på Android?", "acceptedAnswer": {"@type": "Answer", "text": "Åpne Google Play, trykk på profilbildet, velg Betalinger og abonnementer og så Abonnementer. Det samme finner du på play.google.com/store/account/subscriptions."}}, {"@type": "Question", "name": "Kan TrekkSjekk finne abonnementene for meg?", "acceptedAnswer": {"@type": "Answer", "text": "TrekkSjekk leser en kontoutskrift du har lastet ned fra nettbanken (CSV) på telefonen, uten bankkobling, og finner de faste trekkene. Står det bare APPLE.COM/BILL, Google Play eller PlayStation, foreslår appen hvilke tjenester det kan være ut fra beløpet. Du kan også legge inn abonnementene selv. Fila leses lokalt og slettes etterpå."}}]}</script>
+</head>
+<body>
+<div class="page">
+
+  <nav class="crumbs" aria-label="Du er her"><a href="/">TrekkSjekk</a> › Finn alle abonnementene dine</nav>
+  <p class="eyebrow">Oversikt</p>
+  <h1>Hvordan finner jeg alle abonnementene jeg betaler for?</h1>
+
+  <div class="short">
+    <h2>Kort svar</h2>
+    <p>Gå gjennom kontoutskriften for de siste 12 månedene og se etter beløp som går igjen, også årlige. Sjekk så stedene der abonnementer gjemmer seg bak et annet navn: <b>Abonnementer</b> under navnet ditt i Innstillinger på iPhone, <b>Betalinger og abonnementer</b> i Google Play, <b>automatiske betalinger</b> i PayPal, AvtaleGiro og eFaktura i nettbanken, og mobilregningen. Søk til slutt i e-posten etter «kvittering» og «fornyes».</p>
+  </div>
+
+  <p class="jump"><a href="#kontoutskriften">1. Kontoutskriften</a> · <a href="#iphone">2. iPhone</a> · <a href="#android">3. Android</a> · <a href="#paypal">4. PayPal</a> · <a href="#nettbanken">5. Nettbanken</a> · <a href="#mobil">6. Mobilregningen</a> · <a href="#epost">7. E-posten</a></p>
+
+  <section id="kontoutskriften">
+    <h2>1. Gå gjennom kontoutskriften – 12 måneder tilbake</h2>
+    <p>De fleste abonnementer trekkes fra kortet hver måned, men mange trekkes én gang i året (for eksempel årspakker i apper, antivirus og medlemskap). Ser du bare på forrige måned, går du glipp av dem.</p>
+    <ol class="steps">
+      <li>Åpne nettbanken og velg kontoen og kortet du betaler med. Har du flere kort, gjør det for hvert av dem.</li>
+      <li>Velg de siste 12 månedene.</li>
+      <li>Se etter samme beløp på omtrent samme dato hver måned, og etter trekk som bare kommer én gang i året.</li>
+      <li>Merk deg trekk som ikke har navnet på tjenesten: <b>APPLE.COM/BILL</b>, <b>GOOGLE*</b>, <b>PAYPAL *</b> og PlayStation. Bak dem kan det ligge flere abonnementer samlet.</li>
+    </ol>
+    <p>Usikker på et trekk? Se <a href="/apple-com-bill/">Hva er APPLE.COM/BILL?</a> og <a href="/google-trekk/">Hva er GOOGLE *-trekk?</a></p>
+  </section>
+
+  <section id="iphone">
+    <h2>2. Abonnementer gjennom Apple (iPhone og iPad)</h2>
+    <ol class="steps">
+      <li>Åpne <b>Innstillinger</b> og trykk på navnet ditt øverst.</li>
+      <li>Trykk på <b>Abonnementer</b>. Der ligger alt du betaler gjennom Apple-kontoen: Apples egne tjenester og abonnementer du har startet i apper fra App Store.</li>
+      <li>Vil du se tidligere kjøp også, gå til <a href="https://reportaproblem.apple.com/" rel="nofollow noopener">reportaproblem.apple.com</a>.</li>
+    </ol>
+    <p>Har du Familiedeling, må hvert familiemedlem sjekke sin egen liste. Det samme gjelder om du har mer enn én Apple-konto.</p>
+  </section>
+
+  <section id="android">
+    <h2>3. Abonnementer gjennom Google Play (Android)</h2>
+    <ol class="steps">
+      <li>Gå til <a href="https://play.google.com/store/account/subscriptions" rel="nofollow noopener">play.google.com/store/account/subscriptions</a>, eller åpne Google Play, trykk på profilbildet og velg <b>Betalinger og abonnementer</b> og så <b>Abonnementer</b>.</li>
+      <li>Andre betalinger til Google (for eksempel lagringsplass) finner du på <a href="https://payments.google.com/" rel="nofollow noopener">payments.google.com</a> under <b>Abonnementer og tjenester</b>.</li>
+    </ol>
+    <p>Har du flere Google-kontoer, sjekk hver av dem.</p>
+  </section>
+
+  <section id="paypal">
+    <h2>4. Automatiske betalinger i PayPal</h2>
+    <p>Har du betalt et abonnement med PayPal, står det ofte bare PAYPAL på kontoutskriften. Logg inn på paypal.com, gå til <b>Innstillinger</b> og <b>Betalinger</b>, og åpne <b>Automatiske betalinger</b>. Der ser du hvem som har lov til å trekke deg, og kan avslutte avtalen.</p>
+  </section>
+
+  <section id="nettbanken">
+    <h2>5. AvtaleGiro og eFaktura i nettbanken</h2>
+    <p>Regninger som betales automatisk, som forsikring, strøm, treningssenter og aviser, ligger ofte som AvtaleGiro- eller eFaktura-avtaler. De fleste nettbanker har en oversikt over avtalene dine. Sjekk også faste trekk du har satt opp med Vipps.</p>
+  </section>
+
+  <section id="mobil">
+    <h2>6. Mobilregningen</h2>
+    <p>Noen tjenester kan legges på regningen fra mobilselskapet i stedet for på kortet, og strømmetjenester kan være en del av mobil- eller TV-abonnementet. Se gjennom de siste regningene fra mobilselskapet og TV-leverandøren.</p>
+  </section>
+
+  <section id="epost">
+    <h2>7. Søk i e-posten</h2>
+    <p>De fleste tjenester sender kvittering eller varsel før fornyelse. Søk i e-posten etter <b>kvittering</b>, <b>fornyes</b>, <b>abonnement</b>, <b>prøveperiode</b> og de engelske ordene <b>receipt</b> og <b>subscription</b>. Det fanger opp ting du har glemt, særlig gratis prøveperioder som har gått over til betalt.</p>
+  </section>
+
+  <section class="note">
+    <h2>Når du har funnet dem: sjekk fristen før du sier opp</h2>
+    <p>Mange abonnementer kan sies opp når som helst, men noen har bindingstid eller oppsigelsestid, og da gjelder det å si opp før neste trekk. TrekkSjekk har guider med frist og fremgangsmåte for <a href="/si-opp/">235 tjenester</a>, og prisene på <a href="/priser/">Priser</a>.</p>
+  </section>
+
+  <section class="faq">
+    <h2>Vanlige spørsmål</h2>
+    <h3>Hvordan finner jeg alle abonnementene jeg betaler for?</h3>
+    <p>Gå gjennom kontoutskriften for de siste 12 månedene og se etter beløp som går igjen. Sjekk så Abonnementer i Innstillinger på iPhone, Betalinger og abonnementer i Google Play, automatiske betalinger i PayPal, AvtaleGiro og eFaktura i nettbanken og mobilregningen. Søk også i e-posten etter kvittering og fornyes.</p>
+    <h3>Hvorfor finner jeg ikke abonnementet på kontoutskriften?</h3>
+    <p>Abonnementer betalt gjennom App Store, Google Play eller PayPal står med navnet til Apple, Google eller PayPal, ikke tjenesten. Flere kjøp kan være slått sammen til ett trekk. Årlige abonnementer vises bare én gang i året.</p>
+    <h3>Hvordan ser jeg abonnementene mine på iPhone?</h3>
+    <p>Åpne Innstillinger, trykk på navnet ditt og velg Abonnementer. Der ligger alt du betaler gjennom Apple-kontoen, og der kan du også avslutte.</p>
+    <h3>Hvordan ser jeg abonnementene mine på Android?</h3>
+    <p>Åpne Google Play, trykk på profilbildet, velg Betalinger og abonnementer og så Abonnementer. Det samme finner du på play.google.com/store/account/subscriptions.</p>
+    <h3>Kan TrekkSjekk finne abonnementene for meg?</h3>
+    <p>TrekkSjekk leser en kontoutskrift du har lastet ned fra nettbanken (CSV) på telefonen, uten bankkobling, og finner de faste trekkene. Står det bare APPLE.COM/BILL, Google Play eller PlayStation, foreslår appen hvilke tjenester det kan være ut fra beløpet. Du kan også legge inn abonnementene selv. Fila leses lokalt og slettes etterpå.</p>
+  </section>
+
+  <section class="cta">
+    <h2>La appen lete i kontoutskriften</h2>
+    <p>TrekkSjekk leser en kontoutskrift du laster ned fra nettbanken, rett på telefonen og uten bankkobling, og finner de faste trekkene. Du får oversikt over hva du betaler i måneden og i året, og siste dag du kan si opp. Ingen konto og ingen bankkobling. Gratis å laste ned for iPhone og Android.</p>
+    <p><a class="button" href="https://apps.apple.com/no/app/id6811947257">Last ned i App Store</a> <a class="button" href="https://play.google.com/store/apps/details?id=com.oleandrefoss.abbo">Last ned i Google Play</a></p>
+  </section>
+  <p class="source">Kilder: Apple-kundestøtte, «<a href="https://support.apple.com/no-no/118428" rel="nofollow noopener">Avslutt et abonnement fra Apple</a>»; Google Play-hjelp, «<a href="https://support.google.com/googleplay/answer/7018481?hl=no" rel="nofollow noopener">Avslutt abonnementer på Google Play</a>»; PayPal, «<a href="https://www.paypal.com/smarthelp/article/faq1067" rel="nofollow noopener">What is an automatic payment and how do I update or cancel one?</a>», lest 25. oktober 2026.</p>
+
+  <footer>
+    <a href="/">TrekkSjekk</a> · <a href="/si-opp/">Alle oppsigelsesguider</a> · <a href="/priser/">Priser</a> · <a href="/studentrabatt/">Studentrabatt</a> · <a href="/om.html">Om</a> · <a href="/personvern.html">Personvern</a> · Oppdatert 25. oktober 2026
+  </footer>
+</div>
+</body>
+</html>
