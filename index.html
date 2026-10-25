@@ -892,7 +892,7 @@ button{font:inherit;color:inherit}
     var f = el("span", { class: "flis", "aria-hidden": "true" });
     if (t && LOGOER.indexOf(t.d) !== -1) {
       f.className = "flis logo";
-      f.appendChild(el("img", { src: "bilder/logoer/" + t.d + ".webp", alt: "", loading: "lazy" }));
+      f.appendChild(el("img", { src: "bilder/logoer/" + t.d + ".webp", alt: (navn || t.n || "").trim(), loading: "lazy" }));
       return f;
     }
     f.style.background = farge;
