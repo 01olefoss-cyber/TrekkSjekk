@@ -29,7 +29,7 @@ Laget av Ole André Foss (TrekkSjekk Foss, Kristiansand) fordi appene som fantes
 - [Finnes TrekkSjekk på Android?](https://trekksjekk.no/android/): ja, i Google Play (Android 7.0 eller nyere); hva appen gjør på Android, pris, forskjeller fra iPhone og hvordan du sier opp Premium
 - [Personvern](https://trekksjekk.no/personvern.html)
 - [Vilkår](https://trekksjekk.no/vilkar.html)
-- [App Store](https://apps.apple.com/no/app/id6811947257)
+- [App Store](https://apps.apple.com/no/app/id6811947257?ppid=7cece6f3-3cfa-49ff-9c34-0c8acf33ae33)
 - [Google Play](https://play.google.com/store/apps/details?id=com.oleandrefoss.abbo&referrer=utm_source%3Dnettside%26utm_medium%3Dweb)
 
 ## Alt i ren tekst
