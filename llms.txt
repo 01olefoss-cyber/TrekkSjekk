@@ -26,6 +26,7 @@ Laget av Ole André Foss (TrekkSjekk Foss, Kristiansand) fordi appene som fantes
 - [Hva er APPLE.COM/BILL?](https://trekksjekk.no/apple-com-bill/): hva trekket på kontoutskriften er, hvordan du finner ut hva det gjelder, og hvordan du sier opp
 - [Hva er GOOGLE *-trekk?](https://trekksjekk.no/google-trekk/): hva GOOGLE*-trekk fra Google Play på kontoutskriften er, hvordan du finner kjøpet i bestillingsloggen, og hvordan du sier opp
 - [Hvordan finner jeg alle abonnementene jeg betaler for?](https://trekksjekk.no/finn-abonnementer/): sjekkliste i 7 steg – kontoutskriften 12 måneder tilbake, Abonnementer på iPhone, Google Play, PayPal, AvtaleGiro/eFaktura, mobilregningen og e-posten
+- [Hvordan sier jeg opp et abonnement på iPhone?](https://trekksjekk.no/iphone-abonnement/): Innstillinger → navnet ditt → Abonnementer → Avslutt abonnement, hva du gjør når abonnementet ikke står der, og at det ikke holder å slette appen
 - [Finnes TrekkSjekk på Android?](https://trekksjekk.no/android/): ja, i Google Play (Android 7.0 eller nyere); hva appen gjør på Android, pris, forskjeller fra iPhone og hvordan du sier opp Premium
 - [Personvern](https://trekksjekk.no/personvern.html)
 - [Vilkår](https://trekksjekk.no/vilkar.html)
