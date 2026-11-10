@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hvilke banker kan TrekkSjekk lese kontoutskrift fra? | TrekkSjekk</title>
+<meta name="description" content="Alle banker som lar deg laste ned kontoutskriften som CSV eller PDF. Testet med formatene til DNB, SpareBank 1, Nordea, Sbanken, Bulder, Revolut og flere.">
+<link rel="canonical" href="https://trekksjekk.no/banker/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:site_name" content="TrekkSjekk">
+<meta property="og:title" content="Hvilke banker kan TrekkSjekk lese kontoutskrift fra? | TrekkSjekk">
+<meta property="og:description" content="Alle banker som lar deg laste ned kontoutskriften som CSV eller PDF. Testet med formatene til DNB, SpareBank 1, Nordea, Sbanken, Bulder, Revolut og flere.">
+<meta property="og:url" content="https://trekksjekk.no/banker/">
+<meta property="og:image" content="https://trekksjekk.no/bilder/ikon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FBFAFC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15131B" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="/bilder/ikon-64.png">
+<link rel="apple-touch-icon" href="/bilder/ikon-180.png">
+<link rel="preload" href="/fonter/poppins-bold.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/fonter/poppins-regular.woff" as="font" type="font/woff" crossorigin>
+<style>
+@font-face{font-family:"Poppins";src:url("/fonter/poppins-regular.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Poppins";src:url("/fonter/poppins-medium.woff") format("woff");font-weight:500 600;font-display:swap}
+@font-face{font-family:"Poppins";src:url("/fonter/poppins-bold.woff") format("woff");font-weight:700 800;font-display:swap}
+</style>
+<style>
+:root {
+  --ground: #F3F5FA; --surface: #FFFFFF; --ink: #0D1326; --muted: #566079;
+  --accent: #1E3A8A; --hairline: #E1E6F0; --flag: #EBEEF6; --green: #15803D;
+  --sans: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #080D1F; --surface: #111934; --ink: #EEF1F8; --muted: #A1A9BE;
+    --accent: #9DB4FF; --hairline: #212B4A; --flag: #172040; --green: #4ADE80;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #080D1F; --surface: #111934; --ink: #EEF1F8; --muted: #A1A9BE;
+  --accent: #9DB4FF; --hairline: #212B4A; --flag: #172040; --green: #4ADE80;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ground); color: var(--ink);
+  font-family: var(--sans); font-size: 16px; line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); }
+.page { max-width: 46rem; margin: 0 auto; padding: 56px 16px 72px; }
+.eyebrow {
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent); margin: 0 0 18px; font-weight: 600;
+}
+h1 {
+  font-weight: 700; font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.1;
+  letter-spacing: -0.015em; text-wrap: balance; margin: 0 0 18px;
+}
+h2 { font-size: 1.3rem; font-weight: 700; line-height: 1.25; margin: 0 0 12px; }
+.lead { font-size: 1.12rem; color: var(--muted); max-width: 36rem; margin: 0 0 32px; }
+section { margin: 0 0 40px; }
+.facts {
+  margin: 0 0 44px; border-top: 1px solid var(--hairline);
+}
+.facts div {
+  display: grid; grid-template-columns: 9rem 1fr; gap: 0 1.2rem;
+  padding: 14px 0; border-bottom: 1px solid var(--hairline);
+}
+.facts dt { font-weight: 600; color: var(--muted); font-size: 0.9rem; padding-top: 1px; }
+.facts dd { margin: 0; }
+@media (max-width: 520px) {
+  .facts div { grid-template-columns: 1fr; gap: 2px; }
+}
+.steps { padding-left: 1.3rem; display: flex; flex-direction: column; gap: 8px; max-width: 36rem; }
+.steps li::marker { color: var(--accent); font-weight: 700; }
+.note {
+  background: var(--flag); border-left: 3px solid var(--accent); padding: 20px 22px;
+}
+.note h2 { font-size: 1.05rem; }
+.note p { margin: 0 0 10px; }
+.note ol { margin: 0; padding-left: 1.2rem; }
+.cta {
+  border: 1px solid var(--hairline); background: var(--surface);
+  border-radius: 14px; padding: 22px 22px 8px;
+}
+.cta p { margin: 0 0 14px; }
+.cta .button { margin: 0 8px 8px 0; }
+.button {
+  display: inline-block; background: var(--accent); color: #fff;
+  padding: 10px 18px; border-radius: 10px; font-weight: 700; text-decoration: none;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .button { color: #080D1F; } }
+:root[data-theme="dark"] .button { color: #080D1F; }
+.source { font-size: 0.85rem; color: var(--muted); }
+.table-wrap { overflow-x: auto; margin: 0 0 44px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+th, td { text-align: left; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+th { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+footer {
+  margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--hairline);
+  font-size: 0.8rem; color: var(--muted);
+}
+.jump { font-weight: 600; line-height: 2; margin: 0 0 8px; }
+section h2 { scroll-margin-top: 16px; }
+.faq h3 { font-size: 1.02rem; font-weight: 700; margin: 22px 0 4px; }
+.faq p { margin: 0; max-width: 36rem; }
+.meta { font-size: 0.85rem; color: var(--muted); margin: -6px 0 24px; }
+.short { background: var(--flag); border-left: 3px solid var(--accent); padding: 18px 20px; margin-bottom: 36px; }
+.short h2 { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; }
+.short p { margin: 0; font-size: 1.05rem; }
+.tittel { display: flex; align-items: center; gap: 14px; margin: 0 0 18px; }
+.tittel h1 { margin: 0; }
+.logo { border-radius: 22%; flex: none; object-fit: cover; background: #fff; box-shadow: 0 0 0 1px var(--hairline); }
+.bokstav { display: inline-flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 0.95em; box-shadow: none; }
+.tittel .bokstav { font-size: 1.5rem; }
+.navn { display: inline-flex; align-items: center; gap: 10px; }
+.sok { position: sticky; top: 0; z-index: 2; background: var(--ground); padding: 10px 0; margin: 0 0 8px; }
+.sok input {
+  width: 100%; font: inherit; font-size: 16px; padding: 12px 14px; border-radius: 12px;
+  border: 1px solid var(--hairline); background: var(--surface); color: var(--ink);
+}
+.sok input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+tr[hidden], section[hidden] { display: none; }
+.source a { overflow-wrap: anywhere; }
+.steps a, p a, .faq p { overflow-wrap: anywhere; }
+
+/* Brødsmuler og beslektede guider */
+.crumbs { font-size: 14px; color: var(--muted); margin: 0 0 18px; }
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+.related ul { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 6px; }
+.related li a { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--hairline); border-radius: 12px; color: var(--ink); text-decoration: none; background: var(--surface); }
+.related li a:hover { border-color: var(--accent); }
+.related .logo { width: 24px; height: 24px; border-radius: 7px; font-size: 12px; }
+
+/* Priser og studentrabatter */
+.tj-gruppe { margin: 0 0 44px; }
+.tj-gruppe h2 { font-size: 1.5rem; letter-spacing: -0.02em; margin: 0; }
+details.tj-gruppe { border-top: 1px solid var(--hairline); margin: 0; }
+details.tj-gruppe:last-of-type { border-bottom: 1px solid var(--hairline); margin-bottom: 44px; }
+details.tj-gruppe > summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 12px; padding: 18px 0; scroll-margin-top: 80px; }
+details.tj-gruppe > summary::-webkit-details-marker { display: none; }
+details.tj-gruppe > summary::after { content: "+"; margin-left: auto; font-size: 1.5rem; line-height: 1; color: var(--muted); transition: transform .2s; }
+details.tj-gruppe[open] > summary::after { transform: rotate(45deg); }
+.antall { font-size: 0.85rem; color: var(--muted); }
+details[hidden] { display: none; }
+.tj { padding: 20px 0; border-bottom: 1px solid var(--hairline); }
+.tj[hidden] { display: none; }
+.tj-hode { display: flex; align-items: center; gap: 12px; }
+.tj-hode h3 { margin: 0; font-size: 1.08rem; letter-spacing: -0.01em; }
+.tj-lenke, .spar { margin-left: auto; font-size: 0.85rem; white-space: nowrap; }
+.tj-lenke { font-weight: 600; text-decoration: none; }
+.tj-lenke:hover { text-decoration: underline; }
+.spar { font-weight: 700; color: var(--green); background: var(--flag); padding: 3px 10px; border-radius: 999px; }
+.priser { margin: 10px 0 8px; font-size: 0.95rem; }
+.priser th, .priser td { border: 0; padding: 7px 0; vertical-align: top; }
+.priser tr + tr th, .priser tr + tr td { border-top: 1px dashed var(--hairline); }
+.priser th { font-size: 0.95rem; font-weight: 500; color: var(--ink); padding-right: 16px; }
+.priser th small { display: block; font-size: 0.78rem; font-weight: 400; color: var(--muted); }
+.priser td { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.priser td.tekst { white-space: normal; font-weight: 500; }
+.valuta { white-space: normal; }
+.valuta { display: block; font-size: 0.75rem; font-weight: 400; color: var(--muted); }
+.tilbud { font-weight: 700; font-size: 1.05rem; margin: 10px 0 2px; }
+.tilbud-tekst { margin: 0 0 6px; max-width: 38rem; }
+.tj .source { margin: 4px 0 0; }
+@media (max-width: 520px) {
+  .tj-hode { flex-wrap: wrap; }
+  .spar { margin-left: 48px; }
+}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TrekkSjekk", "item": "https://trekksjekk.no/"}, {"@type": "ListItem", "position": 2, "name": "Banker og kontoutskrift", "item": "https://trekksjekk.no/banker/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Hvilke banker kan TrekkSjekk lese kontoutskrift fra?", "inLanguage": "nb-NO", "datePublished": "2026-11-04", "dateModified": "2026-11-10", "mainEntityOfPage": "https://trekksjekk.no/banker/", "author": {"@type": "Person", "name": "Ole André Foss"}, "publisher": {"@type": "Organization", "name": "TrekkSjekk Foss", "url": "https://trekksjekk.no/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hvilke banker kan TrekkSjekk lese kontoutskrift fra?", "acceptedAnswer": {"@type": "Answer", "text": "TrekkSjekk har ingen fast liste over banker. Appen leser kolonnene i fila selv, så den skal virke med kontoutskrifter fra de fleste banker, så lenge du kan laste ned kontoutskriften som CSV eller PDF fra nettbanken. Den er testet med formatene til DNB, SpareBank 1, Nordea, Sbanken, Bulder, Jæren Sparebank, Revolut og Vipps (CSV), og DNB, Nordea, Sbanken, SpareBank 1, Revolut og kredittkortfakturaer (PDF). Skjermbilder og skannede PDF-er kan ikke leses."}}, {"@type": "Question", "name": "Kan jeg bruke et skjermbilde av kontoutskriften?", "acceptedAnswer": {"@type": "Answer", "text": "Nei. TrekkSjekk leser teksten i fila, så du må laste ned kontoutskriften som CSV eller PDF fra nettbanken. Et skjermbilde eller en skannet PDF er bare et bilde og kan ikke leses."}}, {"@type": "Question", "name": "Må jeg koble TrekkSjekk til banken?", "acceptedAnswer": {"@type": "Answer", "text": "Nei. TrekkSjekk har ingen bankkobling og ber aldri om innlogging i banken. Du laster ned fila selv og velger den i appen. Fila leses på telefonen og slettes etterpå."}}, {"@type": "Question", "name": "Hva gjør jeg hvis banken ikke vil lage fila?", "acceptedAnswer": {"@type": "Answer", "text": "Velg bare de siste tre månedene, og filtrer så du bare får betalinger (penger ut). Da blir fila mindre, og det holder for å finne de månedlige trekkene."}}, {"@type": "Question", "name": "Hvor lang periode bør kontoutskriften dekke?", "acceptedAnswer": {"@type": "Answer", "text": "Tre måneder holder for månedlige trekk. Vil du også finne årlige abonnementer, velg de siste 12 månedene."}}, {"@type": "Question", "name": "Hva hvis min bank ikke står på lista?", "acceptedAnswer": {"@type": "Answer", "text": "Prøv likevel. Lista er bare de formatene som er testet, ikke en grense. Får appen ikke lest fila, kan du velge tjenestene selv i appen, og send gjerne en rapport fra appen så formatet kan bli lagt til."}}]}</script>
+</head>
+<body>
+<div class="page">
+
+  <nav class="crumbs" aria-label="Du er her"><a href="/">TrekkSjekk</a> › Banker og kontoutskrift</nav>
+  <p class="eyebrow">Kontoutskrift</p>
+  <h1>Hvilke banker kan TrekkSjekk lese kontoutskrift fra?</h1>
+
+  <div class="short">
+    <h2>Kort svar</h2>
+    <p>TrekkSjekk har ingen fast liste over banker. Appen leser kolonnene i fila selv, så den skal virke med kontoutskrifter fra de fleste banker, så lenge du kan laste ned kontoutskriften som <b>CSV</b> eller <b>PDF</b> fra nettbanken. Den er testet med formatene til DNB, SpareBank 1, Nordea, Sbanken, Bulder, Jæren Sparebank, Revolut og Vipps (CSV), og DNB, Nordea, Sbanken, SpareBank 1, Revolut og kredittkortfakturaer (PDF). Skjermbilder og skannede PDF-er kan ikke leses.</p>
+  </div>
+
+  <p class="jump"><a href="#testet">Testede banker</a> · <a href="#laste-ned">Slik får du fila</a> · <a href="#virker-ikke">Virker ikke fila?</a> · <a href="#personvern">Hva skjer med fila</a></p>
+
+  <section id="testet">
+    <h2>Bankene og formatene som er testet</h2>
+    <p>Appen ser selv etter kolonnene for dato, tekst og beløp, også når de heter forskjellig fra bank til bank. Tabellen viser formatene TrekkSjekk er testet med. De fleste testfilene er laget etter bankens format, så lista er ingen garanti for hver eneste fil, og andre banker kan virke like godt.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Bank</th><th>CSV</th><th>PDF</th></tr></thead>
+        <tbody>
+          <tr><td>DNB</td><td>Testet</td><td>Testet</td></tr>
+          <tr><td>SpareBank 1</td><td>Testet, også bankens ekte eksportformat</td><td>Testet</td></tr>
+          <tr><td>Nordea</td><td>Testet</td><td>Testet</td></tr>
+          <tr><td>Sbanken</td><td>Testet</td><td>Testet</td></tr>
+          <tr><td>Revolut</td><td>Testet</td><td>Testet, også engelsk</td></tr>
+          <tr><td>Bulder</td><td>Testet</td><td>Ikke testet</td></tr>
+          <tr><td>Jæren Sparebank</td><td>Testet</td><td>Ikke testet</td></tr>
+          <tr><td>Vipps</td><td>Testet</td><td>Ikke testet</td></tr>
+          <tr><td>Kredittkortfaktura</td><td>Kjøp som positive tall snus riktig</td><td>Testet</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Står ikke banken din her, for eksempel Danske Bank, Handelsbanken eller en annen sparebank, kan du prøve likevel. Lista er det som er testet, ikke en grense.</p>
+  </section>
+
+  <section id="laste-ned">
+    <h2>Slik laster du ned kontoutskriften</h2>
+    <ol class="steps">
+      <li>Logg inn i nettbanken.</li>
+      <li>Åpne kontoen eller kortet du betaler abonnementene med.</li>
+      <li>Velg periode. Tre måneder holder for månedlige trekk. Vil du finne årlige abonnementer også, velg 12 måneder.</li>
+      <li>Last ned eller eksporter kontoutskriften som <b>CSV</b> eller <b>PDF</b>.</li>
+      <li>Åpne TrekkSjekk, velg <b>Les inn kontoutskrift</b> og velg fila.</li>
+    </ol>
+    <p>Har du flere kort eller kontoer, gjør det for hver av dem.</p>
+  </section>
+
+  <section id="virker-ikke" class="note">
+    <h2>Virker ikke fila?</h2>
+    <ol>
+      <li><b>Skjermbilde eller bilde:</b> virker ikke. Appen leser teksten i fila, så den må lastes ned som CSV eller PDF.</li>
+      <li><b>Skannet eller passordlåst PDF:</b> kan ikke leses, og appen sier fra om det. Krypterte bank-PDF-er uten passord går fint.</li>
+      <li><b>For stor fil:</b> grensen er 25 MB og 60 sider for PDF. Vil ikke banken lage fila, velg bare de siste tre månedene og filtrer så du bare får betalinger (penger ut).</li>
+      <li><b>Fortsatt ikke:</b> trykk <b>Velg tjenestene selv</b> i appen og legg dem inn, og send gjerne en rapport fra appen så formatet kan bli lagt til.</li>
+    </ol>
+  </section>
+
+  <section id="personvern">
+    <h2>Hva skjer med fila?</h2>
+    <p>Kontoutskriften leses på telefonen. Den sendes ikke til TrekkSjekk eller noen andre, og kopien appen lager av fila slettes etterpå. Det er ingen bankkobling og ingen innlogging i banken. Appen hopper over dagligvarer, overføringer til personer og påfyll av egne kontoer, og viser bare det som ser ut som faste trekk.</p>
+    <p>Står det bare APPLE.COM/BILL eller GOOGLE* på trekket, foreslår appen hvilke tjenester det kan være ut fra beløpet. Les mer om <a href="/apple-com-bill/">APPLE.COM/BILL</a> og <a href="/google-trekk/">GOOGLE *-trekk</a>, eller se <a href="/finn-abonnementer/">sjekklista for å finne alle abonnementene</a>.</p>
+  </section>
+
+  <section class="faq">
+    <h2>Vanlige spørsmål</h2>
+    <h3>Hvilke banker kan TrekkSjekk lese kontoutskrift fra?</h3>
+    <p>TrekkSjekk har ingen fast liste over banker. Appen leser kolonnene i fila selv, så den skal virke med kontoutskrifter fra de fleste banker, så lenge du kan laste ned kontoutskriften som CSV eller PDF fra nettbanken. Den er testet med formatene til DNB, SpareBank 1, Nordea, Sbanken, Bulder, Jæren Sparebank, Revolut og Vipps (CSV), og DNB, Nordea, Sbanken, SpareBank 1, Revolut og kredittkortfakturaer (PDF). Skjermbilder og skannede PDF-er kan ikke leses.</p>
+    <h3>Kan jeg bruke et skjermbilde av kontoutskriften?</h3>
+    <p>Nei. TrekkSjekk leser teksten i fila, så du må laste ned kontoutskriften som CSV eller PDF fra nettbanken. Et skjermbilde eller en skannet PDF er bare et bilde og kan ikke leses.</p>
+    <h3>Må jeg koble TrekkSjekk til banken?</h3>
+    <p>Nei. TrekkSjekk har ingen bankkobling og ber aldri om innlogging i banken. Du laster ned fila selv og velger den i appen. Fila leses på telefonen og slettes etterpå.</p>
+    <h3>Hva gjør jeg hvis banken ikke vil lage fila?</h3>
+    <p>Velg bare de siste tre månedene, og filtrer så du bare får betalinger (penger ut). Da blir fila mindre, og det holder for å finne de månedlige trekkene.</p>
+    <h3>Hvor lang periode bør kontoutskriften dekke?</h3>
+    <p>Tre måneder holder for månedlige trekk. Vil du også finne årlige abonnementer, velg de siste 12 månedene.</p>
+    <h3>Hva hvis min bank ikke står på lista?</h3>
+    <p>Prøv likevel. Lista er bare de formatene som er testet, ikke en grense. Får appen ikke lest fila, kan du velge tjenestene selv i appen, og send gjerne en rapport fra appen så formatet kan bli lagt til.</p>
+  </section>
+
+  <section class="cta">
+    <h2>Les inn kontoutskriften</h2>
+    <p>TrekkSjekk finner de faste trekkene i kontoutskriften, viser hva du betaler i måneden og i året, og siste dag du kan si opp. Ingen konto og ingen bankkobling. Gratis å laste ned for iPhone og Android.</p>
+    <p><a class="button" href="https://apps.apple.com/no/app/id6811947257?ppid=7cece6f3-3cfa-49ff-9c34-0c8acf33ae33">Last ned i App Store</a> <a class="button" href="https://play.google.com/store/apps/details?id=com.oleandrefoss.abbo&amp;referrer=utm_source%3Dnettside%26utm_medium%3Dweb">Last ned i Google Play</a></p>
+  </section>
+
+  <footer>
+    <a href="/">TrekkSjekk</a> · <a href="/si-opp/">Alle oppsigelsesguider</a> · <a href="/priser/">Priser</a> · <a href="/studentrabatt/">Studentrabatt</a> · <a href="/om.html">Om</a> · <a href="/personvern.html">Personvern</a> · Oppdatert 10. november 2026
+  </footer>
+</div>
+</body>
+</html>
