@@ -260,7 +260,7 @@ Oppdatert 2026-10-18. Tallene er hentet fra leverandørenes egne sider; hver lin
 - Deezer: Premium 129 kr i måneden; Duo 169 kr i måneden; Family 209 kr i måneden (kontrollert 2026-09-13)
 - YouTube Premium: Individual 169 kr i måneden; Family 269 kr i måneden; YouTube Music Premium – Individual 139 kr i måneden (kontrollert 2026-09-13)
 - Storytel: Basic 149 kr i måneden; Premium 189 kr i måneden; Unlimited 219 kr i måneden; Family fra 289 kr i måneden (kontrollert 2026-10-08)
-- Fabel: Standard 199 kr i måneden; Duo 249 kr i måneden; Familie 349 kr i måneden (kontrollert 2026-10-08)
+- Fabel: Lett 139 kr i måneden; Standard 199 kr i måneden; Duo 249 kr i måneden; Familie 349 kr i måneden (kontrollert 2026-11-16)
 - Podme: Premium 99 kr i måneden; Premium Duo 129 kr i måneden; Premium Total 199 kr i måneden; Premium Total Duo 249 kr i måneden (kontrollert 2026-09-13)
 - Tidal: Individual 139 kr i måneden; Family 219 kr i måneden; DJ Extension 199 kr i måneden (kontrollert 2026-09-13)
 - Apple Music: Individual 139 kr i måneden; Family 219 kr i måneden (kontrollert 2026-10-08)
